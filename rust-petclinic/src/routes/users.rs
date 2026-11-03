@@ -28,9 +28,7 @@ pub async fn create(
         } else {
             format!("ROLE_{name}")
         };
-        if !roles.contains(&name) {
-            roles.push(name);
-        }
+        roles.push(name);
     }
     if roles.is_empty() {
         return Err(AppError::unexpected("IllegalArgumentException"));
