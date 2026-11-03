@@ -52,7 +52,10 @@ compare() {
   rust="$(fetch "$RUST_URL" "$method" "$path" "$body" "$filter")"
   java_status="${java%%$'\n'*}"
   rust_status="${rust%%$'\n'*}"
-  if [[ "$java" == "$rust" ]]; then
+  if [[ "$java_status" == "000" || "$rust_status" == "000" ]]; then
+    verdict="UNREACHABLE"
+    failures=$((failures + 1))
+  elif [[ "$java" == "$rust" ]]; then
     verdict="identical"
   else
     verdict="DIFFERENT"
