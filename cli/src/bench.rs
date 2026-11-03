@@ -393,9 +393,13 @@ pub fn render_results(ts: &Timeseries) -> String {
                 short.join(", ")
             )));
             out.push('\n');
+            let verdict = if rb <= ja {
+                format!("{:.1}x less", ja / rb.max(1e-9))
+            } else {
+                format!("{:.1}x MORE", rb / ja.max(1e-9))
+            };
             out.push_str(&bold(&format!(
-                "cpu per request: java {ja:.2} core-ms, rust {rb:.2} core-ms ({:.1}x less)",
-                ja / rb.max(1e-9)
+                "cpu per request: java {ja:.2} core-ms, rust {rb:.2} core-ms (rust {verdict})"
             )));
         }
         _ => {
