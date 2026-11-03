@@ -1,34 +1,13 @@
-<div class="shell" [class.panel-closed]="!panelOpen()">
-  <header class="topbar">
-    <div class="brand">
-      <img src="amadeus-mark.svg" alt="" width="28" height="28" />
-      <span class="wordmark">amadeus</span>
-      <span class="divider"></span>
-      <span class="product">Modernization Console</span>
-    </div>
-    <nav class="topnav">
-      <button [class.active]="view() === 'overview'" (click)="view.set('overview')">Service</button>
-      <button [class.active]="view() === 'data'" (click)="view.set('data')">Data parity</button>
-    </nav>
-    <div class="right">
-      <span class="chip plain env">Travel, Shopping &amp; Reservation · Java → Rust</span>
-      <button class="btn ghost sm toggle" (click)="panelOpen.set(!panelOpen())">
-        {{ panelOpen() ? 'Hide cost panel' : 'Show cost panel' }}
-      </button>
-    </div>
-  </header>
-
-  <main class="content">
-    @switch (view()) {
-      @case ('overview') { <app-service-overview /> }
-      @case ('data') { <app-entity-browser /> }
-    }
-    <footer class="foot muted">
-      Demo console for the Java → Rust modernization of spring-petclinic-rest. Not an Amadeus product.
-    </footer>
-  </main>
-
-  @if (panelOpen()) {
-    <app-cost-panel class="side" />
+<header class="bar">
+  <span class="name">java_to_rust</span>
+  <span class="dim">spring-petclinic-rest · java → rust · amadeus tsr modernization</span>
+  <span class="spacer"></span>
+  @for (k of kinds; track k) {
+    <span class="svc {{ k }}">{{ k }}</span><span class="dim">:{{ services[k].port }}</span>
+    <span [class.good]="up()[k].startsWith('up')" [class.bad]="up()[k] === 'down'">{{ up()[k] }}</span>
   }
-</div>
+</header>
+<main class="split">
+  <api-pane class="pane"></api-pane>
+  <bench-pane class="pane"></bench-pane>
+</main>

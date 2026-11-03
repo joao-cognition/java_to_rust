@@ -1,15 +1,31 @@
-import { Component, signal } from '@angular/core';
-import { CostPanel } from './features/cost-panel';
-import { EntityBrowser } from './features/entity-browser';
-import { ServiceOverview } from './features/service-overview';
+import { Component, inject, signal } from '@angular/core';
+import { ApiPane } from './api-pane';
+import { BenchPane } from './bench-pane';
+import { ApiService, ok } from './core/api.service';
+import { SERVICES, ServiceKind } from './core/models';
 
 @Component({
   selector: 'app-root',
-  imports: [ServiceOverview, EntityBrowser, CostPanel],
+  imports: [ApiPane, BenchPane],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  readonly panelOpen = signal(true);
-  readonly view = signal<'overview' | 'data'>('overview');
+  private readonly api = inject(ApiService);
+  readonly services = SERVICES;
+  readonly kinds: ServiceKind[] = ['java', 'rust'];
+  readonly up = signal<Record<ServiceKind, string>>({ java: '…', rust: '…' });
+
+  constructor() {
+    void this.health();
+    setInterval(() => void this.health(), 10_000);
+  }
+
+  private async health(): Promise<void> {
+    const res = await Promise.all(this.kinds.map((k) => this.api.probe(k, '/pettypes')));
+    this.up.set({
+      java: ok(res[0].status) ? `up ${res[0].ms.toFixed(0)}ms` : 'down',
+      rust: ok(res[1].status) ? `up ${res[1].ms.toFixed(0)}ms` : 'down',
+    });
+  }
 }

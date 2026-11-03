@@ -12,23 +12,24 @@ It ships three parts:
 |---|---|---|
 | Java service (unchanged Spring PetClinic REST API) | `src/` | 9966 (`/petclinic/api`) |
 | Rust port of the read hot path (reference lists, lookups, search) + benchmark | `rust-petclinic/`, `bench/` (separate PR) | 9977 (`/petclinic/api`) |
-| **Amadeus Modernization Console** — Angular UI with the CPU-cost side panel | `frontend/` | 4200 |
+| **Bench console** — split view: raw API calls to both services + terminal pane with the measured before/after | `frontend/` | 4200 |
 
-## Modernization Console (`frontend/`)
+## Bench console (`frontend/`)
 
-Angular 22 app, Amadeus look and feel. The main view shows the live Java service (health, record counts, migration
-scope) and a data browser that can be switched between the Java and the Rust service. The right-hand **CPU cost
-panel** is the point of the demo:
+A single dark, monospace page for a technical audience. No dashboards, no money figures — just the raw API and
+measured numbers.
 
-1. **Benchmark** — Java vs Rust for the same traffic on 2 vCPUs: CPU cores needed, $ per million requests, peak
-   throughput, p99, memory, start-up, DB queries per request. Loads the reference run from
-   `frontend/public/bench/reference-summary.json`; use **Load results** to drop in `bench/results/summary.json`
-   from your own `bench/run.sh` run.
-2. **Amadeus-scale impact** — editable assumptions (vCPUs in the CPU-intensive fleet, vCPU-hour price, share of
-   the fleet ported) → vCPUs freed and $ saved per year, plus the "every 1 % ported saves …" figure.
-3. **Validate the migration** — fires the same requests at both services from the browser, checks the JSON is
-   identical (key order normalised) and compares p50/p99. The badge turns **Validated** only when every endpoint is
-   identical and Rust is not slower. CPU/cost figures stay with `bench/run.sh`; the probe is a parity + sanity check.
+* **Left — api.** Type a path (or click one of the hot-path endpoints), the same `GET` goes to the Java service
+  (`:9966`) and the Rust service (`:9977`) through the dev-server proxy. You see status, latency, size and the raw
+  JSON of both, plus a `diff:` line (`identical`, key order ignored, or the list of differing JSON paths). `x50`
+  sends 50 sequential requests to each side and prints p50/p99 as seen from the browser.
+* **Right — bench.** Replays `bench/results/run.log` as written by `bench/run.sh`, then draws sparklines per second
+  for CPU cores, req/s, p99 and RSS of each service from `bench/results/timeseries.json`, and a summary block with
+  the deltas and the line that matters: `cpu freed at N req/s: X cores (Y% of the java footprint)`. Nothing in this
+  pane is typed in by hand; if the files are missing it says so and tells you to run the bench.
+
+`frontend/public/bench/results` is a symlink to `../../../bench/results`, so the console always shows the results
+committed in the repo (or the ones you just produced).
 
 ```sh
 # 1. Java service
@@ -37,7 +38,7 @@ panel** is the point of the demo:
 docker compose --profile postgres up -d
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres,spring-data-jpa
 
-# 2. Rust service (see rust-petclinic/README.md) — optional, the console shows it as "not reachable" otherwise
+# 2. Rust service (see rust-petclinic/README.md) — optional, the console shows it as down otherwise
 cd rust-petclinic && cargo run --release     # http://localhost:9977/petclinic/api
 
 # 3. Console

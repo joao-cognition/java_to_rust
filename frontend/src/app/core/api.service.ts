@@ -1,73 +1,83 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable, inject } from '@angular/core';
-import { firstValueFrom } from 'rxjs';
-import { NamedRef, Owner, Pet, ServiceKind, Visit, Vet } from './models';
-import { SettingsService } from './settings.service';
-
-export interface TimedResult<T> { data: T; ms: number; }
-
-export interface HealthStatus { kind: ServiceKind; up: boolean; ms: number; detail: string; }
+import { Injectable } from '@angular/core';
+import { Probe, SERVICES, ServiceKind } from './models';
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  private readonly http = inject(HttpClient);
-  private readonly settings = inject(SettingsService);
-
-  baseUrl(kind: ServiceKind): string {
-    const s = this.settings.settings();
-    return (kind === 'java' ? s.javaBaseUrl : s.rustBaseUrl).replace(/\/+$/, '');
+  url(kind: ServiceKind, path: string): string {
+    const p = path.startsWith('/') ? path : `/${path}`;
+    return `${SERVICES[kind].base}/api${p}`;
   }
 
-  apiUrl(kind: ServiceKind, path: string): string {
-    return `${this.baseUrl(kind)}/api${path.startsWith('/') ? path : '/' + path}`;
-  }
-
-  async health(kind: ServiceKind): Promise<HealthStatus> {
-    const started = performance.now();
+  /** One request, never throws: status 0 means the proxy target is down. */
+  async probe(kind: ServiceKind, path: string): Promise<Probe> {
+    const t0 = performance.now();
     try {
-      const body = await firstValueFrom(
-        this.http.get<{ status?: string }>(`${this.baseUrl(kind)}/actuator/health`),
-      );
-      const ms = performance.now() - started;
-      const up = (body?.status ?? '').toUpperCase() === 'UP';
-      return { kind, up, ms, detail: up ? 'UP' : (body?.status ?? 'unknown') };
-    } catch (err: unknown) {
-      return { kind, up: false, ms: performance.now() - started, detail: describe(err) };
-    }
-  }
-
-  async get<T>(kind: ServiceKind, path: string): Promise<TimedResult<T>> {
-    const started = performance.now();
-    const data = await firstValueFrom(this.http.get<T>(this.apiUrl(kind, path)));
-    return { data, ms: performance.now() - started };
-  }
-
-  /** Raw fetch used by the validation probe: returns status + parsed body without throwing. */
-  async probe(kind: ServiceKind, path: string): Promise<{ status: number; ms: number; body: unknown }> {
-    const started = performance.now();
-    try {
-      const res = await fetch(this.apiUrl(kind, path), { headers: { Accept: 'application/json' } });
+      const res = await fetch(this.url(kind, path), { headers: { accept: 'application/json' } });
       const text = await res.text();
-      let body: unknown = text;
-      try { body = JSON.parse(text); } catch { /* non-JSON body */ }
-      return { status: res.status, ms: performance.now() - started, body };
-    } catch {
-      return { status: 0, ms: performance.now() - started, body: null };
+      const ms = performance.now() - t0;
+      let body: unknown = null;
+      try {
+        body = text ? JSON.parse(text) : null;
+      } catch {
+        body = text;
+      }
+      if ([502, 503, 504].includes(res.status) && (body === null || typeof body !== 'object')) {
+        return { status: 0, ms, bytes: 0, body: null, text: '', error: `proxy ${res.status}: nothing listening on :${SERVICES[kind].port}` };
+      }
+      return { status: res.status, ms, bytes: text.length, body, text };
+    } catch (err) {
+      return { status: 0, ms: performance.now() - t0, bytes: 0, body: null, text: '', error: (err as Error).message };
     }
   }
-
-  owners(kind: ServiceKind) { return this.get<Owner[]>(kind, '/owners'); }
-  pets(kind: ServiceKind) { return this.get<Pet[]>(kind, '/pets'); }
-  vets(kind: ServiceKind) { return this.get<Vet[]>(kind, '/vets'); }
-  visits(kind: ServiceKind) { return this.get<Visit[]>(kind, '/visits'); }
-  petTypes(kind: ServiceKind) { return this.get<NamedRef[]>(kind, '/pettypes'); }
-  specialties(kind: ServiceKind) { return this.get<NamedRef[]>(kind, '/specialties'); }
 }
 
-export function describe(err: unknown): string {
-  if (err && typeof err === 'object' && 'status' in err) {
-    const status = (err as { status: number }).status;
-    return status === 0 || status === 502 || status === 503 || status === 504 ? 'unreachable' : `HTTP ${status}`;
+export function ok(status: number): boolean {
+  return status >= 200 && status < 300;
+}
+
+/** Stable JSON (sorted keys) so serializer field order does not count as a difference. */
+export function canonical(value: unknown): string {
+  return JSON.stringify(sortKeys(value));
+}
+
+function sortKeys(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(sortKeys);
+  if (value && typeof value === 'object') {
+    return Object.keys(value as Record<string, unknown>)
+      .sort()
+      .reduce<Record<string, unknown>>((acc, k) => {
+        acc[k] = sortKeys((value as Record<string, unknown>)[k]);
+        return acc;
+      }, {});
   }
-  return 'unreachable';
+  return value;
+}
+
+/** JSON-path list of leaf differences between two values (capped). */
+export function diffPaths(a: unknown, b: unknown, path = '$', out: string[] = [], cap = 12): string[] {
+  if (out.length >= cap) return out;
+  if (Array.isArray(a) && Array.isArray(b)) {
+    if (a.length !== b.length) out.push(`${path}.length ${a.length} != ${b.length}`);
+    for (let i = 0; i < Math.min(a.length, b.length); i++) diffPaths(a[i], b[i], `${path}[${i}]`, out, cap);
+    return out;
+  }
+  if (a && b && typeof a === 'object' && typeof b === 'object') {
+    const ao = a as Record<string, unknown>;
+    const bo = b as Record<string, unknown>;
+    for (const k of new Set([...Object.keys(ao), ...Object.keys(bo)])) {
+      if (!(k in ao)) out.push(`${path}.${k} missing in java`);
+      else if (!(k in bo)) out.push(`${path}.${k} missing in rust`);
+      else diffPaths(ao[k], bo[k], `${path}.${k}`, out, cap);
+      if (out.length >= cap) break;
+    }
+    return out;
+  }
+  if (a !== b) out.push(`${path}: ${JSON.stringify(a)} != ${JSON.stringify(b)}`);
+  return out;
+}
+
+export function percentile(samples: number[], p: number): number {
+  if (!samples.length) return 0;
+  const s = [...samples].sort((x, y) => x - y);
+  return s[Math.min(s.length - 1, Math.floor(p * s.length))];
 }
