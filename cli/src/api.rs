@@ -26,6 +26,7 @@ pub struct Probe {
     pub bytes: usize,
     pub body: Option<Value>,
     pub text: String,
+    pub content_type: String,
     pub error: Option<String>,
 }
 
@@ -48,6 +49,12 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
     match client.get(url).header("accept", "application/json").send().await {
         Ok(res) => {
             let status = res.status().as_u16();
+            let content_type = res
+                .headers()
+                .get("content-type")
+                .and_then(|v| v.to_str().ok())
+                .unwrap_or("")
+                .to_string();
             let text = match res.text().await {
                 Ok(t) => t,
                 Err(e) => {
@@ -57,6 +64,7 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
                         bytes: 0,
                         body: None,
                         text: String::new(),
+                        content_type,
                         error: Some(format!("body read failed after HTTP {status}: {e}")),
                     }
                 }
@@ -69,6 +77,7 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
                 bytes: text.len(),
                 body,
                 text,
+                content_type,
                 error: None,
             }
         }
@@ -78,6 +87,7 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
             bytes: 0,
             body: None,
             text: String::new(),
+            content_type: String::new(),
             error: Some(if e.is_connect() {
                 "connection refused — nothing listening".into()
             } else {
@@ -194,32 +204,24 @@ pub async fn compare(bases: &Bases, path: &str, burst: usize, show_body: bool) -
     }
 
     println!();
-    match (j.ok(), r.ok()) {
-        (false, _) => println!(
-            "{}",
-            yellow(&format!(
-                "diff: n/a — java {}",
-                if j.status == 0 {
-                    "not reachable".to_string()
-                } else {
-                    format!("HTTP {}", j.status)
-                }
-            ))
-        ),
-        (_, false) => println!(
-            "{}",
-            yellow(&format!(
-                "diff: n/a — rust {}",
-                if r.status == 0 {
-                    "not reachable".to_string()
-                } else {
-                    format!("HTTP {}", r.status)
-                }
-            ))
-        ),
-        (true, true) => match (&j.body, &r.body) {
+    let reach = |p: &Probe| p.status != 0;
+    match (reach(&j), reach(&r)) {
+        (false, _) => println!("{}", yellow("diff: n/a — java not reachable")),
+        (_, false) => println!("{}", yellow("diff: n/a — rust not reachable")),
+        _ if j.status != r.status => {
+            println!(
+                "{}",
+                yellow(&format!("diff: status differs — java {} vs rust {}", j.status, r.status))
+            )
+        }
+        _ => match (&j.body, &r.body) {
             (Some(a), Some(b)) if canonical(a) == canonical(b) => {
-                println!("{}", green(&format!("diff: identical ({}B, key order ignored)", j.bytes)));
+                let what = if j.ok() {
+                    String::new()
+                } else {
+                    format!("HTTP {} problem, ", j.status)
+                };
+                println!("{}", green(&format!("diff: identical ({what}{}B, key order ignored)", j.bytes)));
             }
             (Some(a), Some(b)) => {
                 let mut out = Vec::new();

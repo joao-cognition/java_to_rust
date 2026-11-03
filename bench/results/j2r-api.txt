@@ -1,0 +1,208 @@
+$ j2r api "airports" -n 50 --no-body
+GET http://localhost:9966/travel/api/airports
+GET http://localhost:9977/travel/api/airports
+
+java 200  3.3ms  6554B
+rust 200  1.3ms  6554B
+
+diff: identical (6554B, key order ignored)
+
+50 sequential requests per side, GET /airports
+  java  p50     1.2 ms   p99     3.1 ms   min    0.9 ms   errors 0
+  rust  p50     0.5 ms   p99     4.6 ms   min    0.3 ms   errors 0
+
+$ j2r api "airports/NCE" -n 50 --no-body
+GET http://localhost:9966/travel/api/airports/NCE
+GET http://localhost:9977/travel/api/airports/NCE
+
+java 200  1.6ms  148B
+rust 200  0.8ms  148B
+
+diff: identical (148B, key order ignored)
+
+50 sequential requests per side, GET /airports/NCE
+  java  p50     0.9 ms   p99     1.9 ms   min    0.7 ms   errors 0
+  rust  p50     0.3 ms   p99     0.6 ms   min    0.2 ms   errors 0
+
+$ j2r api "airlines" -n 50 --no-body
+GET http://localhost:9966/travel/api/airlines
+GET http://localhost:9977/travel/api/airlines
+
+java 200  1.6ms  1076B
+rust 200  0.9ms  1076B
+
+diff: identical (1076B, key order ignored)
+
+50 sequential requests per side, GET /airlines
+  java  p50     1.0 ms   p99     3.5 ms   min    0.8 ms   errors 0
+  rust  p50     0.3 ms   p99     2.3 ms   min    0.2 ms   errors 0
+
+$ j2r api "airlines/AF" -n 50 --no-body
+GET http://localhost:9966/travel/api/airlines/AF
+GET http://localhost:9977/travel/api/airlines/AF
+
+java 200  1.7ms  82B
+rust 200  0.9ms  82B
+
+diff: identical (82B, key order ignored)
+
+50 sequential requests per side, GET /airlines/AF
+  java  p50     1.2 ms   p99     4.6 ms   min    0.7 ms   errors 0
+  rust  p50     0.3 ms   p99     2.0 ms   min    0.2 ms   errors 0
+
+$ j2r api "flights?origin=NCE&destination=LHR&date=2026-11-05" -n 50 --no-body
+GET http://localhost:9966/travel/api/flights?origin=NCE&destination=LHR&date=2026-11-05
+GET http://localhost:9977/travel/api/flights?origin=NCE&destination=LHR&date=2026-11-05
+
+java 200  3.0ms  3978B
+rust 200  2.4ms  3978B
+
+diff: identical (3978B, key order ignored)
+
+50 sequential requests per side, GET /flights?origin=NCE&destination=LHR&date=2026-11-05
+  java  p50     1.7 ms   p99     5.0 ms   min    1.3 ms   errors 0
+  rust  p50     1.2 ms   p99     3.8 ms   min    0.8 ms   errors 0
+
+$ j2r api "flights/1" -n 50 --no-body
+GET http://localhost:9966/travel/api/flights/1
+GET http://localhost:9977/travel/api/flights/1
+
+java 200  2.0ms  569B
+rust 200  1.5ms  569B
+
+diff: identical (569B, key order ignored)
+
+50 sequential requests per side, GET /flights/1
+  java  p50     1.0 ms   p99     3.2 ms   min    0.7 ms   errors 0
+  rust  p50     0.4 ms   p99     2.8 ms   min    0.3 ms   errors 0
+
+$ j2r api "offers?origin=NCE&destination=LHR&date=2026-11-05&adults=2&cabin=ECONOMY" -n 50 --no-body
+GET http://localhost:9966/travel/api/offers?origin=NCE&destination=LHR&date=2026-11-05&adults=2&cabin=ECONOMY
+GET http://localhost:9977/travel/api/offers?origin=NCE&destination=LHR&date=2026-11-05&adults=2&cabin=ECONOMY
+
+java 200  5.3ms  19294B
+rust 200  2.4ms  19294B
+
+diff: identical (19294B, key order ignored)
+
+50 sequential requests per side, GET /offers?origin=NCE&destination=LHR&date=2026-11-05&adults=2&cabin=ECONOMY
+  java  p50     3.2 ms   p99     8.2 ms   min    2.2 ms   errors 0
+  rust  p50     0.8 ms   p99     2.9 ms   min    0.5 ms   errors 0
+
+$ j2r api "travelers/1" -n 50 --no-body
+GET http://localhost:9966/travel/api/travelers/1
+GET http://localhost:9977/travel/api/travelers/1
+
+java 200  1.6ms  167B
+rust 200  1.0ms  167B
+
+diff: identical (167B, key order ignored)
+
+50 sequential requests per side, GET /travelers/1
+  java  p50     0.8 ms   p99     1.4 ms   min    0.7 ms   errors 0
+  rust  p50     0.3 ms   p99     0.6 ms   min    0.2 ms   errors 0
+
+$ j2r api "travelers?lastName=Mar" -n 50 --no-body
+GET http://localhost:9966/travel/api/travelers?lastName=Mar
+GET http://localhost:9977/travel/api/travelers?lastName=Mar
+
+java 200  2.3ms  830B
+rust 200  0.9ms  830B
+
+diff: identical (830B, key order ignored)
+
+50 sequential requests per side, GET /travelers?lastName=Mar
+  java  p50     1.6 ms   p99     4.5 ms   min    1.1 ms   errors 0
+  rust  p50     0.4 ms   p99     1.6 ms   min    0.3 ms   errors 0
+
+$ j2r api "bookings/QX7K2M" -n 50 --no-body
+GET http://localhost:9966/travel/api/bookings/QX7K2M
+GET http://localhost:9977/travel/api/bookings/QX7K2M
+
+java 200  3.4ms  1105B
+rust 200  2.9ms  1105B
+
+diff: identical (1105B, key order ignored)
+
+50 sequential requests per side, GET /bookings/QX7K2M
+  java  p50     1.5 ms   p99     2.9 ms   min    1.1 ms   errors 0
+  rust  p50     1.0 ms   p99     4.6 ms   min    0.7 ms   errors 0
+
+$ j2r api "bookings?lastName=Martin" -n 50 --no-body
+GET http://localhost:9966/travel/api/bookings?lastName=Martin
+GET http://localhost:9977/travel/api/bookings?lastName=Martin
+
+java 200  7.8ms  14671B
+rust 200  2.5ms  14671B
+
+diff: identical (14671B, key order ignored)
+
+50 sequential requests per side, GET /bookings?lastName=Martin
+  java  p50     5.6 ms   p99    11.7 ms   min    4.4 ms   errors 0
+  rust  p50     1.8 ms   p99     3.1 ms   min    1.3 ms   errors 0
+
+$ j2r api "airports/QQQ" -n 50 --no-body
+GET http://localhost:9966/travel/api/airports/QQQ
+GET http://localhost:9977/travel/api/airports/QQQ
+
+java HTTP 404  2.0ms  105B
+rust HTTP 404  0.9ms  105B
+
+diff: identical (HTTP 404 problem, 105B, key order ignored)
+
+50 sequential requests per side, GET /airports/QQQ
+  java  n/a (50 errors)
+  rust  n/a (50 errors)
+
+$ j2r api "flights/999999" -n 50 --no-body
+GET http://localhost:9966/travel/api/flights/999999
+GET http://localhost:9977/travel/api/flights/999999
+
+java HTTP 404  1.7ms  109B
+rust HTTP 404  1.0ms  109B
+
+diff: identical (HTTP 404 problem, 109B, key order ignored)
+
+50 sequential requests per side, GET /flights/999999
+  java  n/a (50 errors)
+  rust  n/a (50 errors)
+
+$ j2r api "offers?origin=NCE&destination=NCE&date=2026-11-05" -n 50 --no-body
+GET http://localhost:9966/travel/api/offers?origin=NCE&destination=NCE&date=2026-11-05
+GET http://localhost:9977/travel/api/offers?origin=NCE&destination=NCE&date=2026-11-05
+
+java HTTP 400  1.8ms  114B
+rust HTTP 400  0.6ms  114B
+
+diff: identical (HTTP 400 problem, 114B, key order ignored)
+
+50 sequential requests per side, GET /offers?origin=NCE&destination=NCE&date=2026-11-05
+  java  n/a (50 errors)
+  rust  n/a (50 errors)
+
+$ j2r api "offers?origin=NCE&destination=LHR&date=bad" -n 50 --no-body
+GET http://localhost:9966/travel/api/offers?origin=NCE&destination=LHR&date=bad
+GET http://localhost:9977/travel/api/offers?origin=NCE&destination=LHR&date=bad
+
+java HTTP 400  1.3ms  122B
+rust HTTP 400  0.5ms  122B
+
+diff: identical (HTTP 400 problem, 122B, key order ignored)
+
+50 sequential requests per side, GET /offers?origin=NCE&destination=LHR&date=bad
+  java  n/a (50 errors)
+  rust  n/a (50 errors)
+
+$ j2r api "bookings/ZZZZZZ" -n 50 --no-body
+GET http://localhost:9966/travel/api/bookings/ZZZZZZ
+GET http://localhost:9977/travel/api/bookings/ZZZZZZ
+
+java HTTP 404  1.6ms  111B
+rust HTTP 404  0.9ms  111B
+
+diff: identical (HTTP 404 problem, 111B, key order ignored)
+
+50 sequential requests per side, GET /bookings/ZZZZZZ
+  java  n/a (50 errors)
+  rust  n/a (50 errors)
+
