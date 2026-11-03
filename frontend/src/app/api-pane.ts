@@ -52,8 +52,10 @@ interface Burst {
           </div>
         }
       </div>
-      <div class="diff" [class.good]="c.diff.length === 0 && isOk(c.rust.status)" [class.bad]="c.diff.length > 0">
-        @if (!isOk(c.rust.status)) {
+      <div class="diff" [class.good]="c.diff.length === 0 && isOk(c.java.status) && isOk(c.rust.status)" [class.bad]="c.diff.length > 0">
+        @if (!isOk(c.java.status)) {
+          diff: n/a — java {{ c.java.status ? 'HTTP ' + c.java.status : 'not reachable on :' + services.java.port }}
+        } @else if (!isOk(c.rust.status)) {
           diff: n/a — rust {{ c.rust.status ? 'HTTP ' + c.rust.status : 'not reachable on :' + services.rust.port }}
         } @else if (c.diff.length === 0) {
           diff: identical ({{ c.java.bytes }} B, key order ignored)
@@ -82,7 +84,7 @@ interface Burst {
     .status { display: flex; gap: 10px; padding: 3px 8px; white-space: nowrap; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg2); }
     .st { color: var(--green); }
     .st.bad { color: var(--red); }
-    .body { margin: 0; padding: 6px 8px; overflow: auto; max-height: 38vh; min-height: 120px; font-size: 12px; line-height: 1.35; }
+    .body { margin: 0; padding: 6px 8px; overflow: auto; max-height: 60vh; min-height: 120px; font-size: 12px; line-height: 1.35; }
     .diff { padding: 3px 0; }
     .diff.good { color: var(--green); }
     .diff.bad { color: var(--amber); }
@@ -114,9 +116,13 @@ export class ApiPane {
     this.busy.set(true);
     const path = this.path().trim();
     const [java, rust] = await Promise.all([this.api.probe('java', path), this.api.probe('rust', path)]);
-    const diff = ok(java.status) && ok(rust.status) && canonical(java.body) !== canonical(rust.body) ? diffPaths(java.body, rust.body) : [];
+    let diff: string[] = [];
+    if (ok(java.status) && ok(rust.status) && canonical(java.body) !== canonical(rust.body)) {
+      diff = diffPaths(java.body, rust.body);
+      if (!diff.length) diff = ['$: bodies differ'];
+    }
     this.call.set({ path, java, rust, diff });
-    const verdict = !ok(rust.status) ? 'rust n/a' : diff.length ? `${diff.length} diff` : 'identical';
+    const verdict = !ok(java.status) ? 'java n/a' : !ok(rust.status) ? 'rust n/a' : diff.length ? `${diff.length} diff` : 'identical';
     this.push(`> GET /${path}  java ${java.status || 'down'} ${java.ms.toFixed(0)}ms  rust ${rust.status || 'down'} ${rust.ms.toFixed(0)}ms  ${verdict}`);
     this.busy.set(false);
   }

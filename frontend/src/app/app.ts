@@ -1,12 +1,11 @@
 import { Component, inject, signal } from '@angular/core';
 import { ApiPane } from './api-pane';
-import { BenchPane } from './bench-pane';
 import { ApiService, ok } from './core/api.service';
 import { SERVICES, ServiceKind } from './core/models';
 
 @Component({
   selector: 'app-root',
-  imports: [ApiPane, BenchPane],
+  imports: [ApiPane],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

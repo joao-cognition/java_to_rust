@@ -2,6 +2,7 @@
 .bar { display: flex; gap: 10px; align-items: baseline; padding: 6px 12px; border-bottom: 1px solid var(--line); background: var(--bg2); }
 .name { color: var(--fg); font-weight: 600; }
 .spacer { flex: 1; }
-.split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 10px 12px 12px; min-height: 0; }
+.single { display: grid; grid-template-rows: 1fr auto; gap: 8px; padding: 10px 12px 12px; min-height: 0; max-width: 1200px; width: 100%; margin: 0 auto; }
+footer { font-size: 12px; }
+code { color: var(--green); }
 .pane { min-height: 0; }
-@media (max-width: 1100px) { .split { grid-template-columns: 1fr; grid-template-rows: auto 1fr; } }

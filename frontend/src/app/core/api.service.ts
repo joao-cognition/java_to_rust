@@ -24,7 +24,7 @@ export class ApiService {
       if ([502, 503, 504].includes(res.status) && (body === null || typeof body !== 'object')) {
         return { status: 0, ms, bytes: 0, body: null, text: '', error: `proxy ${res.status}: nothing listening on :${SERVICES[kind].port}` };
       }
-      return { status: res.status, ms, bytes: text.length, body, text };
+      return { status: res.status, ms, bytes: new TextEncoder().encode(text).length, body, text };
     } catch (err) {
       return { status: 0, ms: performance.now() - t0, bytes: 0, body: null, text: '', error: (err as Error).message };
     }
@@ -56,6 +56,10 @@ function sortKeys(value: unknown): unknown {
 /** JSON-path list of leaf differences between two values (capped). */
 export function diffPaths(a: unknown, b: unknown, path = '$', out: string[] = [], cap = 12): string[] {
   if (out.length >= cap) return out;
+  if (Array.isArray(a) !== Array.isArray(b) || (a === null) !== (b === null) || typeof a !== typeof b) {
+    out.push(`${path}: ${kindOf(a)} in java, ${kindOf(b)} in rust`);
+    return out;
+  }
   if (Array.isArray(a) && Array.isArray(b)) {
     if (a.length !== b.length) out.push(`${path}.length ${a.length} != ${b.length}`);
     for (let i = 0; i < Math.min(a.length, b.length); i++) diffPaths(a[i], b[i], `${path}[${i}]`, out, cap);
@@ -74,6 +78,10 @@ export function diffPaths(a: unknown, b: unknown, path = '$', out: string[] = []
   }
   if (a !== b) out.push(`${path}: ${JSON.stringify(a)} != ${JSON.stringify(b)}`);
   return out;
+}
+
+function kindOf(v: unknown): string {
+  return v === null ? 'null' : Array.isArray(v) ? 'array' : typeof v;
 }
 
 export function percentile(samples: number[], p: number): number {
