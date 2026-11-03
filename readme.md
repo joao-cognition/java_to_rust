@@ -6,14 +6,13 @@ This fork of [spring-petclinic-rest](https://github.com/spring-petclinic/spring-
 modernization workflow: take a Java (Spring Boot / Hibernate) REST service, port its CPU-hot read path to Rust (Axum),
 run both against the same PostgreSQL, and measure what the same traffic costs in CPU before and after.
 
-It ships three parts:
+It ships two parts today; the third arrives with the migration:
 
 | Part | Where | Port |
 |---|---|---|
 | Java service (unchanged Spring PetClinic REST API) | `src/` | 9966 (`/petclinic/api`) |
-| Rust port of the read hot path (reference lists, lookups, search) + benchmark | `rust-petclinic/`, `bench/` (separate PR) | 9977 (`/petclinic/api`) |
+| Rust port of the read hot path — produced live by Devin during the demo | `rust-petclinic/` (not in this repo yet) | 9977 (`/petclinic/api`) |
 | **`j2r` CLI** — the console, in your terminal: raw API comparison, benchmark with real CPU numbers, live watch | `cli/` | — |
-| Browser API tester (optional) — same GET to both services, raw JSON side by side, diff | `frontend/` | 4200 |
 
 ## `j2r` — the terminal console (`cli/`)
 
@@ -37,12 +36,6 @@ published by Docker. For a remote host pass `--java http://host:9966/petclinic/a
 `--java-container <name>`), same for `--rust`. Everything in `bench/results/` is produced by this tool; nothing is
 typed in.
 
-## Browser API tester (`frontend/`, optional)
-
-A single dark page that does the `j2r api` part in a browser for people who prefer clicking: path input, quick
-links to the hot-path endpoints, raw JSON of both services, `diff:` line, `x50` burst. `npm start` proxies
-`/petclinic` → `:9966` and `/rust/petclinic` → `:9977`. No benchmarks in the browser.
-
 ```sh
 # 1. Java service
 ./mvnw spring-boot:run                       # H2 in-memory, http://localhost:9966/petclinic/api
@@ -50,12 +43,11 @@ links to the hot-path endpoints, raw JSON of both services, `diff:` line, `x50` 
 docker compose --profile postgres up -d
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres,spring-data-jpa
 
-# 2. Rust service (see rust-petclinic/README.md) — until it runs, j2r shows the rust side as down / n/a
+# 2. Rust service — appears once the migration PR lands; until then j2r shows the rust side as down / n/a
 cd rust-petclinic && cargo run --release     # http://localhost:9977/petclinic/api
 
 # 3. Console
 cargo install --path cli && j2r api vets && j2r bench
-cd frontend && npm install && npm start      # optional browser API tester, http://localhost:4200
 ```
 
 The dev server proxies `/petclinic` → `localhost:9966` and `/rust/petclinic` → `localhost:9977`
