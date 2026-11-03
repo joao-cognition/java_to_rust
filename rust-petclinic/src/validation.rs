@@ -72,7 +72,8 @@ pub fn validate_owner_fields(fields: &OwnerFields) -> Vec<ValidationMessage> {
         match value_of(fields, rule.field) {
             None => errors.push(ValidationMessage::new(rule.field, None, "must not be null")),
             Some(value) => {
-                let len = value.chars().count();
+                // Bean Validation's @Size counts UTF-16 code units (String#length).
+                let len = value.encode_utf16().count();
                 if len < 1 || len > rule.max_len {
                     errors.push(ValidationMessage::new(
                         rule.field,
@@ -147,5 +148,17 @@ mod tests {
                 "Field 'telephone' must match \"^[0-9]*$\" (rejected value: call-me)",
             ]
         );
+    }
+
+    #[test]
+    fn size_counts_utf16_code_units_like_java() {
+        // 40 emoji are 40 chars but 80 UTF-16 code units: exactly the @Size(max = 80) of city
+        let mut f = valid();
+        f.city = Some("\u{1F436}".repeat(40));
+        assert!(validate_owner_fields(&f).is_empty());
+        f.city = Some("\u{1F436}".repeat(41));
+        let errors = validate_owner_fields(&f);
+        assert_eq!(errors.len(), 1);
+        assert_eq!(errors[0].default_message, "size must be between 1 and 80");
     }
 }
