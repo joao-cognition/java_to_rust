@@ -288,19 +288,19 @@ pub async fn run(bases: &Bases, only: Option<&str>, out: &Path, verbose: bool) -
     for g in &groups {
         let rs: Vec<&CaseResult> = results.iter().filter(|r| r.group == *g).collect();
         let ok = rs.iter().filter(|r| r.identical).count();
-        let jp = api::percentile(&rs.iter().map(|r| r.java_ms).collect::<Vec<_>>(), 50.0);
-        let rp = api::percentile(&rs.iter().map(|r| r.rust_ms).collect::<Vec<_>>(), 50.0);
-        let line = format!(
-            "  {:<10} {:>6} {:>10} {:>6} {:>12.2} {:>12.2}",
-            g,
-            rs.len(),
-            ok,
-            rs.len() - ok,
-            jp,
-            rp
-        );
+        let p50 = |f: fn(&CaseResult) -> Option<f64>| {
+            let v: Vec<f64> = rs.iter().filter_map(|r| f(r)).collect();
+            if v.is_empty() {
+                "down".to_string()
+            } else {
+                format!("{:.2}", api::percentile(&v, 50.0))
+            }
+        };
+        let jp = p50(|r| (r.java_status != 0).then_some(r.java_ms));
+        let rp = p50(|r| (r.rust_status != 0).then_some(r.rust_ms));
+        let line = format!("  {:<10} {:>6} {:>10} {:>6} {:>12} {:>12}", g, rs.len(), ok, rs.len() - ok, jp, rp);
         println!("{}", if ok == rs.len() { line } else { red(&line) });
-        md.push_str(&format!("| {g} | {} | {ok} | {} | {jp:.2} | {rp:.2} |\n", rs.len(), rs.len() - ok));
+        md.push_str(&format!("| {g} | {} | {ok} | {} | {jp} | {rp} |\n", rs.len(), rs.len() - ok));
     }
     let verdict = if identical == results.len() { "identical" } else { "DIFFERENT" };
     md.push_str(&format!(
