@@ -1,0 +1,23 @@
+name: j2r cli
+
+on:
+  push:
+    paths: ["cli/**", ".github/workflows/cli.yml"]
+  pull_request:
+    paths: ["cli/**", ".github/workflows/cli.yml"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cli
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt --check
+      - run: cargo clippy --release -- -D warnings
+      - run: cargo build --release
+      - run: ./target/release/j2r --help

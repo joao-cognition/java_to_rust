@@ -1,0 +1,23 @@
+[package]
+name = "j2r"
+version = "0.1.0"
+edition = "2021"
+description = "java → rust migration console for the terminal: raw API comparison and CPU/latency benchmark of the two services"
+license = "Apache-2.0"
+
+[[bin]]
+name = "j2r"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive", "env"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "sync"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+terminal_size = "0.4"
+
+[profile.release]
+lto = true
+codegen-units = 1

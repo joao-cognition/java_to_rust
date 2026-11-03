@@ -12,24 +12,36 @@ It ships three parts:
 |---|---|---|
 | Java service (unchanged Spring PetClinic REST API) | `src/` | 9966 (`/petclinic/api`) |
 | Rust port of the read hot path (reference lists, lookups, search) + benchmark | `rust-petclinic/`, `bench/` (separate PR) | 9977 (`/petclinic/api`) |
-| **Bench console** — split view: raw API calls to both services + terminal pane with the measured before/after | `frontend/` | 4200 |
+| **`j2r` CLI** — the console, in your terminal: raw API comparison, benchmark with real CPU numbers, live watch | `cli/` | — |
+| Browser API tester (optional) — same GET to both services, raw JSON side by side, diff | `frontend/` | 4200 |
 
-## Bench console (`frontend/`)
+## `j2r` — the terminal console (`cli/`)
 
-A single dark, monospace page for a technical audience. No dashboards, no money figures — just the raw API and
-measured numbers.
+One static Rust binary, no UI framework. Everything it prints is measured on the spot.
 
-* **Left — api.** Type a path (or click one of the hot-path endpoints), the same `GET` goes to the Java service
-  (`:9966`) and the Rust service (`:9977`) through the dev-server proxy. You see status, latency, size and the raw
-  JSON of both, plus a `diff:` line (`identical`, key order ignored, or the list of differing JSON paths). `x50`
-  sends 50 sequential requests to each side and prints p50/p99 as seen from the browser.
-* **Right — bench.** Replays `bench/results/run.log` as written by `bench/run.sh`, then draws sparklines per second
-  for CPU cores, req/s, p99 and RSS of each service from `bench/results/timeseries.json`, and a summary block with
-  the deltas and the line that matters: `cpu freed at N req/s: X cores (Y% of the java footprint)`. Nothing in this
-  pane is typed in by hand; if the files are missing it says so and tells you to run the bench.
+```sh
+cargo install --path cli            # or: cargo run --manifest-path cli/Cargo.toml -- <cmd>
+j2r --help
+```
 
-`frontend/public/bench/results` is a symlink to `../../../bench/results`, so the console always shows the results
-committed in the repo (or the ones you just produced).
+| Command | What you see |
+|---|---|
+| `j2r api owners/1 -n 50` | the same `GET` sent to Java (`:9966`) and Rust (`:9977`): status, latency, bytes and the raw JSON of both side by side, a `diff:` line (`identical`, key order ignored, or the differing JSON paths), then p50/p99/min of 50 sequential requests per side |
+| `j2r bench --rate 300 --duration 30 --peak 10` | fixed-rate load against each service in turn (2 s warm-up, then one line per second: `cpu=… cores rps=… p50=… p99=… rss=…`), a closed-loop peak phase (64 in flight), then sparklines per metric and a `summary` table with deltas ending in `cpu freed at 300 req/s: X cores (Y% of the java footprint)`; writes `bench/results/{timeseries.json,summary.json,run.log}` |
+| `j2r watch` | one line per second with CPU cores, RSS and probe latency of both services — leave it running while you flip traffic |
+| `j2r show bench/results` | re-render a saved run |
+
+CPU and RSS are read from the **service process**, not from the load generator: `/proc/<pid>/stat` for a native
+process (found from the listening port), or the container's cgroup (`cpu.stat`, `memory.current`) when the port is
+published by Docker. For a remote host pass `--java http://host:9966/petclinic/api --java-pid <pid>` (or
+`--java-container <name>`), same for `--rust`. Everything in `bench/results/` is produced by this tool; nothing is
+typed in.
+
+## Browser API tester (`frontend/`, optional)
+
+A single dark page that does the `j2r api` part in a browser for people who prefer clicking: path input, quick
+links to the hot-path endpoints, raw JSON of both services, `diff:` line, `x50` burst. `npm start` proxies
+`/petclinic` → `:9966` and `/rust/petclinic` → `:9977`. No benchmarks in the browser.
 
 ```sh
 # 1. Java service
@@ -38,11 +50,12 @@ committed in the repo (or the ones you just produced).
 docker compose --profile postgres up -d
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres,spring-data-jpa
 
-# 2. Rust service (see rust-petclinic/README.md) — optional, the console shows it as down otherwise
+# 2. Rust service (see rust-petclinic/README.md) — until it runs, j2r shows the rust side as down / n/a
 cd rust-petclinic && cargo run --release     # http://localhost:9977/petclinic/api
 
 # 3. Console
-cd frontend && npm install && npm start      # http://localhost:4200
+cargo install --path cli && j2r api vets && j2r bench
+cd frontend && npm install && npm start      # optional browser API tester, http://localhost:4200
 ```
 
 The dev server proxies `/petclinic` → `localhost:9966` and `/rust/petclinic` → `localhost:9977`
