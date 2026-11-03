@@ -1,12 +1,59 @@
-# REST version of Spring PetClinic Sample Application (spring-framework-petclinic extension)
+# Amadeus · Java → Rust modernization demo (spring-petclinic-rest fork)
 
 [![Java Build Status](https://github.com/spring-petclinic/spring-petclinic-rest/actions/workflows/maven-build-master.yml/badge.svg)](https://github.com/spring-petclinic/spring-petclinic-rest/actions/workflows/maven-build-master.yml)
-[![Docker Build Status](https://github.com/spring-petclinic/spring-petclinic-rest/actions/workflows/docker-build.yml/badge.svg)](https://github.com/spring-petclinic/spring-petclinic-rest/actions/workflows/docker-build.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=spring-petclinic_spring-petclinic-rest&metric=alert_status)](https://sonarcloud.io/dashboard?id=spring-petclinic_spring-petclinic-rest)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=spring-petclinic_spring-petclinic-rest&metric=coverage)](https://sonarcloud.io/dashboard?id=spring-petclinic_spring-petclinic-rest)
 
-This backend version of the Spring Petclinic application only provides a REST API. **There is no UI**.
-The [spring-petclinic-angular project](https://github.com/spring-petclinic/spring-petclinic-angular) is a Angular front-end application which consumes the REST API.
+This fork of [spring-petclinic-rest](https://github.com/spring-petclinic/spring-petclinic-rest) is the fixture for a
+modernization workflow: take a Java (Spring Boot / Hibernate) REST service, port its CPU-hot read path to Rust (Axum),
+run both against the same PostgreSQL, and measure what the same traffic costs in CPU before and after.
+
+It ships three parts:
+
+| Part | Where | Port |
+|---|---|---|
+| Java service (unchanged Spring PetClinic REST API) | `src/` | 9966 (`/petclinic/api`) |
+| Rust port of the read hot path (reference lists, lookups, search) + benchmark | `rust-petclinic/`, `bench/` (separate PR) | 9977 (`/petclinic/api`) |
+| **Amadeus Modernization Console** — Angular UI with the CPU-cost side panel | `frontend/` | 4200 |
+
+## Modernization Console (`frontend/`)
+
+Angular 22 app, Amadeus look and feel. The main view shows the live Java service (health, record counts, migration
+scope) and a data browser that can be switched between the Java and the Rust service. The right-hand **CPU cost
+panel** is the point of the demo:
+
+1. **Benchmark** — Java vs Rust for the same traffic on 2 vCPUs: CPU cores needed, $ per million requests, peak
+   throughput, p99, memory, start-up, DB queries per request. Loads the reference run from
+   `frontend/public/bench/reference-summary.json`; use **Load results** to drop in `bench/results/summary.json`
+   from your own `bench/run.sh` run.
+2. **Amadeus-scale impact** — editable assumptions (vCPUs in the CPU-intensive fleet, vCPU-hour price, share of
+   the fleet ported) → vCPUs freed and $ saved per year, plus the "every 1 % ported saves …" figure.
+3. **Validate the migration** — fires the same requests at both services from the browser, checks the JSON is
+   identical (key order normalised) and compares p50/p99. The badge turns **Validated** only when every endpoint is
+   identical and Rust is not slower. CPU/cost figures stay with `bench/run.sh`; the probe is a parity + sanity check.
+
+```sh
+# 1. Java service
+./mvnw spring-boot:run                       # H2 in-memory, http://localhost:9966/petclinic/api
+# or, to share a database with the Rust port:
+docker compose --profile postgres up -d
+./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres,spring-data-jpa
+
+# 2. Rust service (see rust-petclinic/README.md) — optional, the console shows it as "not reachable" otherwise
+cd rust-petclinic && cargo run --release     # http://localhost:9977/petclinic/api
+
+# 3. Console
+cd frontend && npm install && npm start      # http://localhost:4200
+```
+
+The dev server proxies `/petclinic` → `localhost:9966` and `/rust/petclinic` → `localhost:9977`
+(`frontend/proxy.conf.json`), so no CORS setup is needed; both base URLs are editable in the panel.
+
+---
+
+# REST version of Spring PetClinic Sample Application (upstream documentation)
+
+This backend version of the Spring Petclinic application only provides a REST API. **There is no UI** in the upstream
+project; the Angular console above was added for this fork.
+The [spring-petclinic-angular project](https://github.com/spring-petclinic/spring-petclinic-angular) is the upstream Angular front-end application which consumes the REST API.
 
 ## Understanding the Spring Petclinic application with a few diagrams
 

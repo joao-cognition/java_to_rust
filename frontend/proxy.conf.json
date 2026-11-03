@@ -1,0 +1,15 @@
+{
+  "/petclinic": {
+    "target": "http://localhost:9966",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/rust": {
+    "target": "http://localhost:9977",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/rust": "" },
+    "logLevel": "warn"
+  }
+}
