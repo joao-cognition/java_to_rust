@@ -50,9 +50,6 @@ cd rust-petclinic && cargo run --release     # http://localhost:9977/petclinic/a
 cargo install --path cli && j2r api vets && j2r bench
 ```
 
-The dev server proxies `/petclinic` → `localhost:9966` and `/rust/petclinic` → `localhost:9977`
-(`frontend/proxy.conf.json`), so no CORS setup is needed; both base URLs are editable in the panel.
-
 ---
 
 # REST version of Spring PetClinic Sample Application (upstream documentation)
