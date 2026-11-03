@@ -36,6 +36,8 @@ const ROWS: Array<Pick<MetricRow, 'key' | 'label' | 'unit' | 'betterWhen' | 'dec
   { key: 'dbQueriesPerRequest', label: 'DB queries per request', unit: '', betterWhen: 'lower', decimals: 0 },
 ];
 
+const MAX_SUMMARY_BYTES = 1024 * 1024;
+
 @Injectable({ providedIn: 'root' })
 export class BenchService {
   private readonly http = inject(HttpClient);
@@ -102,9 +104,15 @@ export class BenchService {
 
   async loadFromFile(file: File): Promise<void> {
     try {
+      if (file.size > MAX_SUMMARY_BYTES) {
+        throw new Error(`file is ${(file.size / 1024 / 1024).toFixed(1)} MB; a bench summary is a few KB`);
+      }
       const parsed = JSON.parse(await file.text()) as BenchSummary;
-      if (!parsed?.services?.java || !parsed?.services?.rust) {
-        throw new Error('missing services.java / services.rust');
+      for (const kind of ['java', 'rust'] as const) {
+        const cores = parsed?.services?.[kind]?.cpuCoresAtFixedRate;
+        if (typeof cores !== 'number' || !(cores > 0)) {
+          throw new Error(`services.${kind}.cpuCoresAtFixedRate must be a positive number`);
+        }
       }
       this.apply(parsed, `${file.name} — measured ${formatDate(parsed.measuredAt)}`);
     } catch (err) {

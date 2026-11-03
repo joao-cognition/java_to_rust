@@ -14,8 +14,6 @@ const SCOPE: Array<Omit<ScopeRow, 'rust'>> = [
   { method: 'GET', path: '/owners', label: 'Owner list / search' },
   { method: 'GET', path: '/owners/1', label: 'Owner lookup (nested pets, visits)' },
   { method: 'GET', path: '/pets/1', label: 'Pet lookup' },
-  { method: 'GET', path: '/visits', label: 'Visits' },
-  { method: 'GET', path: '/pets', label: 'Pets' },
 ];
 
 @Component({

@@ -196,7 +196,7 @@ export class CostPanel {
   readonly measuredOn = computed(() => formatDate(this.bench.summary()?.measuredAt));
 
   constructor() {
-    void this.bench.loadReference();
+    if (!this.bench.summary()) void this.bench.loadReference();
   }
 
   set<K extends keyof ReturnType<typeof this.s>>(key: K, value: ReturnType<typeof this.s>[K]): void {
@@ -214,7 +214,7 @@ export class CostPanel {
   resetAll(): void {
     this.settings.reset();
     this.validation.reset();
-    void this.bench.loadReference();
+    if (!this.bench.summary()) void this.bench.loadReference();
   }
 
   fmt(v: number | undefined, decimals: number): string {

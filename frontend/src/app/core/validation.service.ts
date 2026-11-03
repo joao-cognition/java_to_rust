@@ -113,20 +113,30 @@ export class ValidationService {
       done += 2;
       const javaMs: number[] = [first.java.ms];
       const rustMs: number[] = [first.rust.ms];
+      let javaStatus = first.java.status;
+      let rustStatus = first.rust.status;
       for (let i = 1; i < n; i++) {
-        if (first.java.status > 0) javaMs.push((await this.api.probe('java', ep.path)).ms);
-        if (first.rust.status > 0) rustMs.push((await this.api.probe('rust', ep.path)).ms);
+        if (ok(javaStatus)) {
+          const r = await this.api.probe('java', ep.path);
+          javaMs.push(r.ms);
+          if (!ok(r.status)) javaStatus = r.status;
+        }
+        if (ok(rustStatus)) {
+          const r = await this.api.probe('rust', ep.path);
+          rustMs.push(r.ms);
+          if (!ok(r.status)) rustStatus = r.status;
+        }
         done += 2;
         this.progress.set(done / total);
       }
       results.push({
         path: ep.path,
         label: ep.label,
-        parity: parity(first.java.status, first.rust.status, first.java.body, first.rust.body),
-        javaStatus: first.java.status,
-        rustStatus: first.rust.status,
-        java: first.java.status > 0 ? stats(javaMs) : null,
-        rust: first.rust.status > 0 ? stats(rustMs) : null,
+        parity: parity(javaStatus, rustStatus, first.java.body, first.rust.body),
+        javaStatus,
+        rustStatus,
+        java: ok(javaStatus) ? stats(javaMs) : null,
+        rust: ok(rustStatus) ? stats(rustMs) : null,
       });
       this.checks.set([...results]);
     }
@@ -141,9 +151,13 @@ export class ValidationService {
   }
 }
 
+function ok(status: number): boolean {
+  return status >= 200 && status < 300;
+}
+
 function parity(javaStatus: number, rustStatus: number, javaBody: unknown, rustBody: unknown): ParityState {
-  if (javaStatus < 200 || javaStatus >= 300) return 'java-missing';
-  if (rustStatus < 200 || rustStatus >= 300) return 'rust-missing';
+  if (!ok(javaStatus)) return 'java-missing';
+  if (!ok(rustStatus)) return 'rust-missing';
   return canonical(javaBody) === canonical(rustBody) ? 'identical' : 'different';
 }
 
