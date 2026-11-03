@@ -1,4 +1,0 @@
-[2m2026-11-03T20:51:52.997020Z[0m [32m INFO[0m [2mrust_petclinic[0m[2m:[0m connecting to database [3mport[0m[2m=[0m9977
-[2m2026-11-03T20:51:53.002033Z[0m [32m INFO[0m [2mrust_petclinic[0m[2m:[0m rust-petclinic listening [3maddr[0m[2m=[0m0.0.0.0:9977
-[2m2026-11-03T20:53:54.717709Z[0m [32m INFO[0m [2mrust_petclinic[0m[2m:[0m shutdown signal received
-[2m2026-11-03T20:53:54.718259Z[0m [32m INFO[0m [2mrust_petclinic[0m[2m:[0m shutdown complete

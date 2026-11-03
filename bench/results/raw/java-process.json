@@ -1,9 +1,0 @@
-{
-  "service": "java",
-  "startupSeconds": 5.447515725,
-  "cpuSecondsFixed": 21.76,
-  "fixedRequests": 30001,
-  "dbCallsFixed": 135553,
-  "peakRssFixedMb": 697.4,
-  "peakRssPeakMb": 844.5
-}
