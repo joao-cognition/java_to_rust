@@ -1,0 +1,60 @@
+name: Rust build
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "rust-petclinic/**"
+      - ".github/workflows/rust-build.yml"
+  pull_request:
+    paths:
+      - "rust-petclinic/**"
+      - ".github/workflows/rust-build.yml"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  rust:
+    name: fmt, clippy, test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: rust-petclinic
+    services:
+      postgres:
+        image: postgres:16.3
+        env:
+          POSTGRES_USER: petclinic
+          POSTGRES_PASSWORD: petclinic
+          POSTGRES_DB: petclinic
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U petclinic"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: rust-petclinic
+      - name: cargo fmt --check
+        run: cargo fmt --all --check
+      - name: cargo clippy
+        run: cargo clippy --all-targets -- -D warnings
+      - name: cargo test (no database)
+        run: cargo test
+      - name: seed PostgreSQL with the Java schema and data
+        working-directory: .
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q postgresql-client
+          DATABASE_URL=postgres://petclinic:petclinic@localhost:5432/petclinic rust-petclinic/scripts/init-db.sh
+      - name: cargo test (database integration)
+        run: cargo test -- --ignored
+        env:
+          DATABASE_URL: postgres://petclinic:petclinic@localhost:5432/petclinic
