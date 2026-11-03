@@ -4,7 +4,7 @@ use axum::Json;
 
 use super::{created, deleted, no_content_or_404, AppState, Body, Id};
 use crate::db;
-use crate::dto::{PetType, PetTypeInput};
+use crate::dto::{PetType, PetTypeFieldsInput, PetTypeInput};
 use crate::error::AppError;
 use crate::validation::check_pet_type;
 
@@ -26,8 +26,12 @@ pub async fn get_one(State(state): State<AppState>, Id(id): Id) -> Result<Json<P
 /// `PetTypeFields`: any `id` in the body is ignored.
 pub async fn create(
     State(state): State<AppState>,
-    Body(pet_type): Body<PetTypeInput>,
+    Body(fields): Body<PetTypeFieldsInput>,
 ) -> Result<Response, AppError> {
+    let pet_type = PetTypeInput {
+        name: fields.name,
+        id: None,
+    };
     check_pet_type(&pet_type, false)?;
     let name = pet_type.name.as_deref().unwrap_or_default();
     let saved = db::insert_pet_type(&state.pool, name).await?;

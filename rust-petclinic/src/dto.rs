@@ -127,6 +127,14 @@ pub struct PetTypeInput {
     pub id: Option<i32>,
 }
 
+/// `PetTypeFields`: body of `POST /pettypes`. Java's fields DTO has no `id`, so any `id`
+/// sent (even a non-numeric one) is ignored.
+#[derive(Debug, Clone, Default, PartialEq, Eq, Serialize, Deserialize)]
+pub struct PetTypeFieldsInput {
+    #[serde(default, deserialize_with = "scalar_as_string")]
+    pub name: Option<String>,
+}
+
 /// `Specialty` (body of `POST/PUT /specialties`, items of `Vet.specialties`).
 #[derive(Debug, Clone, Default, PartialEq, Eq, Serialize, Deserialize)]
 pub struct SpecialtyInput {
