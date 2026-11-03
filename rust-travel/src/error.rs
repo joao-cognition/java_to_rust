@@ -17,7 +17,10 @@ pub type ApiResult<T> = Result<T, ApiError>;
 
 impl ApiError {
     pub fn new(status: StatusCode, detail: impl Into<String>) -> Self {
-        Self { status, detail: detail.into() }
+        Self {
+            status,
+            detail: detail.into(),
+        }
     }
     pub fn bad_request(detail: impl Into<String>) -> Self {
         Self::new(StatusCode::BAD_REQUEST, detail)
@@ -81,7 +84,8 @@ pub async fn problem_instance(req: Request, next: Next) -> Response {
         title: err.status.canonical_reason().unwrap_or(""),
     };
     let mut out = (err.status, serde_json::to_string(&body).unwrap_or_default()).into_response();
-    out.headers_mut().insert(header::CONTENT_TYPE, HeaderValue::from_static("application/problem+json"));
+    out.headers_mut()
+        .insert(header::CONTENT_TYPE, HeaderValue::from_static("application/problem+json"));
     out
 }
 

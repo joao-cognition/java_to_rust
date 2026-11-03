@@ -62,7 +62,11 @@ impl Params {
             Some(v) if v.trim().is_empty() => Ok(None),
             Some(v) => {
                 let t = v.trim();
-                allowed.iter().find(|a| **a == t).map(|a| Some(*a)).ok_or_else(|| ApiError::convert(name, &v))
+                allowed
+                    .iter()
+                    .find(|a| **a == t)
+                    .map(|a| Some(*a))
+                    .ok_or_else(|| ApiError::convert(name, &v))
             }
         }
     }
@@ -81,7 +85,10 @@ pub fn parse_number(text: &str) -> Option<i64> {
         Some(rest) => (true, rest),
         None => (false, s.as_str()),
     };
-    let hex = body.strip_prefix("0x").or_else(|| body.strip_prefix("0X")).or_else(|| body.strip_prefix('#'));
+    let hex = body
+        .strip_prefix("0x")
+        .or_else(|| body.strip_prefix("0X"))
+        .or_else(|| body.strip_prefix('#'));
     if let Some(digits) = hex {
         if digits.is_empty() || !digits.chars().all(|c| c.is_ascii_hexdigit()) {
             return None;

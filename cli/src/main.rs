@@ -7,6 +7,7 @@
 
 mod api;
 mod bench;
+mod parity;
 mod render;
 mod sampler;
 
@@ -104,6 +105,18 @@ pub enum Cmd {
         #[arg(long)]
         rust_container: Option<String>,
     },
+    /// Replay the full read-endpoint catalogue against both services and require identical responses
+    Parity {
+        /// Only cases whose path contains this text
+        #[arg(long)]
+        only: Option<String>,
+        /// Directory for parity.json and parity.md
+        #[arg(long, default_value = "bench/results")]
+        out: PathBuf,
+        /// Print every case, not only the differing ones
+        #[arg(short, long)]
+        verbose: bool,
+    },
     /// Re-render a saved bench from its results directory
     Show {
         #[arg(default_value = "bench/results")]
@@ -168,6 +181,7 @@ async fn run(cli: Cli) -> Result<(), Box<dyn std::error::Error>> {
             let sources = sampler::Sources::resolve(&bases, java_pid, rust_pid, java_container.as_deref(), rust_container.as_deref());
             bench::watch(&bases, &sources, interval).await
         }
+        Cmd::Parity { only, out, verbose } => parity::run(&bases, only.as_deref(), &out, verbose).await,
         Cmd::Show { dir } => bench::show(&dir),
     }
 }

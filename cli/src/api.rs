@@ -26,6 +26,7 @@ pub struct Probe {
     pub bytes: usize,
     pub body: Option<Value>,
     pub text: String,
+    pub content_type: String,
     pub error: Option<String>,
 }
 
@@ -48,6 +49,12 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
     match client.get(url).header("accept", "application/json").send().await {
         Ok(res) => {
             let status = res.status().as_u16();
+            let content_type = res
+                .headers()
+                .get("content-type")
+                .and_then(|v| v.to_str().ok())
+                .unwrap_or("")
+                .to_string();
             let text = match res.text().await {
                 Ok(t) => t,
                 Err(e) => {
@@ -57,6 +64,7 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
                         bytes: 0,
                         body: None,
                         text: String::new(),
+                        content_type,
                         error: Some(format!("body read failed after HTTP {status}: {e}")),
                     }
                 }
@@ -69,6 +77,7 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
                 bytes: text.len(),
                 body,
                 text,
+                content_type,
                 error: None,
             }
         }
@@ -78,6 +87,7 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
             bytes: 0,
             body: None,
             text: String::new(),
+            content_type: String::new(),
             error: Some(if e.is_connect() {
                 "connection refused — nothing listening".into()
             } else {

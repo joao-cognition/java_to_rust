@@ -42,7 +42,13 @@ pub struct AirlineRow {
 
 impl From<AirlineRow> for AirlineDto {
     fn from(a: AirlineRow) -> Self {
-        AirlineDto { iata: a.iata, icao: a.icao, name: a.name, country: a.country, alliance: a.alliance }
+        AirlineDto {
+            iata: a.iata,
+            icao: a.icao,
+            name: a.name,
+            country: a.country,
+            alliance: a.alliance,
+        }
     }
 }
 
@@ -155,8 +161,7 @@ pub struct TravelerRow {
     pub frequent_flyer_number: Option<String>,
 }
 
-pub const TRAVELER_COLUMNS: &str =
-    "t.id, t.first_name, t.last_name, t.date_of_birth, t.email, t.nationality, t.frequent_flyer_number";
+pub const TRAVELER_COLUMNS: &str = "t.id, t.first_name, t.last_name, t.date_of_birth, t.email, t.nationality, t.frequent_flyer_number";
 
 impl From<TravelerRow> for TravelerDto {
     fn from(t: TravelerRow) -> Self {
