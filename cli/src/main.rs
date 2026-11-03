@@ -67,7 +67,7 @@ pub enum Cmd {
         #[arg(long, default_value_t = 300, value_parser = clap::value_parser!(u32).range(1..=20_000))]
         rate: u32,
         /// Seconds of fixed-rate load per service
-        #[arg(long, default_value_t = 30)]
+        #[arg(long, default_value_t = 30, value_parser = clap::value_parser!(u64).range(1..))]
         duration: u64,
         /// Seconds of uncapped (closed-loop, 64 in flight) load per service to find peak req/s; 0 to skip
         #[arg(long, default_value_t = 10)]

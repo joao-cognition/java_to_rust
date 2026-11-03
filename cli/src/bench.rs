@@ -362,8 +362,20 @@ pub fn render_results(ts: &Timeseries) -> String {
         false,
     );
     out.push('\n');
-    match (j.and_then(|s| s.cpu_cores), r.and_then(|s| s.cpu_cores)) {
-        (Some(a), Some(b)) => {
+    let short: Vec<String> = [("java", j, dj), ("rust", r, dr)]
+        .into_iter()
+        .filter_map(|(k, sm, d)| {
+            let d = d.filter(|d| *d < 0.95 * rate as f64)?;
+            let errors = sm.map(|s| s.errors).unwrap_or(0);
+            Some(if errors > 0 {
+                format!("{k} {d:.0} ({errors} errors)")
+            } else {
+                format!("{k} {d:.0}")
+            })
+        })
+        .collect();
+    match (j.and_then(|s| s.cpu_cores), r.and_then(|s| s.cpu_cores), dj, dr) {
+        (Some(a), Some(b), Some(da), Some(db)) if short.is_empty() => {
             let freed = a - b;
             out.push_str(&bold(&format!(
                 "cpu freed at {rate} req/s: {:.2} cores ({:.0}% of the java footprint) — same traffic on {:.1}x fewer cores",
@@ -371,23 +383,35 @@ pub fn render_results(ts: &Timeseries) -> String {
                 freed / a * 100.0,
                 a / b.max(1e-9)
             )));
+            let _ = (da, db);
         }
-        _ => out.push_str(&dim(
-            "# one side not measured — run both services against the same database and rerun",
-        )),
+        (Some(a), Some(b), Some(da), Some(db)) => {
+            // Delivered rates differ: compare CPU per request instead of claiming a saving at the requested rate.
+            let (ja, rb) = (a * 1000.0 / da.max(1e-9), b * 1000.0 / db.max(1e-9));
+            out.push_str(&yellow(&format!(
+                "# requested {rate} req/s but delivered only {} — failed or saturated, so no like-for-like saving is claimed",
+                short.join(", ")
+            )));
+            out.push('\n');
+            out.push_str(&bold(&format!(
+                "cpu per request: java {ja:.2} core-ms, rust {rb:.2} core-ms ({:.1}x less)",
+                ja / rb.max(1e-9)
+            )));
+        }
+        _ => {
+            out.push_str(&dim(
+                "# one side not measured — run both services against the same database and rerun",
+            ));
+            if !short.is_empty() {
+                out.push('\n');
+                out.push_str(&yellow(&format!(
+                    "# requested {rate} req/s but delivered only {}",
+                    short.join(", ")
+                )));
+            }
+        }
     }
     out.push('\n');
-    let short: Vec<String> = [("java", dj), ("rust", dr)]
-        .into_iter()
-        .filter_map(|(k, d)| d.filter(|d| *d < 0.95 * rate as f64).map(|d| format!("{k} {d:.0}")))
-        .collect();
-    if !short.is_empty() {
-        out.push_str(&yellow(&format!(
-            "# requested {rate} req/s but delivered only {} — that side was saturated; its CPU figure is for the delivered rate",
-            short.join(", ")
-        )));
-        out.push('\n');
-    }
     out
 }
 
