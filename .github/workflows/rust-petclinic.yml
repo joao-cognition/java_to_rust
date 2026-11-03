@@ -1,0 +1,41 @@
+name: rust-petclinic
+
+on:
+  push:
+    paths: ["rust-petclinic/**", ".github/workflows/rust-petclinic.yml"]
+  pull_request:
+    paths: ["rust-petclinic/**", ".github/workflows/rust-petclinic.yml"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: rust-petclinic
+    services:
+      postgres:
+        image: postgres:16.3
+        env:
+          POSTGRES_USER: petclinic
+          POSTGRES_PASSWORD: petclinic
+          POSTGRES_DB: petclinic
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U petclinic"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      POSTGRES_URL: jdbc:postgresql://localhost:5432/petclinic
+      POSTGRES_USER: petclinic
+      POSTGRES_PASS: petclinic
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt --check
+      - run: cargo clippy --release --all-targets -- -D warnings
+      - run: cargo build --release
+      - run: cargo test --release
