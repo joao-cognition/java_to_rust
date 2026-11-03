@@ -57,6 +57,8 @@ pub struct ServiceSeries {
 #[serde(rename_all = "camelCase")]
 pub struct Summary {
     pub cpu_cores: Option<f64>,
+    #[serde(default)]
+    pub rps: f64,
     pub p50_ms: f64,
     pub p99_ms: f64,
     pub rss_mb: Option<f64>,
@@ -230,7 +232,8 @@ async fn fixed_rate_second(client: &reqwest::Client, base: &str, rate: u32, sour
 /// Closed loop, 64 workers, as fast as the server answers: peak throughput and its p99.
 async fn peak_phase(client: &reqwest::Client, base: &str, seconds: u64) -> (f64, f64) {
     let done = Arc::new(AtomicU64::new(0));
-    let deadline = Instant::now() + Duration::from_secs(seconds);
+    let started = Instant::now();
+    let deadline = started + Duration::from_secs(seconds);
     let mut set = JoinSet::new();
     for w in 0..64usize {
         let c = client.clone();
@@ -241,7 +244,7 @@ async fn peak_phase(client: &reqwest::Client, base: &str, seconds: u64) -> (f64,
             let mut i = w;
             while Instant::now() < deadline {
                 let p = api::probe(&c, &format!("{base}{}", MIX[i % MIX.len()])).await;
-                if p.ok() {
+                if p.ok() && Instant::now() <= deadline {
                     lat.push(p.ms);
                     done.fetch_add(1, Ordering::Relaxed);
                 }
@@ -254,7 +257,10 @@ async fn peak_phase(client: &reqwest::Client, base: &str, seconds: u64) -> (f64,
     while let Some(Ok(l)) = set.join_next().await {
         all.extend(l);
     }
-    (done.load(Ordering::Relaxed) as f64 / seconds as f64, api::percentile(&all, 0.99))
+    (
+        done.load(Ordering::Relaxed) as f64 / started.elapsed().as_secs_f64().max(1e-3),
+        api::percentile(&all, 0.99),
+    )
 }
 
 fn summarize(samples: &[Sample]) -> Summary {
@@ -265,6 +271,7 @@ fn summarize(samples: &[Sample]) -> Summary {
     };
     Summary {
         cpu_cores: mean(&|s| s.cpu_cores),
+        rps: samples.iter().map(|s| s.rps).sum::<f64>() / n,
         p50_ms: samples.iter().map(|s| s.p50_ms).sum::<f64>() / n,
         p99_ms: samples.iter().map(|s| s.p99_ms).sum::<f64>() / n,
         rss_mb: mean(&|s| s.rss_mb),
@@ -335,8 +342,10 @@ pub fn render_results(ts: &Timeseries) -> String {
         };
         out.push_str(&format!("{label:<22}{:>9}{:>9}{delta}\n", f(a), f(b)));
     };
+    let achieved = achieved_rps(ts);
+    row("delivered req/s".into(), j.map(|s| s.rps), r.map(|s| s.rps), 0, false);
     row(
-        format!("cpu cores @{} req/s", ts.rate_per_second),
+        format!("cpu cores @{achieved:.0} req/s"),
         j.and_then(|s| s.cpu_cores),
         r.and_then(|s| s.cpu_cores),
         2,
@@ -357,8 +366,7 @@ pub fn render_results(ts: &Timeseries) -> String {
         (Some(a), Some(b)) => {
             let freed = a - b;
             out.push_str(&bold(&format!(
-                "cpu freed at {} req/s: {:.2} cores ({:.0}% of the java footprint) — same traffic on {:.1}x fewer cores",
-                ts.rate_per_second,
+                "cpu freed at {achieved:.0} req/s: {:.2} cores ({:.0}% of the java footprint) — same traffic on {:.1}x fewer cores",
                 freed,
                 freed / a * 100.0,
                 a / b.max(1e-9)
@@ -370,6 +378,16 @@ pub fn render_results(ts: &Timeseries) -> String {
     }
     out.push('\n');
     out
+}
+
+/// Mean delivered req/s across both measured sides (the rate the CPU figures actually correspond to).
+fn achieved_rps(ts: &Timeseries) -> f64 {
+    let v: Vec<f64> = ts.summary.values().map(|s| s.rps).collect();
+    if v.is_empty() {
+        ts.rate_per_second as f64
+    } else {
+        v.iter().sum::<f64>() / v.len() as f64
+    }
 }
 
 pub fn show(dir: &Path) -> Result<(), Box<dyn std::error::Error>> {
@@ -395,15 +413,17 @@ pub async fn watch(bases: &Bases, sources: &Sources, interval: u64) -> Result<()
         dim("# cpu = cores used by the service process over the interval; p = latency of one GET /pettypes. ctrl-c to stop")
     );
     let mut prev: [Option<(f64, f64)>; 2] = [sources.java.snapshot(), sources.rust.snapshot()];
-    let mut t = 0u64;
+    let mut prev_at: [Instant; 2] = [Instant::now(), Instant::now()];
+    let started = Instant::now();
     loop {
         tokio::time::sleep(Duration::from_secs(interval)).await;
-        t += interval;
-        let mut line = format!("t={t:>4}s ");
+        let mut line = format!("t={:>4.0}s ", started.elapsed().as_secs_f64());
         for (i, s) in [Service::Java, Service::Rust].into_iter().enumerate() {
             let now = sources.get(s).snapshot();
+            let elapsed = prev_at[i].elapsed().as_secs_f64().max(1e-3);
+            prev_at[i] = Instant::now();
             let cpu = match (prev[i], now) {
-                (Some((c0, _)), Some((c1, _))) => format!("{:.2}", ((c1 - c0) / interval as f64).max(0.0)),
+                (Some((c0, _)), Some((c1, _))) => format!("{:.2}", ((c1 - c0) / elapsed).max(0.0)),
                 _ => "n/a ".into(),
             };
             let rss = now.map(|(_, m)| format!("{m:.0}MB")).unwrap_or_else(|| "n/a".into());

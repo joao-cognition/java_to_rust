@@ -8,9 +8,19 @@ use std::process::Command;
 
 #[derive(Debug, Clone)]
 pub enum Source {
-    Proc { pid: i32, comm: String },
-    Cgroup { name: String, path: PathBuf },
-    Unknown { reason: String },
+    Proc {
+        pid: i32,
+        comm: String,
+    },
+    /// `path` is the cpu controller dir; `memory` the memory controller dir (same dir on cgroup v2).
+    Cgroup {
+        name: String,
+        path: PathBuf,
+        memory: PathBuf,
+    },
+    Unknown {
+        reason: String,
+    },
 }
 
 impl Source {
@@ -38,11 +48,25 @@ impl Source {
                 let rss_pages: f64 = f.get(21)?.parse().ok()?;
                 Some(((utime + stime) / clk_tck(), rss_pages * page_size() / 1048576.0))
             }
-            Source::Cgroup { path, .. } => {
-                let cpu = fs::read_to_string(path.join("cpu.stat")).ok()?;
-                let usec: f64 = cpu.lines().find_map(|l| l.strip_prefix("usage_usec "))?.trim().parse().ok()?;
-                let mem: f64 = fs::read_to_string(path.join("memory.current")).ok()?.trim().parse().ok()?;
-                Some((usec / 1e6, mem / 1048576.0))
+            Source::Cgroup { path, memory, .. } => {
+                let cpu_secs = if let Ok(v1) = fs::read_to_string(path.join("cpuacct.usage")) {
+                    v1.trim().parse::<f64>().ok()? / 1e9
+                } else {
+                    let cpu = fs::read_to_string(path.join("cpu.stat")).ok()?;
+                    cpu.lines()
+                        .find_map(|l| l.strip_prefix("usage_usec "))?
+                        .trim()
+                        .parse::<f64>()
+                        .ok()?
+                        / 1e6
+                };
+                let mem: f64 = fs::read_to_string(memory.join("memory.current"))
+                    .or_else(|_| fs::read_to_string(memory.join("memory.usage_in_bytes")))
+                    .ok()?
+                    .trim()
+                    .parse()
+                    .ok()?;
+                Some((cpu_secs, mem / 1048576.0))
             }
             Source::Unknown { .. } => None,
         }
@@ -157,15 +181,34 @@ fn cgroup_source(name_or_id: &str) -> Option<Source> {
     }
     let s = String::from_utf8_lossy(&out.stdout);
     let (id, name) = s.trim().split_once(' ')?;
+    // (cpu dir, memory dir): cgroup v2 unified paths first, then v1 split controllers
     let candidates = [
-        PathBuf::from(format!("/sys/fs/cgroup/system.slice/docker-{id}.scope")),
-        PathBuf::from(format!("/sys/fs/cgroup/docker/{id}")),
-        PathBuf::from(format!("/sys/fs/cgroup/cpu/docker/{id}")),
+        (
+            format!("/sys/fs/cgroup/system.slice/docker-{id}.scope"),
+            format!("/sys/fs/cgroup/system.slice/docker-{id}.scope"),
+        ),
+        (format!("/sys/fs/cgroup/docker/{id}"), format!("/sys/fs/cgroup/docker/{id}")),
+        (
+            format!("/sys/fs/cgroup/cpu,cpuacct/docker/{id}"),
+            format!("/sys/fs/cgroup/memory/docker/{id}"),
+        ),
+        (
+            format!("/sys/fs/cgroup/cpu/docker/{id}"),
+            format!("/sys/fs/cgroup/memory/docker/{id}"),
+        ),
+        (
+            format!("/sys/fs/cgroup/cpu,cpuacct/system.slice/docker-{id}.scope"),
+            format!("/sys/fs/cgroup/memory/system.slice/docker-{id}.scope"),
+        ),
     ];
-    let path = candidates.into_iter().find(|p| p.join("cpu.stat").exists())?;
+    let (path, memory) = candidates
+        .into_iter()
+        .map(|(c, m)| (PathBuf::from(c), PathBuf::from(m)))
+        .find(|(c, _)| c.join("cpu.stat").exists() || c.join("cpuacct.usage").exists())?;
     Some(Source::Cgroup {
         name: name.trim_start_matches('/').to_string(),
         path,
+        memory,
     })
 }
 

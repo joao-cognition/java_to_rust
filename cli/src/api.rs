@@ -48,7 +48,19 @@ pub async fn probe(client: &reqwest::Client, url: &str) -> Probe {
     match client.get(url).header("accept", "application/json").send().await {
         Ok(res) => {
             let status = res.status().as_u16();
-            let text = res.text().await.unwrap_or_default();
+            let text = match res.text().await {
+                Ok(t) => t,
+                Err(e) => {
+                    return Probe {
+                        status: 0,
+                        ms: t0.elapsed().as_secs_f64() * 1000.0,
+                        bytes: 0,
+                        body: None,
+                        text: String::new(),
+                        error: Some(format!("body read failed after HTTP {status}: {e}")),
+                    }
+                }
+            };
             let ms = t0.elapsed().as_secs_f64() * 1000.0;
             let body = serde_json::from_str::<Value>(&text).ok();
             Probe {
@@ -205,13 +217,13 @@ pub async fn compare(bases: &Bases, path: &str, burst: usize, show_body: bool) -
                 }
             ))
         ),
-        (true, true) => {
-            let (a, b) = (j.body.clone().unwrap_or(Value::Null), r.body.clone().unwrap_or(Value::Null));
-            if canonical(&a) == canonical(&b) {
+        (true, true) => match (&j.body, &r.body) {
+            (Some(a), Some(b)) if canonical(a) == canonical(b) => {
                 println!("{}", green(&format!("diff: identical ({}B, key order ignored)", j.bytes)));
-            } else {
+            }
+            (Some(a), Some(b)) => {
                 let mut out = Vec::new();
-                diff_paths(&a, &b, "$", &mut out, 12);
+                diff_paths(a, b, "$", &mut out, 12);
                 if out.is_empty() {
                     out.push("$: bodies differ".into());
                 }
@@ -223,7 +235,12 @@ pub async fn compare(bases: &Bases, path: &str, burst: usize, show_body: bool) -
                     println!("  {d}");
                 }
             }
-        }
+            _ if j.text == r.text => println!("{}", green(&format!("diff: identical ({}B, non-JSON body)", j.bytes))),
+            _ => println!(
+                "{}",
+                yellow(&format!("diff: non-JSON bodies differ ({}B vs {}B)", j.bytes, r.bytes))
+            ),
+        },
     }
 
     if burst > 0 {

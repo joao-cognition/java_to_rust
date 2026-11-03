@@ -26,8 +26,8 @@ pub struct Cli {
     /// Base URL of the Rust service (Axum)
     #[arg(long, global = true, env = "J2R_RUST", default_value = "http://localhost:9977/petclinic/api")]
     pub rust: String,
-    /// Disable colours
-    #[arg(long, global = true, env = "NO_COLOR")]
+    /// Disable colours (also honoured when the NO_COLOR environment variable is set)
+    #[arg(long, global = true)]
     pub no_color: bool,
     #[command(subcommand)]
     pub cmd: Cmd,
@@ -64,7 +64,7 @@ pub enum Cmd {
     /// Fixed-rate load against each service while sampling CPU seconds and RSS of its process
     Bench {
         /// Requests per second for the fixed-rate phase
-        #[arg(long, default_value_t = 300)]
+        #[arg(long, default_value_t = 300, value_parser = clap::value_parser!(u32).range(1..=20_000))]
         rate: u32,
         /// Seconds of fixed-rate load per service
         #[arg(long, default_value_t = 30)]
@@ -114,7 +114,8 @@ pub enum Cmd {
 #[tokio::main]
 async fn main() {
     let cli = Cli::parse();
-    render::set_color(!cli.no_color);
+    let no_color_env = std::env::var_os("NO_COLOR").is_some_and(|v| !v.is_empty());
+    render::set_color(!cli.no_color && !no_color_env);
     let code = match run(cli).await {
         Ok(()) => 0,
         Err(e) => {
