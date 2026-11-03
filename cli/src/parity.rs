@@ -278,35 +278,26 @@ pub async fn run(bases: &Bases, only: Option<&str>, out: &Path, verbose: bool) -
     });
     println!();
     println!(
-        "  {:<10} {:>6} {:>10} {:>6} {:>12} {:>12}",
-        "endpoint", "cases", "identical", "diff", "java p50 ms", "rust p50 ms"
+        "  {:<10} {:>6} {:>10} {:>6} {:>8}",
+        "endpoint", "cases", "identical", "diff", "rust"
     );
     let mut md = format!(
         "# Parity report\n\nJava `{}` vs Rust `{}`, schedule starting {d0}. Every case: same HTTP status, same content type, same JSON body \
          (key order ignored; values, array order and number text compared exactly).\n\n\
-         | endpoint | cases | identical | diff | java p50 ms | rust p50 ms |\n|---|---:|---:|---:|---:|---:|\n",
+         | endpoint | cases | identical | diff | rust |\n|---|---:|---:|---:|---|\n",
         bases.java, bases.rust
     );
     for g in &groups {
         let rs: Vec<&CaseResult> = results.iter().filter(|r| r.group == *g).collect();
         let ok = rs.iter().filter(|r| r.identical).count();
-        let p50 = |f: fn(&CaseResult) -> Option<f64>| {
-            let v: Vec<f64> = rs.iter().filter_map(|r| f(r)).collect();
-            if v.is_empty() {
-                "down".to_string()
-            } else {
-                format!("{:.2}", api::percentile(&v, 50.0))
-            }
-        };
-        let jp = p50(|r| (r.java_status != 0).then_some(r.java_ms));
-        let rp = p50(|r| (r.rust_status != 0).then_some(r.rust_ms));
-        let line = format!("  {:<10} {:>6} {:>10} {:>6} {:>12} {:>12}", g, rs.len(), ok, rs.len() - ok, jp, rp);
+        let rust = if rs.iter().all(|r| r.rust_status == 0) { "down" } else { "up" };
+        let line = format!("  {:<10} {:>6} {:>10} {:>6} {:>8}", g, rs.len(), ok, rs.len() - ok, rust);
         println!("{}", if ok == rs.len() { line } else { red(&line) });
-        md.push_str(&format!("| {g} | {} | {ok} | {} | {jp} | {rp} |\n", rs.len(), rs.len() - ok));
+        md.push_str(&format!("| {g} | {} | {ok} | {} | {rust} |\n", rs.len(), rs.len() - ok));
     }
     let verdict = if identical == results.len() { "identical" } else { "DIFFERENT" };
     md.push_str(&format!(
-        "| **all** | **{}** | **{identical}** | **{}** | | |\n\nverdict: **{verdict}**\n\n",
+        "| **all** | **{}** | **{identical}** | **{}** | |\n\nverdict: **{verdict}**\n\n",
         results.len(),
         results.len() - identical
     ));

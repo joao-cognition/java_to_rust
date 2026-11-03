@@ -2,19 +2,19 @@
 
 Java `http://localhost:9966/travel/api` vs Rust `http://localhost:9977/travel/api`, schedule starting 2026-11-04. Every case: same HTTP status, same content type, same JSON body (key order ignored; values, array order and number text compared exactly).
 
-| endpoint | cases | identical | diff | java p50 ms | rust p50 ms |
-|---|---:|---:|---:|---:|---:|
-| airports | 7 | 7 | 0 | 24.93 | 1.88 |
-| airlines | 5 | 5 | 0 | 6.10 | 4.02 |
-| flights | 42 | 42 | 0 | 14.37 | 13.23 |
-| flight | 12 | 12 | 0 | 14.45 | 1.64 |
-| offers | 386 | 386 | 0 | 24.44 | 3.70 |
-| traveler | 7 | 7 | 0 | 4.10 | 1.06 |
-| travelers | 12 | 12 | 0 | 15.88 | 1.16 |
-| booking | 204 | 204 | 0 | 10.86 | 5.51 |
-| bookings | 27 | 27 | 0 | 15.58 | 11.78 |
-| errors | 1 | 1 | 0 | 3.50 | 0.95 |
-| **all** | **703** | **703** | **0** | | |
+| endpoint | cases | identical | diff | rust |
+|---|---:|---:|---:|---|
+| airports | 7 | 7 | 0 | up |
+| airlines | 5 | 5 | 0 | up |
+| flights | 42 | 42 | 0 | up |
+| flight | 12 | 12 | 0 | up |
+| offers | 386 | 386 | 0 | up |
+| traveler | 7 | 7 | 0 | up |
+| travelers | 12 | 12 | 0 | up |
+| booking | 204 | 204 | 0 | up |
+| bookings | 27 | 27 | 0 | up |
+| errors | 1 | 1 | 0 | up |
+| **all** | **703** | **703** | **0** | |
 
 verdict: **identical**
 

@@ -204,32 +204,24 @@ pub async fn compare(bases: &Bases, path: &str, burst: usize, show_body: bool) -
     }
 
     println!();
-    match (j.ok(), r.ok()) {
-        (false, _) => println!(
-            "{}",
-            yellow(&format!(
-                "diff: n/a — java {}",
-                if j.status == 0 {
-                    "not reachable".to_string()
-                } else {
-                    format!("HTTP {}", j.status)
-                }
-            ))
-        ),
-        (_, false) => println!(
-            "{}",
-            yellow(&format!(
-                "diff: n/a — rust {}",
-                if r.status == 0 {
-                    "not reachable".to_string()
-                } else {
-                    format!("HTTP {}", r.status)
-                }
-            ))
-        ),
-        (true, true) => match (&j.body, &r.body) {
+    let reach = |p: &Probe| p.status != 0;
+    match (reach(&j), reach(&r)) {
+        (false, _) => println!("{}", yellow("diff: n/a — java not reachable")),
+        (_, false) => println!("{}", yellow("diff: n/a — rust not reachable")),
+        _ if j.status != r.status => {
+            println!(
+                "{}",
+                yellow(&format!("diff: status differs — java {} vs rust {}", j.status, r.status))
+            )
+        }
+        _ => match (&j.body, &r.body) {
             (Some(a), Some(b)) if canonical(a) == canonical(b) => {
-                println!("{}", green(&format!("diff: identical ({}B, key order ignored)", j.bytes)));
+                let what = if j.ok() {
+                    String::new()
+                } else {
+                    format!("HTTP {} problem, ", j.status)
+                };
+                println!("{}", green(&format!("diff: identical ({what}{}B, key order ignored)", j.bytes)));
             }
             (Some(a), Some(b)) => {
                 let mut out = Vec::new();
