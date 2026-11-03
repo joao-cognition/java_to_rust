@@ -104,6 +104,7 @@ async fn catalogue(client: &reqwest::Client, bases: &Bases, d0: NaiveDate) -> Ve
         format!("flights?origin=QQQ&destination=LHR&date={d}"),
         format!("flights?origin=NCE&destination=QQQ&date={d}"),
         format!("flights?origin=NCE&origin=CDG&destination=LHR&date={d}"),
+        format!("flights?origin=NCE&destination=LHR&date={d}&date={}", day(1)),
     ] {
         add(&mut c, "flights", p);
     }
@@ -152,6 +153,7 @@ async fn catalogue(client: &reqwest::Client, bases: &Bases, d0: NaiveDate) -> Ve
         format!("offers?origin=NCE&destination=LHR&date={d}&adults=10"),
         format!("offers?origin=NCE&destination=LHR&date={d}&adults=x"),
         format!("offers?origin=NCE&destination=LHR&date={d}&adults=1.5"),
+        format!("offers?origin=NCE&destination=LHR&date={d}&adults=2&adults=4&cabin=BUSINESS&cabin=FIRST"),
         format!("offers?origin=NCE&destination=LHR&date={d}&cabin=COACH"),
         format!("offers?origin=NCE&destination=LHR&date={d}&cabin=economy"),
         format!("offers?destination=LHR&date={d}"),
