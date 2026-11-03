@@ -1,0 +1,37 @@
+201 location=/api/pettypes/7 type=application/json
+{
+  "id": 7,
+  "name": "parrot"
+}
+--- then GET /api/pettypes
+200 location=- type=application/json
+[
+  {
+    "id": 1,
+    "name": "cat"
+  },
+  {
+    "id": 2,
+    "name": "dog"
+  },
+  {
+    "id": 3,
+    "name": "lizard"
+  },
+  {
+    "id": 4,
+    "name": "snake"
+  },
+  {
+    "id": 5,
+    "name": "bird"
+  },
+  {
+    "id": 6,
+    "name": "hamster"
+  },
+  {
+    "id": 7,
+    "name": "parrot"
+  }
+]

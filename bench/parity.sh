@@ -146,7 +146,7 @@ OWNER='{"firstName":"Parity","lastName":"Check","address":"1 Main St.","city":"M
 PET='{"name":"Parity","birthDate":"2020-01-01","type":{"id":2,"name":"dog"}}'
 VISIT='{"date":"2024-01-01","description":"parity visit"}'
 
-[[ "$GOLDEN" == "1" ]] || reset_db
+reset_db
 
 # ---- reads (benchmark mix first) ---------------------------------------------------------
 for id in 1 2 3 4 5 6 7 8 9 10 999; do
@@ -303,6 +303,7 @@ write_case "DELETE /api/vets/999"                 DELETE "/api/vets/999"
 # ---- pet types ---------------------------------------------------------------------------
 write_case "POST /api/pettypes"                   POST "/api/pettypes" '{"name":"parrot"}' . "/api/pettypes"
 write_case "POST /api/pettypes ignores id"        POST "/api/pettypes" '{"id":1,"name":"parrot"}' . "/api/pettypes"
+write_case "POST /api/pettypes non-numeric id"    POST "/api/pettypes" '{"id":"abc","name":"parrot"}' . "/api/pettypes"
 write_case "POST /api/pettypes invalid"           POST "/api/pettypes" '{"name":""}'
 write_case "PUT /api/pettypes/1"                  PUT "/api/pettypes/1" '{"id":1,"name":"kitten"}' . "/api/pettypes/1"
 write_case "PUT /api/pettypes/1 missing id"       PUT "/api/pettypes/1" '{"name":"kitten"}'
@@ -326,6 +327,8 @@ write_case "POST /api/users"                      POST "/api/users" \
   '{"username":"parity","password":"secret","enabled":true,"roles":[{"name":"OWNER_ADMIN"}]}'
 write_case "POST /api/users prefixed role"        POST "/api/users" \
   '{"username":"parity","password":"secret","enabled":true,"roles":[{"name":"ROLE_VET_ADMIN"}]}'
+write_case "POST /api/users duplicate role"       POST "/api/users" \
+  '{"username":"parity","password":"secret","enabled":true,"roles":[{"name":"ADMIN"},{"name":"ROLE_ADMIN"}]}'
 write_case "POST /api/users no roles"             POST "/api/users" '{"username":"parity","password":"secret"}'
 write_case "POST /api/users invalid"              POST "/api/users" '{"password":"","roles":[{"name":""}]}'
 write_case "POST /api/users missing enabled"      POST "/api/users" \
