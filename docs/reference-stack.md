@@ -47,6 +47,17 @@ j2r api owners/1     # java 200 with the JSON; rust "down" until rust-petclinic/
 j2r watch            # one line per second: java cpu/rss/probe up, rust down
 ```
 
+## 4. Newman non-regression suite
+
+```sh
+./scripts/reset-db.sh                                        # the collection writes data
+BASE_URL=http://localhost:9966/petclinic ./postman-tests.sh  # Java (default when BASE_URL is unset)
+BASE_URL=http://localhost:9977/petclinic ./postman-tests.sh  # Rust port
+```
+
+The base URL can also be passed as the first argument. Needs `node`/`npx` and `jq`; the HTML report goes to
+`src/test/postman/reports/report.html`.
+
 ## Reset the database to seed data
 
 ```sh
