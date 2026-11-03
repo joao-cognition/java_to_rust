@@ -232,8 +232,7 @@ async fn fixed_rate_second(client: &reqwest::Client, base: &str, rate: u32, sour
 /// Closed loop, 64 workers, as fast as the server answers: peak throughput and its p99.
 async fn peak_phase(client: &reqwest::Client, base: &str, seconds: u64) -> (f64, f64) {
     let done = Arc::new(AtomicU64::new(0));
-    let started = Instant::now();
-    let deadline = started + Duration::from_secs(seconds);
+    let deadline = Instant::now() + Duration::from_secs(seconds);
     let mut set = JoinSet::new();
     for w in 0..64usize {
         let c = client.clone();
@@ -258,7 +257,7 @@ async fn peak_phase(client: &reqwest::Client, base: &str, seconds: u64) -> (f64,
         all.extend(l);
     }
     (
-        done.load(Ordering::Relaxed) as f64 / started.elapsed().as_secs_f64().max(1e-3),
+        done.load(Ordering::Relaxed) as f64 / seconds.max(1) as f64,
         api::percentile(&all, 0.99),
     )
 }
@@ -342,10 +341,11 @@ pub fn render_results(ts: &Timeseries) -> String {
         };
         out.push_str(&format!("{label:<22}{:>9}{:>9}{delta}\n", f(a), f(b)));
     };
-    let achieved = achieved_rps(ts);
-    row("delivered req/s".into(), j.map(|s| s.rps), r.map(|s| s.rps), 0, false);
+    let (dj, dr) = (delivered(ts, "java"), delivered(ts, "rust"));
+    let rate = ts.rate_per_second;
+    row("delivered req/s".into(), dj, dr, 0, false);
     row(
-        format!("cpu cores @{achieved:.0} req/s"),
+        format!("cpu cores @{rate} req/s"),
         j.and_then(|s| s.cpu_cores),
         r.and_then(|s| s.cpu_cores),
         2,
@@ -366,7 +366,7 @@ pub fn render_results(ts: &Timeseries) -> String {
         (Some(a), Some(b)) => {
             let freed = a - b;
             out.push_str(&bold(&format!(
-                "cpu freed at {achieved:.0} req/s: {:.2} cores ({:.0}% of the java footprint) — same traffic on {:.1}x fewer cores",
+                "cpu freed at {rate} req/s: {:.2} cores ({:.0}% of the java footprint) — same traffic on {:.1}x fewer cores",
                 freed,
                 freed / a * 100.0,
                 a / b.max(1e-9)
@@ -377,17 +377,28 @@ pub fn render_results(ts: &Timeseries) -> String {
         )),
     }
     out.push('\n');
+    let short: Vec<String> = [("java", dj), ("rust", dr)]
+        .into_iter()
+        .filter_map(|(k, d)| d.filter(|d| *d < 0.95 * rate as f64).map(|d| format!("{k} {d:.0}")))
+        .collect();
+    if !short.is_empty() {
+        out.push_str(&yellow(&format!(
+            "# requested {rate} req/s but delivered only {} — that side was saturated; its CPU figure is for the delivered rate",
+            short.join(", ")
+        )));
+        out.push('\n');
+    }
     out
 }
 
-/// Mean delivered req/s across both measured sides (the rate the CPU figures actually correspond to).
-fn achieved_rps(ts: &Timeseries) -> f64 {
-    let v: Vec<f64> = ts.summary.values().map(|s| s.rps).collect();
-    if v.is_empty() {
-        ts.rate_per_second as f64
-    } else {
-        v.iter().sum::<f64>() / v.len() as f64
+/// Mean delivered req/s of one side: from the summary, or recomputed from the samples for older files.
+fn delivered(ts: &Timeseries, side: &str) -> Option<f64> {
+    let summary = ts.summary.get(side)?;
+    if summary.rps > 0.0 {
+        return Some(summary.rps);
     }
+    let samples = &ts.services.get(side)?.samples;
+    (!samples.is_empty()).then(|| samples.iter().map(|s| s.rps).sum::<f64>() / samples.len() as f64)
 }
 
 pub fn show(dir: &Path) -> Result<(), Box<dyn std::error::Error>> {
