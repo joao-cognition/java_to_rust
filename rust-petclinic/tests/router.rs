@@ -1,4 +1,4 @@
-//! Router tests that do not need a database: routing, health probe, and the error paths
+//! Router tests that do not need a database: routing, the health probe without a database, and the error paths
 //! (404 / 400) which are answered before any query is issued.
 
 use axum::body::Body;
@@ -20,7 +20,7 @@ async fn body_json(response: axum::response::Response) -> Value {
 }
 
 #[tokio::test]
-async fn health_is_up() {
+async fn health_is_down_without_database() {
     let response = test_app()
         .oneshot(
             Request::get("/petclinic/actuator/health")
@@ -29,10 +29,10 @@ async fn health_is_up() {
         )
         .await
         .unwrap();
-    assert_eq!(response.status(), StatusCode::OK);
+    assert_eq!(response.status(), StatusCode::SERVICE_UNAVAILABLE);
     assert_eq!(
         body_json(response).await,
-        serde_json::json!({"groups": ["liveness", "readiness"], "status": "UP"})
+        serde_json::json!({"groups": ["liveness", "readiness"], "status": "DOWN"})
     );
 }
 

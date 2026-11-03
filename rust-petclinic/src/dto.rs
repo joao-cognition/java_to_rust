@@ -101,7 +101,8 @@ where
 }
 
 /// Health probe payload, byte-for-byte what Spring Boot Actuator returns for
-/// `/actuator/health` in the Java service (`{"groups":["liveness","readiness"],"status":"UP"}`).
+/// `/actuator/health` in the Java service (`{"groups":["liveness","readiness"],"status":"UP"}`,
+/// or `"DOWN"` with HTTP 503 when the database health indicator fails).
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Health {
     pub groups: [&'static str; 2],
@@ -112,6 +113,10 @@ impl Health {
     pub const UP: Health = Health {
         groups: ["liveness", "readiness"],
         status: "UP",
+    };
+    pub const DOWN: Health = Health {
+        groups: ["liveness", "readiness"],
+        status: "DOWN",
     };
 }
 

@@ -40,7 +40,7 @@ All paths are prefixed with `/petclinic`.
 
 | Method | Path                          | Notes                                                        |
 |--------|-------------------------------|--------------------------------------------------------------|
-| GET    | `/actuator/health`            | `{"groups":["liveness","readiness"],"status":"UP"}`, same as Actuator |
+| GET    | `/actuator/health`            | `{"groups":["liveness","readiness"],"status":"UP"}`, same as Actuator; `503` + `"DOWN"` when PostgreSQL does not answer |
 | GET    | `/api/vets`                   | vets with sorted `specialties`, 1 query                      |
 | GET    | `/api/vets/{vetId}`           |                                                              |
 | GET    | `/api/specialties`            |                                                              |

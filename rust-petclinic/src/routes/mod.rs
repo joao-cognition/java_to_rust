@@ -8,7 +8,7 @@ mod specialties;
 mod vets;
 
 use axum::extract::rejection::{JsonRejection, PathRejection};
-use axum::extract::FromRequestParts;
+use axum::extract::{FromRequestParts, State};
 use axum::http::request::Parts;
 use axum::http::StatusCode;
 use axum::response::{IntoResponse, Response};
@@ -54,8 +54,23 @@ pub fn app(pool: PgPool) -> Router {
         .with_state(AppState { pool })
 }
 
-async fn health() -> Json<Health> {
-    Json(Health::UP)
+/// Like Actuator's aggregate health (which includes the `DataSource` indicator): `UP` only
+/// while the database answers within [`HEALTH_DB_TIMEOUT`], otherwise `503` + `DOWN`.
+const HEALTH_DB_TIMEOUT: std::time::Duration = std::time::Duration::from_secs(1);
+
+async fn health(State(state): State<AppState>) -> (StatusCode, Json<Health>) {
+    let ping = sqlx::query_scalar::<_, i32>("SELECT 1").fetch_one(&state.pool);
+    match tokio::time::timeout(HEALTH_DB_TIMEOUT, ping).await {
+        Ok(Ok(_)) => (StatusCode::OK, Json(Health::UP)),
+        Ok(Err(err)) => {
+            tracing::warn!(error = %err, "health check: database unavailable");
+            (StatusCode::SERVICE_UNAVAILABLE, Json(Health::DOWN))
+        }
+        Err(_) => {
+            tracing::warn!("health check: database did not answer within {HEALTH_DB_TIMEOUT:?}");
+            (StatusCode::SERVICE_UNAVAILABLE, Json(Health::DOWN))
+        }
+    }
 }
 
 /// Unknown route. Spring raises `NoResourceFoundException`, which `ExceptionControllerAdvice`
