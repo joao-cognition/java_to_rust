@@ -23,7 +23,7 @@ springboot-petclinic-server/
 .factorypath
 
 # newman reports
-/src/test/postman/reports/
+./src/test/postman/reports/
 
 # Rust CLI build output
 cli/target/
