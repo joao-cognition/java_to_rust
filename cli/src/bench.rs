@@ -19,19 +19,24 @@ pub struct Plan {
     pub only: Option<Service>,
 }
 
-/// Request mix of the read hot path: mostly record lookups and searches, some reference lists.
-const MIX: &[&str] = &[
-    "owners/1",
-    "owners/1",
-    "owners/1",
-    "owners/1",
-    "owners?lastName=Davis",
-    "owners?lastName=Davis",
-    "vets",
-    "specialties",
-    "pettypes",
-    "pets/1",
-];
+/// Request mix of the read hot path: half fare searches (the CPU-heavy part), the rest booking/traveler
+/// lookups, a schedule query and reference lists. Dates are relative because the service seeds 30 days
+/// of schedules starting the day after it boots.
+fn mix() -> Vec<String> {
+    let tomorrow = (chrono::Local::now() + chrono::Duration::days(1)).format("%Y-%m-%d").to_string();
+    vec![
+        format!("offers?origin=NCE&destination=LHR&date={tomorrow}"),
+        format!("offers?origin=NCE&destination=LHR&date={tomorrow}&adults=2&cabin=ECONOMY"),
+        format!("offers?origin=CDG&destination=JFK&date={tomorrow}"),
+        format!("offers?origin=MAD&destination=FRA&date={tomorrow}&cabin=BUSINESS"),
+        format!("offers?origin=LHR&destination=DXB&date={tomorrow}"),
+        "bookings/QX7K2M".to_string(),
+        "bookings?lastName=Mar".to_string(),
+        "travelers/1".to_string(),
+        format!("flights?origin=NCE&destination=LHR&date={tomorrow}"),
+        "airports".to_string(),
+    ]
+}
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
 #[serde(rename_all = "camelCase")]
@@ -87,9 +92,10 @@ pub async fn run(bases: &Bases, sources: &Sources, plan: Plan, out: &Path) -> Re
         rate_per_second: plan.rate,
         duration_seconds: plan.duration,
         peak_seconds: plan.peak,
-        mix: MIX.iter().map(|s| s.to_string()).collect(),
+        mix: mix(),
         ..Default::default()
     };
+    let mix = Arc::new(ts.mix.clone());
     let mut log: Vec<String> = Vec::new();
     let mut say = |line: String| {
         println!("{line}");
@@ -101,7 +107,7 @@ pub async fn run(bases: &Bases, sources: &Sources, plan: Plan, out: &Path) -> Re
         plan.rate, plan.duration, plan.peak
     ));
     say(dim(&format!("# {} · {}", ts.measured_at, ts.host)));
-    say(dim(&format!("# mix: {}", MIX.join(" "))));
+    say(dim(&format!("# mix: {}", ts.mix.join(" "))));
 
     for service in [Service::Java, Service::Rust] {
         if plan.only.is_some_and(|o| o != service) {
@@ -110,7 +116,7 @@ pub async fn run(bases: &Bases, sources: &Sources, plan: Plan, out: &Path) -> Re
         let name = service.name();
         let base = bases.url(service, "");
         let source = sources.get(service);
-        let health = api::probe(&client, &bases.url(service, "pettypes")).await;
+        let health = api::probe(&client, &bases.url(service, "airports")).await;
         if !health.ok() {
             say(format!("[{}] {} {} — skipped", svc(name), red("down"), dim(&base)));
             continue;
@@ -127,8 +133,8 @@ pub async fn run(bases: &Bases, sources: &Sources, plan: Plan, out: &Path) -> Re
         }
 
         // warm-up: 2 s at the target rate, not recorded (JIT, connection pools)
-        let _ = fixed_rate_second(&client, &base, plan.rate, source, 0).await;
-        let _ = fixed_rate_second(&client, &base, plan.rate, source, 0).await;
+        let _ = fixed_rate_second(&client, &base, &mix, plan.rate, source, 0).await;
+        let _ = fixed_rate_second(&client, &base, &mix, plan.rate, source, 0).await;
 
         let mut series = ServiceSeries {
             label: name.to_string(),
@@ -136,7 +142,7 @@ pub async fn run(bases: &Bases, sources: &Sources, plan: Plan, out: &Path) -> Re
             samples: Vec::new(),
         };
         for t in 1..=plan.duration {
-            let s = fixed_rate_second(&client, &base, plan.rate, source, t).await;
+            let s = fixed_rate_second(&client, &base, &mix, plan.rate, source, t).await;
             say(format!(
                 "[{}] t={:>3}s cpu={} rps={:>5.0} p50={:>5.1}ms p99={:>6.1}ms rss={}{}",
                 svc(name),
@@ -157,7 +163,7 @@ pub async fn run(bases: &Bases, sources: &Sources, plan: Plan, out: &Path) -> Re
 
         let mut summary = summarize(&series.samples);
         if plan.peak > 0 {
-            let (rps, p99) = peak_phase(&client, &base, plan.peak).await;
+            let (rps, p99) = peak_phase(&client, &base, &mix, plan.peak).await;
             say(format!(
                 "[{}] peak: {} req/s over {}s, 64 in flight, p99={:.1}ms",
                 svc(name),
@@ -189,7 +195,7 @@ pub async fn run(bases: &Bases, sources: &Sources, plan: Plan, out: &Path) -> Re
 }
 
 /// One second of open-loop load at `rate` req/s; CPU and RSS deltas of the server process over the same wall time.
-async fn fixed_rate_second(client: &reqwest::Client, base: &str, rate: u32, source: &Source, t: u64) -> Sample {
+async fn fixed_rate_second(client: &reqwest::Client, base: &str, mix: &Arc<Vec<String>>, rate: u32, source: &Source, t: u64) -> Sample {
     let snap0 = source.snapshot();
     let t0 = Instant::now();
     let mut set = JoinSet::new();
@@ -197,7 +203,7 @@ async fn fixed_rate_second(client: &reqwest::Client, base: &str, rate: u32, sour
     tick.set_missed_tick_behavior(tokio::time::MissedTickBehavior::Burst);
     for i in 0..rate as usize {
         tick.tick().await;
-        let url = format!("{base}{}", MIX[(t as usize * rate as usize + i) % MIX.len()]);
+        let url = format!("{base}{}", mix[(t as usize * rate as usize + i) % mix.len()]);
         let c = client.clone();
         set.spawn(async move {
             let p = api::probe(&c, &url).await;
@@ -230,7 +236,7 @@ async fn fixed_rate_second(client: &reqwest::Client, base: &str, rate: u32, sour
 }
 
 /// Closed loop, 64 workers, as fast as the server answers: peak throughput and its p99.
-async fn peak_phase(client: &reqwest::Client, base: &str, seconds: u64) -> (f64, f64) {
+async fn peak_phase(client: &reqwest::Client, base: &str, mix: &Arc<Vec<String>>, seconds: u64) -> (f64, f64) {
     let done = Arc::new(AtomicU64::new(0));
     let deadline = Instant::now() + Duration::from_secs(seconds);
     let mut set = JoinSet::new();
@@ -238,11 +244,12 @@ async fn peak_phase(client: &reqwest::Client, base: &str, seconds: u64) -> (f64,
         let c = client.clone();
         let base = base.to_string();
         let done = done.clone();
+        let mix = mix.clone();
         set.spawn(async move {
             let mut lat = Vec::new();
             let mut i = w;
             while Instant::now() < deadline {
-                let p = api::probe(&c, &format!("{base}{}", MIX[i % MIX.len()])).await;
+                let p = api::probe(&c, &format!("{base}{}", mix[i % mix.len()])).await;
                 if p.ok() && Instant::now() <= deadline {
                     lat.push(p.ms);
                     done.fetch_add(1, Ordering::Relaxed);
@@ -449,7 +456,7 @@ pub async fn watch(bases: &Bases, sources: &Sources, interval: u64) -> Result<()
     }
     println!(
         "{}",
-        dim("# cpu = cores used by the service process over the interval; p = latency of one GET /pettypes. ctrl-c to stop")
+        dim("# cpu = cores used by the service process over the interval; p = latency of one GET /airports. ctrl-c to stop")
     );
     let mut prev: [Option<(f64, f64)>; 2] = [sources.java.snapshot(), sources.rust.snapshot()];
     let mut prev_at: [Instant; 2] = [Instant::now(), Instant::now()];
@@ -467,7 +474,7 @@ pub async fn watch(bases: &Bases, sources: &Sources, interval: u64) -> Result<()
             };
             let rss = now.map(|(_, m)| format!("{m:.0}MB")).unwrap_or_else(|| "n/a".into());
             prev[i] = now;
-            let p = api::probe(&client, &bases.url(s, "pettypes")).await;
+            let p = api::probe(&client, &bases.url(s, "airports")).await;
             let lat = if p.ok() { format!("{:.1}ms", p.ms) } else { red("down") };
             line.push_str(&format!(" {} cpu={cpu} rss={rss:>6} p={lat:<8}", svc(s.name())));
         }
