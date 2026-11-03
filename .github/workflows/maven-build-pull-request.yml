@@ -3,21 +3,29 @@ name: Java CI for Pull Request
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+    paths-ignore: [ "cli/**", "readme.md" ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Build
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: ./mvnw -B verify
+      - uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: Build and test
+        run: ./mvnw -B verify
+      - name: HTTP smoke test (h2 profile)
+        run: |
+          java -jar target/travel-reservation-api-*.jar > app.log 2>&1 &
+          echo $! > app.pid
+          scripts/smoke.sh http://localhost:9966/travel
+      - name: Application log
+        if: failure()
+        run: cat app.log
+      - name: Stop application
+        if: always()
+        run: kill "$(cat app.pid)" || true

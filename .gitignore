@@ -8,10 +8,6 @@ target/*
 
 generated/
 
-# Easier branch switching
-springboot-petclinic-client/
-springboot-petclinic-server/
-
 # jenv local settings
 .java-version
 
@@ -21,9 +17,6 @@ springboot-petclinic-server/
 # asdf generated files
 .tool-versions
 .factorypath
-
-# newman reports
-./src/test/postman/reports/
 
 # Rust CLI build output
 cli/target/

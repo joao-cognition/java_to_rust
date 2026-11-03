@@ -21,10 +21,10 @@ use std::path::PathBuf;
 )]
 pub struct Cli {
     /// Base URL of the Java service (Spring Boot)
-    #[arg(long, global = true, env = "J2R_JAVA", default_value = "http://localhost:9966/petclinic/api")]
+    #[arg(long, global = true, env = "J2R_JAVA", default_value = "http://localhost:9966/travel/api")]
     pub java: String,
     /// Base URL of the Rust service (Axum)
-    #[arg(long, global = true, env = "J2R_RUST", default_value = "http://localhost:9977/petclinic/api")]
+    #[arg(long, global = true, env = "J2R_RUST", default_value = "http://localhost:9977/travel/api")]
     pub rust: String,
     /// Disable colours (also honoured when the NO_COLOR environment variable is set)
     #[arg(long, global = true)]
@@ -52,7 +52,7 @@ impl Service {
 pub enum Cmd {
     /// GET one path on both services and compare the raw responses
     Api {
-        /// Path under the API base, e.g. `vets`, `owners/1`, `owners?lastName=Davis`
+        /// Path under the API base, e.g. `airports`, `bookings/QX7K2M`, `travelers?lastName=Mar`, `offers?origin=NCE&destination=LHR&date=2026-11-05`
         path: String,
         /// Also send N sequential requests per side and print p50/p99
         #[arg(short, long, default_value_t = 0)]
@@ -67,7 +67,7 @@ pub enum Cmd {
         #[arg(long, default_value_t = 300, value_parser = clap::value_parser!(u32).range(1..=20_000))]
         rate: u32,
         /// Seconds of fixed-rate load per service
-        #[arg(long, default_value_t = 30)]
+        #[arg(long, default_value_t = 30, value_parser = clap::value_parser!(u64).range(1..))]
         duration: u64,
         /// Seconds of uncapped (closed-loop, 64 in flight) load per service to find peak req/s; 0 to skip
         #[arg(long, default_value_t = 10)]
