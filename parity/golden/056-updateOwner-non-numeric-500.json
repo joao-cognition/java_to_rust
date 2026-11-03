@@ -1,0 +1,31 @@
+{
+  "case": "non-numeric-500",
+  "operation": "updateOwner",
+  "request": {
+    "body": {
+      "address": "12 Analytical Row",
+      "city": "London",
+      "firstName": "Ada",
+      "lastName": "Lovelace",
+      "telephone": "4420794600"
+    },
+    "method": "PUT",
+    "path": "owners/abc"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/owners/abc",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentTypeMismatchException",
+      "type": "{origin}/petclinic/api/owners/abc"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

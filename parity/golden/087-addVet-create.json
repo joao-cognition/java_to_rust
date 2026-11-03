@@ -1,0 +1,36 @@
+{
+  "case": "create",
+  "operation": "addVet",
+  "request": {
+    "body": {
+      "firstName": "Grace",
+      "lastName": "Hopper",
+      "specialties": [
+        {
+          "id": 4,
+          "name": "oncology"
+        }
+      ]
+    },
+    "method": "POST",
+    "path": "vets"
+  },
+  "response": {
+    "body": {
+      "firstName": "Grace",
+      "id": 7,
+      "lastName": "Hopper",
+      "specialties": [
+        {
+          "id": 4,
+          "name": "oncology"
+        }
+      ]
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": "/api/vets/7"
+    },
+    "status": 201
+  }
+}

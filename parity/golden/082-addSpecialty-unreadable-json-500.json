@@ -1,0 +1,25 @@
+{
+  "case": "unreadable-json-500",
+  "operation": "addSpecialty",
+  "request": {
+    "body": "{\"name\": ",
+    "method": "POST",
+    "path": "specialties"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/specialties",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "HttpMessageNotReadableException",
+      "type": "{origin}/petclinic/api/specialties"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

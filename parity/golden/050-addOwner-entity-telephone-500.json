@@ -1,0 +1,31 @@
+{
+  "case": "entity-telephone-500",
+  "operation": "addOwner",
+  "request": {
+    "body": {
+      "address": "1 St",
+      "city": "X",
+      "firstName": "Ann",
+      "lastName": "Lee",
+      "telephone": "123"
+    },
+    "method": "POST",
+    "path": "owners"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/owners",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "ConstraintViolationException",
+      "type": "{origin}/petclinic/api/owners"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

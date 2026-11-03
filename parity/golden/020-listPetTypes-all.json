@@ -1,0 +1,42 @@
+{
+  "case": "all",
+  "operation": "listPetTypes",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "pettypes"
+  },
+  "response": {
+    "body": [
+      {
+        "id": 1,
+        "name": "cat"
+      },
+      {
+        "id": 2,
+        "name": "dog"
+      },
+      {
+        "id": 3,
+        "name": "lizard"
+      },
+      {
+        "id": 4,
+        "name": "snake"
+      },
+      {
+        "id": 5,
+        "name": "bird"
+      },
+      {
+        "id": 6,
+        "name": "hamster"
+      }
+    ],
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

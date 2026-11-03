@@ -1,0 +1,31 @@
+{
+  "case": "create",
+  "operation": "addOwner",
+  "request": {
+    "body": {
+      "address": "12 Analytical Row",
+      "city": "London",
+      "firstName": "Ada",
+      "lastName": "Lovelace",
+      "telephone": "4420794600"
+    },
+    "method": "POST",
+    "path": "owners"
+  },
+  "response": {
+    "body": {
+      "address": "12 Analytical Row",
+      "city": "London",
+      "firstName": "Ada",
+      "id": 11,
+      "lastName": "Lovelace",
+      "pets": [],
+      "telephone": "4420794600"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": "/api/owners/11"
+    },
+    "status": 201
+  }
+}

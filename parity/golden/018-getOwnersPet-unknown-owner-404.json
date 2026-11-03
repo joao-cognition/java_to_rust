@@ -1,0 +1,16 @@
+{
+  "case": "unknown-owner-404",
+  "operation": "getOwnersPet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "owners/999/pets/1"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

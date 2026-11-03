@@ -1,0 +1,34 @@
+{
+  "case": "empty-name-400",
+  "operation": "addPetType",
+  "request": {
+    "body": {
+      "name": ""
+    },
+    "method": "POST",
+    "path": "pettypes"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/pettypes",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "size must be between 1 and 80",
+          "field": "name",
+          "message": "Field 'name' size must be between 1 and 80 (rejected value: )",
+          "rejectedValue": ""
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/pettypes"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

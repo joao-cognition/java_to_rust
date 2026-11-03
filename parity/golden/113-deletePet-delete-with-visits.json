@@ -1,0 +1,16 @@
+{
+  "case": "delete-with-visits",
+  "operation": "deletePet",
+  "request": {
+    "body": null,
+    "method": "DELETE",
+    "path": "pets/14"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 204
+  }
+}

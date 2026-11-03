@@ -1,0 +1,25 @@
+{
+  "case": "create",
+  "operation": "addVisitToOwner",
+  "request": {
+    "body": {
+      "date": "2024-05-01",
+      "description": "annual checkup"
+    },
+    "method": "POST",
+    "path": "owners/11/pets/14/visits"
+  },
+  "response": {
+    "body": {
+      "date": "2024-05-01",
+      "description": "annual checkup",
+      "id": 5,
+      "petId": 14
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": "/api/visits/5"
+    },
+    "status": 201
+  }
+}

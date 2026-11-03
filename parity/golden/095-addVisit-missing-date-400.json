@@ -1,0 +1,35 @@
+{
+  "case": "missing-date-400",
+  "operation": "addVisit",
+  "request": {
+    "body": {
+      "description": "vaccination",
+      "petId": 14
+    },
+    "method": "POST",
+    "path": "visits"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/visits",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "must not be null",
+          "field": "date",
+          "message": "Field 'date' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/visits"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

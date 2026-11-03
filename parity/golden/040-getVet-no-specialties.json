@@ -1,0 +1,22 @@
+{
+  "case": "no-specialties",
+  "operation": "getVet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "vets/1"
+  },
+  "response": {
+    "body": {
+      "firstName": "James",
+      "id": 1,
+      "lastName": "Carter",
+      "specialties": []
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

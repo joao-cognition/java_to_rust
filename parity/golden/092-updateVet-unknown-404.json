@@ -1,0 +1,20 @@
+{
+  "case": "unknown-404",
+  "operation": "updateVet",
+  "request": {
+    "body": {
+      "firstName": "Grace",
+      "lastName": "Hopper",
+      "specialties": []
+    },
+    "method": "PUT",
+    "path": "vets/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

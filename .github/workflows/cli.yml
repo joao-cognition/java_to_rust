@@ -2,9 +2,9 @@ name: j2r cli
 
 on:
   push:
-    paths: ["cli/**", ".github/workflows/cli.yml"]
+    paths: ["cli/**", "parity/**", "src/main/resources/openapi.yml", ".github/workflows/cli.yml"]
   pull_request:
-    paths: ["cli/**", ".github/workflows/cli.yml"]
+    paths: ["cli/**", "parity/**", "src/main/resources/openapi.yml", ".github/workflows/cli.yml"]
 
 jobs:
   build:
@@ -19,5 +19,6 @@ jobs:
           components: rustfmt, clippy
       - run: cargo fmt --check
       - run: cargo clippy --release -- -D warnings
+      - run: cargo test --release
       - run: cargo build --release
       - run: ./target/release/j2r --help

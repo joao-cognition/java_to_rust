@@ -1,0 +1,37 @@
+{
+  "case": "seed",
+  "operation": "getOwner",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "owners/1"
+  },
+  "response": {
+    "body": {
+      "address": "110 W. Liberty St.",
+      "city": "Madison",
+      "firstName": "George",
+      "id": 1,
+      "lastName": "Franklin",
+      "pets": [
+        {
+          "birthDate": "2000-09-07",
+          "id": 1,
+          "name": "Leo",
+          "ownerId": 1,
+          "type": {
+            "id": 1,
+            "name": "cat"
+          },
+          "visits": []
+        }
+      ],
+      "telephone": "6085551023"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

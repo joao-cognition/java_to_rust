@@ -1,0 +1,41 @@
+{
+  "case": "future-birth-date-400",
+  "operation": "updatePet",
+  "request": {
+    "body": {
+      "birthDate": "2999-01-01",
+      "id": 14,
+      "name": "Ada",
+      "type": {
+        "id": 3,
+        "name": "lizard"
+      },
+      "visits": []
+    },
+    "method": "PUT",
+    "path": "pets/14"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/pets/14",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "Birth date cannot be in the future",
+          "field": "birthDate",
+          "message": "Field 'birthDate' Birth date cannot be in the future (rejected value: 2999-01-01)",
+          "rejectedValue": "2999-01-01"
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/pets/14"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

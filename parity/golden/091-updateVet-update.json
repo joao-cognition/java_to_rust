@@ -1,0 +1,29 @@
+{
+  "case": "update",
+  "operation": "updateVet",
+  "request": {
+    "body": {
+      "firstName": "Grace",
+      "lastName": "Brewster",
+      "specialties": [
+        {
+          "id": 1,
+          "name": "radiology"
+        },
+        {
+          "id": 2,
+          "name": "surgery"
+        }
+      ]
+    },
+    "method": "PUT",
+    "path": "vets/7"
+  },
+  "response": {
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 204
+  }
+}

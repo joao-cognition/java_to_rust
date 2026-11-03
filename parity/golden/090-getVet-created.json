@@ -1,0 +1,27 @@
+{
+  "case": "created",
+  "operation": "getVet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "vets/7"
+  },
+  "response": {
+    "body": {
+      "firstName": "Grace",
+      "id": 7,
+      "lastName": "Hopper",
+      "specialties": [
+        {
+          "id": 4,
+          "name": "oncology"
+        }
+      ]
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

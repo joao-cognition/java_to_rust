@@ -1,0 +1,25 @@
+{
+  "case": "seed-with-pets-404",
+  "operation": "deleteOwner",
+  "request": {
+    "body": null,
+    "method": "DELETE",
+    "path": "owners/1"
+  },
+  "response": {
+    "body": {
+      "detail": "The requested resource could not be processed due to a data constraint violation",
+      "instance": "/petclinic/api/owners/1",
+      "schemaValidationErrors": [],
+      "status": 404,
+      "timestamp": "<timestamp>",
+      "title": "DataIntegrityViolationException",
+      "type": "{origin}/petclinic/api/owners/1"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 404
+  }
+}

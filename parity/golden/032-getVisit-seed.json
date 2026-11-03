@@ -1,0 +1,22 @@
+{
+  "case": "seed",
+  "operation": "getVisit",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "visits/1"
+  },
+  "response": {
+    "body": {
+      "date": "2010-03-04",
+      "description": "rabies shot",
+      "id": 1,
+      "petId": 7
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "case": "non-numeric-500",
+  "operation": "getVet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "vets/abc"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/vets/abc",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentTypeMismatchException",
+      "type": "{origin}/petclinic/api/vets/abc"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "case": "with-visits",
+  "operation": "getPet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "pets/7"
+  },
+  "response": {
+    "body": {
+      "birthDate": "1995-09-04",
+      "id": 7,
+      "name": "Samantha",
+      "ownerId": 6,
+      "type": {
+        "id": 1,
+        "name": "cat"
+      },
+      "visits": [
+        {
+          "date": "2010-03-04",
+          "description": "rabies shot",
+          "id": 1,
+          "petId": 7
+        },
+        {
+          "date": "2008-09-04",
+          "description": "spayed",
+          "id": 4,
+          "petId": 7
+        }
+      ]
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

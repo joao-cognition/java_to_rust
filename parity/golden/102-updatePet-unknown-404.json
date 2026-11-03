@@ -1,0 +1,25 @@
+{
+  "case": "unknown-404",
+  "operation": "updatePet",
+  "request": {
+    "body": {
+      "birthDate": "2021-02-03",
+      "id": 999,
+      "name": "Ada",
+      "type": {
+        "id": 3,
+        "name": "lizard"
+      },
+      "visits": []
+    },
+    "method": "PUT",
+    "path": "pets/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

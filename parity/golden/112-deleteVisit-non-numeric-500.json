@@ -1,0 +1,25 @@
+{
+  "case": "non-numeric-500",
+  "operation": "deleteVisit",
+  "request": {
+    "body": null,
+    "method": "DELETE",
+    "path": "visits/abc"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/visits/abc",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentTypeMismatchException",
+      "type": "{origin}/petclinic/api/visits/abc"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

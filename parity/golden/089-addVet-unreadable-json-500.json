@@ -1,0 +1,25 @@
+{
+  "case": "unreadable-json-500",
+  "operation": "addVet",
+  "request": {
+    "body": "{\"name\": ",
+    "method": "POST",
+    "path": "vets"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/vets",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "HttpMessageNotReadableException",
+      "type": "{origin}/petclinic/api/vets"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

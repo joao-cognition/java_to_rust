@@ -1,0 +1,23 @@
+{
+  "case": "update",
+  "operation": "updateOwnersPet",
+  "request": {
+    "body": {
+      "birthDate": "2019-06-15",
+      "name": "Charles",
+      "type": {
+        "id": 1,
+        "name": "cat"
+      }
+    },
+    "method": "PUT",
+    "path": "owners/11/pets/14"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 204
+  }
+}

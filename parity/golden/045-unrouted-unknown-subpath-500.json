@@ -1,0 +1,25 @@
+{
+  "case": "unknown-subpath-500",
+  "operation": "(unrouted)",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "owners/1/nope"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/owners/1/nope",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "NoResourceFoundException",
+      "type": "{origin}/petclinic/api/owners/1/nope"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

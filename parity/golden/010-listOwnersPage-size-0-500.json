@@ -1,0 +1,25 @@
+{
+  "case": "size-0-500",
+  "operation": "listOwnersPage",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "v2/owners?size=0"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/v2/owners",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "ConstraintViolationException",
+      "type": "{origin}/petclinic/api/v2/owners"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

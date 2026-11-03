@@ -4,9 +4,11 @@
 //! * `j2r bench`        fixed-rate load against each service while sampling CPU and RSS of the real process
 //! * `j2r watch`        live per-second CPU / RSS / probe latency of both services
 //! * `j2r show`         re-render a saved bench (sparklines + before/after summary)
+//! * `j2r parity`       every openapi.yml operation (happy path + error cases) against both, status/headers/body diff
 
 mod api;
 mod bench;
+mod parity;
 mod render;
 mod sampler;
 
@@ -109,6 +111,28 @@ pub enum Cmd {
         #[arg(default_value = "bench/results")]
         dir: PathBuf,
     },
+    /// Replay the request catalogue (every openapi.yml operation, happy path and error cases) against Java and
+    /// Rust and diff status, Content-Type, Location and JSON body per case. Run from the repo root.
+    Parity {
+        /// Only run the Java pass and write its responses as golden fixtures into this directory
+        #[arg(long, value_name = "DIR")]
+        record: Option<PathBuf>,
+        /// Compare Rust against golden fixtures in this directory instead of a live Java pass
+        #[arg(long, value_name = "DIR", conflicts_with = "record")]
+        golden: Option<PathBuf>,
+        /// Command that resets the database to seed data, run before each pass
+        #[arg(long, default_value = "./scripts/reset-db.sh")]
+        reset: String,
+        /// Do not reset the database before each pass
+        #[arg(long)]
+        no_reset: bool,
+        /// OpenAPI contract used for the per-operation case counts
+        #[arg(long, default_value = "src/main/resources/openapi.yml")]
+        spec: PathBuf,
+        /// Print identical cases too, not only differences
+        #[arg(short, long)]
+        verbose: bool,
+    },
 }
 
 #[tokio::main]
@@ -169,5 +193,25 @@ async fn run(cli: Cli) -> Result<(), Box<dyn std::error::Error>> {
             bench::watch(&bases, &sources, interval).await
         }
         Cmd::Show { dir } => bench::show(&dir),
+        Cmd::Parity {
+            record,
+            golden,
+            reset,
+            no_reset,
+            spec,
+            verbose,
+        } => {
+            parity::run(
+                &bases,
+                parity::Opts {
+                    record,
+                    golden,
+                    reset: (!no_reset).then_some(reset),
+                    spec,
+                    verbose,
+                },
+            )
+            .await
+        }
     }
 }

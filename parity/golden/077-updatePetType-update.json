@@ -1,0 +1,19 @@
+{
+  "case": "update",
+  "operation": "updatePetType",
+  "request": {
+    "body": {
+      "id": 7,
+      "name": "gerbil"
+    },
+    "method": "PUT",
+    "path": "pettypes/7"
+  },
+  "response": {
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 204
+  }
+}

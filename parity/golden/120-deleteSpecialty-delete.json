@@ -1,0 +1,16 @@
+{
+  "case": "delete",
+  "operation": "deleteSpecialty",
+  "request": {
+    "body": null,
+    "method": "DELETE",
+    "path": "specialties/4"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 204
+  }
+}

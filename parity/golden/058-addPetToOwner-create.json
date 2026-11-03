@@ -1,0 +1,34 @@
+{
+  "case": "create",
+  "operation": "addPetToOwner",
+  "request": {
+    "body": {
+      "birthDate": "2020-01-01",
+      "name": "Babbage",
+      "type": {
+        "id": 2,
+        "name": "dog"
+      }
+    },
+    "method": "POST",
+    "path": "owners/11/pets"
+  },
+  "response": {
+    "body": {
+      "birthDate": "2020-01-01",
+      "id": 14,
+      "name": "Babbage",
+      "ownerId": 11,
+      "type": {
+        "id": 2,
+        "name": "dog"
+      },
+      "visits": []
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": "/api/pets/14"
+    },
+    "status": 201
+  }
+}

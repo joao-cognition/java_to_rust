@@ -1,0 +1,25 @@
+{
+  "case": "created",
+  "operation": "getOwner",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "owners/11"
+  },
+  "response": {
+    "body": {
+      "address": "12 Analytical Row",
+      "city": "London",
+      "firstName": "Ada",
+      "id": 11,
+      "lastName": "Lovelace",
+      "pets": [],
+      "telephone": "4420794600"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

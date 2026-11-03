@@ -1,0 +1,16 @@
+{
+  "case": "unknown-404",
+  "operation": "getSpecialty",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "specialties/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "case": "delete",
+  "operation": "deletePetType",
+  "request": {
+    "body": null,
+    "method": "DELETE",
+    "path": "pettypes/7"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 204
+  }
+}

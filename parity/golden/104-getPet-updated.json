@@ -1,0 +1,40 @@
+{
+  "case": "updated",
+  "operation": "getPet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "pets/14"
+  },
+  "response": {
+    "body": {
+      "birthDate": "2021-02-03",
+      "id": 14,
+      "name": "Ada",
+      "ownerId": 11,
+      "type": {
+        "id": 3,
+        "name": "lizard"
+      },
+      "visits": [
+        {
+          "date": "2024-06-02",
+          "description": "booster",
+          "id": 7,
+          "petId": 14
+        },
+        {
+          "date": "2024-05-01",
+          "description": "annual checkup",
+          "id": 5,
+          "petId": 14
+        }
+      ]
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

@@ -29,6 +29,7 @@ j2r --help
 | `j2r bench --rate 300 --duration 30 --peak 10` | fixed-rate load against each service in turn (2 s warm-up, then one line per second: `cpu=… cores rps=… p50=… p99=… rss=…`), a closed-loop peak phase (64 in flight), then sparklines per metric and a `summary` table with deltas ending in `cpu freed at 300 req/s: X cores (Y% of the java footprint)`; writes `bench/results/{timeseries.json,summary.json,run.log}` |
 | `j2r watch` | one line per second with CPU cores, RSS and probe latency of both services — leave it running while you flip traffic |
 | `j2r show bench/results` | re-render a saved run |
+| `j2r parity` | 125 ordered cases covering every `openapi.yml` operation (happy path + Java's 404/400/500) sent to both after a DB reset each; per-operation case counts and status/`Content-Type`/`Location`/JSON-path diffs. `--golden parity/golden` checks Rust against committed Java responses without a JVM |
 
 CPU and RSS are read from the **service process**, not from the load generator: `/proc/<pid>/stat` for a native
 process (found from the listening port), or the container's cgroup (`cpu.stat`, `memory.current`) when the port is

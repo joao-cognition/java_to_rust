@@ -47,6 +47,23 @@ j2r api owners/1     # java 200 with the JSON; rust "down" until rust-petclinic/
 j2r watch            # one line per second: java cpu/rss/probe up, rust down
 ```
 
+### Parity harness (`j2r parity`, run from the repo root)
+
+Replays a fixed, ordered catalogue (125 cases: every `openapi.yml` operation with its happy path and the 404 / 400
+Bean Validation / 500 responses Java really produces) and diffs status, `Content-Type`, `Location` and the JSON body
+(key order ignored; problem-detail `timestamp`, the host in `type` and the order of `schemaValidationErrors` are
+normalized). `./scripts/reset-db.sh` runs before each service's pass so generated ids match. Prints the case count per
+operation (gaps show as `0`) and exits non-zero on any difference.
+
+```sh
+j2r parity                                        # live Java (:9966) vs Rust (:9977)
+j2r parity --golden parity/golden                 # Rust vs the committed Java responses, no JVM needed
+j2r parity --record parity/golden                 # re-record the golden fixtures from Java
+j2r parity --rust http://localhost:9966/petclinic/api   # Java vs Java: must be 125/125 identical
+```
+
+`parity/golden/NNN-<operationId>-<case>.json` holds one request + Java response per case, in run order.
+
 ## Reset the database to seed data
 
 ```sh

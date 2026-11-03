@@ -1,0 +1,74 @@
+{
+  "case": "with-pets-and-visits",
+  "operation": "getOwner",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "owners/6"
+  },
+  "response": {
+    "body": {
+      "address": "105 N. Lake St.",
+      "city": "Monona",
+      "firstName": "Jean",
+      "id": 6,
+      "lastName": "Coleman",
+      "pets": [
+        {
+          "birthDate": "1995-09-04",
+          "id": 8,
+          "name": "Max",
+          "ownerId": 6,
+          "type": {
+            "id": 1,
+            "name": "cat"
+          },
+          "visits": [
+            {
+              "date": "2011-03-04",
+              "description": "rabies shot",
+              "id": 2,
+              "petId": 8
+            },
+            {
+              "date": "2009-06-04",
+              "description": "neutered",
+              "id": 3,
+              "petId": 8
+            }
+          ]
+        },
+        {
+          "birthDate": "1995-09-04",
+          "id": 7,
+          "name": "Samantha",
+          "ownerId": 6,
+          "type": {
+            "id": 1,
+            "name": "cat"
+          },
+          "visits": [
+            {
+              "date": "2010-03-04",
+              "description": "rabies shot",
+              "id": 1,
+              "petId": 7
+            },
+            {
+              "date": "2008-09-04",
+              "description": "spayed",
+              "id": 4,
+              "petId": 7
+            }
+          ]
+        }
+      ],
+      "telephone": "6085552654"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

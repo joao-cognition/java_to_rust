@@ -1,0 +1,22 @@
+{
+  "case": "update",
+  "operation": "updateOwner",
+  "request": {
+    "body": {
+      "address": "1 Ockham Park",
+      "city": "Surrey",
+      "firstName": "Ada",
+      "lastName": "King",
+      "telephone": "4414830000"
+    },
+    "method": "PUT",
+    "path": "owners/11"
+  },
+  "response": {
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 204
+  }
+}

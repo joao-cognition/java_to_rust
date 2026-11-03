@@ -1,0 +1,58 @@
+{
+  "case": "after-writes",
+  "operation": "listOwnersPage",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "v2/owners?lastName=King"
+  },
+  "response": {
+    "body": {
+      "content": [
+        {
+          "address": "1 Ockham Park",
+          "city": "Surrey",
+          "firstName": "Ada",
+          "id": 11,
+          "lastName": "King",
+          "pets": [
+            {
+              "birthDate": "2021-02-03",
+              "id": 14,
+              "name": "Ada",
+              "ownerId": 11,
+              "type": {
+                "id": 3,
+                "name": "lizard"
+              },
+              "visits": [
+                {
+                  "date": "2024-06-02",
+                  "description": "booster",
+                  "id": 7,
+                  "petId": 14
+                },
+                {
+                  "date": "2024-05-01",
+                  "description": "annual checkup",
+                  "id": 5,
+                  "petId": 14
+                }
+              ]
+            }
+          ],
+          "telephone": "4414830000"
+        }
+      ],
+      "page": 0,
+      "size": 20,
+      "totalElements": 1,
+      "totalPages": 1
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

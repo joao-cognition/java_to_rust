@@ -1,0 +1,19 @@
+{
+  "case": "unknown-404",
+  "operation": "updatePetType",
+  "request": {
+    "body": {
+      "id": 999,
+      "name": "gerbil"
+    },
+    "method": "PUT",
+    "path": "pettypes/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "case": "create",
+  "operation": "addUser",
+  "request": {
+    "body": {
+      "enabled": true,
+      "password": "secret",
+      "roles": [
+        {
+          "name": "OWNER_ADMIN"
+        }
+      ],
+      "username": "parity"
+    },
+    "method": "POST",
+    "path": "users"
+  },
+  "response": {
+    "body": {
+      "enabled": true,
+      "password": "secret",
+      "roles": [
+        {
+          "name": "ROLE_OWNER_ADMIN"
+        }
+      ],
+      "username": "parity"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 201
+  }
+}

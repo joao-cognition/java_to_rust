@@ -1,0 +1,56 @@
+{
+  "case": "invalid-fields-400",
+  "operation": "addOwner",
+  "request": {
+    "body": {
+      "address": "a",
+      "city": "c",
+      "firstName": "",
+      "lastName": "x1",
+      "telephone": "abc"
+    },
+    "method": "POST",
+    "path": "owners"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/owners",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "must match \"^[0-9]*$\"",
+          "field": "telephone",
+          "message": "Field 'telephone' must match \"^[0-9]*$\" (rejected value: abc)",
+          "rejectedValue": "abc"
+        },
+        {
+          "defaultMessage": "must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\"",
+          "field": "firstName",
+          "message": "Field 'firstName' must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\" (rejected value: )",
+          "rejectedValue": ""
+        },
+        {
+          "defaultMessage": "must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}\\.?$\"",
+          "field": "lastName",
+          "message": "Field 'lastName' must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}\\.?$\" (rejected value: x1)",
+          "rejectedValue": "x1"
+        },
+        {
+          "defaultMessage": "size must be between 1 and 30",
+          "field": "firstName",
+          "message": "Field 'firstName' size must be between 1 and 30 (rejected value: )",
+          "rejectedValue": ""
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/owners"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

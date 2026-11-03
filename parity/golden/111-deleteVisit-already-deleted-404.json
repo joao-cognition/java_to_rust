@@ -1,0 +1,16 @@
+{
+  "case": "already-deleted-404",
+  "operation": "deleteVisit",
+  "request": {
+    "body": null,
+    "method": "DELETE",
+    "path": "visits/7"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "case": "created",
+  "operation": "getPetType",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "pettypes/7"
+  },
+  "response": {
+    "body": {
+      "id": 7,
+      "name": "hamster"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

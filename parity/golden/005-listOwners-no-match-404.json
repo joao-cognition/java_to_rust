@@ -1,0 +1,16 @@
+{
+  "case": "no-match-404",
+  "operation": "listOwners",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "owners?lastName=Zzz"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

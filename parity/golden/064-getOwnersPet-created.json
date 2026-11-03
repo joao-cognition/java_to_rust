@@ -1,0 +1,27 @@
+{
+  "case": "created",
+  "operation": "getOwnersPet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "owners/11/pets/14"
+  },
+  "response": {
+    "body": {
+      "birthDate": "2020-01-01",
+      "id": 14,
+      "name": "Babbage",
+      "ownerId": 11,
+      "type": {
+        "id": 2,
+        "name": "dog"
+      },
+      "visits": []
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

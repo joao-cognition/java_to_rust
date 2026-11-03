@@ -1,0 +1,35 @@
+{
+  "case": "empty-name-400",
+  "operation": "updateSpecialty",
+  "request": {
+    "body": {
+      "id": 4,
+      "name": ""
+    },
+    "method": "PUT",
+    "path": "specialties/4"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/specialties/4",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "size must be between 1 and 80",
+          "field": "name",
+          "message": "Field 'name' size must be between 1 and 80 (rejected value: )",
+          "rejectedValue": ""
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/specialties/4"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

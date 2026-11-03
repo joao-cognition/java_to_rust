@@ -1,0 +1,16 @@
+{
+  "case": "unknown-404",
+  "operation": "getVet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "vets/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

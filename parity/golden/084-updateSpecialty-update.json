@@ -1,0 +1,19 @@
+{
+  "case": "update",
+  "operation": "updateSpecialty",
+  "request": {
+    "body": {
+      "id": 4,
+      "name": "oncology"
+    },
+    "method": "PUT",
+    "path": "specialties/4"
+  },
+  "response": {
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 204
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "case": "create",
+  "operation": "addVisit",
+  "request": {
+    "body": {
+      "date": "2024-06-01",
+      "description": "vaccination",
+      "petId": 14
+    },
+    "method": "POST",
+    "path": "visits"
+  },
+  "response": {
+    "body": {
+      "date": "2024-06-01",
+      "description": "vaccination",
+      "id": 7,
+      "petId": 14
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": "/api/visits/7"
+    },
+    "status": 201
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "case": "two-specialties",
+  "operation": "getVet",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "vets/3"
+  },
+  "response": {
+    "body": {
+      "firstName": "Linda",
+      "id": 3,
+      "lastName": "Douglas",
+      "specialties": [
+        {
+          "id": 3,
+          "name": "dentistry"
+        },
+        {
+          "id": 2,
+          "name": "surgery"
+        }
+      ]
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

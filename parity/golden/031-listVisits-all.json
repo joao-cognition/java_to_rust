@@ -1,0 +1,42 @@
+{
+  "case": "all",
+  "operation": "listVisits",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "visits"
+  },
+  "response": {
+    "body": [
+      {
+        "date": "2010-03-04",
+        "description": "rabies shot",
+        "id": 1,
+        "petId": 7
+      },
+      {
+        "date": "2011-03-04",
+        "description": "rabies shot",
+        "id": 2,
+        "petId": 8
+      },
+      {
+        "date": "2009-06-04",
+        "description": "neutered",
+        "id": 3,
+        "petId": 8
+      },
+      {
+        "date": "2008-09-04",
+        "description": "spayed",
+        "id": 4,
+        "petId": 7
+      }
+    ],
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "case": "unknown-404",
+  "operation": "updateSpecialty",
+  "request": {
+    "body": {
+      "id": 999,
+      "name": "oncology"
+    },
+    "method": "PUT",
+    "path": "specialties/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

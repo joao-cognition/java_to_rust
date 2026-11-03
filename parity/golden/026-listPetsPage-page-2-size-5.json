@@ -1,0 +1,57 @@
+{
+  "case": "page-2-size-5",
+  "operation": "listPetsPage",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "v2/pets?page=2&size=5"
+  },
+  "response": {
+    "body": {
+      "content": [
+        {
+          "birthDate": "2000-03-09",
+          "id": 11,
+          "name": "Freddy",
+          "ownerId": 9,
+          "type": {
+            "id": 5,
+            "name": "bird"
+          },
+          "visits": []
+        },
+        {
+          "birthDate": "2000-06-24",
+          "id": 12,
+          "name": "Lucky",
+          "ownerId": 10,
+          "type": {
+            "id": 2,
+            "name": "dog"
+          },
+          "visits": []
+        },
+        {
+          "birthDate": "2002-06-08",
+          "id": 13,
+          "name": "Sly",
+          "ownerId": 10,
+          "type": {
+            "id": 1,
+            "name": "cat"
+          },
+          "visits": []
+        }
+      ],
+      "page": 2,
+      "size": 5,
+      "totalElements": 13,
+      "totalPages": 3
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

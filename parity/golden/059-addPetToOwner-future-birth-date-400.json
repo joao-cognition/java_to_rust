@@ -1,0 +1,39 @@
+{
+  "case": "future-birth-date-400",
+  "operation": "addPetToOwner",
+  "request": {
+    "body": {
+      "birthDate": "2999-01-01",
+      "name": "Rex",
+      "type": {
+        "id": 2,
+        "name": "dog"
+      }
+    },
+    "method": "POST",
+    "path": "owners/11/pets"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/owners/11/pets",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "Birth date cannot be in the future",
+          "field": "birthDate",
+          "message": "Field 'birthDate' Birth date cannot be in the future (rejected value: 2999-01-01)",
+          "rejectedValue": "2999-01-01"
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/owners/11/pets"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

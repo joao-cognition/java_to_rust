@@ -1,0 +1,25 @@
+{
+  "case": "update",
+  "operation": "updatePet",
+  "request": {
+    "body": {
+      "birthDate": "2021-02-03",
+      "id": 14,
+      "name": "Ada",
+      "type": {
+        "id": 3,
+        "name": "lizard"
+      },
+      "visits": []
+    },
+    "method": "PUT",
+    "path": "pets/14"
+  },
+  "response": {
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 204
+  }
+}

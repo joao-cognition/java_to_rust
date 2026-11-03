@@ -1,0 +1,19 @@
+{
+  "case": "unknown-404",
+  "operation": "updateVisit",
+  "request": {
+    "body": {
+      "date": "2024-06-02",
+      "description": "booster"
+    },
+    "method": "PUT",
+    "path": "visits/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

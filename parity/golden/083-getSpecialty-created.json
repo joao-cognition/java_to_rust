@@ -1,0 +1,20 @@
+{
+  "case": "created",
+  "operation": "getSpecialty",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "specialties/4"
+  },
+  "response": {
+    "body": {
+      "id": 4,
+      "name": "cardiology"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

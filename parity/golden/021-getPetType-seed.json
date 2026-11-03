@@ -1,0 +1,20 @@
+{
+  "case": "seed",
+  "operation": "getPetType",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "pettypes/1"
+  },
+  "response": {
+    "body": {
+      "id": 1,
+      "name": "cat"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

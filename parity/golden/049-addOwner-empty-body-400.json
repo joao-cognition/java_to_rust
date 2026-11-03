@@ -1,0 +1,56 @@
+{
+  "case": "empty-body-400",
+  "operation": "addOwner",
+  "request": {
+    "body": {},
+    "method": "POST",
+    "path": "owners"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/owners",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "must not be null",
+          "field": "address",
+          "message": "Field 'address' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        },
+        {
+          "defaultMessage": "must not be null",
+          "field": "city",
+          "message": "Field 'city' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        },
+        {
+          "defaultMessage": "must not be null",
+          "field": "firstName",
+          "message": "Field 'firstName' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        },
+        {
+          "defaultMessage": "must not be null",
+          "field": "lastName",
+          "message": "Field 'lastName' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        },
+        {
+          "defaultMessage": "must not be null",
+          "field": "telephone",
+          "message": "Field 'telephone' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/owners"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "case": "unknown-owner-404",
+  "operation": "updateOwnersPet",
+  "request": {
+    "body": {
+      "birthDate": "2020-01-01",
+      "name": "Babbage",
+      "type": {
+        "id": 2,
+        "name": "dog"
+      }
+    },
+    "method": "PUT",
+    "path": "owners/999/pets/14"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

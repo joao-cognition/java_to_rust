@@ -1,0 +1,25 @@
+{
+  "case": "unreadable-json-500",
+  "operation": "addPetType",
+  "request": {
+    "body": "{\"name\": ",
+    "method": "POST",
+    "path": "pettypes"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/pettypes",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "HttpMessageNotReadableException",
+      "type": "{origin}/petclinic/api/pettypes"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

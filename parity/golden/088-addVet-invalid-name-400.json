@@ -1,0 +1,48 @@
+{
+  "case": "invalid-name-400",
+  "operation": "addVet",
+  "request": {
+    "body": {
+      "firstName": "Grace1",
+      "lastName": "",
+      "specialties": []
+    },
+    "method": "POST",
+    "path": "vets"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/vets",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\"",
+          "field": "firstName",
+          "message": "Field 'firstName' must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\" (rejected value: Grace1)",
+          "rejectedValue": "Grace1"
+        },
+        {
+          "defaultMessage": "must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}\\.?$\"",
+          "field": "lastName",
+          "message": "Field 'lastName' must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}\\.?$\" (rejected value: )",
+          "rejectedValue": ""
+        },
+        {
+          "defaultMessage": "size must be between 1 and 30",
+          "field": "lastName",
+          "message": "Field 'lastName' size must be between 1 and 30 (rejected value: )",
+          "rejectedValue": ""
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/vets"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

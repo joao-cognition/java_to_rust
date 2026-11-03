@@ -1,0 +1,43 @@
+{
+  "case": "missing-fields-400",
+  "operation": "addPetToOwner",
+  "request": {
+    "body": {
+      "type": {
+        "id": 2,
+        "name": "dog"
+      }
+    },
+    "method": "POST",
+    "path": "owners/11/pets"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/owners/11/pets",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "must not be null",
+          "field": "birthDate",
+          "message": "Field 'birthDate' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        },
+        {
+          "defaultMessage": "must not be null",
+          "field": "name",
+          "message": "Field 'name' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/owners/11/pets"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "case": "create",
+  "operation": "addPetType",
+  "request": {
+    "body": {
+      "name": "hamster"
+    },
+    "method": "POST",
+    "path": "pettypes"
+  },
+  "response": {
+    "body": {
+      "id": 7,
+      "name": "hamster"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": "/api/pettypes/7"
+    },
+    "status": 201
+  }
+}

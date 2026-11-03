@@ -1,0 +1,16 @@
+{
+  "case": "unknown-404",
+  "operation": "getPetType",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "pettypes/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

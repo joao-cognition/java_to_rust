@@ -1,0 +1,16 @@
+{
+  "case": "delete",
+  "operation": "deleteOwner",
+  "request": {
+    "body": null,
+    "method": "DELETE",
+    "path": "owners/11"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 204
+  }
+}

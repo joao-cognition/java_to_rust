@@ -1,0 +1,20 @@
+{
+  "case": "seed",
+  "operation": "getSpecialty",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "specialties/1"
+  },
+  "response": {
+    "body": {
+      "id": 1,
+      "name": "radiology"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

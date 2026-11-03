@@ -1,0 +1,23 @@
+{
+  "case": "past-last-page",
+  "operation": "listOwnersPage",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "v2/owners?page=99&size=5"
+  },
+  "response": {
+    "body": {
+      "content": [],
+      "page": 99,
+      "size": 5,
+      "totalElements": 10,
+      "totalPages": 2
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

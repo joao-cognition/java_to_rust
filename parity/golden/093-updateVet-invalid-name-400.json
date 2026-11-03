@@ -1,0 +1,42 @@
+{
+  "case": "invalid-name-400",
+  "operation": "updateVet",
+  "request": {
+    "body": {
+      "firstName": "",
+      "lastName": "Hopper",
+      "specialties": []
+    },
+    "method": "PUT",
+    "path": "vets/7"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/vets/7",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\"",
+          "field": "firstName",
+          "message": "Field 'firstName' must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\" (rejected value: )",
+          "rejectedValue": ""
+        },
+        {
+          "defaultMessage": "size must be between 1 and 30",
+          "field": "firstName",
+          "message": "Field 'firstName' size must be between 1 and 30 (rejected value: )",
+          "rejectedValue": ""
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/vets/7"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

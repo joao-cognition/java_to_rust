@@ -1,0 +1,22 @@
+{
+  "case": "unknown-404",
+  "operation": "updateOwner",
+  "request": {
+    "body": {
+      "address": "12 Analytical Row",
+      "city": "London",
+      "firstName": "Ada",
+      "lastName": "Lovelace",
+      "telephone": "4420794600"
+    },
+    "method": "PUT",
+    "path": "owners/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

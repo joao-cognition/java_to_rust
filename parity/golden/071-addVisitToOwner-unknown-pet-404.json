@@ -1,0 +1,28 @@
+{
+  "case": "unknown-pet-404",
+  "operation": "addVisitToOwner",
+  "request": {
+    "body": {
+      "date": "2024-05-01",
+      "description": "x"
+    },
+    "method": "POST",
+    "path": "owners/11/pets/999/visits"
+  },
+  "response": {
+    "body": {
+      "detail": "The requested resource could not be processed due to a data constraint violation",
+      "instance": "/petclinic/api/owners/11/pets/999/visits",
+      "schemaValidationErrors": [],
+      "status": 404,
+      "timestamp": "<timestamp>",
+      "title": "DataIntegrityViolationException",
+      "type": "{origin}/petclinic/api/owners/11/pets/999/visits"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 404
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "case": "invalid-fields-400",
+  "operation": "updateOwnersPet",
+  "request": {
+    "body": {
+      "birthDate": "2999-01-01",
+      "name": "",
+      "type": {
+        "id": 1,
+        "name": "cat"
+      }
+    },
+    "method": "PUT",
+    "path": "owners/11/pets/14"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/owners/11/pets/14",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "Birth date cannot be in the future",
+          "field": "birthDate",
+          "message": "Field 'birthDate' Birth date cannot be in the future (rejected value: 2999-01-01)",
+          "rejectedValue": "2999-01-01"
+        },
+        {
+          "defaultMessage": "size must be between 1 and 30",
+          "field": "name",
+          "message": "Field 'name' size must be between 1 and 30 (rejected value: )",
+          "rejectedValue": ""
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/owners/11/pets/14"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "case": "unknown-404",
+  "operation": "getVisit",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "visits/999"
+  },
+  "response": {
+    "headers": {
+      "content-type": null,
+      "location": null
+    },
+    "status": 404
+  }
+}

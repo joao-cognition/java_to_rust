@@ -1,0 +1,25 @@
+{
+  "case": "non-numeric-page-500",
+  "operation": "listOwnersPage",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "v2/owners?page=x"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/v2/owners",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentTypeMismatchException",
+      "type": "{origin}/petclinic/api/v2/owners"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

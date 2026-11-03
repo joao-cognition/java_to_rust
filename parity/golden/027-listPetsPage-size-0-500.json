@@ -1,0 +1,25 @@
+{
+  "case": "size-0-500",
+  "operation": "listPetsPage",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "v2/pets?size=0"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/v2/pets",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "ConstraintViolationException",
+      "type": "{origin}/petclinic/api/v2/pets"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

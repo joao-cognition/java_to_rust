@@ -1,0 +1,30 @@
+{
+  "case": "all",
+  "operation": "listSpecialties",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "specialties"
+  },
+  "response": {
+    "body": [
+      {
+        "id": 1,
+        "name": "radiology"
+      },
+      {
+        "id": 2,
+        "name": "surgery"
+      },
+      {
+        "id": 3,
+        "name": "dentistry"
+      }
+    ],
+    "headers": {
+      "content-type": "application/json",
+      "location": null
+    },
+    "status": 200
+  }
+}

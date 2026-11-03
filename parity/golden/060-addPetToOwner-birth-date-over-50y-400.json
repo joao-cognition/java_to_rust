@@ -1,0 +1,39 @@
+{
+  "case": "birth-date-over-50y-400",
+  "operation": "addPetToOwner",
+  "request": {
+    "body": {
+      "birthDate": "1900-01-01",
+      "name": "Rex",
+      "type": {
+        "id": 2,
+        "name": "dog"
+      }
+    },
+    "method": "POST",
+    "path": "owners/11/pets"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/owners/11/pets",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "Birth date cannot be older than 50 years",
+          "field": "birthDate",
+          "message": "Field 'birthDate' Birth date cannot be older than 50 years (rejected value: 1900-01-01)",
+          "rejectedValue": "1900-01-01"
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/owners/11/pets"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}

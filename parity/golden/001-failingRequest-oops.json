@@ -1,0 +1,25 @@
+{
+  "case": "oops",
+  "operation": "failingRequest",
+  "request": {
+    "body": null,
+    "method": "GET",
+    "path": "oops"
+  },
+  "response": {
+    "body": {
+      "detail": "An unexpected error occurred while processing your request",
+      "instance": "/petclinic/api/oops",
+      "schemaValidationErrors": [],
+      "status": 500,
+      "timestamp": "<timestamp>",
+      "title": "NoResourceFoundException",
+      "type": "{origin}/petclinic/api/oops"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 500
+  }
+}

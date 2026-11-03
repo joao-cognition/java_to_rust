@@ -1,0 +1,22 @@
+{
+  "case": "create",
+  "operation": "addSpecialty",
+  "request": {
+    "body": {
+      "name": "cardiology"
+    },
+    "method": "POST",
+    "path": "specialties"
+  },
+  "response": {
+    "body": {
+      "id": 4,
+      "name": "cardiology"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "location": "/api/specialties/4"
+    },
+    "status": 201
+  }
+}

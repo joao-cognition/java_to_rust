@@ -1,0 +1,35 @@
+{
+  "case": "missing-username-400",
+  "operation": "addUser",
+  "request": {
+    "body": {
+      "enabled": true,
+      "password": "secret"
+    },
+    "method": "POST",
+    "path": "users"
+  },
+  "response": {
+    "body": {
+      "detail": "The request contains invalid or missing parameters",
+      "instance": "/petclinic/api/users",
+      "schemaValidationErrors": [
+        {
+          "defaultMessage": "must not be null",
+          "field": "username",
+          "message": "Field 'username' must not be null (rejected value: null)",
+          "rejectedValue": "null"
+        }
+      ],
+      "status": 400,
+      "timestamp": "<timestamp>",
+      "title": "MethodArgumentNotValidException",
+      "type": "{origin}/petclinic/api/users"
+    },
+    "headers": {
+      "content-type": "application/problem+json",
+      "location": null
+    },
+    "status": 400
+  }
+}
