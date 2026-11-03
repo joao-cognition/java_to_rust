@@ -32,6 +32,17 @@ async fn get_json(app: axum::Router, path: &str) -> (StatusCode, Value) {
 
 #[tokio::test]
 #[ignore = "needs DATABASE_URL"]
+async fn health_is_up_with_database() {
+    let (status, json) = get_json(test_app().await, "/petclinic/actuator/health").await;
+    assert_eq!(status, StatusCode::OK);
+    assert_eq!(
+        json,
+        serde_json::json!({"groups": ["liveness", "readiness"], "status": "UP"})
+    );
+}
+
+#[tokio::test]
+#[ignore = "needs DATABASE_URL"]
 async fn vets_are_listed_with_sorted_specialties() {
     let (status, json) = get_json(test_app().await, "/petclinic/api/vets").await;
     assert_eq!(status, StatusCode::OK);
