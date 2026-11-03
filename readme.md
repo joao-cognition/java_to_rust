@@ -50,6 +50,9 @@ cd rust-petclinic && cargo run --release     # http://localhost:9977/petclinic/a
 cargo install --path cli && j2r api vets && j2r bench
 ```
 
+Exact commands, VM workarounds and the DB reset (`./scripts/reset-db.sh`) are in
+[docs/reference-stack.md](docs/reference-stack.md).
+
 ---
 
 # REST version of Spring PetClinic Sample Application (upstream documentation)
