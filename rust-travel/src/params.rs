@@ -24,6 +24,27 @@ impl Params {
         }
     }
 
+    fn values(&self, name: &str) -> Vec<&str> {
+        self.0.iter().filter(|(k, _)| k == name).map(|(_, v)| v.as_str()).collect()
+    }
+
+    /// A converted (non-`String`) parameter: Spring converts only the first of repeated values; when that fails the
+    /// detail shows the `String[]` itself (`[Ljava.lang.String;@<identity hash>`).
+    fn converted(&self, name: &str) -> Option<Converted<'_>> {
+        let values = self.values(name);
+        let first = *values.first()?;
+        let shown = if values.len() == 1 {
+            first.to_owned()
+        } else {
+            java_array_string(&values)
+        };
+        Some(Converted {
+            first,
+            repeated: values.len() > 1,
+            shown,
+        })
+    }
+
     pub fn required_string(&self, name: &str) -> ApiResult<String> {
         self.raw(name).ok_or_else(|| ApiError::missing(name))
     }
@@ -38,38 +59,53 @@ impl Params {
     }
 
     pub fn required_date(&self, name: &str) -> ApiResult<NaiveDate> {
-        match self.raw(name) {
+        match self.converted(name) {
             None => Err(ApiError::missing(name)),
-            Some(v) if v.is_empty() => Err(ApiError::missing(name)),
-            Some(v) => parse_iso_date(&v).ok_or_else(|| ApiError::convert(name, &v)),
+            Some(c) if c.first.is_empty() => Err(ApiError::missing(name)),
+            Some(c) => parse_iso_date(c.first).ok_or_else(|| ApiError::convert(name, &c.shown)),
         }
     }
 
     pub fn int_or(&self, name: &str, default: i32) -> ApiResult<i32> {
-        match self.raw(name) {
+        match self.converted(name) {
             None => Ok(default),
-            Some(v) if v.is_empty() => Ok(default),
-            Some(v) => parse_number(&v)
+            Some(c) if c.first.is_empty() && !c.repeated => Ok(default),
+            Some(c) => parse_number(c.first)
                 .and_then(|n| i32::try_from(n).ok())
-                .ok_or_else(|| ApiError::convert(name, &v)),
+                .ok_or_else(|| ApiError::convert(name, &c.shown)),
         }
     }
 
     /// Optional enum parameter, `allowed` being the Java constant names.
     pub fn optional_enum(&self, name: &str, allowed: &[&'static str]) -> ApiResult<Option<&'static str>> {
-        match self.raw(name) {
+        match self.converted(name) {
             None => Ok(None),
-            Some(v) if v.trim().is_empty() => Ok(None),
-            Some(v) => {
-                let t = v.trim();
+            Some(c) if c.first.trim().is_empty() => Ok(None),
+            Some(c) => {
+                let t = c.first.trim();
                 allowed
                     .iter()
                     .find(|a| **a == t)
                     .map(|a| Some(*a))
-                    .ok_or_else(|| ApiError::convert(name, &v))
+                    .ok_or_else(|| ApiError::convert(name, &c.shown))
             }
         }
     }
+}
+
+struct Converted<'a> {
+    first: &'a str,
+    repeated: bool,
+    shown: String,
+}
+
+/// `String[].toString()`; the identity hash is arbitrary in Java, here a stable hash of the values.
+fn java_array_string(values: &[&str]) -> String {
+    let hash = values
+        .iter()
+        .flat_map(|v| v.bytes().chain([0]))
+        .fold(0x811c9dc5u32, |h, b| (h ^ b as u32).wrapping_mul(0x01000193));
+    format!("[Ljava.lang.String;@{hash:x}")
 }
 
 /// `@PathVariable Long`.
@@ -162,5 +198,27 @@ mod tests {
         let bad = Params::parse(Some("cabin=economy&adults=x"));
         assert_eq!(bad.optional_enum("cabin", &["ECONOMY"]), Err(ApiError::convert("cabin", "economy")));
         assert_eq!(bad.int_or("adults", 1), Err(ApiError::convert("adults", "x")));
+    }
+
+    #[test]
+    fn repeated_converted_parameters_use_the_first_value() {
+        let p = Params::parse(Some("date=2026-11-04&date=bad&adults=2&adults=x&cabin=%20BUSINESS&cabin=x"));
+        assert_eq!(p.required_date("date"), Ok(NaiveDate::from_ymd_opt(2026, 11, 4).unwrap()));
+        assert_eq!(p.int_or("adults", 1), Ok(2));
+        assert_eq!(p.optional_enum("cabin", &["BUSINESS"]), Ok(Some("BUSINESS")));
+        let empty_first = Params::parse(Some("date=&date=2026-11-04&adults=&adults=2&cabin=&cabin=x"));
+        assert_eq!(empty_first.required_date("date"), Err(ApiError::missing("date")));
+        assert!(empty_first
+            .int_or("adults", 1)
+            .unwrap_err()
+            .detail
+            .contains("'[Ljava.lang.String;@"));
+        assert_eq!(empty_first.optional_enum("cabin", &["BUSINESS"]), Ok(None));
+        let bad_first = Params::parse(Some("date=bad&date=2026-11-04"));
+        assert!(bad_first
+            .required_date("date")
+            .unwrap_err()
+            .detail
+            .starts_with("Failed to convert 'date' with value: '[Ljava.lang.String;@"));
     }
 }
