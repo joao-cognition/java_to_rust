@@ -1,0 +1,9 @@
+{
+  "service": "rust",
+  "startupSeconds": 0.008927808,
+  "cpuSecondsFixed": 6.31,
+  "fixedRequests": 30001,
+  "dbCallsFixed": 30001,
+  "peakRssFixedMb": 18,
+  "peakRssPeakMb": 21.4
+}

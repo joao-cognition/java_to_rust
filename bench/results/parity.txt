@@ -1,0 +1,64 @@
+endpoint                                     | java | rust | result
+---------------------------------------------|------|------|----------
+GET /actuator/health                         | 200  | 200  | identical
+GET /api/vets                                | 200  | 200  | identical
+GET /api/vets/1                              | 200  | 200  | identical
+GET /api/vets/2                              | 200  | 200  | identical
+GET /api/vets/3                              | 200  | 200  | identical
+GET /api/vets/4                              | 200  | 200  | identical
+GET /api/vets/5                              | 200  | 200  | identical
+GET /api/vets/6                              | 200  | 200  | identical
+GET /api/vets/999                            | 404  | 404  | identical
+GET /api/specialties                         | 200  | 200  | identical
+GET /api/specialties/1                       | 200  | 200  | identical
+GET /api/specialties/2                       | 200  | 200  | identical
+GET /api/specialties/3                       | 200  | 200  | identical
+GET /api/specialties/999                     | 404  | 404  | identical
+GET /api/pettypes                            | 200  | 200  | identical
+GET /api/pettypes/1                          | 200  | 200  | identical
+GET /api/pettypes/2                          | 200  | 200  | identical
+GET /api/pettypes/3                          | 200  | 200  | identical
+GET /api/pettypes/4                          | 200  | 200  | identical
+GET /api/pettypes/5                          | 200  | 200  | identical
+GET /api/pettypes/6                          | 200  | 200  | identical
+GET /api/pettypes/999                        | 404  | 404  | identical
+GET /api/owners                              | 200  | 200  | identical
+GET /api/owners?lastName=Davis               | 200  | 200  | identical
+GET /api/owners?lastName=D                   | 200  | 200  | identical
+GET /api/owners?lastName=Franklin            | 200  | 200  | identical
+GET /api/owners?lastName=Mc                  | 200  | 200  | identical
+GET /api/owners?lastName=Zzz                 | 404  | 404  | identical
+GET /api/owners/1                            | 200  | 200  | identical
+GET /api/owners/2                            | 200  | 200  | identical
+GET /api/owners/3                            | 200  | 200  | identical
+GET /api/owners/4                            | 200  | 200  | identical
+GET /api/owners/5                            | 200  | 200  | identical
+GET /api/owners/6                            | 200  | 200  | identical
+GET /api/owners/7                            | 200  | 200  | identical
+GET /api/owners/8                            | 200  | 200  | identical
+GET /api/owners/9                            | 200  | 200  | identical
+GET /api/owners/10                           | 200  | 200  | identical
+GET /api/owners/999                          | 404  | 404  | identical
+GET /api/pets/1                              | 200  | 200  | identical
+GET /api/pets/2                              | 200  | 200  | identical
+GET /api/pets/3                              | 200  | 200  | identical
+GET /api/pets/4                              | 200  | 200  | identical
+GET /api/pets/5                              | 200  | 200  | identical
+GET /api/pets/6                              | 200  | 200  | identical
+GET /api/pets/7                              | 200  | 200  | identical
+GET /api/pets/8                              | 200  | 200  | identical
+GET /api/pets/9                              | 200  | 200  | identical
+GET /api/pets/10                             | 200  | 200  | identical
+GET /api/pets/11                             | 200  | 200  | identical
+GET /api/pets/12                             | 200  | 200  | identical
+GET /api/pets/13                             | 200  | 200  | identical
+GET /api/pets/999                            | 404  | 404  | identical
+GET /api/owners/abc (500)                    | 500  | 500  | identical
+GET /api/nope (500)                          | 500  | 500  | identical
+POST /api/owners (201)                       | 201  | 201  | identical
+POST /api/owners invalid telephone (400)     | 400  | 400  | identical
+POST /api/owners empty body {} (400)         | 400  | 400  | identical
+POST /api/owners numeric field (400)         | 400  | 400  | identical
+POST /api/owners malformed JSON (500)        | 500  | 500  | identical
+
+PARITY OK: 60 endpoints identical
