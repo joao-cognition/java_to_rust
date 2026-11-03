@@ -54,9 +54,9 @@ j2r watch            # one line per second: java cpu/rss/probe up, rust down
 ```
 
 Drops and recreates the `public` schema, then re-runs `schema.sql` + `data.sql` through `psql` inside the compose
-container (no local `psql` needed), so ids restart at 1. Safe while the services are running (the pool reconnects to the new tables); use it
+container (no local `psql` needed) in one transaction, so ids restart at 1 and concurrent writes cannot interleave. Safe while the services are running (the pool reconnects to the new tables); use it
 before every parity run or test that writes. The same thing as a one-liner:
 
 ```sh
-{ echo 'SET client_min_messages=warning; DROP SCHEMA public CASCADE; CREATE SCHEMA public;'; cat src/main/resources/db/postgres/{schema,data}.sql; } | docker compose --profile postgres exec -T postgres psql -q -v ON_ERROR_STOP=1 -U petclinic -d petclinic
+{ echo 'SET client_min_messages=warning; DROP SCHEMA public CASCADE; CREATE SCHEMA public;'; cat src/main/resources/db/postgres/{schema,data}.sql; } | docker compose --profile postgres exec -T postgres psql -q -1 -v ON_ERROR_STOP=1 -U petclinic -d petclinic
 ```

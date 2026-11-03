@@ -6,4 +6,4 @@ db=src/main/resources/db/postgres
 {
   echo 'SET client_min_messages = warning; DROP SCHEMA public CASCADE; CREATE SCHEMA public;'
   cat "$db/schema.sql" "$db/data.sql"
-} | docker compose --profile postgres exec -T postgres psql -q -v ON_ERROR_STOP=1 -U petclinic -d petclinic
+} | docker compose --profile postgres exec -T postgres psql -q -1 -v ON_ERROR_STOP=1 -U petclinic -d petclinic
