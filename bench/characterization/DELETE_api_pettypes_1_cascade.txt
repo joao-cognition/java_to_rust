@@ -1,0 +1,105 @@
+204 location=- type=-
+<empty>
+--- then GET /api/pets
+200 location=- type=application/json
+[
+  {
+    "birthDate": "2002-08-06",
+    "id": 2,
+    "name": "Basil",
+    "ownerId": 2,
+    "type": {
+      "id": 6,
+      "name": "hamster"
+    },
+    "visits": []
+  },
+  {
+    "birthDate": "2001-04-17",
+    "id": 3,
+    "name": "Rosy",
+    "ownerId": 3,
+    "type": {
+      "id": 2,
+      "name": "dog"
+    },
+    "visits": []
+  },
+  {
+    "birthDate": "2000-03-07",
+    "id": 4,
+    "name": "Jewel",
+    "ownerId": 3,
+    "type": {
+      "id": 2,
+      "name": "dog"
+    },
+    "visits": []
+  },
+  {
+    "birthDate": "2000-11-30",
+    "id": 5,
+    "name": "Iggy",
+    "ownerId": 4,
+    "type": {
+      "id": 3,
+      "name": "lizard"
+    },
+    "visits": []
+  },
+  {
+    "birthDate": "2000-01-20",
+    "id": 6,
+    "name": "George",
+    "ownerId": 5,
+    "type": {
+      "id": 4,
+      "name": "snake"
+    },
+    "visits": []
+  },
+  {
+    "birthDate": "1999-08-06",
+    "id": 9,
+    "name": "Lucky",
+    "ownerId": 7,
+    "type": {
+      "id": 5,
+      "name": "bird"
+    },
+    "visits": []
+  },
+  {
+    "birthDate": "1997-02-24",
+    "id": 10,
+    "name": "Mulligan",
+    "ownerId": 8,
+    "type": {
+      "id": 2,
+      "name": "dog"
+    },
+    "visits": []
+  },
+  {
+    "birthDate": "2000-03-09",
+    "id": 11,
+    "name": "Freddy",
+    "ownerId": 9,
+    "type": {
+      "id": 5,
+      "name": "bird"
+    },
+    "visits": []
+  },
+  {
+    "birthDate": "2000-06-24",
+    "id": 12,
+    "name": "Lucky",
+    "ownerId": 10,
+    "type": {
+      "id": 2,
+      "name": "dog"
+    },
+    "visits": []
+  }
+]

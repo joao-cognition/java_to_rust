@@ -1,0 +1,10 @@
+204 location=- type=application/json
+<empty>
+--- then GET /api/vets/3
+200 location=- type=application/json
+{
+  "firstName": "Linda",
+  "id": 3,
+  "lastName": "Douglas",
+  "specialties": []
+}

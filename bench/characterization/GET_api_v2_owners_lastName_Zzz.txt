@@ -1,0 +1,8 @@
+200 location=- type=application/json
+{
+  "content": [],
+  "page": 0,
+  "size": 20,
+  "totalElements": 0,
+  "totalPages": 0
+}

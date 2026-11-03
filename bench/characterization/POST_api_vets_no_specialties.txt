@@ -1,0 +1,7 @@
+201 location=/api/vets/7 type=application/json
+{
+  "firstName": "Parity",
+  "id": 7,
+  "lastName": "Vet",
+  "specialties": []
+}

@@ -1,0 +1,51 @@
+200 location=- type=application/json
+{
+  "content": [
+    {
+      "address": "638 Cardinal Ave.",
+      "city": "Sun Prairie",
+      "firstName": "Betty",
+      "id": 2,
+      "lastName": "Davis",
+      "pets": [
+        {
+          "birthDate": "2002-08-06",
+          "id": 2,
+          "name": "Basil",
+          "ownerId": 2,
+          "type": {
+            "id": 6,
+            "name": "hamster"
+          },
+          "visits": []
+        }
+      ],
+      "telephone": "6085551749"
+    },
+    {
+      "address": "563 Friendly St.",
+      "city": "Windsor",
+      "firstName": "Harold",
+      "id": 4,
+      "lastName": "Davis",
+      "pets": [
+        {
+          "birthDate": "2000-11-30",
+          "id": 5,
+          "name": "Iggy",
+          "ownerId": 4,
+          "type": {
+            "id": 3,
+            "name": "lizard"
+          },
+          "visits": []
+        }
+      ],
+      "telephone": "6085553198"
+    }
+  ],
+  "page": 0,
+  "size": 20,
+  "totalElements": 2,
+  "totalPages": 1
+}

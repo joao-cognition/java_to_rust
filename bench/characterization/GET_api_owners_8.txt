@@ -1,0 +1,22 @@
+200 location=- type=application/json
+{
+  "address": "345 Maple St.",
+  "city": "Madison",
+  "firstName": "Maria",
+  "id": 8,
+  "lastName": "Escobito",
+  "pets": [
+    {
+      "birthDate": "1997-02-24",
+      "id": 10,
+      "name": "Mulligan",
+      "ownerId": 8,
+      "type": {
+        "id": 2,
+        "name": "dog"
+      },
+      "visits": []
+    }
+  ],
+  "telephone": "6085557683"
+}

@@ -1,0 +1,16 @@
+400 location=- type=application/problem+json
+{
+  "detail": "The request contains invalid or missing parameters",
+  "instance": "/petclinic/api/visits",
+  "schemaValidationErrors": [
+    {
+      "defaultMessage": "must be greater than or equal to 0",
+      "field": "petId",
+      "message": "Field 'petId' must be greater than or equal to 0 (rejected value: -1)",
+      "rejectedValue": "-1"
+    }
+  ],
+  "status": 400,
+  "title": "MethodArgumentNotValidException",
+  "type": "/petclinic/api/visits"
+}

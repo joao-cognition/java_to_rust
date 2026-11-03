@@ -1,0 +1,9 @@
+500 location=- type=application/problem+json
+{
+  "detail": "An unexpected error occurred while processing your request",
+  "instance": "/petclinic/api/owners/1/pets/1/visits",
+  "schemaValidationErrors": [],
+  "status": 500,
+  "title": "HttpMessageNotReadableException",
+  "type": "/petclinic/api/owners/1/pets/1/visits"
+}

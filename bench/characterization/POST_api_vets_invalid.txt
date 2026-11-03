@@ -1,0 +1,40 @@
+400 location=- type=application/problem+json
+{
+  "detail": "The request contains invalid or missing parameters",
+  "instance": "/petclinic/api/vets",
+  "schemaValidationErrors": [
+    {
+      "defaultMessage": "must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\"",
+      "field": "firstName",
+      "message": "Field 'firstName' must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}$\" (rejected value: Vet2)",
+      "rejectedValue": "Vet2"
+    },
+    {
+      "defaultMessage": "must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}\\.?$\"",
+      "field": "lastName",
+      "message": "Field 'lastName' must match \"^[\\p{L}]+([ '-][\\p{L}]+){0,2}\\.?$\" (rejected value: )",
+      "rejectedValue": ""
+    },
+    {
+      "defaultMessage": "size must be between 1 and 30",
+      "field": "lastName",
+      "message": "Field 'lastName' size must be between 1 and 30 (rejected value: )",
+      "rejectedValue": ""
+    },
+    {
+      "defaultMessage": "must be greater than or equal to 0",
+      "field": "specialties[0].id",
+      "message": "Field 'specialties[0].id' must be greater than or equal to 0 (rejected value: -1)",
+      "rejectedValue": "-1"
+    },
+    {
+      "defaultMessage": "size must be between 1 and 80",
+      "field": "specialties[0].name",
+      "message": "Field 'specialties[0].name' size must be between 1 and 80 (rejected value: )",
+      "rejectedValue": ""
+    }
+  ],
+  "status": 400,
+  "title": "MethodArgumentNotValidException",
+  "type": "/petclinic/api/vets"
+}

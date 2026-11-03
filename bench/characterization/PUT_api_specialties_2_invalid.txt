@@ -1,0 +1,16 @@
+400 location=- type=application/problem+json
+{
+  "detail": "The request contains invalid or missing parameters",
+  "instance": "/petclinic/api/specialties/2",
+  "schemaValidationErrors": [
+    {
+      "defaultMessage": "size must be between 1 and 80",
+      "field": "name",
+      "message": "Field 'name' size must be between 1 and 80 (rejected value: )",
+      "rejectedValue": ""
+    }
+  ],
+  "status": 400,
+  "title": "MethodArgumentNotValidException",
+  "type": "/petclinic/api/specialties/2"
+}

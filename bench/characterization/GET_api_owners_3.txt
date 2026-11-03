@@ -1,0 +1,33 @@
+200 location=- type=application/json
+{
+  "address": "2693 Commerce St.",
+  "city": "McFarland",
+  "firstName": "Eduardo",
+  "id": 3,
+  "lastName": "Rodriquez",
+  "pets": [
+    {
+      "birthDate": "2000-03-07",
+      "id": 4,
+      "name": "Jewel",
+      "ownerId": 3,
+      "type": {
+        "id": 2,
+        "name": "dog"
+      },
+      "visits": []
+    },
+    {
+      "birthDate": "2001-04-17",
+      "id": 3,
+      "name": "Rosy",
+      "ownerId": 3,
+      "type": {
+        "id": 2,
+        "name": "dog"
+      },
+      "visits": []
+    }
+  ],
+  "telephone": "6085558763"
+}

@@ -1,0 +1,91 @@
+$ j2r bench --rate 300 --duration 30 --peak 10
+# 2026-11-03T21:48:41.351749824+00:00 · 8 vcpu · Intel(R) Xeon(R) Processor
+# mix: owners/1 owners/1 owners/1 owners/1 owners?lastName=Davis owners?lastName=Davis vets specialties pettypes pets/1
+[java] up http://localhost:9966/petclinic/api/ · pid 10921 (java)
+[java] t=  1s cpu=0.22 cores rps=  300 p50=  1.1ms p99=   5.5ms rss=665MB
+[java] t=  2s cpu=0.20 cores rps=  300 p50=  1.2ms p99=   5.7ms rss=665MB
+[java] t=  3s cpu=0.23 cores rps=  300 p50=  1.4ms p99=   6.1ms rss=665MB
+[java] t=  4s cpu=0.25 cores rps=  300 p50=  1.3ms p99=   5.6ms rss=665MB
+[java] t=  5s cpu=0.25 cores rps=  300 p50=  1.5ms p99=   5.8ms rss=665MB
+[java] t=  6s cpu=0.21 cores rps=  300 p50=  1.1ms p99=   5.6ms rss=665MB
+[java] t=  7s cpu=0.22 cores rps=  300 p50=  1.1ms p99=   5.6ms rss=665MB
+[java] t=  8s cpu=0.36 cores rps=  300 p50=  1.2ms p99=   6.5ms rss=665MB
+[java] t=  9s cpu=0.24 cores rps=  300 p50=  1.1ms p99=   5.5ms rss=665MB
+[java] t= 10s cpu=0.21 cores rps=  301 p50=  1.1ms p99=   5.7ms rss=665MB
+[java] t= 11s cpu=0.21 cores rps=  300 p50=  1.1ms p99=   5.9ms rss=665MB
+[java] t= 12s cpu=0.21 cores rps=  300 p50=  1.0ms p99=   6.3ms rss=665MB
+[java] t= 13s cpu=0.20 cores rps=  300 p50=  1.2ms p99=   6.4ms rss=665MB
+[java] t= 14s cpu=0.24 cores rps=  300 p50=  1.4ms p99=   5.5ms rss=665MB
+[java] t= 15s cpu=0.25 cores rps=  300 p50=  1.4ms p99=   6.6ms rss=665MB
+[java] t= 16s cpu=0.26 cores rps=  300 p50=  1.3ms p99=   5.8ms rss=665MB
+[java] t= 17s cpu=0.24 cores rps=  301 p50=  1.1ms p99=   6.4ms rss=665MB
+[java] t= 18s cpu=0.22 cores rps=  300 p50=  1.2ms p99=   6.0ms rss=665MB
+[java] t= 19s cpu=0.24 cores rps=  300 p50=  1.4ms p99=   9.3ms rss=665MB
+[java] t= 20s cpu=0.23 cores rps=  299 p50=  1.4ms p99=   8.9ms rss=665MB
+[java] t= 21s cpu=0.36 cores rps=  300 p50=  1.6ms p99=   7.7ms rss=665MB
+[java] t= 22s cpu=0.26 cores rps=  301 p50=  1.3ms p99=   7.1ms rss=665MB
+[java] t= 23s cpu=0.22 cores rps=  300 p50=  1.1ms p99=   5.2ms rss=665MB
+[java] t= 24s cpu=0.22 cores rps=  301 p50=  1.2ms p99=   4.9ms rss=665MB
+[java] t= 25s cpu=0.22 cores rps=  300 p50=  1.2ms p99=   6.6ms rss=665MB
+[java] t= 26s cpu=0.34 cores rps=  300 p50=  1.7ms p99=   7.3ms rss=666MB
+[java] t= 27s cpu=0.38 cores rps=  298 p50=  1.7ms p99=   8.6ms rss=666MB
+[java] t= 28s cpu=0.29 cores rps=  300 p50=  1.6ms p99=   6.6ms rss=666MB
+[java] t= 29s cpu=0.28 cores rps=  299 p50=  1.2ms p99=   6.9ms rss=666MB
+[java] t= 30s cpu=0.27 cores rps=  300 p50=  1.3ms p99=   7.7ms rss=666MB
+[java] peak: 4222 req/s over 10s, 64 in flight, p99=47.7ms
+[rust] up http://localhost:9977/petclinic/api/ · pid 73248 (rust-petclinic)
+[rust] t=  1s cpu=0.07 cores rps=  300 p50=  0.4ms p99=   4.5ms rss=27MB
+[rust] t=  2s cpu=0.07 cores rps=  300 p50=  0.5ms p99=   6.8ms rss=27MB
+[rust] t=  3s cpu=0.07 cores rps=  301 p50=  0.5ms p99=   5.3ms rss=27MB
+[rust] t=  4s cpu=0.07 cores rps=  300 p50=  0.4ms p99=   4.9ms rss=27MB
+[rust] t=  5s cpu=0.07 cores rps=  300 p50=  0.5ms p99=   6.1ms rss=27MB
+[rust] t=  6s cpu=0.06 cores rps=  301 p50=  0.8ms p99=   5.9ms rss=27MB
+[rust] t=  7s cpu=0.06 cores rps=  300 p50=  0.6ms p99=   5.5ms rss=27MB
+[rust] t=  8s cpu=0.06 cores rps=  301 p50=  0.5ms p99=   4.5ms rss=27MB
+[rust] t=  9s cpu=0.07 cores rps=  301 p50=  0.5ms p99=   6.1ms rss=27MB
+[rust] t= 10s cpu=0.05 cores rps=  301 p50=  0.4ms p99=   4.4ms rss=27MB
+[rust] t= 11s cpu=0.07 cores rps=  300 p50=  0.5ms p99=   5.2ms rss=27MB
+[rust] t= 12s cpu=0.06 cores rps=  300 p50=  0.5ms p99=   4.8ms rss=27MB
+[rust] t= 13s cpu=0.06 cores rps=  299 p50=  0.5ms p99=   5.5ms rss=27MB
+[rust] t= 14s cpu=0.05 cores rps=  301 p50=  0.4ms p99=   5.3ms rss=27MB
+[rust] t= 15s cpu=0.06 cores rps=  299 p50=  0.4ms p99=   5.4ms rss=27MB
+[rust] t= 16s cpu=0.07 cores rps=  300 p50=  0.5ms p99=   6.1ms rss=27MB
+[rust] t= 17s cpu=0.06 cores rps=  300 p50=  0.5ms p99=   6.5ms rss=27MB
+[rust] t= 18s cpu=0.06 cores rps=  300 p50=  0.5ms p99=   4.9ms rss=27MB
+[rust] t= 19s cpu=0.06 cores rps=  300 p50=  0.5ms p99=   7.3ms rss=27MB
+[rust] t= 20s cpu=0.06 cores rps=  300 p50=  0.5ms p99=   5.0ms rss=27MB
+[rust] t= 21s cpu=0.07 cores rps=  300 p50=  0.5ms p99=   5.5ms rss=27MB
+[rust] t= 22s cpu=0.06 cores rps=  300 p50=  0.5ms p99=   5.3ms rss=27MB
+[rust] t= 23s cpu=0.07 cores rps=  300 p50=  0.5ms p99=   6.0ms rss=27MB
+[rust] t= 24s cpu=0.06 cores rps=  300 p50=  0.4ms p99=   5.3ms rss=27MB
+[rust] t= 25s cpu=0.08 cores rps=  300 p50=  0.5ms p99=   7.2ms rss=27MB
+[rust] t= 26s cpu=0.06 cores rps=  300 p50=  0.5ms p99=   5.1ms rss=27MB
+[rust] t= 27s cpu=0.05 cores rps=  300 p50=  0.6ms p99=   7.3ms rss=27MB
+[rust] t= 28s cpu=0.06 cores rps=  300 p50=  0.5ms p99=   7.5ms rss=27MB
+[rust] t= 29s cpu=0.06 cores rps=  298 p50=  0.5ms p99=   8.2ms rss=27MB
+[rust] t= 30s cpu=0.06 cores rps=  301 p50=  0.5ms p99=  25.7ms rss=27MB
+[rust] peak: 8569 req/s over 10s, 64 in flight, p99=19.1ms
+
+cpu cores
+  java  ▅▅▅▅▅▅▆▆▆▆▅▅▅▅██▅▅▅▅▅▅▅▅▅▅▅▅▆▆▆▆▅▅▅▅▅▅▅▅██▆▆▅▅▅▅▅▅▇▇██▆▆▆▆▆▆      0.25
+  rust  ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂      0.06
+rps req/s
+  java  ████████████████████████████████████████████████████████████       300
+  rust  ████████████████████████████████████████████████████████████       300
+p99 ms
+  java  ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▄▄▃▃▃▃▃▃▂▂▂▂▃▃▃▃▃▃▃▃▃▃▃▃       6.4
+  rust  ▂▂▃▃▂▂▂▂▃▃▃▃▂▂▂▂▃▃▂▂▂▂▂▂▃▃▂▂▂▂▃▃▃▃▂▂▃▃▂▂▂▂▂▂▃▃▂▂▃▃▂▂▃▃▃▃▃▃██       6.4
+rss MB
+  java  ████████████████████████████████████████████████████████████       665
+  rust  ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁        27
+
+summary            java     rust    delta
+delivered req/s             300      300      +0%
+cpu cores @300 req/s       0.25     0.06     -75%
+p50 ms                      1.3      0.5     -62%
+p99 ms                      6.4      6.4      -0%
+rss MB                      665       27     -96%
+peak req/s                 4222     8569    +103%
+
+cpu freed at 300 req/s: 0.19 cores (75% of the java footprint) — same traffic on 4.0x fewer cores
+

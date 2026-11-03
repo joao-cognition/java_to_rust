@@ -1,0 +1,25 @@
+201 location=/api/vets/2 type=application/json
+{
+  "firstName": "Helena",
+  "id": 2,
+  "lastName": "Leary",
+  "specialties": [
+    {
+      "id": 3,
+      "name": "dentistry"
+    }
+  ]
+}
+--- then GET /api/vets/2
+200 location=- type=application/json
+{
+  "firstName": "Helena",
+  "id": 2,
+  "lastName": "Leary",
+  "specialties": [
+    {
+      "id": 3,
+      "name": "dentistry"
+    }
+  ]
+}

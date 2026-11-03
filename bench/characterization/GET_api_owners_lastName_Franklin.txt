@@ -1,0 +1,24 @@
+200 location=- type=application/json
+[
+  {
+    "address": "110 W. Liberty St.",
+    "city": "Madison",
+    "firstName": "George",
+    "id": 1,
+    "lastName": "Franklin",
+    "pets": [
+      {
+        "birthDate": "2000-09-07",
+        "id": 1,
+        "name": "Leo",
+        "ownerId": 1,
+        "type": {
+          "id": 1,
+          "name": "cat"
+        },
+        "visits": []
+      }
+    ],
+    "telephone": "6085551023"
+  }
+]

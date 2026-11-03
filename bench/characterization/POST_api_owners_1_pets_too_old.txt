@@ -1,0 +1,16 @@
+400 location=- type=application/problem+json
+{
+  "detail": "The request contains invalid or missing parameters",
+  "instance": "/petclinic/api/owners/1/pets",
+  "schemaValidationErrors": [
+    {
+      "defaultMessage": "Birth date cannot be older than 50 years",
+      "field": "birthDate",
+      "message": "Field 'birthDate' Birth date cannot be older than 50 years (rejected value: 1960-01-01)",
+      "rejectedValue": "1960-01-01"
+    }
+  ],
+  "status": 400,
+  "title": "MethodArgumentNotValidException",
+  "type": "/petclinic/api/owners/1/pets"
+}

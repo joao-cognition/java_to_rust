@@ -1,0 +1,8 @@
+204 location=- type=application/json
+<empty>
+--- then GET /api/pettypes/1
+200 location=- type=application/json
+{
+  "id": 1,
+  "name": "kitten"
+}

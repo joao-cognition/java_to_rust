@@ -1,0 +1,20 @@
+200 location=- type=application/json
+{
+  "content": [
+    {
+      "birthDate": "2002-06-08",
+      "id": 13,
+      "name": "Sly",
+      "ownerId": 10,
+      "type": {
+        "id": 1,
+        "name": "cat"
+      },
+      "visits": []
+    }
+  ],
+  "page": 3,
+  "size": 4,
+  "totalElements": 13,
+  "totalPages": 4
+}

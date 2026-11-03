@@ -1,0 +1,16 @@
+400 location=- type=application/problem+json
+{
+  "detail": "The request contains invalid or missing parameters",
+  "instance": "/petclinic/api/owners",
+  "schemaValidationErrors": [
+    {
+      "defaultMessage": "must match \"^[0-9]*$\"",
+      "field": "telephone",
+      "message": "Field 'telephone' must match \"^[0-9]*$\" (rejected value: not-a-number)",
+      "rejectedValue": "not-a-number"
+    }
+  ],
+  "status": 400,
+  "title": "MethodArgumentNotValidException",
+  "type": "/petclinic/api/owners"
+}

@@ -1,0 +1,15 @@
+201 location=/api/visits/1 type=application/json
+{
+  "date": "2011-01-01",
+  "description": "merged",
+  "id": 1,
+  "petId": 7
+}
+--- then GET /api/visits/1
+200 location=- type=application/json
+{
+  "date": "2011-01-01",
+  "description": "merged",
+  "id": 1,
+  "petId": 7
+}

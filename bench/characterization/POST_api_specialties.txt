@@ -1,0 +1,25 @@
+201 location=/api/specialties/4 type=application/json
+{
+  "id": 4,
+  "name": "oncology"
+}
+--- then GET /api/specialties
+200 location=- type=application/json
+[
+  {
+    "id": 1,
+    "name": "radiology"
+  },
+  {
+    "id": 2,
+    "name": "surgery"
+  },
+  {
+    "id": 3,
+    "name": "dentistry"
+  },
+  {
+    "id": 4,
+    "name": "oncology"
+  }
+]

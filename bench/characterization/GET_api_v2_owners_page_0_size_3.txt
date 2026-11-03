@@ -1,0 +1,83 @@
+200 location=- type=application/json
+{
+  "content": [
+    {
+      "address": "110 W. Liberty St.",
+      "city": "Madison",
+      "firstName": "George",
+      "id": 1,
+      "lastName": "Franklin",
+      "pets": [
+        {
+          "birthDate": "2000-09-07",
+          "id": 1,
+          "name": "Leo",
+          "ownerId": 1,
+          "type": {
+            "id": 1,
+            "name": "cat"
+          },
+          "visits": []
+        }
+      ],
+      "telephone": "6085551023"
+    },
+    {
+      "address": "638 Cardinal Ave.",
+      "city": "Sun Prairie",
+      "firstName": "Betty",
+      "id": 2,
+      "lastName": "Davis",
+      "pets": [
+        {
+          "birthDate": "2002-08-06",
+          "id": 2,
+          "name": "Basil",
+          "ownerId": 2,
+          "type": {
+            "id": 6,
+            "name": "hamster"
+          },
+          "visits": []
+        }
+      ],
+      "telephone": "6085551749"
+    },
+    {
+      "address": "2693 Commerce St.",
+      "city": "McFarland",
+      "firstName": "Eduardo",
+      "id": 3,
+      "lastName": "Rodriquez",
+      "pets": [
+        {
+          "birthDate": "2000-03-07",
+          "id": 4,
+          "name": "Jewel",
+          "ownerId": 3,
+          "type": {
+            "id": 2,
+            "name": "dog"
+          },
+          "visits": []
+        },
+        {
+          "birthDate": "2001-04-17",
+          "id": 3,
+          "name": "Rosy",
+          "ownerId": 3,
+          "type": {
+            "id": 2,
+            "name": "dog"
+          },
+          "visits": []
+        }
+      ],
+      "telephone": "6085558763"
+    }
+  ],
+  "page": 0,
+  "size": 3,
+  "totalElements": 10,
+  "totalPages": 4
+}

@@ -3,15 +3,13 @@
 [![Java Build Status](https://github.com/spring-petclinic/spring-petclinic-rest/actions/workflows/maven-build-master.yml/badge.svg)](https://github.com/spring-petclinic/spring-petclinic-rest/actions/workflows/maven-build-master.yml)
 
 This fork of [spring-petclinic-rest](https://github.com/spring-petclinic/spring-petclinic-rest) is the fixture for a
-modernization workflow: take a Java (Spring Boot / Hibernate) REST service, port its CPU-hot read path to Rust (Axum),
-run both against the same PostgreSQL, and measure what the same traffic costs in CPU before and after.
-
-It ships two parts today; the third arrives with the migration:
+modernization workflow: take a Java (Spring Boot / Hibernate) REST service, port it to Rust (Axum) starting with the
+CPU-hot read path, run both against the same PostgreSQL, and measure what the same traffic costs in CPU before and after.
 
 | Part | Where | Port |
 |---|---|---|
 | Java service (unchanged Spring PetClinic REST API) | `src/` | 9966 (`/petclinic/api`) |
-| Rust port of the read hot path — produced live by Devin during the demo | `rust-petclinic/` (not in this repo yet) | 9977 (`/petclinic/api`) |
+| Rust port (Axum + sqlx) of every endpoint, same JSON contract — `cd rust-petclinic && cargo run --release`; see [`rust-petclinic/README.md`](rust-petclinic/README.md) | `rust-petclinic/` | 9977 (`/petclinic/api`) |
 | **`j2r` CLI** — the console, in your terminal: raw API comparison, benchmark with real CPU numbers, live watch | `cli/` | — |
 
 ## `j2r` — the terminal console (`cli/`)
@@ -43,8 +41,9 @@ typed in.
 docker compose --profile postgres up -d
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres,spring-data-jpa
 
-# 2. Rust service — appears once the migration PR lands; until then j2r shows the rust side as down / n/a
+# 2. Rust service, same PostgreSQL (DATABASE_URL defaults to postgres://petclinic:petclinic@localhost:5432/petclinic)
 cd rust-petclinic && cargo run --release     # http://localhost:9977/petclinic/api
+bench/parity.sh                              # every endpoint, Java vs Rust, key order ignored
 
 # 3. Console
 cargo install --path cli && j2r api vets && j2r bench

@@ -1,0 +1,256 @@
+$ j2r api owners/1 -n 50
+GET http://localhost:9966/petclinic/api/owners/1
+GET http://localhost:9977/petclinic/api/owners/1
+
+java 200  3.2ms  233B                                      │ rust 200  1.8ms  233B
+───────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+{                                                          │ {
+  "address": "110 W. Liberty St.",                         │   "address": "110 W. Liberty St.",
+  "city": "Madison",                                       │   "city": "Madison",
+  "firstName": "George",                                   │   "firstName": "George",
+  "id": 1,                                                 │   "id": 1,
+  "lastName": "Franklin",                                  │   "lastName": "Franklin",
+  "pets": [                                                │   "pets": [
+    {                                                      │     {
+      "birthDate": "2000-09-07",                           │       "birthDate": "2000-09-07",
+      "id": 1,                                             │       "id": 1,
+      "name": "Leo",                                       │       "name": "Leo",
+      "ownerId": 1,                                        │       "ownerId": 1,
+      "type": {                                            │       "type": {
+        "id": 1,                                           │         "id": 1,
+        "name": "cat"                                      │         "name": "cat"
+      },                                                   │       },
+      "visits": []                                         │       "visits": []
+    }                                                      │     }
+  ],                                                       │   ],
+  "telephone": "6085551023"                                │   "telephone": "6085551023"
+}                                                          │ }
+
+diff: identical (233B, key order ignored)
+
+50 sequential requests per side, GET /owners/1
+  java  p50     1.0 ms   p99     4.2 ms   min    0.7 ms   errors 0
+  rust  p50     0.5 ms   p99     2.5 ms   min    0.2 ms   errors 0
+
+$ j2r api owners?lastName=Davis -n 50
+GET http://localhost:9966/petclinic/api/owners?lastName=Davis
+GET http://localhost:9977/petclinic/api/owners?lastName=Davis
+
+java 200  1.9ms  473B                                      │ rust 200  2.7ms  473B
+───────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+[                                                          │ [
+  {                                                        │   {
+    "address": "638 Cardinal Ave.",                        │     "address": "638 Cardinal Ave.",
+    "city": "Sun Prairie",                                 │     "city": "Sun Prairie",
+    "firstName": "Betty",                                  │     "firstName": "Betty",
+    "id": 2,                                               │     "id": 2,
+    "lastName": "Davis",                                   │     "lastName": "Davis",
+    "pets": [                                              │     "pets": [
+      {                                                    │       {
+        "birthDate": "2002-08-06",                         │         "birthDate": "2002-08-06",
+        "id": 2,                                           │         "id": 2,
+        "name": "Basil",                                   │         "name": "Basil",
+        "ownerId": 2,                                      │         "ownerId": 2,
+        "type": {                                          │         "type": {
+          "id": 6,                                         │           "id": 6,
+          "name": "hamster"                                │           "name": "hamster"
+        },                                                 │         },
+        "visits": []                                       │         "visits": []
+      }                                                    │       }
+    ],                                                     │     ],
+    "telephone": "6085551749"                              │     "telephone": "6085551749"
+  },                                                       │   },
+  {                                                        │   {
+    "address": "563 Friendly St.",                         │     "address": "563 Friendly St.",
+    "city": "Windsor",                                     │     "city": "Windsor",
+    "firstName": "Harold",                                 │     "firstName": "Harold",
+    "id": 4,                                               │     "id": 4,
+    "lastName": "Davis",                                   │     "lastName": "Davis",
+    "pets": [                                              │     "pets": [
+      {                                                    │       {
+        "birthDate": "2000-11-30",                         │         "birthDate": "2000-11-30",
+        "id": 5,                                           │         "id": 5,
+        "name": "Iggy",                                    │         "name": "Iggy",
+        "ownerId": 4,                                      │         "ownerId": 4,
+        "type": {                                          │         "type": {
+          "id": 3,                                         │           "id": 3,
+          "name": "lizard"                                 │           "name": "lizard"
+        },                                                 │         },
+        "visits": []                                       │         "visits": []
+      }                                                    │       }
+    ],                                                     │     ],
+    "telephone": "6085553198"                              │     "telephone": "6085553198"
+  }                                                        │   }
+]                                                          │ ]
+
+diff: identical (473B, key order ignored)
+
+50 sequential requests per side, GET /owners?lastName=Davis
+  java  p50     1.1 ms   p99     9.7 ms   min    0.8 ms   errors 0
+  rust  p50     0.4 ms   p99     2.8 ms   min    0.2 ms   errors 0
+
+$ j2r api vets -n 50
+GET http://localhost:9966/petclinic/api/vets
+GET http://localhost:9977/petclinic/api/vets
+
+java 200  4.2ms  533B                                      │ rust 200  3.2ms  533B
+───────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+[                                                          │ [
+  {                                                        │   {
+    "firstName": "James",                                  │     "firstName": "James",
+    "id": 1,                                               │     "id": 1,
+    "lastName": "Carter",                                  │     "lastName": "Carter",
+    "specialties": []                                      │     "specialties": []
+  },                                                       │   },
+  {                                                        │   {
+    "firstName": "Helen",                                  │     "firstName": "Helen",
+    "id": 2,                                               │     "id": 2,
+    "lastName": "Leary",                                   │     "lastName": "Leary",
+    "specialties": [                                       │     "specialties": [
+      {                                                    │       {
+        "id": 1,                                           │         "id": 1,
+        "name": "radiology"                                │         "name": "radiology"
+      }                                                    │       }
+    ]                                                      │     ]
+  },                                                       │   },
+  {                                                        │   {
+    "firstName": "Linda",                                  │     "firstName": "Linda",
+    "id": 3,                                               │     "id": 3,
+    "lastName": "Douglas",                                 │     "lastName": "Douglas",
+    "specialties": [                                       │     "specialties": [
+      {                                                    │       {
+        "id": 3,                                           │         "id": 3,
+        "name": "dentistry"                                │         "name": "dentistry"
+      },                                                   │       },
+      {                                                    │       {
+        "id": 2,                                           │         "id": 2,
+        "name": "surgery"                                  │         "name": "surgery"
+      }                                                    │       }
+    ]                                                      │     ]
+  },                                                       │   },
+  {                                                        │   {
+    "firstName": "Rafael",                                 │     "firstName": "Rafael",
+    "id": 4,                                               │     "id": 4,
+    "lastName": "Ortega",                                  │     "lastName": "Ortega",
+    "specialties": [                                       │     "specialties": [
+      {                                                    │       {
+        "id": 2,                                           │         "id": 2,
+        "name": "surgery"                                  │         "name": "surgery"
+      }                                                    │       }
+    ]                                                      │     ]
+  },                                                       │   },
+  {                                                        │   {
+    "firstName": "Henry",                                  │     "firstName": "Henry",
+    "id": 5,                                               │     "id": 5,
+    "lastName": "Stevens",                                 │     "lastName": "Stevens",
+    "specialties": [                                       │     "specialties": [
+      {                                                    │       {
+        "id": 1,                                           │         "id": 1,
+        "name": "radiology"                                │         "name": "radiology"
+      }                                                    │       }
+    ]                                                      │     ]
+  },                                                       │   },
+  {                                                        │   {
+    "firstName": "Sharon",                                 │     "firstName": "Sharon",
+    "id": 6,                                               │     "id": 6,
+    "lastName": "Jenkins",                                 │     "lastName": "Jenkins",
+    "specialties": []                                      │     "specialties": []
+  }                                                        │   }
+]                                                          │ ]
+
+diff: identical (533B, key order ignored)
+
+50 sequential requests per side, GET /vets
+  java  p50     1.3 ms   p99     5.3 ms   min    1.0 ms   errors 0
+  rust  p50     0.3 ms   p99     3.4 ms   min    0.2 ms   errors 0
+
+$ j2r api specialties -n 50
+GET http://localhost:9966/petclinic/api/specialties
+GET http://localhost:9977/petclinic/api/specialties
+
+java 200  3.4ms  83B                                       │ rust 200  2.9ms  83B
+───────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+[                                                          │ [
+  {                                                        │   {
+    "id": 1,                                               │     "id": 1,
+    "name": "radiology"                                    │     "name": "radiology"
+  },                                                       │   },
+  {                                                        │   {
+    "id": 2,                                               │     "id": 2,
+    "name": "surgery"                                      │     "name": "surgery"
+  },                                                       │   },
+  {                                                        │   {
+    "id": 3,                                               │     "id": 3,
+    "name": "dentistry"                                    │     "name": "dentistry"
+  }                                                        │   }
+]                                                          │ ]
+
+diff: identical (83B, key order ignored)
+
+50 sequential requests per side, GET /specialties
+  java  p50     0.7 ms   p99     4.9 ms   min    0.5 ms   errors 0
+  rust  p50     0.3 ms   p99     2.7 ms   min    0.2 ms   errors 0
+
+$ j2r api pettypes -n 50
+GET http://localhost:9966/petclinic/api/pettypes
+GET http://localhost:9977/petclinic/api/pettypes
+
+java 200  2.1ms  143B                                      │ rust 200  2.6ms  143B
+───────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+[                                                          │ [
+  {                                                        │   {
+    "id": 1,                                               │     "id": 1,
+    "name": "cat"                                          │     "name": "cat"
+  },                                                       │   },
+  {                                                        │   {
+    "id": 2,                                               │     "id": 2,
+    "name": "dog"                                          │     "name": "dog"
+  },                                                       │   },
+  {                                                        │   {
+    "id": 3,                                               │     "id": 3,
+    "name": "lizard"                                       │     "name": "lizard"
+  },                                                       │   },
+  {                                                        │   {
+    "id": 4,                                               │     "id": 4,
+    "name": "snake"                                        │     "name": "snake"
+  },                                                       │   },
+  {                                                        │   {
+    "id": 5,                                               │     "id": 5,
+    "name": "bird"                                         │     "name": "bird"
+  },                                                       │   },
+  {                                                        │   {
+    "id": 6,                                               │     "id": 6,
+    "name": "hamster"                                      │     "name": "hamster"
+  }                                                        │   }
+]                                                          │ ]
+
+diff: identical (143B, key order ignored)
+
+50 sequential requests per side, GET /pettypes
+  java  p50     1.0 ms   p99     6.9 ms   min    0.5 ms   errors 0
+  rust  p50     0.2 ms   p99    12.0 ms   min    0.1 ms   errors 0
+
+$ j2r api pets/1 -n 50
+GET http://localhost:9966/petclinic/api/pets/1
+GET http://localhost:9977/petclinic/api/pets/1
+
+java 200  2.0ms  99B                                       │ rust 200  2.3ms  99B
+───────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+{                                                          │ {
+  "birthDate": "2000-09-07",                               │   "birthDate": "2000-09-07",
+  "id": 1,                                                 │   "id": 1,
+  "name": "Leo",                                           │   "name": "Leo",
+  "ownerId": 1,                                            │   "ownerId": 1,
+  "type": {                                                │   "type": {
+    "id": 1,                                               │     "id": 1,
+    "name": "cat"                                          │     "name": "cat"
+  },                                                       │   },
+  "visits": []                                             │   "visits": []
+}                                                          │ }
+
+diff: identical (99B, key order ignored)
+
+50 sequential requests per side, GET /pets/1
+  java  p50     0.8 ms   p99     4.1 ms   min    0.6 ms   errors 0
+  rust  p50     0.3 ms   p99     4.3 ms   min    0.2 ms   errors 0
+

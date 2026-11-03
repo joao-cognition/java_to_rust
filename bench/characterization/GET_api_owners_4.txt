@@ -1,0 +1,22 @@
+200 location=- type=application/json
+{
+  "address": "563 Friendly St.",
+  "city": "Windsor",
+  "firstName": "Harold",
+  "id": 4,
+  "lastName": "Davis",
+  "pets": [
+    {
+      "birthDate": "2000-11-30",
+      "id": 5,
+      "name": "Iggy",
+      "ownerId": 4,
+      "type": {
+        "id": 3,
+        "name": "lizard"
+      },
+      "visits": []
+    }
+  ],
+  "telephone": "6085553198"
+}

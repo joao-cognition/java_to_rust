@@ -1,0 +1,15 @@
+204 location=- type=-
+<empty>
+--- then GET /api/pets/2
+200 location=- type=application/json
+{
+  "birthDate": "2020-01-01",
+  "id": 2,
+  "name": "Parity",
+  "ownerId": 2,
+  "type": {
+    "id": 2,
+    "name": "dog"
+  },
+  "visits": []
+}

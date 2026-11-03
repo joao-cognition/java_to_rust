@@ -1,0 +1,9 @@
+404 location=- type=application/problem+json
+{
+  "detail": "The requested resource could not be processed due to a data constraint violation",
+  "instance": "/petclinic/api/owners/1/pets",
+  "schemaValidationErrors": [],
+  "status": 404,
+  "title": "DataIntegrityViolationException",
+  "type": "/petclinic/api/owners/1/pets"
+}

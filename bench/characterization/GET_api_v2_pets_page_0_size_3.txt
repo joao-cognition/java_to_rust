@@ -1,0 +1,42 @@
+200 location=- type=application/json
+{
+  "content": [
+    {
+      "birthDate": "2000-09-07",
+      "id": 1,
+      "name": "Leo",
+      "ownerId": 1,
+      "type": {
+        "id": 1,
+        "name": "cat"
+      },
+      "visits": []
+    },
+    {
+      "birthDate": "2002-08-06",
+      "id": 2,
+      "name": "Basil",
+      "ownerId": 2,
+      "type": {
+        "id": 6,
+        "name": "hamster"
+      },
+      "visits": []
+    },
+    {
+      "birthDate": "2001-04-17",
+      "id": 3,
+      "name": "Rosy",
+      "ownerId": 3,
+      "type": {
+        "id": 2,
+        "name": "dog"
+      },
+      "visits": []
+    }
+  ],
+  "page": 0,
+  "size": 3,
+  "totalElements": 13,
+  "totalPages": 5
+}

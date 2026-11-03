@@ -1,0 +1,16 @@
+400 location=- type=application/problem+json
+{
+  "detail": "The request contains invalid or missing parameters",
+  "instance": "/petclinic/api/owners/1/pets",
+  "schemaValidationErrors": [
+    {
+      "defaultMessage": "Birth date cannot be in the future",
+      "field": "birthDate",
+      "message": "Field 'birthDate' Birth date cannot be in the future (rejected value: 2099-01-01)",
+      "rejectedValue": "2099-01-01"
+    }
+  ],
+  "status": 400,
+  "title": "MethodArgumentNotValidException",
+  "type": "/petclinic/api/owners/1/pets"
+}

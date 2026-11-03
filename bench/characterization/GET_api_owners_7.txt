@@ -1,0 +1,22 @@
+200 location=- type=application/json
+{
+  "address": "1450 Oak Blvd.",
+  "city": "Monona",
+  "firstName": "Jeff",
+  "id": 7,
+  "lastName": "Black",
+  "pets": [
+    {
+      "birthDate": "1999-08-06",
+      "id": 9,
+      "name": "Lucky",
+      "ownerId": 7,
+      "type": {
+        "id": 5,
+        "name": "bird"
+      },
+      "visits": []
+    }
+  ],
+  "telephone": "6085555387"
+}

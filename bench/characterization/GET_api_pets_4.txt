@@ -1,0 +1,12 @@
+200 location=- type=application/json
+{
+  "birthDate": "2000-03-07",
+  "id": 4,
+  "name": "Jewel",
+  "ownerId": 3,
+  "type": {
+    "id": 2,
+    "name": "dog"
+  },
+  "visits": []
+}

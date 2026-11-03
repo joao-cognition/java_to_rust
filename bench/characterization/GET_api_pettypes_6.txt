@@ -1,0 +1,5 @@
+200 location=- type=application/json
+{
+  "id": 6,
+  "name": "hamster"
+}

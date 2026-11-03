@@ -1,0 +1,24 @@
+200 location=- type=application/json
+[
+  {
+    "address": "2387 S. Fair Way",
+    "city": "Madison",
+    "firstName": "Peter",
+    "id": 5,
+    "lastName": "McTavish",
+    "pets": [
+      {
+        "birthDate": "2000-01-20",
+        "id": 6,
+        "name": "George",
+        "ownerId": 5,
+        "type": {
+          "id": 4,
+          "name": "snake"
+        },
+        "visits": []
+      }
+    ],
+    "telephone": "6085552765"
+  }
+]

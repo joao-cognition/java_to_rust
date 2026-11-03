@@ -1,0 +1,18 @@
+204 location=- type=-
+<empty>
+--- then GET /api/visits
+200 location=- type=application/json
+[
+  {
+    "date": "2011-03-04",
+    "description": "rabies shot",
+    "id": 2,
+    "petId": 8
+  },
+  {
+    "date": "2009-06-04",
+    "description": "neutered",
+    "id": 3,
+    "petId": 8
+  }
+]

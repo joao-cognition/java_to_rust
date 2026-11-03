@@ -1,0 +1,28 @@
+400 location=- type=application/problem+json
+{
+  "detail": "The request contains invalid or missing parameters",
+  "instance": "/petclinic/api/users",
+  "schemaValidationErrors": [
+    {
+      "defaultMessage": "size must be between 1 and 80",
+      "field": "password",
+      "message": "Field 'password' size must be between 1 and 80 (rejected value: )",
+      "rejectedValue": ""
+    },
+    {
+      "defaultMessage": "size must be between 1 and 80",
+      "field": "roles[0].name",
+      "message": "Field 'roles[0].name' size must be between 1 and 80 (rejected value: )",
+      "rejectedValue": ""
+    },
+    {
+      "defaultMessage": "must not be null",
+      "field": "username",
+      "message": "Field 'username' must not be null (rejected value: null)",
+      "rejectedValue": "null"
+    }
+  ],
+  "status": 400,
+  "title": "MethodArgumentNotValidException",
+  "type": "/petclinic/api/users"
+}

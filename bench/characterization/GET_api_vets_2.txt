@@ -1,0 +1,12 @@
+200 location=- type=application/json
+{
+  "firstName": "Helen",
+  "id": 2,
+  "lastName": "Leary",
+  "specialties": [
+    {
+      "id": 1,
+      "name": "radiology"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+201 location=/api/owners/11 type=application/json
+{
+  "address": "1 Main St.",
+  "city": "Madison",
+  "firstName": "Parity",
+  "id": 11,
+  "lastName": "Check",
+  "pets": [],
+  "telephone": "6085550000"
+}
+--- then GET /api/owners/11
+200 location=- type=application/json
+{
+  "address": "1 Main St.",
+  "city": "Madison",
+  "firstName": "Parity",
+  "id": 11,
+  "lastName": "Check",
+  "pets": [],
+  "telephone": "6085550000"
+}

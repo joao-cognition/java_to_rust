@@ -1,0 +1,8 @@
+200 location=- type=application/vnd.spring-boot.actuator.v3+json
+{
+  "groups": [
+    "liveness",
+    "readiness"
+  ],
+  "status": "UP"
+}

@@ -1,0 +1,22 @@
+400 location=- type=application/problem+json
+{
+  "detail": "The request contains invalid or missing parameters",
+  "instance": "/petclinic/api/owners/1/pets/1",
+  "schemaValidationErrors": [
+    {
+      "defaultMessage": "must not be null",
+      "field": "birthDate",
+      "message": "Field 'birthDate' must not be null (rejected value: null)",
+      "rejectedValue": "null"
+    },
+    {
+      "defaultMessage": "must not be null",
+      "field": "type",
+      "message": "Field 'type' must not be null (rejected value: null)",
+      "rejectedValue": "null"
+    }
+  ],
+  "status": 400,
+  "title": "MethodArgumentNotValidException",
+  "type": "/petclinic/api/owners/1/pets/1"
+}

@@ -1,0 +1,7 @@
+201 location=/api/visits/5 type=application/json
+{
+  "date": "2024-02-02",
+  "description": "coerce",
+  "id": 5,
+  "petId": 1
+}

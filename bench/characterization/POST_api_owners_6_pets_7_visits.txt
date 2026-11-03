@@ -1,0 +1,39 @@
+201 location=/api/visits/5 type=application/json
+{
+  "date": "2024-01-01",
+  "description": "parity visit",
+  "id": 5,
+  "petId": 7
+}
+--- then GET /api/pets/7
+200 location=- type=application/json
+{
+  "birthDate": "1995-09-04",
+  "id": 7,
+  "name": "Samantha",
+  "ownerId": 6,
+  "type": {
+    "id": 1,
+    "name": "cat"
+  },
+  "visits": [
+    {
+      "date": "2024-01-01",
+      "description": "parity visit",
+      "id": 5,
+      "petId": 7
+    },
+    {
+      "date": "2010-03-04",
+      "description": "rabies shot",
+      "id": 1,
+      "petId": 7
+    },
+    {
+      "date": "2008-09-04",
+      "description": "spayed",
+      "id": 4,
+      "petId": 7
+    }
+  ]
+}

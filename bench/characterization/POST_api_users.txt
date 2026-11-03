@@ -1,0 +1,11 @@
+201 location=- type=application/json
+{
+  "enabled": true,
+  "password": "secret",
+  "roles": [
+    {
+      "name": "ROLE_OWNER_ADMIN"
+    }
+  ],
+  "username": "parity"
+}

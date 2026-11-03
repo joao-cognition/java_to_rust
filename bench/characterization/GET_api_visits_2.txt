@@ -1,0 +1,7 @@
+200 location=- type=application/json
+{
+  "date": "2011-03-04",
+  "description": "rabies shot",
+  "id": 2,
+  "petId": 8
+}

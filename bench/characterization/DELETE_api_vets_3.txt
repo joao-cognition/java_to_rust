@@ -1,0 +1,51 @@
+204 location=- type=-
+<empty>
+--- then GET /api/vets
+200 location=- type=application/json
+[
+  {
+    "firstName": "James",
+    "id": 1,
+    "lastName": "Carter",
+    "specialties": []
+  },
+  {
+    "firstName": "Helen",
+    "id": 2,
+    "lastName": "Leary",
+    "specialties": [
+      {
+        "id": 1,
+        "name": "radiology"
+      }
+    ]
+  },
+  {
+    "firstName": "Rafael",
+    "id": 4,
+    "lastName": "Ortega",
+    "specialties": [
+      {
+        "id": 2,
+        "name": "surgery"
+      }
+    ]
+  },
+  {
+    "firstName": "Henry",
+    "id": 5,
+    "lastName": "Stevens",
+    "specialties": [
+      {
+        "id": 1,
+        "name": "radiology"
+      }
+    ]
+  },
+  {
+    "firstName": "Sharon",
+    "id": 6,
+    "lastName": "Jenkins",
+    "specialties": []
+  }
+]
