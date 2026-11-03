@@ -6,29 +6,35 @@ This fork of [spring-petclinic-rest](https://github.com/spring-petclinic/spring-
 modernization workflow: take a Java (Spring Boot / Hibernate) REST service, port its CPU-hot read path to Rust (Axum),
 run both against the same PostgreSQL, and measure what the same traffic costs in CPU before and after.
 
-It ships three parts:
+It ships two parts today; the third arrives with the migration:
 
 | Part | Where | Port |
 |---|---|---|
 | Java service (unchanged Spring PetClinic REST API) | `src/` | 9966 (`/petclinic/api`) |
-| Rust port of the read hot path (reference lists, lookups, search) + benchmark | `rust-petclinic/`, `bench/` (separate PR) | 9977 (`/petclinic/api`) |
-| **Amadeus Modernization Console** — Angular UI with the CPU-cost side panel | `frontend/` | 4200 |
+| Rust port of the read hot path — produced live by Devin during the demo | `rust-petclinic/` (not in this repo yet) | 9977 (`/petclinic/api`) |
+| **`j2r` CLI** — the console, in your terminal: raw API comparison, benchmark with real CPU numbers, live watch | `cli/` | — |
 
-## Modernization Console (`frontend/`)
+## `j2r` — the terminal console (`cli/`)
 
-Angular 22 app, Amadeus look and feel. The main view shows the live Java service (health, record counts, migration
-scope) and a data browser that can be switched between the Java and the Rust service. The right-hand **CPU cost
-panel** is the point of the demo:
+One static Rust binary, no UI framework. Everything it prints is measured on the spot.
 
-1. **Benchmark** — Java vs Rust for the same traffic on 2 vCPUs: CPU cores needed, $ per million requests, peak
-   throughput, p99, memory, start-up, DB queries per request. Loads the reference run from
-   `frontend/public/bench/reference-summary.json`; use **Load results** to drop in `bench/results/summary.json`
-   from your own `bench/run.sh` run.
-2. **Amadeus-scale impact** — editable assumptions (vCPUs in the CPU-intensive fleet, vCPU-hour price, share of
-   the fleet ported) → vCPUs freed and $ saved per year, plus the "every 1 % ported saves …" figure.
-3. **Validate the migration** — fires the same requests at both services from the browser, checks the JSON is
-   identical (key order normalised) and compares p50/p99. The badge turns **Validated** only when every endpoint is
-   identical and Rust is not slower. CPU/cost figures stay with `bench/run.sh`; the probe is a parity + sanity check.
+```sh
+cargo install --path cli            # or: cargo run --manifest-path cli/Cargo.toml -- <cmd>
+j2r --help
+```
+
+| Command | What you see |
+|---|---|
+| `j2r api owners/1 -n 50` | the same `GET` sent to Java (`:9966`) and Rust (`:9977`): status, latency, bytes and the raw JSON of both side by side, a `diff:` line (`identical`, key order ignored, or the differing JSON paths), then p50/p99/min of 50 sequential requests per side |
+| `j2r bench --rate 300 --duration 30 --peak 10` | fixed-rate load against each service in turn (2 s warm-up, then one line per second: `cpu=… cores rps=… p50=… p99=… rss=…`), a closed-loop peak phase (64 in flight), then sparklines per metric and a `summary` table with deltas ending in `cpu freed at 300 req/s: X cores (Y% of the java footprint)`; writes `bench/results/{timeseries.json,summary.json,run.log}` |
+| `j2r watch` | one line per second with CPU cores, RSS and probe latency of both services — leave it running while you flip traffic |
+| `j2r show bench/results` | re-render a saved run |
+
+CPU and RSS are read from the **service process**, not from the load generator: `/proc/<pid>/stat` for a native
+process (found from the listening port), or the container's cgroup (`cpu.stat`, `memory.current`) when the port is
+published by Docker. For a remote host pass `--java http://host:9966/petclinic/api --java-pid <pid>` (or
+`--java-container <name>`), same for `--rust`. Everything in `bench/results/` is produced by this tool; nothing is
+typed in.
 
 ```sh
 # 1. Java service
@@ -37,15 +43,12 @@ panel** is the point of the demo:
 docker compose --profile postgres up -d
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=postgres,spring-data-jpa
 
-# 2. Rust service (see rust-petclinic/README.md) — optional, the console shows it as "not reachable" otherwise
+# 2. Rust service — appears once the migration PR lands; until then j2r shows the rust side as down / n/a
 cd rust-petclinic && cargo run --release     # http://localhost:9977/petclinic/api
 
 # 3. Console
-cd frontend && npm install && npm start      # http://localhost:4200
+cargo install --path cli && j2r api vets && j2r bench
 ```
-
-The dev server proxies `/petclinic` → `localhost:9966` and `/rust/petclinic` → `localhost:9977`
-(`frontend/proxy.conf.json`), so no CORS setup is needed; both base URLs are editable in the panel.
 
 ---
 
