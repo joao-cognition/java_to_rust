@@ -512,6 +512,23 @@ fn fixture_name(seq: usize, c: &Case) -> String {
     format!("{:03}-{op}-{}.json", seq + 1, c.name)
 }
 
+/// `NNN-<op>-<case>.json`, as written by `fixture_name`.
+fn is_fixture_name(n: &str) -> bool {
+    let b = n.as_bytes();
+    n.ends_with(".json") && b.len() > 9 && b[..3].iter().all(u8::is_ascii_digit) && b[3] == b'-'
+}
+
+/// Whether a case path (no leading `/`, optional query) is an instance of an openapi path template.
+pub fn matches_route(template: &str, path: &str) -> bool {
+    let path = path.split('?').next().unwrap_or_default();
+    let t: Vec<&str> = template.trim_start_matches('/').split('/').collect();
+    let p: Vec<&str> = path.split('/').collect();
+    t.len() == p.len()
+        && t.iter()
+            .zip(&p)
+            .all(|(t, p)| t == p || (t.starts_with('{') && t.ends_with('}') && !p.is_empty()))
+}
+
 fn request_json(c: &Case) -> Value {
     json!({
         "method": c.method.as_str(),
@@ -528,7 +545,7 @@ fn record(dir: &Path, cases: &[Case], outcomes: &[Outcome]) -> Result<(), Box<dy
     std::fs::create_dir_all(dir)?;
     for e in std::fs::read_dir(dir)? {
         let p = e?.path();
-        if p.extension().is_some_and(|x| x == "json") {
+        if p.file_name().and_then(|n| n.to_str()).is_some_and(is_fixture_name) {
             std::fs::remove_file(p)?;
         }
     }
@@ -554,6 +571,9 @@ fn load_golden(dir: &Path, cases: &[Case]) -> Result<Vec<Option<Outcome>>, Box<d
                 return Ok(None);
             }
             let v: Value = serde_json::from_str(&std::fs::read_to_string(&p)?)?;
+            if v.get("request") != Some(&request_json(c)) {
+                return Err(format!("{}: request differs from the catalogue, re-record the fixtures", p.display()).into());
+            }
             Ok(v.get("response").and_then(Outcome::from_json))
         })
         .collect()
@@ -648,14 +668,6 @@ pub async fn run(bases: &Bases, opts: Opts) -> Result<(), Box<dyn std::error::Er
 
 /// Case count (and identical count) per openapi.yml operation; operations without cases are listed as gaps.
 fn coverage(spec: &Path, cases: &[Case], same: Option<&[bool]>) {
-    let mut per: BTreeMap<&str, (usize, usize, Vec<u16>)> = BTreeMap::new();
-    for (i, c) in cases.iter().enumerate() {
-        let e = per.entry(c.op).or_default();
-        e.0 += 1;
-        if same.is_some_and(|s| s[i]) {
-            e.1 += 1;
-        }
-    }
     let ops = match std::fs::read_to_string(spec) {
         Ok(y) => spec_operations(&y),
         Err(e) => {
@@ -663,6 +675,23 @@ fn coverage(spec: &Path, cases: &[Case], same: Option<&[bool]>) {
             Vec::new()
         }
     };
+    let mut per: BTreeMap<&str, (usize, usize, Vec<u16>)> = BTreeMap::new();
+    for (i, c) in cases.iter().enumerate() {
+        if let Some((_, m, t)) = ops.iter().find(|(id, _, _)| id == c.op) {
+            if m != c.method.as_str() || !matches_route(t, c.path) {
+                println!(
+                    "{}",
+                    yellow(&format!("{} {}: {} {} is not {m} {t}, not counted", c.op, c.name, c.method, c.path))
+                );
+                continue;
+            }
+        }
+        let e = per.entry(c.op).or_default();
+        e.0 += 1;
+        if same.is_some_and(|s| s[i]) {
+            e.1 += 1;
+        }
+    }
     let mut rows: Vec<(String, String, String)> = ops.clone();
     for c in cases {
         if !rows.iter().any(|(id, _, _)| id == c.op) {
@@ -751,6 +780,16 @@ mod tests {
     }
 
     #[test]
+    fn routes_and_fixture_names() {
+        assert!(matches_route("/owners/{ownerId}/pets/{petId}", "owners/1/pets/abc"));
+        assert!(matches_route("/v2/owners", "v2/owners?page=1"));
+        assert!(!matches_route("/owners/{ownerId}", "owners"));
+        assert!(!matches_route("/owners/{ownerId}", "pets/1"));
+        assert!(is_fixture_name("001-getOwner-seed.json"));
+        assert!(!is_fixture_name("notes.json"));
+    }
+
+    #[test]
     fn origin_strips_path() {
         assert_eq!(origin("http://localhost:9977/petclinic/api"), "http://localhost:9977");
         assert_eq!(origin("http://h:1"), "http://h:1");
@@ -775,6 +814,16 @@ mod tests {
         let cases = catalogue();
         for (id, _, _) in &ops {
             assert!(cases.iter().any(|c| c.op == id), "no case for {id}");
+        }
+        for c in &cases {
+            if let Some((_, m, t)) = ops.iter().find(|(id, _, _)| id == c.op) {
+                assert!(
+                    m == c.method.as_str() && matches_route(t, c.path),
+                    "{} {}: not {m} {t}",
+                    c.op,
+                    c.name
+                );
+            }
         }
         let mut names: Vec<String> = cases.iter().enumerate().map(|(i, c)| fixture_name(i, c)).collect();
         names.sort();
