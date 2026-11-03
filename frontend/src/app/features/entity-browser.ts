@@ -156,14 +156,20 @@ export class EntityBrowser {
     void this.load();
   }
 
+  private requestId = 0;
+
   private async load(): Promise<void> {
+    const id = ++this.requestId;
     this.error.set('');
     this.ms.set(null);
+    this.rows.set([]);
     try {
       const r = await this.api.get<unknown[]>(this.source(), `/${this.entity()}`);
+      if (id !== this.requestId) return;
       this.rows.set(r.data);
       this.ms.set(r.ms);
     } catch (err) {
+      if (id !== this.requestId) return;
       this.rows.set([]);
       const status = (err as { status?: number })?.status;
       this.error.set(
