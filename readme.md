@@ -75,6 +75,29 @@ published by Docker. For a remote host pass `--java http://host:9966/travel/api 
 `--java-container <name>`), same for `--rust`. Everything in `bench/results/` is produced by this tool; nothing is
 typed in.
 
+### Parity: the acceptance check
+
+`scripts/parity.sh` is the one command every port ticket must pass: it starts PostgreSQL (`docker compose --profile
+postgres`), drops the schema, starts Java on `:9966` (schema + `data.sql` + `DemoDataSeeder`, schedule from tomorrow),
+starts `rust-travel` on `:9977` if built (otherwise every case is `rust down`), then runs `j2r parity`: 843 GET cases
+over all 11 endpoints (routes in every fuel band and the domestic VAT route, d+0/7/15/29 and dates outside the window,
+every cabin and none, adults 1/2/5/9 and 0/10, sold-out fares, existing/missing/lowercase ids, IATA codes and PNRs,
+malformed and missing parameters, unknown routes). Each case must match on status, `Content-Type` and body (key order
+ignored, number text exact, ProblemDetail `type`/`title`/`status`/`detail`/`instance` field by field). It prints one
+line per case, writes `parity/results.json` and `parity/report.md`, and exits non-zero on any difference.
+
+| command | what it does |
+|---|---|
+| `scripts/parity.sh` | Java vs Rust, live |
+| `scripts/parity.sh --record` | same, and stores Java's responses plus a dump of the seeded database in `parity/golden/` |
+| `scripts/parity.sh --golden` | no Java: restores `parity/golden/db.sql.gz`, starts Rust and compares it against the goldens |
+| `J2R_RUST=http://localhost:9966/travel/api scripts/parity.sh` | Java vs Java (sanity check: every case identical) |
+| `scripts/parity.sh --only offers` | a subset (path or label contains the text) |
+
+Goldens live in one file, `parity/golden/goldens.json.gz` (a JSON object keyed by case slug; labels slugify
+uniquely), next to `manifest.json` (case order, schedule start) and `db.sql.gz`. Booking `createdAt` comes from the
+seeding wall clock, so goldens are only valid against their own database dump; `--golden` therefore restores it.
+
 Until a Rust service answers on `:9977`, `j2r api` shows the rust column as `down` and `j2r bench` prints the Java
 baseline with rust `n/a` — that is the "before".
 
