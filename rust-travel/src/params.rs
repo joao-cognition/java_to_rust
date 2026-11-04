@@ -53,12 +53,22 @@ pub fn java_trim(s: &str) -> &str {
 
 /// `StringUtils.hasText`.
 pub fn has_text(s: &str) -> bool {
-    s.chars().any(|c| !c.is_whitespace())
+    s.chars().any(|c| !java_is_whitespace(c))
+}
+
+/// `Character.isWhitespace`: Unicode space/line/paragraph separators except the no-break spaces
+/// (U+00A0, U+2007, U+202F), plus `\t`..`\r` and U+001C..U+001F. Unlike `char::is_whitespace`, NEL is excluded.
+pub fn java_is_whitespace(c: char) -> bool {
+    matches!(
+        c,
+        '\t'..='\r' | '\u{1c}'..='\u{1f}' | ' ' | '\u{1680}' | '\u{2000}'..='\u{2006}' | '\u{2008}'..='\u{200a}'
+            | '\u{2028}' | '\u{2029}' | '\u{205f}' | '\u{3000}'
+    )
 }
 
 /// `NumberUtils.parseNumber(text, Long.class)`: all whitespace removed, optional sign, decimal or `0x`/`0X`/`#` hex.
 pub fn parse_java_long(text: &str) -> Option<i64> {
-    let s: String = text.chars().filter(|c| !c.is_whitespace()).collect();
+    let s: String = text.chars().filter(|c| !java_is_whitespace(*c)).collect();
     let (neg, body) = match s.as_bytes().first() {
         Some(b'-') => (true, &s[1..]),
         Some(b'+') => (false, &s[1..]),
@@ -163,6 +173,12 @@ pub fn parse_iso_date(text: &str) -> Option<NaiveDate> {
 
 #[cfg(test)]
 mod tests {
+    #[test]
+    fn has_text_uses_java_whitespace() {
+        assert!(!super::has_text(" \t\u{2003}\u{3000}"));
+        assert!(super::has_text("\u{a0}"));
+        assert!(super::has_text("\u{85}"));
+    }
     use super::*;
 
     #[test]

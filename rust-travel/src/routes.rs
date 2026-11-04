@@ -297,7 +297,7 @@ async fn offers(
 /// `@RequestParam @NotBlank String lastName`.
 fn last_name<'q>(q: &'q Params, at: &str) -> Result<std::borrow::Cow<'q, str>, Problem> {
     let v = required_string(q, "lastName", at)?;
-    if java_trim(&v).is_empty() {
+    if !has_text(&v) {
         return Err(Problem::validation(at));
     }
     Ok(v)
