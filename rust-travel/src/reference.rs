@@ -1,0 +1,100 @@
+//! Reference data (airports, airlines, tax rules) comes from the static `data.sql`, which the Java service applies
+//! at startup and never changes at runtime, so the Rust service loads it once and serves it from memory.
+
+use crate::model::{Airline, Airport, TaxRule};
+use sqlx::PgPool;
+use std::collections::HashMap;
+use std::time::Duration;
+
+pub struct Reference {
+    pub airports: Vec<Airport>,
+    pub airlines: Vec<Airline>,
+    pub tax_rules: Vec<TaxRule>,
+    airport_index: HashMap<String, usize>,
+    airline_index: HashMap<String, usize>,
+}
+
+impl Reference {
+    pub async fn load(pool: &PgPool) -> Result<Self, sqlx::Error> {
+        let mut airports: Vec<Airport> = sqlx::query_as(
+            "SELECT iata, icao, name, city, country, timezone, latitude, longitude FROM airport ORDER BY iata",
+        )
+        .fetch_all(pool)
+        .await?;
+        for a in &mut airports {
+            a.tz = a.timezone.parse().ok();
+            if a.tz.is_none() {
+                tracing::warn!("unknown timezone {} for airport {}", a.timezone, a.iata);
+            }
+        }
+        let airlines: Vec<Airline> =
+            sqlx::query_as("SELECT iata, icao, name, country, alliance FROM airline ORDER BY iata")
+                .fetch_all(pool)
+                .await?;
+        let tax_rules: Vec<TaxRule> = sqlx::query_as(
+            "SELECT kind, country, airport_iata, airline_iata, min_distance_km, max_distance_km, amount \
+             FROM tax_rule ORDER BY code",
+        )
+        .fetch_all(pool)
+        .await?;
+        let airport_index = airports
+            .iter()
+            .enumerate()
+            .map(|(i, a)| (a.iata.clone(), i))
+            .collect();
+        let airline_index = airlines
+            .iter()
+            .enumerate()
+            .map(|(i, a)| (a.iata.clone(), i))
+            .collect();
+        Ok(Self {
+            airports,
+            airlines,
+            tax_rules,
+            airport_index,
+            airline_index,
+        })
+    }
+
+    /// Waits until the Java service has finished applying `data.sql`. Its statements commit one by one, so a
+    /// snapshot is only accepted once every reference table is non-empty and unchanged since the previous poll.
+    pub async fn load_when_ready(pool: &PgPool) -> Self {
+        let mut previous = None;
+        loop {
+            match Self::load(pool).await {
+                Ok(r) => {
+                    let sizes = (r.airports.len(), r.airlines.len(), r.tax_rules.len());
+                    if sizes.0 > 0 && sizes.1 > 0 && sizes.2 > 0 && previous == Some(sizes) {
+                        return r;
+                    }
+                    if sizes.0 == 0 || sizes.1 == 0 || sizes.2 == 0 {
+                        tracing::warn!(
+                            "reference tables are empty; waiting for the Java service to seed them"
+                        );
+                    }
+                    previous = Some(sizes);
+                }
+                Err(e) => tracing::warn!("reference data not readable yet ({e}); retrying"),
+            }
+            tokio::time::sleep(Duration::from_secs(2)).await;
+        }
+    }
+
+    pub fn airport(&self, iata: &str) -> Option<&Airport> {
+        self.airport_index.get(iata).map(|&i| &self.airports[i])
+    }
+
+    pub fn airline(&self, iata: &str) -> Option<&Airline> {
+        self.airline_index.get(iata).map(|&i| &self.airlines[i])
+    }
+}
+
+/// `ReferenceDataService.normalize` (`trim().toUpperCase(Locale.ROOT)`).
+pub fn normalize(code: &str) -> String {
+    java_trim(code).to_uppercase()
+}
+
+/// `String.trim()`: strips leading/trailing chars `<= ' '` (not Unicode whitespace).
+pub fn java_trim(s: &str) -> &str {
+    s.trim_matches(|c: char| c <= ' ')
+}
