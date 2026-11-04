@@ -11,12 +11,12 @@ The modernization workflow this repo is built for:
    PostgreSQL**, same JSON contract, on port 9977,
 3. prove it in the terminal: `j2r api` shows the two responses are identical, `j2r bench` shows cores freed.
 
-There is **no Rust code in this repository yet**; it arrives with the migration PR.
+The Rust port lives in `rust-travel/` and is filled in endpoint by endpoint during the migration.
 
 | Part | Where | Port |
 |---|---|---|
 | Java service — Spring Boot 4, Spring Data JPA / Hibernate, PostgreSQL 16 or in-memory H2 | `src/` | 9966 (`/travel/api`) |
-| Rust port of the read hot path — produced by Devin during the migration | `rust-travel/` (not here yet) | 9977 (`/travel/api`) |
+| Rust port of the read hot path — produced by Devin during the migration | `rust-travel/` | 9977 (`/travel/api`) |
 | **`j2r` CLI** — raw API comparison, benchmark with real CPU numbers, live watch | `cli/` | — |
 
 ## The Java service
@@ -48,6 +48,18 @@ empty, so a Rust service pointed at the same PostgreSQL sees exactly the same da
 
 Errors are RFC 9457 `ProblemDetail` bodies. The read endpoints above (everything but `POST`/`DELETE`) are the
 migration slice.
+
+## The Rust port (`rust-travel/`)
+
+Axum + Tokio + sqlx, read-only against the PostgreSQL the Java `postgres` profile uses (same `POSTGRES_URL`,
+`POSTGRES_USER`, `POSTGRES_PASS` variables and defaults; `PORT` defaults to 9977). Java owns the schema and seed data,
+so start Java first.
+
+```sh
+cargo run --release --manifest-path rust-travel/Cargo.toml   # http://localhost:9977/travel/api
+curl -s localhost:9977/travel/api/_smoke                      # row counts read from the shared database
+cd rust-travel && cargo test                                  # integration tests use DATABASE_URL, skip without a DB
+```
 
 ## `j2r` — the terminal console (`cli/`)
 

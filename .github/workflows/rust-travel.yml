@@ -1,0 +1,42 @@
+name: rust-travel
+
+on:
+  push:
+    paths: ["rust-travel/**", "src/main/resources/db/**", ".github/workflows/rust-travel.yml"]
+  pull_request:
+    paths: ["rust-travel/**", "src/main/resources/db/**", ".github/workflows/rust-travel.yml"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16.3
+        env:
+          POSTGRES_USER: travel
+          POSTGRES_PASSWORD: travel
+          POSTGRES_DB: travel
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U travel" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgres://travel:travel@localhost:5432/travel
+    defaults:
+      run:
+        working-directory: rust-travel
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt --check
+      - run: cargo clippy --all-targets -- -D warnings
+      # Java owns the schema and reference data; apply its scripts so the integration tests have rows to read.
+      - name: Load the Java schema and reference data
+        env:
+          PGPASSWORD: travel
+        run: |
+          psql -v ON_ERROR_STOP=1 -h localhost -U travel -d travel \
+            -f ../src/main/resources/db/postgres/schema.sql -f ../src/main/resources/db/data.sql
+      - run: cargo test
+      - run: cargo build --release
