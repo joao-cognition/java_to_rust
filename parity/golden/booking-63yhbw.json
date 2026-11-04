@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 63YHBW",
+  "path": "bookings/63YHBW",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-22T10:59:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "63YHBW",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "ONEWORLD",
+            "country": "GB",
+            "iata": "BA",
+            "icao": "BAW",
+            "name": "British Airways"
+          },
+          "arrival": "2026-11-10T15:50:00+00:00",
+          "departure": "2026-11-10T15:05:00+01:00",
+          "destination": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          },
+          "durationMinutes": 105,
+          "flightNumber": "BA344",
+          "id": 40,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 230.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1978-11-02",
+        "email": "sofia.marchetti@example.com",
+        "firstName": "Sofia",
+        "frequentFlyerNumber": null,
+        "id": 3,
+        "lastName": "Marchetti",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1998-11-21",
+        "email": "juliette.roux@example.com",
+        "firstName": "Juliette",
+        "frequentFlyerNumber": null,
+        "id": 40,
+        "lastName": "Roux",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

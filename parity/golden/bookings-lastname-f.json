@@ -1,0 +1,1314 @@
+{
+  "endpoint": "bookings",
+  "label": "bookings lastName F",
+  "path": "bookings?lastName=F",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "createdAt": "2026-11-02T11:08:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "825LH3",
+      "segments": [
+        {
+          "bookingClass": "J",
+          "cabin": "BUSINESS",
+          "flight": {
+            "aircraft": "A330",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "US",
+              "iata": "DL",
+              "icao": "DAL",
+              "name": "Delta Air Lines"
+            },
+            "arrival": "2026-11-10T22:25:00+01:00",
+            "departure": "2026-11-10T08:40:00-05:00",
+            "destination": {
+              "city": "Paris",
+              "country": "FR",
+              "iata": "CDG",
+              "icao": "LFPG",
+              "latitude": 49.0097,
+              "longitude": 2.5479,
+              "name": "Paris Charles de Gaulle",
+              "timezone": "Europe/Paris"
+            },
+            "durationMinutes": 465,
+            "flightNumber": "DL61",
+            "id": 967,
+            "origin": {
+              "city": "New York",
+              "country": "US",
+              "iata": "JFK",
+              "icao": "KJFK",
+              "latitude": 40.6413,
+              "longitude": -73.7781,
+              "name": "New York John F. Kennedy International",
+              "timezone": "America/New_York"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 4637.20,
+      "travelers": [
+        {
+          "dateOfBirth": "1981-07-31",
+          "email": "ines.romero@example.com",
+          "firstName": "Inés",
+          "frequentFlyerNumber": "IB66778899",
+          "id": 38,
+          "lastName": "Romero",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1989-09-11",
+          "email": "lea.fontaine@example.com",
+          "firstName": "Léa",
+          "frequentFlyerNumber": null,
+          "id": 46,
+          "lastName": "Fontaine",
+          "nationality": "FR"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-11-01T22:51:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "HB2KZ7",
+      "segments": [
+        {
+          "bookingClass": "J",
+          "cabin": "BUSINESS",
+          "flight": {
+            "aircraft": "A321",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "IT",
+              "iata": "AZ",
+              "icao": "ITY",
+              "name": "ITA Airways"
+            },
+            "arrival": "2026-12-03T07:40:00+01:00",
+            "departure": "2026-12-03T06:00:00+01:00",
+            "destination": {
+              "city": "Rome",
+              "country": "IT",
+              "iata": "FCO",
+              "icao": "LIRF",
+              "latitude": 41.8003,
+              "longitude": 12.2389,
+              "name": "Rome Fiumicino",
+              "timezone": "Europe/Rome"
+            },
+            "durationMinutes": 100,
+            "flightNumber": "AZ480",
+            "id": 2393,
+            "origin": {
+              "city": "Munich",
+              "country": "DE",
+              "iata": "MUC",
+              "icao": "EDDM",
+              "latitude": 48.3537,
+              "longitude": 11.775,
+              "name": "Munich Franz Josef Strauss",
+              "timezone": "Europe/Berlin"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 1210.89,
+      "travelers": [
+        {
+          "dateOfBirth": "1992-09-14",
+          "email": "emma.johansson@example.com",
+          "firstName": "Emma",
+          "frequentFlyerNumber": null,
+          "id": 6,
+          "lastName": "Johansson",
+          "nationality": "SE"
+        },
+        {
+          "dateOfBirth": "1980-09-07",
+          "email": "lena.fischer@example.com",
+          "firstName": "Lena",
+          "frequentFlyerNumber": "LH880077665",
+          "id": 23,
+          "lastName": "Fischer",
+          "nationality": "DE"
+        },
+        {
+          "dateOfBirth": "1988-08-02",
+          "email": "felix.weber@example.com",
+          "firstName": "Felix",
+          "frequentFlyerNumber": "LX55667788",
+          "id": 31,
+          "lastName": "Weber",
+          "nationality": "CH"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-30T23:52:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "BXVRG7",
+      "segments": [
+        {
+          "bookingClass": "Y",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "E190",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "IT",
+              "iata": "AZ",
+              "icao": "ITY",
+              "name": "ITA Airways"
+            },
+            "arrival": "2026-11-16T07:35:00+01:00",
+            "departure": "2026-11-16T06:00:00+01:00",
+            "destination": {
+              "city": "Rome",
+              "country": "IT",
+              "iata": "FCO",
+              "icao": "LIRF",
+              "latitude": 41.8003,
+              "longitude": 12.2389,
+              "name": "Rome Fiumicino",
+              "timezone": "Europe/Rome"
+            },
+            "durationMinutes": 95,
+            "flightNumber": "AZ480",
+            "id": 2325,
+            "origin": {
+              "city": "Munich",
+              "country": "DE",
+              "iata": "MUC",
+              "icao": "EDDM",
+              "latitude": 48.3537,
+              "longitude": 11.775,
+              "name": "Munich Franz Josef Strauss",
+              "timezone": "Europe/Berlin"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 476.49,
+      "travelers": [
+        {
+          "dateOfBirth": "1980-09-07",
+          "email": "lena.fischer@example.com",
+          "firstName": "Lena",
+          "frequentFlyerNumber": "LH880077665",
+          "id": 23,
+          "lastName": "Fischer",
+          "nationality": "DE"
+        },
+        {
+          "dateOfBirth": "1988-08-02",
+          "email": "felix.weber@example.com",
+          "firstName": "Felix",
+          "frequentFlyerNumber": "LX55667788",
+          "id": 31,
+          "lastName": "Weber",
+          "nationality": "CH"
+        },
+        {
+          "dateOfBirth": "1985-02-23",
+          "email": "alejandro.navarro@example.com",
+          "firstName": "Alejandro",
+          "frequentFlyerNumber": null,
+          "id": 47,
+          "lastName": "Navarro",
+          "nationality": "ES"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-29T13:00:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "YPQVUH",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A320",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "IT",
+              "iata": "AZ",
+              "icao": "ITY",
+              "name": "ITA Airways"
+            },
+            "arrival": "2026-11-09T15:45:00+01:00",
+            "departure": "2026-11-09T14:20:00+01:00",
+            "destination": {
+              "city": "Munich",
+              "country": "DE",
+              "iata": "MUC",
+              "icao": "EDDM",
+              "latitude": 48.3537,
+              "longitude": 11.775,
+              "name": "Munich Franz Josef Strauss",
+              "timezone": "Europe/Berlin"
+            },
+            "durationMinutes": 85,
+            "flightNumber": "AZ432",
+            "id": 2179,
+            "origin": {
+              "city": "Rome",
+              "country": "IT",
+              "iata": "FCO",
+              "icao": "LIRF",
+              "latitude": 41.8003,
+              "longitude": 12.2389,
+              "name": "Rome Fiumicino",
+              "timezone": "Europe/Rome"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 352.20,
+      "travelers": [
+        {
+          "dateOfBirth": "1973-10-12",
+          "email": "tomas.novak@example.com",
+          "firstName": "Tomas",
+          "frequentFlyerNumber": null,
+          "id": 24,
+          "lastName": "Novák",
+          "nationality": "CZ"
+        },
+        {
+          "dateOfBirth": "1971-09-24",
+          "email": "pierre.girard@example.com",
+          "firstName": "Pierre",
+          "frequentFlyerNumber": "AF778899001",
+          "id": 33,
+          "lastName": "Girard",
+          "nationality": "FR"
+        },
+        {
+          "dateOfBirth": "1989-09-11",
+          "email": "lea.fontaine@example.com",
+          "firstName": "Léa",
+          "frequentFlyerNumber": null,
+          "id": 46,
+          "lastName": "Fontaine",
+          "nationality": "FR"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-24T06:02:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "CSLSTN",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A321",
+            "airline": {
+              "alliance": "STAR_ALLIANCE",
+              "country": "DE",
+              "iata": "LH",
+              "icao": "DLH",
+              "name": "Lufthansa"
+            },
+            "arrival": "2026-11-05T16:45:00+01:00",
+            "departure": "2026-11-05T14:25:00+01:00",
+            "destination": {
+              "city": "Frankfurt",
+              "country": "DE",
+              "iata": "FRA",
+              "icao": "EDDF",
+              "latitude": 50.0379,
+              "longitude": 8.5622,
+              "name": "Frankfurt am Main",
+              "timezone": "Europe/Berlin"
+            },
+            "durationMinutes": 140,
+            "flightNumber": "LH1103",
+            "id": 1504,
+            "origin": {
+              "city": "Madrid",
+              "country": "ES",
+              "iata": "MAD",
+              "icao": "LEMD",
+              "latitude": 40.4983,
+              "longitude": -3.5676,
+              "name": "Adolfo Suárez Madrid-Barajas",
+              "timezone": "Europe/Madrid"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 146.00,
+      "travelers": [
+        {
+          "dateOfBirth": "1989-09-11",
+          "email": "lea.fontaine@example.com",
+          "firstName": "Léa",
+          "frequentFlyerNumber": null,
+          "id": 46,
+          "lastName": "Fontaine",
+          "nationality": "FR"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-21T23:29:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "A3A29L",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A320",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "IT",
+              "iata": "AZ",
+              "icao": "ITY",
+              "name": "ITA Airways"
+            },
+            "arrival": "2026-12-02T15:45:00+01:00",
+            "departure": "2026-12-02T14:20:00+01:00",
+            "destination": {
+              "city": "Rome",
+              "country": "IT",
+              "iata": "FCO",
+              "icao": "LIRF",
+              "latitude": 41.8003,
+              "longitude": 12.2389,
+              "name": "Rome Fiumicino",
+              "timezone": "Europe/Rome"
+            },
+            "durationMinutes": 85,
+            "flightNumber": "AZ482",
+            "id": 2391,
+            "origin": {
+              "city": "Munich",
+              "country": "DE",
+              "iata": "MUC",
+              "icao": "EDDM",
+              "latitude": 48.3537,
+              "longitude": 11.775,
+              "name": "Munich Franz Josef Strauss",
+              "timezone": "Europe/Berlin"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 335.49,
+      "travelers": [
+        {
+          "dateOfBirth": "1975-05-30",
+          "email": "thomas.mueller@example.com",
+          "firstName": "Thomas",
+          "frequentFlyerNumber": "LH992001734",
+          "id": 5,
+          "lastName": "Müller",
+          "nationality": "DE"
+        },
+        {
+          "dateOfBirth": "1992-09-14",
+          "email": "emma.johansson@example.com",
+          "firstName": "Emma",
+          "frequentFlyerNumber": null,
+          "id": 6,
+          "lastName": "Johansson",
+          "nationality": "SE"
+        },
+        {
+          "dateOfBirth": "1983-04-22",
+          "email": "isabel.fernandez@example.com",
+          "firstName": "Isabel",
+          "frequentFlyerNumber": null,
+          "id": 8,
+          "lastName": "Fernández",
+          "nationality": "ES"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-21T00:16:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "4TC6UJ",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "E190",
+            "airline": {
+              "alliance": "STAR_ALLIANCE",
+              "country": "PT",
+              "iata": "TP",
+              "icao": "TAP",
+              "name": "TAP Air Portugal"
+            },
+            "arrival": "2026-12-02T14:30:00+01:00",
+            "departure": "2026-12-02T10:35:00+00:00",
+            "destination": {
+              "city": "Amsterdam",
+              "country": "NL",
+              "iata": "AMS",
+              "icao": "EHAM",
+              "latitude": 52.3105,
+              "longitude": 4.7683,
+              "name": "Amsterdam Schiphol",
+              "timezone": "Europe/Amsterdam"
+            },
+            "durationMinutes": 175,
+            "flightNumber": "TP1741",
+            "id": 2150,
+            "origin": {
+              "city": "Lisbon",
+              "country": "PT",
+              "iata": "LIS",
+              "icao": "LPPT",
+              "latitude": 38.7742,
+              "longitude": -9.1342,
+              "name": "Lisbon Humberto Delgado",
+              "timezone": "Europe/Lisbon"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 381.40,
+      "travelers": [
+        {
+          "dateOfBirth": "1983-04-22",
+          "email": "isabel.fernandez@example.com",
+          "firstName": "Isabel",
+          "frequentFlyerNumber": null,
+          "id": 8,
+          "lastName": "Fernández",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1993-05-16",
+          "email": "niamh.oconnor@example.com",
+          "firstName": "Niamh",
+          "frequentFlyerNumber": null,
+          "id": 15,
+          "lastName": "O'Connor",
+          "nationality": "IE"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-19T05:27:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "RDDPD9",
+      "segments": [
+        {
+          "bookingClass": "J",
+          "cabin": "BUSINESS",
+          "flight": {
+            "aircraft": "E190",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "FR",
+              "iata": "AF",
+              "icao": "AFR",
+              "name": "Air France"
+            },
+            "arrival": "2026-11-06T20:10:00+01:00",
+            "departure": "2026-11-06T18:45:00+01:00",
+            "destination": {
+              "city": "Paris",
+              "country": "FR",
+              "iata": "CDG",
+              "icao": "LFPG",
+              "latitude": 49.0097,
+              "longitude": 2.5479,
+              "name": "Paris Charles de Gaulle",
+              "timezone": "Europe/Paris"
+            },
+            "durationMinutes": 85,
+            "flightNumber": "AF7706",
+            "id": 405,
+            "origin": {
+              "city": "Nice",
+              "country": "FR",
+              "iata": "NCE",
+              "icao": "LFMN",
+              "latitude": 43.6584,
+              "longitude": 7.2159,
+              "name": "Nice Côte d'Azur",
+              "timezone": "Europe/Paris"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 1262.10,
+      "travelers": [
+        {
+          "dateOfBirth": "1990-07-25",
+          "email": "lucas.martins@example.com",
+          "firstName": "Lucas",
+          "frequentFlyerNumber": "TP00482913",
+          "id": 2,
+          "lastName": "Martins",
+          "nationality": "PT"
+        },
+        {
+          "dateOfBirth": "1980-09-07",
+          "email": "lena.fischer@example.com",
+          "firstName": "Lena",
+          "frequentFlyerNumber": "LH880077665",
+          "id": 23,
+          "lastName": "Fischer",
+          "nationality": "DE"
+        },
+        {
+          "dateOfBirth": "1991-04-03",
+          "email": "zoe.williams@example.com",
+          "firstName": "Zoe",
+          "frequentFlyerNumber": "BA11223344",
+          "id": 44,
+          "lastName": "Williams",
+          "nationality": "GB"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-15T09:28:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "7SQF99",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "E190",
+            "airline": {
+              "alliance": "STAR_ALLIANCE",
+              "country": "IN",
+              "iata": "AI",
+              "icao": "AIC",
+              "name": "Air India"
+            },
+            "arrival": "2026-11-18T13:00:00+05:30",
+            "departure": "2026-11-18T08:30:00+04:00",
+            "destination": {
+              "city": "Mumbai",
+              "country": "IN",
+              "iata": "BOM",
+              "icao": "VABB",
+              "latitude": 19.0896,
+              "longitude": 72.8656,
+              "name": "Chhatrapati Shivaji Maharaj International",
+              "timezone": "Asia/Kolkata"
+            },
+            "durationMinutes": 180,
+            "flightNumber": "AI501",
+            "id": 2866,
+            "origin": {
+              "city": "Dubai",
+              "country": "AE",
+              "iata": "DXB",
+              "icao": "OMDB",
+              "latitude": 25.2532,
+              "longitude": 55.3657,
+              "name": "Dubai International",
+              "timezone": "Asia/Dubai"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 583.50,
+      "travelers": [
+        {
+          "dateOfBirth": "1981-06-03",
+          "email": "jan.devries@example.com",
+          "firstName": "Jan",
+          "frequentFlyerNumber": "KL31415926",
+          "id": 9,
+          "lastName": "de Vries",
+          "nationality": "NL"
+        },
+        {
+          "dateOfBirth": "1980-09-07",
+          "email": "lena.fischer@example.com",
+          "firstName": "Lena",
+          "frequentFlyerNumber": "LH880077665",
+          "id": 23,
+          "lastName": "Fischer",
+          "nationality": "DE"
+        },
+        {
+          "dateOfBirth": "1990-03-28",
+          "email": "sara.andersson@example.com",
+          "firstName": "Sara",
+          "frequentFlyerNumber": null,
+          "id": 25,
+          "lastName": "Andersson",
+          "nationality": "SE"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-13T06:07:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "H5DE5P",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "B738",
+            "airline": {
+              "alliance": "ONEWORLD",
+              "country": "ES",
+              "iata": "IB",
+              "icao": "IBE",
+              "name": "Iberia"
+            },
+            "arrival": "2026-11-19T18:50:00+01:00",
+            "departure": "2026-11-19T16:30:00+01:00",
+            "destination": {
+              "city": "Frankfurt",
+              "country": "DE",
+              "iata": "FRA",
+              "icao": "EDDF",
+              "latitude": 50.0379,
+              "longitude": 8.5622,
+              "name": "Frankfurt am Main",
+              "timezone": "Europe/Berlin"
+            },
+            "durationMinutes": 140,
+            "flightNumber": "IB1104",
+            "id": 1589,
+            "origin": {
+              "city": "Madrid",
+              "country": "ES",
+              "iata": "MAD",
+              "icao": "LEMD",
+              "latitude": 40.4983,
+              "longitude": -3.5676,
+              "name": "Adolfo Suárez Madrid-Barajas",
+              "timezone": "Europe/Madrid"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 423.00,
+      "travelers": [
+        {
+          "dateOfBirth": "1983-04-22",
+          "email": "isabel.fernandez@example.com",
+          "firstName": "Isabel",
+          "frequentFlyerNumber": null,
+          "id": 8,
+          "lastName": "Fernández",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1976-11-26",
+          "email": "daniel.wagner@example.com",
+          "firstName": "Daniel",
+          "frequentFlyerNumber": "LH120034567",
+          "id": 29,
+          "lastName": "Wagner",
+          "nationality": "AT"
+        },
+        {
+          "dateOfBirth": "1981-07-31",
+          "email": "ines.romero@example.com",
+          "firstName": "Inés",
+          "frequentFlyerNumber": "IB66778899",
+          "id": 38,
+          "lastName": "Romero",
+          "nationality": "ES"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-10T07:51:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "XDXBCK",
+      "segments": [
+        {
+          "bookingClass": "Y",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A220",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "FR",
+              "iata": "AF",
+              "icao": "AFR",
+              "name": "Air France"
+            },
+            "arrival": "2026-11-26T20:05:00+01:00",
+            "departure": "2026-11-26T18:45:00+01:00",
+            "destination": {
+              "city": "Paris",
+              "country": "FR",
+              "iata": "CDG",
+              "icao": "LFPG",
+              "latitude": 49.0097,
+              "longitude": 2.5479,
+              "name": "Paris Charles de Gaulle",
+              "timezone": "Europe/Paris"
+            },
+            "durationMinutes": 80,
+            "flightNumber": "AF7706",
+            "id": 565,
+            "origin": {
+              "city": "Nice",
+              "country": "FR",
+              "iata": "NCE",
+              "icao": "LFMN",
+              "latitude": 43.6584,
+              "longitude": 7.2159,
+              "name": "Nice Côte d'Azur",
+              "timezone": "Europe/Paris"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 450.30,
+      "travelers": [
+        {
+          "dateOfBirth": "1992-09-14",
+          "email": "emma.johansson@example.com",
+          "firstName": "Emma",
+          "frequentFlyerNumber": null,
+          "id": 6,
+          "lastName": "Johansson",
+          "nationality": "SE"
+        },
+        {
+          "dateOfBirth": "1969-12-08",
+          "email": "olivier.dubois@example.com",
+          "firstName": "Olivier",
+          "frequentFlyerNumber": "AF556677889",
+          "id": 7,
+          "lastName": "Dubois",
+          "nationality": "FR"
+        },
+        {
+          "dateOfBirth": "1989-09-11",
+          "email": "lea.fontaine@example.com",
+          "firstName": "Léa",
+          "frequentFlyerNumber": null,
+          "id": 46,
+          "lastName": "Fontaine",
+          "nationality": "FR"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-10T02:22:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "8UC358",
+      "segments": [
+        {
+          "bookingClass": "M",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A220",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "FR",
+              "iata": "AF",
+              "icao": "AFR",
+              "name": "Air France"
+            },
+            "arrival": "2026-11-29T07:45:00+01:00",
+            "departure": "2026-11-29T06:15:00+01:00",
+            "destination": {
+              "city": "Nice",
+              "country": "FR",
+              "iata": "NCE",
+              "icao": "LFMN",
+              "latitude": 43.6584,
+              "longitude": 7.2159,
+              "name": "Nice Côte d'Azur",
+              "timezone": "Europe/Paris"
+            },
+            "durationMinutes": 90,
+            "flightNumber": "AF7750",
+            "id": 727,
+            "origin": {
+              "city": "Paris",
+              "country": "FR",
+              "iata": "CDG",
+              "icao": "LFPG",
+              "latitude": 49.0097,
+              "longitude": 2.5479,
+              "name": "Paris Charles de Gaulle",
+              "timezone": "Europe/Paris"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 332.60,
+      "travelers": [
+        {
+          "dateOfBirth": "1983-04-22",
+          "email": "isabel.fernandez@example.com",
+          "firstName": "Isabel",
+          "frequentFlyerNumber": null,
+          "id": 8,
+          "lastName": "Fernández",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1983-06-15",
+          "email": "rui.pereira@example.com",
+          "firstName": "Rui",
+          "frequentFlyerNumber": "TP00990011",
+          "id": 43,
+          "lastName": "Pereira",
+          "nationality": "PT"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-04T15:57:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "FATNAW",
+      "segments": [
+        {
+          "bookingClass": "W",
+          "cabin": "PREMIUM_ECONOMY",
+          "flight": {
+            "aircraft": "E190",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "IT",
+              "iata": "AZ",
+              "icao": "ITY",
+              "name": "ITA Airways"
+            },
+            "arrival": "2026-11-28T07:40:00+01:00",
+            "departure": "2026-11-28T06:00:00+01:00",
+            "destination": {
+              "city": "Rome",
+              "country": "IT",
+              "iata": "FCO",
+              "icao": "LIRF",
+              "latitude": 41.8003,
+              "longitude": 12.2389,
+              "name": "Rome Fiumicino",
+              "timezone": "Europe/Rome"
+            },
+            "durationMinutes": 100,
+            "flightNumber": "AZ480",
+            "id": 2373,
+            "origin": {
+              "city": "Munich",
+              "country": "DE",
+              "iata": "MUC",
+              "icao": "EDDM",
+              "latitude": 48.3537,
+              "longitude": 11.775,
+              "name": "Munich Franz Josef Strauss",
+              "timezone": "Europe/Berlin"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 855.99,
+      "travelers": [
+        {
+          "dateOfBirth": "1971-09-24",
+          "email": "pierre.girard@example.com",
+          "firstName": "Pierre",
+          "frequentFlyerNumber": "AF778899001",
+          "id": 33,
+          "lastName": "Girard",
+          "nationality": "FR"
+        },
+        {
+          "dateOfBirth": "1995-05-08",
+          "email": "sebastian.becker@example.com",
+          "firstName": "Sebastian",
+          "frequentFlyerNumber": null,
+          "id": 37,
+          "lastName": "Becker",
+          "nationality": "DE"
+        },
+        {
+          "dateOfBirth": "1989-09-11",
+          "email": "lea.fontaine@example.com",
+          "firstName": "Léa",
+          "frequentFlyerNumber": null,
+          "id": 46,
+          "lastName": "Fontaine",
+          "nationality": "FR"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-02T04:56:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "JDUQ3U",
+      "segments": [
+        {
+          "bookingClass": "Y",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A220",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "NL",
+              "iata": "KL",
+              "icao": "KLM",
+              "name": "KLM Royal Dutch Airlines"
+            },
+            "arrival": "2026-11-30T12:15:00+00:00",
+            "departure": "2026-11-30T10:20:00+01:00",
+            "destination": {
+              "city": "Lisbon",
+              "country": "PT",
+              "iata": "LIS",
+              "icao": "LPPT",
+              "latitude": 38.7742,
+              "longitude": -9.1342,
+              "name": "Lisbon Humberto Delgado",
+              "timezone": "Europe/Lisbon"
+            },
+            "durationMinutes": 175,
+            "flightNumber": "KL1692",
+            "id": 2003,
+            "origin": {
+              "city": "Amsterdam",
+              "country": "NL",
+              "iata": "AMS",
+              "icao": "EHAM",
+              "latitude": 52.3105,
+              "longitude": 4.7683,
+              "name": "Amsterdam Schiphol",
+              "timezone": "Europe/Amsterdam"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 658.90,
+      "travelers": [
+        {
+          "dateOfBirth": "1983-04-22",
+          "email": "isabel.fernandez@example.com",
+          "firstName": "Isabel",
+          "frequentFlyerNumber": null,
+          "id": 8,
+          "lastName": "Fernández",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1989-09-11",
+          "email": "lea.fontaine@example.com",
+          "firstName": "Léa",
+          "frequentFlyerNumber": null,
+          "id": 46,
+          "lastName": "Fontaine",
+          "nationality": "FR"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-09-28T23:08:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "ZPG3UA",
+      "segments": [
+        {
+          "bookingClass": "Y",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A320",
+            "airline": {
+              "alliance": "ONEWORLD",
+              "country": "GB",
+              "iata": "BA",
+              "icao": "BAW",
+              "name": "British Airways"
+            },
+            "arrival": "2026-11-16T15:55:00+00:00",
+            "departure": "2026-11-16T15:05:00+01:00",
+            "destination": {
+              "city": "London",
+              "country": "GB",
+              "iata": "LHR",
+              "icao": "EGLL",
+              "latitude": 51.47,
+              "longitude": -0.4543,
+              "name": "London Heathrow",
+              "timezone": "Europe/London"
+            },
+            "durationMinutes": 110,
+            "flightNumber": "BA344",
+            "id": 82,
+            "origin": {
+              "city": "Nice",
+              "country": "FR",
+              "iata": "NCE",
+              "icao": "LFMN",
+              "latitude": 43.6584,
+              "longitude": 7.2159,
+              "name": "Nice Côte d'Azur",
+              "timezone": "Europe/Paris"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 370.00,
+      "travelers": [
+        {
+          "dateOfBirth": "1981-07-31",
+          "email": "ines.romero@example.com",
+          "firstName": "Inés",
+          "frequentFlyerNumber": "IB66778899",
+          "id": 38,
+          "lastName": "Romero",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1989-09-11",
+          "email": "lea.fontaine@example.com",
+          "firstName": "Léa",
+          "frequentFlyerNumber": null,
+          "id": 46,
+          "lastName": "Fontaine",
+          "nationality": "FR"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-09-28T01:45:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "ZGXDJQ",
+      "segments": [
+        {
+          "bookingClass": "M",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A321",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "FR",
+              "iata": "AF",
+              "icao": "AFR",
+              "name": "Air France"
+            },
+            "arrival": "2026-12-01T07:45:00+01:00",
+            "departure": "2026-12-01T06:15:00+01:00",
+            "destination": {
+              "city": "Paris",
+              "country": "FR",
+              "iata": "CDG",
+              "icao": "LFPG",
+              "latitude": 49.0097,
+              "longitude": 2.5479,
+              "name": "Paris Charles de Gaulle",
+              "timezone": "Europe/Paris"
+            },
+            "durationMinutes": 90,
+            "flightNumber": "AF7700",
+            "id": 599,
+            "origin": {
+              "city": "Nice",
+              "country": "FR",
+              "iata": "NCE",
+              "icao": "LFMN",
+              "latitude": 43.6584,
+              "longitude": 7.2159,
+              "name": "Nice Côte d'Azur",
+              "timezone": "Europe/Paris"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 430.50,
+      "travelers": [
+        {
+          "dateOfBirth": "1983-04-22",
+          "email": "isabel.fernandez@example.com",
+          "firstName": "Isabel",
+          "frequentFlyerNumber": null,
+          "id": 8,
+          "lastName": "Fernández",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1987-01-06",
+          "email": "noah.peeters@example.com",
+          "firstName": "Noah",
+          "frequentFlyerNumber": null,
+          "id": 41,
+          "lastName": "Peeters",
+          "nationality": "BE"
+        },
+        {
+          "dateOfBirth": "1970-12-17",
+          "email": "markus.hoffmann@example.com",
+          "firstName": "Markus",
+          "frequentFlyerNumber": null,
+          "id": 45,
+          "lastName": "Hoffmann",
+          "nationality": "DE"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-09-27T05:55:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "9EPCJY",
+      "segments": [
+        {
+          "bookingClass": "M",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A350",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "FR",
+              "iata": "AF",
+              "icao": "AFR",
+              "name": "Air France"
+            },
+            "arrival": "2026-11-14T05:00:00+01:00",
+            "departure": "2026-11-13T15:10:00-05:00",
+            "destination": {
+              "city": "Paris",
+              "country": "FR",
+              "iata": "CDG",
+              "icao": "LFPG",
+              "latitude": 49.0097,
+              "longitude": 2.5479,
+              "name": "Paris Charles de Gaulle",
+              "timezone": "Europe/Paris"
+            },
+            "durationMinutes": 470,
+            "flightNumber": "AF64",
+            "id": 991,
+            "origin": {
+              "city": "New York",
+              "country": "US",
+              "iata": "JFK",
+              "icao": "KJFK",
+              "latitude": 40.6413,
+              "longitude": -73.7781,
+              "name": "New York John F. Kennedy International",
+              "timezone": "America/New_York"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 2047.80,
+      "travelers": [
+        {
+          "dateOfBirth": "1992-09-14",
+          "email": "emma.johansson@example.com",
+          "firstName": "Emma",
+          "frequentFlyerNumber": null,
+          "id": 6,
+          "lastName": "Johansson",
+          "nationality": "SE"
+        },
+        {
+          "dateOfBirth": "1980-09-07",
+          "email": "lena.fischer@example.com",
+          "firstName": "Lena",
+          "frequentFlyerNumber": "LH880077665",
+          "id": 23,
+          "lastName": "Fischer",
+          "nationality": "DE"
+        },
+        {
+          "dateOfBirth": "1990-03-28",
+          "email": "sara.andersson@example.com",
+          "firstName": "Sara",
+          "frequentFlyerNumber": null,
+          "id": 25,
+          "lastName": "Andersson",
+          "nationality": "SE"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-09-25T12:13:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "CUTBW3",
+      "segments": [
+        {
+          "bookingClass": "M",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A321",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "FR",
+              "iata": "AF",
+              "icao": "AFR",
+              "name": "Air France"
+            },
+            "arrival": "2026-11-13T13:30:00+00:00",
+            "departure": "2026-11-13T12:35:00+01:00",
+            "destination": {
+              "city": "London",
+              "country": "GB",
+              "iata": "LHR",
+              "icao": "EGLL",
+              "latitude": 51.47,
+              "longitude": -0.4543,
+              "name": "London Heathrow",
+              "timezone": "Europe/London"
+            },
+            "durationMinutes": 115,
+            "flightNumber": "AF343",
+            "id": 60,
+            "origin": {
+              "city": "Nice",
+              "country": "FR",
+              "iata": "NCE",
+              "icao": "LFMN",
+              "latitude": 43.6584,
+              "longitude": 7.2159,
+              "name": "Nice Côte d'Azur",
+              "timezone": "Europe/Paris"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 176.00,
+      "travelers": [
+        {
+          "dateOfBirth": "1983-04-22",
+          "email": "isabel.fernandez@example.com",
+          "firstName": "Isabel",
+          "frequentFlyerNumber": null,
+          "id": 8,
+          "lastName": "Fernández",
+          "nationality": "ES"
+        }
+      ]
+    }
+  ]
+}

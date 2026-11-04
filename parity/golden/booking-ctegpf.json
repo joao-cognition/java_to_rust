@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking CTEGPF",
+  "path": "bookings/CTEGPF",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-28T20:47:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "CTEGPF",
+    "segments": [
+      {
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "flight": {
+          "aircraft": "A350",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "US",
+            "iata": "DL",
+            "icao": "DAL",
+            "name": "Delta Air Lines"
+          },
+          "arrival": "2026-11-06T16:35:00-05:00",
+          "departure": "2026-11-06T14:35:00+01:00",
+          "destination": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          },
+          "durationMinutes": 480,
+          "flightNumber": "DL13",
+          "id": 760,
+          "origin": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 4278.75,
+    "travelers": [
+      {
+        "dateOfBirth": "1969-12-08",
+        "email": "olivier.dubois@example.com",
+        "firstName": "Olivier",
+        "frequentFlyerNumber": "AF556677889",
+        "id": 7,
+        "lastName": "Dubois",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1987-08-17",
+        "email": "matteo.rossi@example.com",
+        "firstName": "Matteo",
+        "frequentFlyerNumber": "AZ44556677",
+        "id": 11,
+        "lastName": "Rossi",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1972-01-27",
+        "email": "louis.lefebvre@example.com",
+        "firstName": "Louis",
+        "frequentFlyerNumber": "AF990011223",
+        "id": 16,
+        "lastName": "Lefebvre",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

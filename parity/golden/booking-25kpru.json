@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 25KPRU",
+  "path": "bookings/25KPRU",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-21T13:49:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "25KPRU",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "DE",
+            "iata": "LH",
+            "icao": "DLH",
+            "name": "Lufthansa"
+          },
+          "arrival": "2026-11-21T19:25:00+01:00",
+          "departure": "2026-11-21T18:00:00+01:00",
+          "destination": {
+            "city": "Munich",
+            "country": "DE",
+            "iata": "MUC",
+            "icao": "EDDM",
+            "latitude": 48.3537,
+            "longitude": 11.775,
+            "name": "Munich Franz Josef Strauss",
+            "timezone": "Europe/Berlin"
+          },
+          "durationMinutes": 85,
+          "flightNumber": "LH433",
+          "id": 2228,
+          "origin": {
+            "city": "Rome",
+            "country": "IT",
+            "iata": "FCO",
+            "icao": "LIRF",
+            "latitude": 41.8003,
+            "longitude": 12.2389,
+            "name": "Rome Fiumicino",
+            "timezone": "Europe/Rome"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 380.20,
+    "travelers": [
+      {
+        "dateOfBirth": "1998-11-21",
+        "email": "juliette.roux@example.com",
+        "firstName": "Juliette",
+        "frequentFlyerNumber": null,
+        "id": 40,
+        "lastName": "Roux",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

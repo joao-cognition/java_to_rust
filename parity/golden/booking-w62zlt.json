@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking W62ZLT",
+  "path": "bookings/W62ZLT",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-19T19:21:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "W62ZLT",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B738",
+          "airline": {
+            "alliance": "ONEWORLD",
+            "country": "GB",
+            "iata": "BA",
+            "icao": "BAW",
+            "name": "British Airways"
+          },
+          "arrival": "2026-11-15T19:20:00+01:00",
+          "departure": "2026-11-15T16:30:00+00:00",
+          "destination": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 110,
+          "flightNumber": "BA394",
+          "id": 275,
+          "origin": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 735.30,
+    "travelers": [
+      {
+        "dateOfBirth": "1984-03-12",
+        "email": "camille.marin@example.com",
+        "firstName": "Camille",
+        "frequentFlyerNumber": "AF123456789",
+        "id": 1,
+        "lastName": "Marin",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1994-12-30",
+        "email": "diego.lopez@example.com",
+        "firstName": "Diego",
+        "frequentFlyerNumber": "IB10029384",
+        "id": 22,
+        "lastName": "López",
+        "nationality": "ES"
+      },
+      {
+        "dateOfBirth": "1982-05-27",
+        "email": "mathis.marquet@example.com",
+        "firstName": "Mathis",
+        "frequentFlyerNumber": "AF112233445",
+        "id": 49,
+        "lastName": "Marquet",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

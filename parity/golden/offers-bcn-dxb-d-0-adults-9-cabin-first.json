@@ -1,0 +1,8 @@
+{
+  "endpoint": "offers",
+  "label": "offers BCN-DXB d+0 adults=9 cabin=FIRST",
+  "path": "offers?origin=BCN&destination=DXB&date=2026-11-05&adults=9&cabin=FIRST",
+  "status": 200,
+  "content_type": "application/json",
+  "body": []
+}

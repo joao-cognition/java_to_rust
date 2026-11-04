@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking NV4U83",
+  "path": "bookings/NV4U83",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-03T12:43:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "NV4U83",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B738",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "IN",
+            "iata": "AI",
+            "icao": "AIC",
+            "name": "Air India"
+          },
+          "arrival": "2026-11-28T16:45:00+05:30",
+          "departure": "2026-11-28T12:15:00+04:00",
+          "destination": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          },
+          "durationMinutes": 180,
+          "flightNumber": "AI503",
+          "id": 2948,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 670.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1975-05-30",
+        "email": "thomas.mueller@example.com",
+        "firstName": "Thomas",
+        "frequentFlyerNumber": "LH992001734",
+        "id": 5,
+        "lastName": "Müller",
+        "nationality": "DE"
+      },
+      {
+        "dateOfBirth": "1973-10-12",
+        "email": "tomas.novak@example.com",
+        "firstName": "Tomas",
+        "frequentFlyerNumber": null,
+        "id": 24,
+        "lastName": "Novák",
+        "nationality": "CZ"
+      },
+      {
+        "dateOfBirth": "1970-12-17",
+        "email": "markus.hoffmann@example.com",
+        "firstName": "Markus",
+        "frequentFlyerNumber": null,
+        "id": 45,
+        "lastName": "Hoffmann",
+        "nationality": "DE"
+      }
+    ]
+  }
+}

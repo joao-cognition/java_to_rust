@@ -1,0 +1,13 @@
+{
+  "endpoint": "flights",
+  "label": "flights malformed date empty",
+  "path": "flights?origin=NCE&destination=LHR&date=",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Required parameter 'date' is not present.",
+    "instance": "/travel/api/flights",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

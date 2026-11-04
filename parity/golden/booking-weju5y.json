@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking WEJU5Y",
+  "path": "bookings/WEJU5Y",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-05T20:20:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "WEJU5Y",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-27T15:35:00+04:00",
+          "departure": "2026-11-27T14:00:00+05:30",
+          "destination": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          },
+          "durationMinutes": 185,
+          "flightNumber": "EK552",
+          "id": 3091,
+          "origin": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 270.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1979-03-05",
+        "email": "pedro.silva@example.com",
+        "firstName": "Pedro",
+        "frequentFlyerNumber": "TP00118822",
+        "id": 13,
+        "lastName": "Silva",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

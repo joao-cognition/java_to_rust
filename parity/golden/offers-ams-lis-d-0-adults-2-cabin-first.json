@@ -1,0 +1,8 @@
+{
+  "endpoint": "offers",
+  "label": "offers AMS-LIS d+0 adults=2 cabin=FIRST",
+  "path": "offers?origin=AMS&destination=LIS&date=2026-11-05&adults=2&cabin=FIRST",
+  "status": 200,
+  "content_type": "application/json",
+  "body": []
+}

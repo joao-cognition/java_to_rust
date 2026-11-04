@@ -1,0 +1,241 @@
+{
+  "endpoint": "offers",
+  "label": "offers sold out AMS-LIS d+0 adults=5 cabin=BUSINESS",
+  "path": "offers?origin=AMS&destination=LIS&date=2026-11-05&adults=5&cabin=BUSINESS",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 525.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 10
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-11-05T17:55:00+00:00",
+        "departure": "2026-11-05T16:00:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 175,
+        "flightNumber": "TP1695",
+        "id": 1806,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "1806-J",
+      "pricing": {
+        "base": 2625.00,
+        "basePerPassenger": 525.00,
+        "currency": "EUR",
+        "passengers": 5,
+        "perPassenger": 621.65,
+        "taxes": 483.25,
+        "taxesPerPassenger": 96.65,
+        "total": 3108.25
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 558.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 15
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-11-05T10:15:00+00:00",
+        "departure": "2026-11-05T08:15:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "TP1691",
+        "id": 1802,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "1802-J",
+      "pricing": {
+        "base": 2790.00,
+        "basePerPassenger": 558.00,
+        "currency": "EUR",
+        "passengers": 5,
+        "perPassenger": 654.65,
+        "taxes": 483.25,
+        "taxesPerPassenger": 96.65,
+        "total": 3273.25
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 598.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-11-05T22:30:00+00:00",
+        "departure": "2026-11-05T20:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 185,
+        "flightNumber": "TP1697",
+        "id": 1808,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "1808-C",
+      "pricing": {
+        "base": 2990.00,
+        "basePerPassenger": 598.00,
+        "currency": "EUR",
+        "passengers": 5,
+        "perPassenger": 694.65,
+        "taxes": 483.25,
+        "taxesPerPassenger": 96.65,
+        "total": 3473.25
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 617.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 7
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-11-05T20:25:00+00:00",
+        "departure": "2026-11-05T18:35:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1696",
+        "id": 1807,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "1807-C",
+      "pricing": {
+        "base": 3085.00,
+        "basePerPassenger": 617.00,
+        "currency": "EUR",
+        "passengers": 5,
+        "perPassenger": 713.65,
+        "taxes": 483.25,
+        "taxesPerPassenger": 96.65,
+        "total": 3568.25
+      }
+    }
+  ]
+}

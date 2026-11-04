@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 4AY7KB",
+  "path": "bookings/4AY7KB",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-11-03T04:23:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "4AY7KB",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A220",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-12-04T20:10:00+01:00",
+          "departure": "2026-12-04T18:45:00+01:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 85,
+          "flightNumber": "AF7706",
+          "id": 629,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 152.30,
+    "travelers": [
+      {
+        "dateOfBirth": "1981-07-31",
+        "email": "ines.romero@example.com",
+        "firstName": "Inés",
+        "frequentFlyerNumber": "IB66778899",
+        "id": 38,
+        "lastName": "Romero",
+        "nationality": "ES"
+      }
+    ]
+  }
+}

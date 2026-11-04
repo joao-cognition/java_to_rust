@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking WDEDWA",
+  "path": "bookings/WDEDWA",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-18T09:00:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "WDEDWA",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B777",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-14T00:50:00+04:00",
+          "departure": "2026-11-13T14:40:00+01:00",
+          "destination": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          },
+          "durationMinutes": 430,
+          "flightNumber": "EK182",
+          "id": 2435,
+          "origin": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1250.40,
+    "travelers": [
+      {
+        "dateOfBirth": "1969-12-08",
+        "email": "olivier.dubois@example.com",
+        "firstName": "Olivier",
+        "frequentFlyerNumber": "AF556677889",
+        "id": 7,
+        "lastName": "Dubois",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1998-11-21",
+        "email": "juliette.roux@example.com",
+        "firstName": "Juliette",
+        "frequentFlyerNumber": null,
+        "id": 40,
+        "lastName": "Roux",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

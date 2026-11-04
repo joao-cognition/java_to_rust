@@ -1,0 +1,8 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-LHR d+30 outside window",
+  "path": "offers?origin=NCE&destination=LHR&date=2026-12-05",
+  "status": 200,
+  "content_type": "application/json",
+  "body": []
+}

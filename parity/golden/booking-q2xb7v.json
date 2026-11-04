@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking Q2XB7V",
+  "path": "bookings/Q2XB7V",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-16T13:57:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "Q2XB7V",
+    "segments": [
+      {
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "flight": {
+          "aircraft": "B787",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-27T20:35:00+01:00",
+          "departure": "2026-11-27T06:40:00-05:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 475,
+          "flightNumber": "AF60",
+          "id": 1085,
+          "origin": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 5823.20,
+    "travelers": [
+      {
+        "dateOfBirth": "1994-12-30",
+        "email": "diego.lopez@example.com",
+        "firstName": "Diego",
+        "frequentFlyerNumber": "IB10029384",
+        "id": 22,
+        "lastName": "López",
+        "nationality": "ES"
+      },
+      {
+        "dateOfBirth": "1997-07-04",
+        "email": "hugo.moreau@example.com",
+        "firstName": "Hugo",
+        "frequentFlyerNumber": "AF334455667",
+        "id": 26,
+        "lastName": "Moreau",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

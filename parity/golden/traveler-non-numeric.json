@@ -1,0 +1,13 @@
+{
+  "endpoint": "travelers/{id}",
+  "label": "traveler non numeric",
+  "path": "travelers/abc",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Failed to convert 'id' with value: 'abc'",
+    "instance": "/travel/api/travelers/abc",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName C",
+  "path": "travelers?lastName=C",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1996-08-23",
+      "email": "chiara.conti@example.com",
+      "firstName": "Chiara",
+      "frequentFlyerNumber": "AZ10203040",
+      "id": 19,
+      "lastName": "Conti",
+      "nationality": "IT"
+    },
+    {
+      "dateOfBirth": "1992-06-09",
+      "email": "beatriz.costa@example.com",
+      "firstName": "Beatriz",
+      "frequentFlyerNumber": null,
+      "id": 30,
+      "lastName": "Costa",
+      "nationality": "PT"
+    }
+  ]
+}

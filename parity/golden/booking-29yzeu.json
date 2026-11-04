@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 29YZEU",
+  "path": "bookings/29YZEU",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-29T11:42:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "29YZEU",
+    "segments": [
+      {
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "flight": {
+          "aircraft": "A380",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-23T16:35:00+01:00",
+          "departure": "2026-11-23T12:35:00+04:00",
+          "destination": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          },
+          "durationMinutes": 420,
+          "flightNumber": "EK233",
+          "id": 2668,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 4939.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1994-12-30",
+        "email": "diego.lopez@example.com",
+        "firstName": "Diego",
+        "frequentFlyerNumber": "IB10029384",
+        "id": 22,
+        "lastName": "López",
+        "nationality": "ES"
+      },
+      {
+        "dateOfBirth": "1971-09-24",
+        "email": "pierre.girard@example.com",
+        "firstName": "Pierre",
+        "frequentFlyerNumber": "AF778899001",
+        "id": 33,
+        "lastName": "Girard",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

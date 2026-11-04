@@ -1,0 +1,8 @@
+{
+  "endpoint": "offers",
+  "label": "offers CDG-JFK d+7 adults=9 cabin=FIRST",
+  "path": "offers?origin=CDG&destination=JFK&date=2026-11-12&adults=9&cabin=FIRST",
+  "status": 200,
+  "content_type": "application/json",
+  "body": []
+}

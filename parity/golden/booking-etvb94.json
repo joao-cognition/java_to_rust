@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking ETVB94",
+  "path": "bookings/ETVB94",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-03T16:00:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "ETVB94",
+    "segments": [
+      {
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "B738",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "IT",
+            "iata": "AZ",
+            "icao": "ITY",
+            "name": "ITA Airways"
+          },
+          "arrival": "2026-11-20T07:40:00+01:00",
+          "departure": "2026-11-20T06:10:00+01:00",
+          "destination": {
+            "city": "Munich",
+            "country": "DE",
+            "iata": "MUC",
+            "icao": "EDDM",
+            "latitude": 48.3537,
+            "longitude": 11.775,
+            "name": "Munich Franz Josef Strauss",
+            "timezone": "Europe/Berlin"
+          },
+          "durationMinutes": 90,
+          "flightNumber": "AZ430",
+          "id": 2221,
+          "origin": {
+            "city": "Rome",
+            "country": "IT",
+            "iata": "FCO",
+            "icao": "LIRF",
+            "latitude": 41.8003,
+            "longitude": 12.2389,
+            "name": "Rome Fiumicino",
+            "timezone": "Europe/Rome"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1278.60,
+    "travelers": [
+      {
+        "dateOfBirth": "1989-04-01",
+        "email": "jonas.nielsen@example.com",
+        "firstName": "Jonas",
+        "frequentFlyerNumber": null,
+        "id": 18,
+        "lastName": "Nielsen",
+        "nationality": "DK"
+      },
+      {
+        "dateOfBirth": "1971-09-24",
+        "email": "pierre.girard@example.com",
+        "firstName": "Pierre",
+        "frequentFlyerNumber": "AF778899001",
+        "id": 33,
+        "lastName": "Girard",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1998-11-21",
+        "email": "juliette.roux@example.com",
+        "firstName": "Juliette",
+        "frequentFlyerNumber": null,
+        "id": 40,
+        "lastName": "Roux",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

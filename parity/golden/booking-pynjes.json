@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking PYNJES",
+  "path": "bookings/PYNJES",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-06T16:33:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "PYNJES",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "IT",
+            "iata": "AZ",
+            "icao": "ITY",
+            "name": "ITA Airways"
+          },
+          "arrival": "2026-11-21T07:20:00+01:00",
+          "departure": "2026-11-21T06:00:00+01:00",
+          "destination": {
+            "city": "Rome",
+            "country": "IT",
+            "iata": "FCO",
+            "icao": "LIRF",
+            "latitude": 41.8003,
+            "longitude": 12.2389,
+            "name": "Rome Fiumicino",
+            "timezone": "Europe/Rome"
+          },
+          "durationMinutes": 80,
+          "flightNumber": "AZ480",
+          "id": 2345,
+          "origin": {
+            "city": "Munich",
+            "country": "DE",
+            "iata": "MUC",
+            "icao": "EDDM",
+            "latitude": 48.3537,
+            "longitude": 11.775,
+            "name": "Munich Franz Josef Strauss",
+            "timezone": "Europe/Berlin"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 482.49,
+    "travelers": [
+      {
+        "dateOfBirth": "1984-03-12",
+        "email": "camille.marin@example.com",
+        "firstName": "Camille",
+        "frequentFlyerNumber": "AF123456789",
+        "id": 1,
+        "lastName": "Marin",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1987-08-17",
+        "email": "matteo.rossi@example.com",
+        "firstName": "Matteo",
+        "frequentFlyerNumber": "AZ44556677",
+        "id": 11,
+        "lastName": "Rossi",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1993-12-05",
+        "email": "laura.jansen@example.com",
+        "firstName": "Laura",
+        "frequentFlyerNumber": "KL27182818",
+        "id": 34,
+        "lastName": "Jansen",
+        "nationality": "NL"
+      }
+    ]
+  }
+}

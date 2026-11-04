@@ -1,0 +1,149 @@
+{
+  "endpoint": "flights",
+  "label": "flights LIS-AMS d+29",
+  "path": "flights?origin=LIS&destination=AMS&date=2026-12-04",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "NL",
+        "iata": "KL",
+        "icao": "KLM",
+        "name": "KLM Royal Dutch Airlines"
+      },
+      "arrival": "2026-12-04T10:50:00+01:00",
+      "departure": "2026-12-04T06:50:00+00:00",
+      "destination": {
+        "city": "Amsterdam",
+        "country": "NL",
+        "iata": "AMS",
+        "icao": "EHAM",
+        "latitude": 52.3105,
+        "longitude": 4.7683,
+        "name": "Amsterdam Schiphol",
+        "timezone": "Europe/Amsterdam"
+      },
+      "durationMinutes": 180,
+      "flightNumber": "KL1740",
+      "id": 2157,
+      "origin": {
+        "city": "Lisbon",
+        "country": "PT",
+        "iata": "LIS",
+        "icao": "LPPT",
+        "latitude": 38.7742,
+        "longitude": -9.1342,
+        "name": "Lisbon Humberto Delgado",
+        "timezone": "Europe/Lisbon"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "PT",
+        "iata": "TP",
+        "icao": "TAP",
+        "name": "TAP Air Portugal"
+      },
+      "arrival": "2026-12-04T14:35:00+01:00",
+      "departure": "2026-12-04T10:35:00+00:00",
+      "destination": {
+        "city": "Amsterdam",
+        "country": "NL",
+        "iata": "AMS",
+        "icao": "EHAM",
+        "latitude": 52.3105,
+        "longitude": 4.7683,
+        "name": "Amsterdam Schiphol",
+        "timezone": "Europe/Amsterdam"
+      },
+      "durationMinutes": 180,
+      "flightNumber": "TP1741",
+      "id": 2158,
+      "origin": {
+        "city": "Lisbon",
+        "country": "PT",
+        "iata": "LIS",
+        "icao": "LPPT",
+        "latitude": 38.7742,
+        "longitude": -9.1342,
+        "name": "Lisbon Humberto Delgado",
+        "timezone": "Europe/Lisbon"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "NL",
+        "iata": "KL",
+        "icao": "KLM",
+        "name": "KLM Royal Dutch Airlines"
+      },
+      "arrival": "2026-12-04T18:20:00+01:00",
+      "departure": "2026-12-04T14:30:00+00:00",
+      "destination": {
+        "city": "Amsterdam",
+        "country": "NL",
+        "iata": "AMS",
+        "icao": "EHAM",
+        "latitude": 52.3105,
+        "longitude": 4.7683,
+        "name": "Amsterdam Schiphol",
+        "timezone": "Europe/Amsterdam"
+      },
+      "durationMinutes": 170,
+      "flightNumber": "KL1742",
+      "id": 2159,
+      "origin": {
+        "city": "Lisbon",
+        "country": "PT",
+        "iata": "LIS",
+        "icao": "LPPT",
+        "latitude": 38.7742,
+        "longitude": -9.1342,
+        "name": "Lisbon Humberto Delgado",
+        "timezone": "Europe/Lisbon"
+      }
+    },
+    {
+      "aircraft": "A321",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "PT",
+        "iata": "TP",
+        "icao": "TAP",
+        "name": "TAP Air Portugal"
+      },
+      "arrival": "2026-12-04T21:50:00+01:00",
+      "departure": "2026-12-04T18:00:00+00:00",
+      "destination": {
+        "city": "Amsterdam",
+        "country": "NL",
+        "iata": "AMS",
+        "icao": "EHAM",
+        "latitude": 52.3105,
+        "longitude": 4.7683,
+        "name": "Amsterdam Schiphol",
+        "timezone": "Europe/Amsterdam"
+      },
+      "durationMinutes": 170,
+      "flightNumber": "TP1743",
+      "id": 2160,
+      "origin": {
+        "city": "Lisbon",
+        "country": "PT",
+        "iata": "LIS",
+        "icao": "LPPT",
+        "latitude": 38.7742,
+        "longitude": -9.1342,
+        "name": "Lisbon Humberto Delgado",
+        "timezone": "Europe/Lisbon"
+      }
+    }
+  ]
+}

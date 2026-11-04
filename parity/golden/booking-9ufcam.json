@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 9UFCAM",
+  "path": "bookings/9UFCAM",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-11-04T05:08:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "9UFCAM",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A380",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-09T16:35:00+01:00",
+          "departure": "2026-11-09T12:35:00+04:00",
+          "destination": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          },
+          "durationMinutes": 420,
+          "flightNumber": "EK233",
+          "id": 2556,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 413.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1973-10-12",
+        "email": "tomas.novak@example.com",
+        "firstName": "Tomas",
+        "frequentFlyerNumber": null,
+        "id": 24,
+        "lastName": "Novák",
+        "nationality": "CZ"
+      }
+    ]
+  }
+}

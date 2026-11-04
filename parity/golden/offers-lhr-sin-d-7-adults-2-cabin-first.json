@@ -1,0 +1,357 @@
+{
+  "endpoint": "offers",
+  "label": "offers LHR-SIN d+7 adults=2 cabin=FIRST",
+  "path": "offers?origin=LHR&destination=SIN&date=2026-11-12&adults=2&cabin=FIRST",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 40,
+        "baseAmount": 4246.00,
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 4
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "SG",
+          "iata": "SQ",
+          "icao": "SIA",
+          "name": "Singapore Airlines"
+        },
+        "arrival": "2026-11-13T06:25:00+08:00",
+        "departure": "2026-11-12T08:15:00+00:00",
+        "destination": {
+          "city": "Singapore",
+          "country": "SG",
+          "iata": "SIN",
+          "icao": "WSSS",
+          "latitude": 1.3644,
+          "longitude": 103.9915,
+          "name": "Singapore Changi",
+          "timezone": "Asia/Singapore"
+        },
+        "durationMinutes": 850,
+        "flightNumber": "SQ301",
+        "id": 1198,
+        "origin": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        }
+      },
+      "offerId": "1198-F",
+      "pricing": {
+        "base": 8492.00,
+        "basePerPassenger": 4246.00,
+        "currency": "EUR",
+        "passengers": 2,
+        "perPassenger": 4638.90,
+        "taxes": 785.80,
+        "taxesPerPassenger": 392.90,
+        "total": 9277.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 40,
+        "baseAmount": 4298.00,
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 2
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "SG",
+          "iata": "SQ",
+          "icao": "SIA",
+          "name": "Singapore Airlines"
+        },
+        "arrival": "2026-11-13T11:15:00+08:00",
+        "departure": "2026-11-12T12:55:00+00:00",
+        "destination": {
+          "city": "Singapore",
+          "country": "SG",
+          "iata": "SIN",
+          "icao": "WSSS",
+          "latitude": 1.3644,
+          "longitude": 103.9915,
+          "name": "Singapore Changi",
+          "timezone": "Asia/Singapore"
+        },
+        "durationMinutes": 860,
+        "flightNumber": "SQ303",
+        "id": 1200,
+        "origin": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        }
+      },
+      "offerId": "1200-F",
+      "pricing": {
+        "base": 8596.00,
+        "basePerPassenger": 4298.00,
+        "currency": "EUR",
+        "passengers": 2,
+        "perPassenger": 4690.90,
+        "taxes": 785.80,
+        "taxesPerPassenger": 392.90,
+        "total": 9381.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 40,
+        "baseAmount": 4348.00,
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 3
+      },
+      "flight": {
+        "aircraft": "A380",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-11-13T12:55:00+08:00",
+        "departure": "2026-11-12T14:55:00+00:00",
+        "destination": {
+          "city": "Singapore",
+          "country": "SG",
+          "iata": "SIN",
+          "icao": "WSSS",
+          "latitude": 1.3644,
+          "longitude": 103.9915,
+          "name": "Singapore Changi",
+          "timezone": "Asia/Singapore"
+        },
+        "durationMinutes": 840,
+        "flightNumber": "BA304",
+        "id": 1201,
+        "origin": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        }
+      },
+      "offerId": "1201-F",
+      "pricing": {
+        "base": 8696.00,
+        "basePerPassenger": 4348.00,
+        "currency": "EUR",
+        "passengers": 2,
+        "perPassenger": 4716.90,
+        "taxes": 737.80,
+        "taxesPerPassenger": 368.90,
+        "total": 9433.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 40,
+        "baseAmount": 4729.00,
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 8
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-11-13T17:05:00+08:00",
+        "departure": "2026-11-12T18:55:00+00:00",
+        "destination": {
+          "city": "Singapore",
+          "country": "SG",
+          "iata": "SIN",
+          "icao": "WSSS",
+          "latitude": 1.3644,
+          "longitude": 103.9915,
+          "name": "Singapore Changi",
+          "timezone": "Asia/Singapore"
+        },
+        "durationMinutes": 850,
+        "flightNumber": "BA306",
+        "id": 1203,
+        "origin": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        }
+      },
+      "offerId": "1203-F",
+      "pricing": {
+        "base": 9458.00,
+        "basePerPassenger": 4729.00,
+        "currency": "EUR",
+        "passengers": 2,
+        "perPassenger": 5097.90,
+        "taxes": 737.80,
+        "taxesPerPassenger": 368.90,
+        "total": 10195.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 40,
+        "baseAmount": 5352.00,
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 8
+      },
+      "flight": {
+        "aircraft": "A350",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-11-13T05:05:00+08:00",
+        "departure": "2026-11-12T06:50:00+00:00",
+        "destination": {
+          "city": "Singapore",
+          "country": "SG",
+          "iata": "SIN",
+          "icao": "WSSS",
+          "latitude": 1.3644,
+          "longitude": 103.9915,
+          "name": "Singapore Changi",
+          "timezone": "Asia/Singapore"
+        },
+        "durationMinutes": 855,
+        "flightNumber": "BA300",
+        "id": 1197,
+        "origin": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        }
+      },
+      "offerId": "1197-F",
+      "pricing": {
+        "base": 10704.00,
+        "basePerPassenger": 5352.00,
+        "currency": "EUR",
+        "passengers": 2,
+        "perPassenger": 5720.90,
+        "taxes": 737.80,
+        "taxesPerPassenger": 368.90,
+        "total": 11441.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 40,
+        "baseAmount": 5693.00,
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 6
+      },
+      "flight": {
+        "aircraft": "B777",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "SG",
+          "iata": "SQ",
+          "icao": "SIA",
+          "name": "Singapore Airlines"
+        },
+        "arrival": "2026-11-13T14:30:00+08:00",
+        "departure": "2026-11-12T16:20:00+00:00",
+        "destination": {
+          "city": "Singapore",
+          "country": "SG",
+          "iata": "SIN",
+          "icao": "WSSS",
+          "latitude": 1.3644,
+          "longitude": 103.9915,
+          "name": "Singapore Changi",
+          "timezone": "Asia/Singapore"
+        },
+        "durationMinutes": 850,
+        "flightNumber": "SQ305",
+        "id": 1202,
+        "origin": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        }
+      },
+      "offerId": "1202-F",
+      "pricing": {
+        "base": 11386.00,
+        "basePerPassenger": 5693.00,
+        "currency": "EUR",
+        "passengers": 2,
+        "perPassenger": 6085.90,
+        "taxes": 785.80,
+        "taxesPerPassenger": 392.90,
+        "total": 12171.80
+      }
+    }
+  ]
+}

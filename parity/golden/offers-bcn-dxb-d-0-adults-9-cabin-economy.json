@@ -1,0 +1,705 @@
+{
+  "endpoint": "offers",
+  "label": "offers BCN-DXB d+0 adults=9 cabin=ECONOMY",
+  "path": "offers?origin=BCN&destination=DXB&date=2026-11-05&adults=9&cabin=ECONOMY",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 250.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 11
+      },
+      "flight": {
+        "aircraft": "B777",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-06T04:55:00+04:00",
+        "departure": "2026-11-05T18:55:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 420,
+        "flightNumber": "EK183",
+        "id": 2404,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2404-K",
+      "pricing": {
+        "base": 2250.00,
+        "basePerPassenger": 250.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 381.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 3430.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 254.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A330",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-05T16:25:00+04:00",
+        "departure": "2026-11-05T06:25:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 420,
+        "flightNumber": "EK180",
+        "id": 2401,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2401-K",
+      "pricing": {
+        "base": 2286.00,
+        "basePerPassenger": 254.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 385.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 3466.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 294.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 19
+      },
+      "flight": {
+        "aircraft": "A380",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-06T00:45:00+04:00",
+        "departure": "2026-11-05T14:40:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 425,
+        "flightNumber": "EK182",
+        "id": 2403,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2403-K",
+      "pricing": {
+        "base": 2646.00,
+        "basePerPassenger": 294.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 425.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 3826.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 334.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 30
+      },
+      "flight": {
+        "aircraft": "B777",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-06T04:55:00+04:00",
+        "departure": "2026-11-05T18:55:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 420,
+        "flightNumber": "EK183",
+        "id": 2404,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2404-M",
+      "pricing": {
+        "base": 3006.00,
+        "basePerPassenger": 334.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 465.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 4186.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 338.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "A330",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-05T16:25:00+04:00",
+        "departure": "2026-11-05T06:25:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 420,
+        "flightNumber": "EK180",
+        "id": 2401,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2401-M",
+      "pricing": {
+        "base": 3042.00,
+        "basePerPassenger": 338.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 469.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 4222.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 356.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 21
+      },
+      "flight": {
+        "aircraft": "A330",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-05T20:35:00+04:00",
+        "departure": "2026-11-05T10:25:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 430,
+        "flightNumber": "EK181",
+        "id": 2402,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2402-K",
+      "pricing": {
+        "base": 3204.00,
+        "basePerPassenger": 356.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 487.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 4384.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 393.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 38
+      },
+      "flight": {
+        "aircraft": "A380",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-06T00:45:00+04:00",
+        "departure": "2026-11-05T14:40:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 425,
+        "flightNumber": "EK182",
+        "id": 2403,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2403-M",
+      "pricing": {
+        "base": 3537.00,
+        "basePerPassenger": 393.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 524.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 4717.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 417.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 31
+      },
+      "flight": {
+        "aircraft": "B777",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-06T04:55:00+04:00",
+        "departure": "2026-11-05T18:55:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 420,
+        "flightNumber": "EK183",
+        "id": 2404,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2404-Y",
+      "pricing": {
+        "base": 3753.00,
+        "basePerPassenger": 417.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 548.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 4933.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 423.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 52
+      },
+      "flight": {
+        "aircraft": "A330",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-05T16:25:00+04:00",
+        "departure": "2026-11-05T06:25:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 420,
+        "flightNumber": "EK180",
+        "id": 2401,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2401-Y",
+      "pricing": {
+        "base": 3807.00,
+        "basePerPassenger": 423.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 554.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 4987.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 475.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 27
+      },
+      "flight": {
+        "aircraft": "A330",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-05T20:35:00+04:00",
+        "departure": "2026-11-05T10:25:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 430,
+        "flightNumber": "EK181",
+        "id": 2402,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2402-M",
+      "pricing": {
+        "base": 4275.00,
+        "basePerPassenger": 475.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 606.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 5455.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 491.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 65
+      },
+      "flight": {
+        "aircraft": "A380",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-06T00:45:00+04:00",
+        "departure": "2026-11-05T14:40:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 425,
+        "flightNumber": "EK182",
+        "id": 2403,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2403-Y",
+      "pricing": {
+        "base": 4419.00,
+        "basePerPassenger": 491.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 622.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 5599.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 594.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 30
+      },
+      "flight": {
+        "aircraft": "A330",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-05T20:35:00+04:00",
+        "departure": "2026-11-05T10:25:00+01:00",
+        "destination": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        },
+        "durationMinutes": 430,
+        "flightNumber": "EK181",
+        "id": 2402,
+        "origin": {
+          "city": "Barcelona",
+          "country": "ES",
+          "iata": "BCN",
+          "icao": "LEBL",
+          "latitude": 41.2974,
+          "longitude": 2.0833,
+          "name": "Barcelona-El Prat",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "2402-Y",
+      "pricing": {
+        "base": 5346.00,
+        "basePerPassenger": 594.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 725.20,
+        "taxes": 1180.80,
+        "taxesPerPassenger": 131.20,
+        "total": 6526.80
+      }
+    }
+  ]
+}

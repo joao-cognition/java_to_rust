@@ -1,0 +1,13 @@
+{
+  "endpoint": "flights",
+  "label": "flights unknown origin",
+  "path": "flights?origin=QQQ&destination=LHR&date=2026-11-05",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Unknown origin airport: QQQ",
+    "instance": "/travel/api/flights",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

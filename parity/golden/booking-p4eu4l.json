@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking P4EU4L",
+  "path": "bookings/P4EU4L",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-29T08:37:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "P4EU4L",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A220",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "DE",
+            "iata": "LH",
+            "icao": "DLH",
+            "name": "Lufthansa"
+          },
+          "arrival": "2026-11-06T11:40:00+01:00",
+          "departure": "2026-11-06T10:20:00+01:00",
+          "destination": {
+            "city": "Munich",
+            "country": "DE",
+            "iata": "MUC",
+            "icao": "EDDM",
+            "latitude": 48.3537,
+            "longitude": 11.775,
+            "name": "Munich Franz Josef Strauss",
+            "timezone": "Europe/Berlin"
+          },
+          "durationMinutes": 80,
+          "flightNumber": "LH431",
+          "id": 2166,
+          "origin": {
+            "city": "Rome",
+            "country": "IT",
+            "iata": "FCO",
+            "icao": "LIRF",
+            "latitude": 41.8003,
+            "longitude": 12.2389,
+            "name": "Rome Fiumicino",
+            "timezone": "Europe/Rome"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 460.20,
+    "travelers": [
+      {
+        "dateOfBirth": "1992-06-09",
+        "email": "beatriz.costa@example.com",
+        "firstName": "Beatriz",
+        "frequentFlyerNumber": null,
+        "id": 30,
+        "lastName": "Costa",
+        "nationality": "PT"
+      },
+      {
+        "dateOfBirth": "1998-11-21",
+        "email": "juliette.roux@example.com",
+        "firstName": "Juliette",
+        "frequentFlyerNumber": null,
+        "id": 40,
+        "lastName": "Roux",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1985-02-23",
+        "email": "alejandro.navarro@example.com",
+        "firstName": "Alejandro",
+        "frequentFlyerNumber": null,
+        "id": 47,
+        "lastName": "Navarro",
+        "nationality": "ES"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName B",
+  "path": "travelers?lastName=B",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1995-05-08",
+      "email": "sebastian.becker@example.com",
+      "firstName": "Sebastian",
+      "frequentFlyerNumber": null,
+      "id": 37,
+      "lastName": "Becker",
+      "nationality": "DE"
+    },
+    {
+      "dateOfBirth": "1982-02-14",
+      "email": "alice.bernard@example.com",
+      "firstName": "Alice",
+      "frequentFlyerNumber": null,
+      "id": 21,
+      "lastName": "Bernard",
+      "nationality": "FR"
+    },
+    {
+      "dateOfBirth": "1979-02-27",
+      "email": "marco.bianchi@example.com",
+      "firstName": "Marco",
+      "frequentFlyerNumber": null,
+      "id": 35,
+      "lastName": "Bianchi",
+      "nationality": "IT"
+    },
+    {
+      "dateOfBirth": "1977-06-18",
+      "email": "oliver.brown@example.com",
+      "firstName": "Oliver",
+      "frequentFlyerNumber": "BA77553311",
+      "id": 20,
+      "lastName": "Brown",
+      "nationality": "GB"
+    }
+  ]
+}

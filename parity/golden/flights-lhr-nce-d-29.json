@@ -1,0 +1,219 @@
+{
+  "endpoint": "flights",
+  "label": "flights LHR-NCE d+29",
+  "path": "flights?origin=LHR&destination=NCE&date=2026-12-04",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-12-04T09:50:00+01:00",
+      "departure": "2026-12-04T06:55:00+00:00",
+      "destination": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 115,
+      "flightNumber": "BA390",
+      "id": 385,
+      "origin": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      }
+    },
+    {
+      "aircraft": "B738",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-12-04T11:15:00+01:00",
+      "departure": "2026-12-04T08:30:00+00:00",
+      "destination": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 105,
+      "flightNumber": "AF391",
+      "id": 386,
+      "origin": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-12-04T14:40:00+01:00",
+      "departure": "2026-12-04T11:50:00+00:00",
+      "destination": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 110,
+      "flightNumber": "BA392",
+      "id": 387,
+      "origin": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      }
+    },
+    {
+      "aircraft": "B738",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-12-04T17:30:00+01:00",
+      "departure": "2026-12-04T14:25:00+00:00",
+      "destination": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 125,
+      "flightNumber": "AF393",
+      "id": 388,
+      "origin": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      }
+    },
+    {
+      "aircraft": "B738",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-12-04T19:25:00+01:00",
+      "departure": "2026-12-04T16:30:00+00:00",
+      "destination": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 115,
+      "flightNumber": "BA394",
+      "id": 389,
+      "origin": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-12-04T22:00:00+01:00",
+      "departure": "2026-12-04T19:00:00+00:00",
+      "destination": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 120,
+      "flightNumber": "AF395",
+      "id": 390,
+      "origin": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      }
+    }
+  ]
+}

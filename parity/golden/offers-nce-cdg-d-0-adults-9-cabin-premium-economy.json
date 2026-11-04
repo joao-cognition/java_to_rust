@@ -1,0 +1,67 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-CDG d+0 adults=9 cabin=PREMIUM_ECONOMY",
+  "path": "offers?origin=NCE&destination=CDG&date=2026-11-05&adults=9&cabin=PREMIUM_ECONOMY",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 160.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-05T13:25:00+01:00",
+        "departure": "2026-11-05T12:05:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 80,
+        "flightNumber": "AF7703",
+        "id": 394,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "394-W",
+      "pricing": {
+        "base": 1440.00,
+        "basePerPassenger": 160.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 224.90,
+        "taxes": 584.10,
+        "taxesPerPassenger": 64.90,
+        "total": 2024.10
+      }
+    }
+  ]
+}

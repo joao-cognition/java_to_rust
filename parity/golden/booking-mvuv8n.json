@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking MVUV8N",
+  "path": "bookings/MVUV8N",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-02T09:00:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "MVUV8N",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "E190",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "IN",
+            "iata": "AI",
+            "icao": "AIC",
+            "name": "Air India"
+          },
+          "arrival": "2026-11-09T12:50:00+05:30",
+          "departure": "2026-11-09T08:30:00+04:00",
+          "destination": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          },
+          "durationMinutes": 170,
+          "flightNumber": "AI501",
+          "id": 2794,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 218.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1979-03-05",
+        "email": "pedro.silva@example.com",
+        "firstName": "Pedro",
+        "frequentFlyerNumber": "TP00118822",
+        "id": 13,
+        "lastName": "Silva",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

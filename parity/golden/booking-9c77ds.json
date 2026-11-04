@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 9C77DS",
+  "path": "bookings/9C77DS",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-21T09:51:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "9C77DS",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A380",
+          "airline": {
+            "alliance": "ONEWORLD",
+            "country": "GB",
+            "iata": "BA",
+            "icao": "BAW",
+            "name": "British Airways"
+          },
+          "arrival": "2026-11-10T04:55:00+08:00",
+          "departure": "2026-11-09T06:50:00+00:00",
+          "destination": {
+            "city": "Singapore",
+            "country": "SG",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "latitude": 1.3644,
+            "longitude": 103.9915,
+            "name": "Singapore Changi",
+            "timezone": "Asia/Singapore"
+          },
+          "durationMinutes": 845,
+          "flightNumber": "BA300",
+          "id": 1173,
+          "origin": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 3170.70,
+    "travelers": [
+      {
+        "dateOfBirth": "1982-02-14",
+        "email": "alice.bernard@example.com",
+        "firstName": "Alice",
+        "frequentFlyerNumber": null,
+        "id": 21,
+        "lastName": "Bernard",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1973-10-12",
+        "email": "tomas.novak@example.com",
+        "firstName": "Tomas",
+        "frequentFlyerNumber": null,
+        "id": 24,
+        "lastName": "Novák",
+        "nationality": "CZ"
+      },
+      {
+        "dateOfBirth": "1997-07-04",
+        "email": "hugo.moreau@example.com",
+        "firstName": "Hugo",
+        "frequentFlyerNumber": "AF334455667",
+        "id": 26,
+        "lastName": "Moreau",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

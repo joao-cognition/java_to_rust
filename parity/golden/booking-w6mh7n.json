@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking W6MH7N",
+  "path": "bookings/W6MH7N",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-03T14:03:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "W6MH7N",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "A330",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-12-04T20:35:00+04:00",
+          "departure": "2026-12-04T10:25:00+01:00",
+          "destination": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          },
+          "durationMinutes": 430,
+          "flightNumber": "EK181",
+          "id": 2518,
+          "origin": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 6369.60,
+    "travelers": [
+      {
+        "dateOfBirth": "1979-03-05",
+        "email": "pedro.silva@example.com",
+        "firstName": "Pedro",
+        "frequentFlyerNumber": "TP00118822",
+        "id": 13,
+        "lastName": "Silva",
+        "nationality": "PT"
+      },
+      {
+        "dateOfBirth": "1972-01-27",
+        "email": "louis.lefebvre@example.com",
+        "firstName": "Louis",
+        "frequentFlyerNumber": "AF990011223",
+        "id": 16,
+        "lastName": "Lefebvre",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1983-01-15",
+        "email": "giulia.ricci@example.com",
+        "firstName": "Giulia",
+        "frequentFlyerNumber": null,
+        "id": 28,
+        "lastName": "Ricci",
+        "nationality": "IT"
+      }
+    ]
+  }
+}

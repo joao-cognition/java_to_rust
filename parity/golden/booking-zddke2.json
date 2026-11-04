@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking ZDDKE2",
+  "path": "bookings/ZDDKE2",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-22T16:13:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "ZDDKE2",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "DE",
+            "iata": "LH",
+            "icao": "DLH",
+            "name": "Lufthansa"
+          },
+          "arrival": "2026-11-09T21:30:00+01:00",
+          "departure": "2026-11-09T19:10:00+01:00",
+          "destination": {
+            "city": "Frankfurt",
+            "country": "DE",
+            "iata": "FRA",
+            "icao": "EDDF",
+            "latitude": 50.0379,
+            "longitude": 8.5622,
+            "name": "Frankfurt am Main",
+            "timezone": "Europe/Berlin"
+          },
+          "durationMinutes": 140,
+          "flightNumber": "LH1105",
+          "id": 1530,
+          "origin": {
+            "city": "Madrid",
+            "country": "ES",
+            "iata": "MAD",
+            "icao": "LEMD",
+            "latitude": 40.4983,
+            "longitude": -3.5676,
+            "name": "Adolfo Suárez Madrid-Barajas",
+            "timezone": "Europe/Madrid"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 230.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1978-11-02",
+        "email": "sofia.marchetti@example.com",
+        "firstName": "Sofia",
+        "frequentFlyerNumber": null,
+        "id": 3,
+        "lastName": "Marchetti",
+        "nationality": "IT"
+      }
+    ]
+  }
+}

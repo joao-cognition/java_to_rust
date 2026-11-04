@@ -1,0 +1,289 @@
+{
+  "endpoint": "flights",
+  "label": "flights NCE-CDG d+0",
+  "path": "flights?origin=NCE&destination=CDG&date=2026-11-05",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-05T07:45:00+01:00",
+      "departure": "2026-11-05T06:15:00+01:00",
+      "destination": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 90,
+      "flightNumber": "AF7700",
+      "id": 391,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "A321",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-05T10:30:00+01:00",
+      "departure": "2026-11-05T08:55:00+01:00",
+      "destination": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 95,
+      "flightNumber": "AF7701",
+      "id": 392,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "B738",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-05T11:25:00+01:00",
+      "departure": "2026-11-05T10:00:00+01:00",
+      "destination": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 85,
+      "flightNumber": "AF7702",
+      "id": 393,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-05T13:25:00+01:00",
+      "departure": "2026-11-05T12:05:00+01:00",
+      "destination": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 80,
+      "flightNumber": "AF7703",
+      "id": 394,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-05T15:50:00+01:00",
+      "departure": "2026-11-05T14:25:00+01:00",
+      "destination": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 85,
+      "flightNumber": "AF7704",
+      "id": 395,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "B738",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-05T18:00:00+01:00",
+      "departure": "2026-11-05T16:45:00+01:00",
+      "destination": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 75,
+      "flightNumber": "AF7705",
+      "id": 396,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "A220",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-05T20:05:00+01:00",
+      "departure": "2026-11-05T18:45:00+01:00",
+      "destination": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 80,
+      "flightNumber": "AF7706",
+      "id": 397,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-05T22:15:00+01:00",
+      "departure": "2026-11-05T20:40:00+01:00",
+      "destination": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      },
+      "durationMinutes": 95,
+      "flightNumber": "AF7707",
+      "id": 398,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    }
+  ]
+}

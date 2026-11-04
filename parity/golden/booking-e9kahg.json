@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking E9KAHG",
+  "path": "bookings/E9KAHG",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-01T18:44:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "E9KAHG",
+    "segments": [
+      {
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "B738",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-15T18:55:00+00:00",
+          "departure": "2026-11-15T17:55:00+01:00",
+          "destination": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          },
+          "durationMinutes": 120,
+          "flightNumber": "AF345",
+          "id": 76,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 496.20,
+    "travelers": [
+      {
+        "dateOfBirth": "1995-05-08",
+        "email": "sebastian.becker@example.com",
+        "firstName": "Sebastian",
+        "frequentFlyerNumber": null,
+        "id": 37,
+        "lastName": "Becker",
+        "nationality": "DE"
+      }
+    ]
+  }
+}

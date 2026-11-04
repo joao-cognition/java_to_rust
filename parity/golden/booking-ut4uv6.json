@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking UT4UV6",
+  "path": "bookings/UT4UV6",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-29T05:52:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "UT4UV6",
+    "segments": [
+      {
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-13T13:35:00+01:00",
+          "departure": "2026-11-13T12:05:00+01:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 90,
+          "flightNumber": "AF7703",
+          "id": 458,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 997.60,
+    "travelers": [
+      {
+        "dateOfBirth": "1986-10-10",
+        "email": "katarzyna.wisniewska@example.com",
+        "firstName": "Katarzyna",
+        "frequentFlyerNumber": null,
+        "id": 36,
+        "lastName": "Wiśniewska",
+        "nationality": "PL"
+      },
+      {
+        "dateOfBirth": "1990-08-29",
+        "email": "francesca.greco@example.com",
+        "firstName": "Francesca",
+        "frequentFlyerNumber": "AZ90807060",
+        "id": 42,
+        "lastName": "Greco",
+        "nationality": "IT"
+      }
+    ]
+  }
+}

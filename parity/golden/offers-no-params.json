@@ -1,0 +1,13 @@
+{
+  "endpoint": "offers",
+  "label": "offers no params",
+  "path": "offers",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Required parameter 'origin' is not present.",
+    "instance": "/travel/api/offers",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

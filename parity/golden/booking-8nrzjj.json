@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 8NRZJJ",
+  "path": "bookings/8NRZJJ",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-20T13:06:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "8NRZJJ",
+    "segments": [
+      {
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "flight": {
+          "aircraft": "B787",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-18T04:55:00+01:00",
+          "departure": "2026-11-17T15:10:00-05:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 465,
+          "flightNumber": "AF64",
+          "id": 1019,
+          "origin": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 2944.05,
+    "travelers": [
+      {
+        "dateOfBirth": "1984-04-13",
+        "email": "amelia.taylor@example.com",
+        "firstName": "Amelia",
+        "frequentFlyerNumber": null,
+        "id": 32,
+        "lastName": "Taylor",
+        "nationality": "GB"
+      },
+      {
+        "dateOfBirth": "1974-03-19",
+        "email": "mikko.virtanen@example.com",
+        "firstName": "Mikko",
+        "frequentFlyerNumber": null,
+        "id": 39,
+        "lastName": "Virtanen",
+        "nationality": "FI"
+      },
+      {
+        "dateOfBirth": "1998-11-21",
+        "email": "juliette.roux@example.com",
+        "firstName": "Juliette",
+        "frequentFlyerNumber": null,
+        "id": 40,
+        "lastName": "Roux",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

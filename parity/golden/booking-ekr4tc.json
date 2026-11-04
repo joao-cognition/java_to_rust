@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking EKR4TC",
+  "path": "bookings/EKR4TC",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-01T12:42:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "EKR4TC",
+    "segments": [
+      {
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "flight": {
+          "aircraft": "B787",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-14T14:45:00+01:00",
+          "departure": "2026-11-14T10:40:00+04:00",
+          "destination": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          },
+          "durationMinutes": 425,
+          "flightNumber": "EK232",
+          "id": 2595,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1037.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1996-01-30",
+        "email": "clara.marques@example.com",
+        "firstName": "Clara",
+        "frequentFlyerNumber": null,
+        "id": 50,
+        "lastName": "Marques",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

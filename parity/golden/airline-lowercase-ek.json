@@ -1,0 +1,14 @@
+{
+  "endpoint": "airlines/{iata}",
+  "label": "airline lowercase ek",
+  "path": "airlines/ek",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "alliance": "NONE",
+    "country": "AE",
+    "iata": "EK",
+    "icao": "UAE",
+    "name": "Emirates"
+  }
+}

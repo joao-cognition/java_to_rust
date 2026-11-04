@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking KNNMR7",
+  "path": "bookings/KNNMR7",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-25T07:49:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "KNNMR7",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "IN",
+            "iata": "AI",
+            "icao": "AIC",
+            "name": "Air India"
+          },
+          "arrival": "2026-11-22T13:05:00+05:30",
+          "departure": "2026-11-22T08:30:00+04:00",
+          "destination": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          },
+          "durationMinutes": 185,
+          "flightNumber": "AI501",
+          "id": 2898,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 391.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1976-11-26",
+        "email": "daniel.wagner@example.com",
+        "firstName": "Daniel",
+        "frequentFlyerNumber": "LH120034567",
+        "id": 29,
+        "lastName": "Wagner",
+        "nationality": "AT"
+      },
+      {
+        "dateOfBirth": "1970-12-17",
+        "email": "markus.hoffmann@example.com",
+        "firstName": "Markus",
+        "frequentFlyerNumber": null,
+        "id": 45,
+        "lastName": "Hoffmann",
+        "nationality": "DE"
+      }
+    ]
+  }
+}

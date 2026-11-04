@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking Z63EMR",
+  "path": "bookings/Z63EMR",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-08T03:08:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "Z63EMR",
+    "segments": [
+      {
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-12-03T19:30:00+01:00",
+          "departure": "2026-12-03T18:10:00+01:00",
+          "destination": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 80,
+          "flightNumber": "AF7753",
+          "id": 746,
+          "origin": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1373.40,
+    "travelers": [
+      {
+        "dateOfBirth": "1972-01-27",
+        "email": "louis.lefebvre@example.com",
+        "firstName": "Louis",
+        "frequentFlyerNumber": "AF990011223",
+        "id": 16,
+        "lastName": "Lefebvre",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1983-01-15",
+        "email": "giulia.ricci@example.com",
+        "firstName": "Giulia",
+        "frequentFlyerNumber": null,
+        "id": 28,
+        "lastName": "Ricci",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1971-09-24",
+        "email": "pierre.girard@example.com",
+        "firstName": "Pierre",
+        "frequentFlyerNumber": "AF778899001",
+        "id": 33,
+        "lastName": "Girard",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

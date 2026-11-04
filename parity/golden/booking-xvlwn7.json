@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking XVLWN7",
+  "path": "bookings/XVLWN7",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-29T02:19:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "XVLWN7",
+    "segments": [
+      {
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "flight": {
+          "aircraft": "B777",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-08T16:25:00+04:00",
+          "departure": "2026-11-08T06:25:00+01:00",
+          "destination": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          },
+          "durationMinutes": 420,
+          "flightNumber": "EK180",
+          "id": 2413,
+          "origin": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 10401.60,
+    "travelers": [
+      {
+        "dateOfBirth": "1989-04-01",
+        "email": "jonas.nielsen@example.com",
+        "firstName": "Jonas",
+        "frequentFlyerNumber": null,
+        "id": 18,
+        "lastName": "Nielsen",
+        "nationality": "DK"
+      },
+      {
+        "dateOfBirth": "1984-04-13",
+        "email": "amelia.taylor@example.com",
+        "firstName": "Amelia",
+        "frequentFlyerNumber": null,
+        "id": 32,
+        "lastName": "Taylor",
+        "nationality": "GB"
+      },
+      {
+        "dateOfBirth": "1993-12-05",
+        "email": "laura.jansen@example.com",
+        "firstName": "Laura",
+        "frequentFlyerNumber": "KL27182818",
+        "id": 34,
+        "lastName": "Jansen",
+        "nationality": "NL"
+      }
+    ]
+  }
+}

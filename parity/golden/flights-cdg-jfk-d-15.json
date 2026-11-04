@@ -1,0 +1,219 @@
+{
+  "endpoint": "flights",
+  "label": "flights CDG-JFK d+15",
+  "path": "flights?origin=CDG&destination=JFK&date=2026-11-20",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "B777",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-20T08:20:00-05:00",
+      "departure": "2026-11-20T06:35:00+01:00",
+      "destination": {
+        "city": "New York",
+        "country": "US",
+        "iata": "JFK",
+        "icao": "KJFK",
+        "latitude": 40.6413,
+        "longitude": -73.7781,
+        "name": "New York John F. Kennedy International",
+        "timezone": "America/New_York"
+      },
+      "durationMinutes": 465,
+      "flightNumber": "AF10",
+      "id": 841,
+      "origin": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "A380",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "US",
+        "iata": "DL",
+        "icao": "DAL",
+        "name": "Delta Air Lines"
+      },
+      "arrival": "2026-11-20T10:35:00-05:00",
+      "departure": "2026-11-20T08:35:00+01:00",
+      "destination": {
+        "city": "New York",
+        "country": "US",
+        "iata": "JFK",
+        "icao": "KJFK",
+        "latitude": 40.6413,
+        "longitude": -73.7781,
+        "name": "New York John F. Kennedy International",
+        "timezone": "America/New_York"
+      },
+      "durationMinutes": 480,
+      "flightNumber": "DL11",
+      "id": 842,
+      "origin": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "B777",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-20T13:05:00-05:00",
+      "departure": "2026-11-20T11:15:00+01:00",
+      "destination": {
+        "city": "New York",
+        "country": "US",
+        "iata": "JFK",
+        "icao": "KJFK",
+        "latitude": 40.6413,
+        "longitude": -73.7781,
+        "name": "New York John F. Kennedy International",
+        "timezone": "America/New_York"
+      },
+      "durationMinutes": 470,
+      "flightNumber": "AF12",
+      "id": 843,
+      "origin": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "B777",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "US",
+        "iata": "DL",
+        "icao": "DAL",
+        "name": "Delta Air Lines"
+      },
+      "arrival": "2026-11-20T16:35:00-05:00",
+      "departure": "2026-11-20T14:35:00+01:00",
+      "destination": {
+        "city": "New York",
+        "country": "US",
+        "iata": "JFK",
+        "icao": "KJFK",
+        "latitude": 40.6413,
+        "longitude": -73.7781,
+        "name": "New York John F. Kennedy International",
+        "timezone": "America/New_York"
+      },
+      "durationMinutes": 480,
+      "flightNumber": "DL13",
+      "id": 844,
+      "origin": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "B787",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-11-20T18:40:00-05:00",
+      "departure": "2026-11-20T16:55:00+01:00",
+      "destination": {
+        "city": "New York",
+        "country": "US",
+        "iata": "JFK",
+        "icao": "KJFK",
+        "latitude": 40.6413,
+        "longitude": -73.7781,
+        "name": "New York John F. Kennedy International",
+        "timezone": "America/New_York"
+      },
+      "durationMinutes": 465,
+      "flightNumber": "AF14",
+      "id": 845,
+      "origin": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "B777",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "US",
+        "iata": "DL",
+        "icao": "DAL",
+        "name": "Delta Air Lines"
+      },
+      "arrival": "2026-11-20T20:55:00-05:00",
+      "departure": "2026-11-20T19:10:00+01:00",
+      "destination": {
+        "city": "New York",
+        "country": "US",
+        "iata": "JFK",
+        "icao": "KJFK",
+        "latitude": 40.6413,
+        "longitude": -73.7781,
+        "name": "New York John F. Kennedy International",
+        "timezone": "America/New_York"
+      },
+      "durationMinutes": 465,
+      "flightNumber": "DL15",
+      "id": 846,
+      "origin": {
+        "city": "Paris",
+        "country": "FR",
+        "iata": "CDG",
+        "icao": "LFPG",
+        "latitude": 49.0097,
+        "longitude": 2.5479,
+        "name": "Paris Charles de Gaulle",
+        "timezone": "Europe/Paris"
+      }
+    }
+  ]
+}

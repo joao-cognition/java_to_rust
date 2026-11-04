@@ -1,0 +1,14 @@
+{
+  "endpoint": "airlines/{iata}",
+  "label": "airline TP",
+  "path": "airlines/TP",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "alliance": "STAR_ALLIANCE",
+    "country": "PT",
+    "iata": "TP",
+    "icao": "TAP",
+    "name": "TAP Air Portugal"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName H",
+  "path": "travelers?lastName=H",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1968-05-20",
+      "email": "ingrid.hansen@example.com",
+      "firstName": "Ingrid",
+      "frequentFlyerNumber": null,
+      "id": 27,
+      "lastName": "Hansen",
+      "nationality": "NO"
+    },
+    {
+      "dateOfBirth": "1970-12-17",
+      "email": "markus.hoffmann@example.com",
+      "firstName": "Markus",
+      "frequentFlyerNumber": null,
+      "id": 45,
+      "lastName": "Hoffmann",
+      "nationality": "DE"
+    },
+    {
+      "dateOfBirth": "1994-10-02",
+      "email": "eva.horvath@example.com",
+      "firstName": "Eva",
+      "frequentFlyerNumber": null,
+      "id": 48,
+      "lastName": "Horváth",
+      "nationality": "HU"
+    }
+  ]
+}

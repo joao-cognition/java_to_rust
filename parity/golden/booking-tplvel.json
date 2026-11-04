@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking TPLVEL",
+  "path": "bookings/TPLVEL",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-11-02T15:40:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "TPLVEL",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "A380",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-17T20:35:00+01:00",
+          "departure": "2026-11-17T06:40:00-05:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 475,
+          "flightNumber": "AF60",
+          "id": 1015,
+          "origin": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 2334.60,
+    "travelers": [
+      {
+        "dateOfBirth": "1990-07-25",
+        "email": "lucas.martins@example.com",
+        "firstName": "Lucas",
+        "frequentFlyerNumber": "TP00482913",
+        "id": 2,
+        "lastName": "Martins",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

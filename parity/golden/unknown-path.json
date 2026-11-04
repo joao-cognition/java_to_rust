@@ -1,0 +1,13 @@
+{
+  "endpoint": "unknown route",
+  "label": "unknown path",
+  "path": "nope",
+  "status": 404,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "No static resource api/nope.",
+    "instance": "/travel/api/nope",
+    "status": 404,
+    "title": "Not Found"
+  }
+}

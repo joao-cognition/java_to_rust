@@ -1,0 +1,13 @@
+{
+  "endpoint": "airlines/{iata}",
+  "label": "airline too long AFX",
+  "path": "airlines/AFX",
+  "status": 404,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Airline AFX not found",
+    "instance": "/travel/api/airlines/AFX",
+    "status": 404,
+    "title": "Not Found"
+  }
+}

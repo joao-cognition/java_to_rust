@@ -4,9 +4,11 @@
 //! * `j2r bench`        fixed-rate load against each service while sampling CPU and RSS of the real process
 //! * `j2r watch`        live per-second CPU / RSS / probe latency of both services
 //! * `j2r show`         re-render a saved bench (sparklines + before/after summary)
+//! * `j2r parity`       replay the full GET case catalogue against both services (or Java goldens) and require identical responses
 
 mod api;
 mod bench;
+mod parity;
 mod render;
 mod sampler;
 
@@ -104,6 +106,24 @@ pub enum Cmd {
         #[arg(long)]
         rust_container: Option<String>,
     },
+    /// Replay the GET case catalogue against both services; exit non-zero unless every case is identical
+    Parity {
+        /// Only cases whose path or label contains this text
+        #[arg(long)]
+        only: Option<String>,
+        /// Directory for results.json and report.md
+        #[arg(long, default_value = "parity")]
+        out: PathBuf,
+        /// Also write the Java responses as goldens
+        #[arg(long, conflicts_with = "golden")]
+        record: bool,
+        /// Use the recorded goldens as the Java side (Java does not need to run)
+        #[arg(long)]
+        golden: bool,
+        /// Golden directory (manifest.json + one <case-slug>.json per case)
+        #[arg(long, default_value = "parity/golden")]
+        golden_dir: PathBuf,
+    },
     /// Re-render a saved bench from its results directory
     Show {
         #[arg(default_value = "bench/results")]
@@ -133,6 +153,25 @@ async fn run(cli: Cli) -> Result<(), Box<dyn std::error::Error>> {
     };
     match cli.cmd {
         Cmd::Api { path, n, no_body } => api::compare(&bases, &path, n, !no_body).await,
+        Cmd::Parity {
+            only,
+            out,
+            record,
+            golden,
+            golden_dir,
+        } => {
+            parity::run(
+                &bases,
+                &parity::Options {
+                    only: only.as_deref(),
+                    out: &out,
+                    golden_dir: &golden_dir,
+                    record,
+                    golden,
+                },
+            )
+            .await
+        }
         Cmd::Bench {
             rate,
             duration,

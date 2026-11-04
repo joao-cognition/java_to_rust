@@ -1,0 +1,183 @@
+{
+  "endpoint": "offers",
+  "label": "offers FCO-MUC d+7 adults=9 cabin=BUSINESS",
+  "path": "offers?origin=FCO&destination=MUC&date=2026-11-12&adults=9&cabin=BUSINESS",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 330.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 15
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-12T19:25:00+01:00",
+        "departure": "2026-11-12T18:00:00+01:00",
+        "destination": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "LH433",
+        "id": 2192,
+        "origin": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        }
+      },
+      "offerId": "2192-J",
+      "pricing": {
+        "base": 2970.00,
+        "basePerPassenger": 330.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 386.20,
+        "taxes": 505.80,
+        "taxesPerPassenger": 56.20,
+        "total": 3475.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 345.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-12T07:40:00+01:00",
+        "departure": "2026-11-12T06:10:00+01:00",
+        "destination": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "AZ430",
+        "id": 2189,
+        "origin": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        }
+      },
+      "offerId": "2189-J",
+      "pricing": {
+        "base": 3105.00,
+        "basePerPassenger": 345.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 401.20,
+        "taxes": 505.80,
+        "taxesPerPassenger": 56.20,
+        "total": 3610.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 382.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 10
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-12T15:40:00+01:00",
+        "departure": "2026-11-12T14:20:00+01:00",
+        "destination": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 80,
+        "flightNumber": "AZ432",
+        "id": 2191,
+        "origin": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        }
+      },
+      "offerId": "2191-J",
+      "pricing": {
+        "base": 3438.00,
+        "basePerPassenger": 382.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 438.20,
+        "taxes": 505.80,
+        "taxesPerPassenger": 56.20,
+        "total": 3943.80
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 6LDJLA",
+  "path": "bookings/6LDJLA",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-31T05:42:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "6LDJLA",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "B787",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-22T09:50:00+01:00",
+          "departure": "2026-11-21T19:55:00-05:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 475,
+          "flightNumber": "AF66",
+          "id": 1049,
+          "origin": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 7069.80,
+    "travelers": [
+      {
+        "dateOfBirth": "1997-07-04",
+        "email": "hugo.moreau@example.com",
+        "firstName": "Hugo",
+        "frequentFlyerNumber": "AF334455667",
+        "id": 26,
+        "lastName": "Moreau",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1987-01-06",
+        "email": "noah.peeters@example.com",
+        "firstName": "Noah",
+        "frequentFlyerNumber": null,
+        "id": 41,
+        "lastName": "Peeters",
+        "nationality": "BE"
+      },
+      {
+        "dateOfBirth": "1983-06-15",
+        "email": "rui.pereira@example.com",
+        "firstName": "Rui",
+        "frequentFlyerNumber": "TP00990011",
+        "id": 43,
+        "lastName": "Pereira",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

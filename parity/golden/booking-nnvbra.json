@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking NNVBRA",
+  "path": "bookings/NNVBRA",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-29T02:24:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "NNVBRA",
+    "segments": [
+      {
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "flight": {
+          "aircraft": "A380",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-29T18:05:00+01:00",
+          "departure": "2026-11-29T14:05:00+04:00",
+          "destination": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          },
+          "durationMinutes": 420,
+          "flightNumber": "EK234",
+          "id": 2717,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 5793.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1972-01-27",
+        "email": "louis.lefebvre@example.com",
+        "firstName": "Louis",
+        "frequentFlyerNumber": "AF990011223",
+        "id": 16,
+        "lastName": "Lefebvre",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1977-06-18",
+        "email": "oliver.brown@example.com",
+        "firstName": "Oliver",
+        "frequentFlyerNumber": "BA77553311",
+        "id": 20,
+        "lastName": "Brown",
+        "nationality": "GB"
+      }
+    ]
+  }
+}

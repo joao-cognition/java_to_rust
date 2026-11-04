@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking CKV8MK",
+  "path": "bookings/CKV8MK",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-19T04:38:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "CKV8MK",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B738",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "IN",
+            "iata": "AI",
+            "icao": "AIC",
+            "name": "Air India"
+          },
+          "arrival": "2026-11-08T21:10:00+05:30",
+          "departure": "2026-11-08T16:40:00+04:00",
+          "destination": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          },
+          "durationMinutes": 180,
+          "flightNumber": "AI505",
+          "id": 2790,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 853.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1975-05-30",
+        "email": "thomas.mueller@example.com",
+        "firstName": "Thomas",
+        "frequentFlyerNumber": "LH992001734",
+        "id": 5,
+        "lastName": "Müller",
+        "nationality": "DE"
+      },
+      {
+        "dateOfBirth": "1987-08-17",
+        "email": "matteo.rossi@example.com",
+        "firstName": "Matteo",
+        "frequentFlyerNumber": "AZ44556677",
+        "id": 11,
+        "lastName": "Rossi",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1986-07-21",
+        "email": "hannah.schmidt@example.com",
+        "firstName": "Hannah",
+        "frequentFlyerNumber": null,
+        "id": 14,
+        "lastName": "Schmidt",
+        "nationality": "DE"
+      }
+    ]
+  }
+}

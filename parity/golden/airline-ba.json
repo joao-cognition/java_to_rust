@@ -1,0 +1,14 @@
+{
+  "endpoint": "airlines/{iata}",
+  "label": "airline BA",
+  "path": "airlines/BA",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "alliance": "ONEWORLD",
+    "country": "GB",
+    "iata": "BA",
+    "icao": "BAW",
+    "name": "British Airways"
+  }
+}

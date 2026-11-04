@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking E9T2CU",
+  "path": "bookings/E9T2CU",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-27T12:23:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "E9T2CU",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A350",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-12T20:45:00+01:00",
+          "departure": "2026-11-12T06:40:00-05:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 485,
+          "flightNumber": "AF60",
+          "id": 980,
+          "origin": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1996.80,
+    "travelers": [
+      {
+        "dateOfBirth": "1972-01-27",
+        "email": "louis.lefebvre@example.com",
+        "firstName": "Louis",
+        "frequentFlyerNumber": "AF990011223",
+        "id": 16,
+        "lastName": "Lefebvre",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1976-11-26",
+        "email": "daniel.wagner@example.com",
+        "firstName": "Daniel",
+        "frequentFlyerNumber": "LH120034567",
+        "id": 29,
+        "lastName": "Wagner",
+        "nationality": "AT"
+      },
+      {
+        "dateOfBirth": "1995-05-08",
+        "email": "sebastian.becker@example.com",
+        "firstName": "Sebastian",
+        "frequentFlyerNumber": null,
+        "id": 37,
+        "lastName": "Becker",
+        "nationality": "DE"
+      }
+    ]
+  }
+}

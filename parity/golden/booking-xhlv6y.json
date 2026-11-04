@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking XHLV6Y",
+  "path": "bookings/XHLV6Y",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-05T12:07:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "XHLV6Y",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A380",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-27T22:35:00+01:00",
+          "departure": "2026-11-27T18:40:00+04:00",
+          "destination": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          },
+          "durationMinutes": 415,
+          "flightNumber": "EK236",
+          "id": 2703,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1690.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1995-02-11",
+        "email": "charlotte.smith@example.com",
+        "firstName": "Charlotte",
+        "frequentFlyerNumber": "BA20081234",
+        "id": 10,
+        "lastName": "Smith",
+        "nationality": "GB"
+      },
+      {
+        "dateOfBirth": "1988-08-02",
+        "email": "felix.weber@example.com",
+        "firstName": "Felix",
+        "frequentFlyerNumber": "LX55667788",
+        "id": 31,
+        "lastName": "Weber",
+        "nationality": "CH"
+      },
+      {
+        "dateOfBirth": "1985-02-23",
+        "email": "alejandro.navarro@example.com",
+        "firstName": "Alejandro",
+        "frequentFlyerNumber": null,
+        "id": 47,
+        "lastName": "Navarro",
+        "nationality": "ES"
+      }
+    ]
+  }
+}

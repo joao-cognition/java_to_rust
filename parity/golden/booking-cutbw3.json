@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking CUTBW3",
+  "path": "bookings/CUTBW3",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-25T12:13:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "CUTBW3",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-13T13:30:00+00:00",
+          "departure": "2026-11-13T12:35:00+01:00",
+          "destination": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          },
+          "durationMinutes": 115,
+          "flightNumber": "AF343",
+          "id": 60,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 176.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1983-04-22",
+        "email": "isabel.fernandez@example.com",
+        "firstName": "Isabel",
+        "frequentFlyerNumber": null,
+        "id": 8,
+        "lastName": "Fernández",
+        "nationality": "ES"
+      }
+    ]
+  }
+}

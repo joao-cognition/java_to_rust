@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking ZWAPQV",
+  "path": "bookings/ZWAPQV",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-18T14:53:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "ZWAPQV",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A380",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "SG",
+            "iata": "SQ",
+            "icao": "SIA",
+            "name": "Singapore Airlines"
+          },
+          "arrival": "2026-11-29T16:05:00+00:00",
+          "departure": "2026-11-29T10:00:00+08:00",
+          "destination": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          },
+          "durationMinutes": 845,
+          "flightNumber": "SQ351",
+          "id": 1478,
+          "origin": {
+            "city": "Singapore",
+            "country": "SG",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "latitude": 1.3644,
+            "longitude": 103.9915,
+            "name": "Singapore Changi",
+            "timezone": "Asia/Singapore"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 841.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1981-06-03",
+        "email": "jan.devries@example.com",
+        "firstName": "Jan",
+        "frequentFlyerNumber": "KL31415926",
+        "id": 9,
+        "lastName": "de Vries",
+        "nationality": "NL"
+      }
+    ]
+  }
+}

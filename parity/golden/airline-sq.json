@@ -1,0 +1,14 @@
+{
+  "endpoint": "airlines/{iata}",
+  "label": "airline SQ",
+  "path": "airlines/SQ",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "alliance": "STAR_ALLIANCE",
+    "country": "SG",
+    "iata": "SQ",
+    "icao": "SIA",
+    "name": "Singapore Airlines"
+  }
+}

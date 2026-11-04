@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 7ASXAF",
+  "path": "bookings/7ASXAF",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-02T14:52:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "7ASXAF",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "ONEWORLD",
+            "country": "GB",
+            "iata": "BA",
+            "icao": "BAW",
+            "name": "British Airways"
+          },
+          "arrival": "2026-11-28T11:30:00+00:00",
+          "departure": "2026-11-28T10:30:00+01:00",
+          "destination": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          },
+          "durationMinutes": 120,
+          "flightNumber": "BA342",
+          "id": 164,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 483.40,
+    "travelers": [
+      {
+        "dateOfBirth": "1984-04-13",
+        "email": "amelia.taylor@example.com",
+        "firstName": "Amelia",
+        "frequentFlyerNumber": null,
+        "id": 32,
+        "lastName": "Taylor",
+        "nationality": "GB"
+      }
+    ]
+  }
+}

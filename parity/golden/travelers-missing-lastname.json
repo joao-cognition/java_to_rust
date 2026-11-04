@@ -1,0 +1,13 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers missing lastName",
+  "path": "travelers",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Required parameter 'lastName' is not present.",
+    "instance": "/travel/api/travelers",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

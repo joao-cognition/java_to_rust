@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 48VP9H",
+  "path": "bookings/48VP9H",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-11-01T02:05:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "48VP9H",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "E190",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "PT",
+            "iata": "TP",
+            "icao": "TAP",
+            "name": "TAP Air Portugal"
+          },
+          "arrival": "2026-11-09T14:15:00+00:00",
+          "departure": "2026-11-09T12:25:00+01:00",
+          "destination": {
+            "city": "Lisbon",
+            "country": "PT",
+            "iata": "LIS",
+            "icao": "LPPT",
+            "latitude": 38.7742,
+            "longitude": -9.1342,
+            "name": "Lisbon Humberto Delgado",
+            "timezone": "Europe/Lisbon"
+          },
+          "durationMinutes": 170,
+          "flightNumber": "TP1693",
+          "id": 1836,
+          "origin": {
+            "city": "Amsterdam",
+            "country": "NL",
+            "iata": "AMS",
+            "icao": "EHAM",
+            "latitude": 52.3105,
+            "longitude": 4.7683,
+            "name": "Amsterdam Schiphol",
+            "timezone": "Europe/Amsterdam"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1939.95,
+    "travelers": [
+      {
+        "dateOfBirth": "1991-10-29",
+        "email": "anna.kowalski@example.com",
+        "firstName": "Anna",
+        "frequentFlyerNumber": null,
+        "id": 12,
+        "lastName": "Kowalski",
+        "nationality": "PL"
+      },
+      {
+        "dateOfBirth": "1989-04-01",
+        "email": "jonas.nielsen@example.com",
+        "firstName": "Jonas",
+        "frequentFlyerNumber": null,
+        "id": 18,
+        "lastName": "Nielsen",
+        "nationality": "DK"
+      },
+      {
+        "dateOfBirth": "1983-06-15",
+        "email": "rui.pereira@example.com",
+        "firstName": "Rui",
+        "frequentFlyerNumber": "TP00990011",
+        "id": 43,
+        "lastName": "Pereira",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

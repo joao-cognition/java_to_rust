@@ -1,0 +1,937 @@
+{
+  "endpoint": "offers",
+  "label": "offers MUC-FCO d+0 defaults",
+  "path": "offers?origin=MUC&destination=FCO&date=2026-11-05",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 59.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 11
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T20:05:00+01:00",
+        "departure": "2026-11-05T18:35:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH483",
+        "id": 2284,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2284-K",
+      "pricing": {
+        "base": 59.00,
+        "basePerPassenger": 59.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 113.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 113.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 69.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T12:20:00+01:00",
+        "departure": "2026-11-05T10:50:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH481",
+        "id": 2282,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2282-K",
+      "pricing": {
+        "base": 69.00,
+        "basePerPassenger": 69.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 123.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 123.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 74.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 9
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-05T15:55:00+01:00",
+        "departure": "2026-11-05T14:20:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AZ482",
+        "id": 2283,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2283-K",
+      "pricing": {
+        "base": 74.00,
+        "basePerPassenger": 74.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 128.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 128.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 78.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T20:05:00+01:00",
+        "departure": "2026-11-05T18:35:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH483",
+        "id": 2284,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2284-M",
+      "pricing": {
+        "base": 78.00,
+        "basePerPassenger": 78.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 132.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 132.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 79.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 21
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-05T07:35:00+01:00",
+        "departure": "2026-11-05T06:00:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AZ480",
+        "id": 2281,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2281-K",
+      "pricing": {
+        "base": 79.00,
+        "basePerPassenger": 79.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 133.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 133.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 91.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 39
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T12:20:00+01:00",
+        "departure": "2026-11-05T10:50:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH481",
+        "id": 2282,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2282-M",
+      "pricing": {
+        "base": 91.00,
+        "basePerPassenger": 91.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 145.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 145.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 98.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 31
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T20:05:00+01:00",
+        "departure": "2026-11-05T18:35:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH483",
+        "id": 2284,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2284-Y",
+      "pricing": {
+        "base": 98.00,
+        "basePerPassenger": 98.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 152.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 152.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 99.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 40
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-05T15:55:00+01:00",
+        "departure": "2026-11-05T14:20:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AZ482",
+        "id": 2283,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2283-M",
+      "pricing": {
+        "base": 99.00,
+        "basePerPassenger": 99.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 153.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 153.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 105.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-05T07:35:00+01:00",
+        "departure": "2026-11-05T06:00:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AZ480",
+        "id": 2281,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2281-M",
+      "pricing": {
+        "base": 105.00,
+        "basePerPassenger": 105.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 159.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 159.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 114.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 45
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T12:20:00+01:00",
+        "departure": "2026-11-05T10:50:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH481",
+        "id": 2282,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2282-Y",
+      "pricing": {
+        "base": 114.00,
+        "basePerPassenger": 114.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 168.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 168.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 124.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 60
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-05T15:55:00+01:00",
+        "departure": "2026-11-05T14:20:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AZ482",
+        "id": 2283,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2283-Y",
+      "pricing": {
+        "base": 124.00,
+        "basePerPassenger": 124.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 178.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 178.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 131.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 42
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-05T07:35:00+01:00",
+        "departure": "2026-11-05T06:00:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AZ480",
+        "id": 2281,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2281-Y",
+      "pricing": {
+        "base": 131.00,
+        "basePerPassenger": 131.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 185.83,
+        "taxes": 54.83,
+        "taxesPerPassenger": 54.83,
+        "total": 185.83
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 167.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 16
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T20:05:00+01:00",
+        "departure": "2026-11-05T18:35:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH483",
+        "id": 2284,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2284-W",
+      "pricing": {
+        "base": 167.00,
+        "basePerPassenger": 167.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 226.33,
+        "taxes": 59.33,
+        "taxesPerPassenger": 59.33,
+        "total": 226.33
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 194.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 16
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T12:20:00+01:00",
+        "departure": "2026-11-05T10:50:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH481",
+        "id": 2282,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2282-W",
+      "pricing": {
+        "base": 194.00,
+        "basePerPassenger": 194.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 253.33,
+        "taxes": 59.33,
+        "taxesPerPassenger": 59.33,
+        "total": 253.33
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 210.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "IT",
+          "iata": "AZ",
+          "icao": "ITY",
+          "name": "ITA Airways"
+        },
+        "arrival": "2026-11-05T15:55:00+01:00",
+        "departure": "2026-11-05T14:20:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AZ482",
+        "id": 2283,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2283-W",
+      "pricing": {
+        "base": 210.00,
+        "basePerPassenger": 210.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 269.33,
+        "taxes": 59.33,
+        "taxesPerPassenger": 59.33,
+        "total": 269.33
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 331.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 5
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-11-05T12:20:00+01:00",
+        "departure": "2026-11-05T10:50:00+01:00",
+        "destination": {
+          "city": "Rome",
+          "country": "IT",
+          "iata": "FCO",
+          "icao": "LIRF",
+          "latitude": 41.8003,
+          "longitude": 12.2389,
+          "name": "Rome Fiumicino",
+          "timezone": "Europe/Rome"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "LH481",
+        "id": 2282,
+        "origin": {
+          "city": "Munich",
+          "country": "DE",
+          "iata": "MUC",
+          "icao": "EDDM",
+          "latitude": 48.3537,
+          "longitude": 11.775,
+          "name": "Munich Franz Josef Strauss",
+          "timezone": "Europe/Berlin"
+        }
+      },
+      "offerId": "2282-C",
+      "pricing": {
+        "base": 331.00,
+        "basePerPassenger": 331.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 396.63,
+        "taxes": 65.63,
+        "taxesPerPassenger": 65.63,
+        "total": 396.63
+      }
+    }
+  ]
+}

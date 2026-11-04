@@ -1,0 +1,125 @@
+{
+  "endpoint": "offers",
+  "label": "offers AMS-LIS d+7 adults=9 cabin=BUSINESS",
+  "path": "offers?origin=AMS&destination=LIS&date=2026-11-12&adults=9&cabin=BUSINESS",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 579.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 14
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-11-12T22:30:00+00:00",
+        "departure": "2026-11-12T20:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 185,
+        "flightNumber": "TP1697",
+        "id": 1864,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "1864-C",
+      "pricing": {
+        "base": 5211.00,
+        "basePerPassenger": 579.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 675.65,
+        "taxes": 869.85,
+        "taxesPerPassenger": 96.65,
+        "total": 6080.85
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 587.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-11-12T14:10:00+00:00",
+        "departure": "2026-11-12T12:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 165,
+        "flightNumber": "TP1693",
+        "id": 1860,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "1860-J",
+      "pricing": {
+        "base": 5283.00,
+        "basePerPassenger": 587.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 683.65,
+        "taxes": 869.85,
+        "taxesPerPassenger": 96.65,
+        "total": 6152.85
+      }
+    }
+  ]
+}

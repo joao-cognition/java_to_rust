@@ -1,0 +1,1053 @@
+{
+  "endpoint": "offers",
+  "label": "offers CDG-JFK d+7 adults=9 cabin=ECONOMY",
+  "path": "offers?origin=CDG&destination=JFK&date=2026-11-12&adults=9&cabin=ECONOMY",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 284.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 14
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T16:30:00-05:00",
+        "departure": "2026-11-12T14:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 475,
+        "flightNumber": "DL13",
+        "id": 796,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "796-K",
+      "pricing": {
+        "base": 2556.00,
+        "basePerPassenger": 284.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 423.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 3811.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 312.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 24
+      },
+      "flight": {
+        "aircraft": "B777",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T13:05:00-05:00",
+        "departure": "2026-11-12T11:15:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 470,
+        "flightNumber": "AF12",
+        "id": 795,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "795-K",
+      "pricing": {
+        "base": 2808.00,
+        "basePerPassenger": 312.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 451.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 4063.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 323.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T08:35:00-05:00",
+        "departure": "2026-11-12T06:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 480,
+        "flightNumber": "AF10",
+        "id": 793,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "793-K",
+      "pricing": {
+        "base": 2907.00,
+        "basePerPassenger": 323.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 462.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 4162.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 348.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 20
+      },
+      "flight": {
+        "aircraft": "A380",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T18:50:00-05:00",
+        "departure": "2026-11-12T16:55:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 475,
+        "flightNumber": "AF14",
+        "id": 797,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "797-K",
+      "pricing": {
+        "base": 3132.00,
+        "basePerPassenger": 348.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 487.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 4387.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 360.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T20:55:00-05:00",
+        "departure": "2026-11-12T19:10:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 465,
+        "flightNumber": "DL15",
+        "id": 798,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "798-K",
+      "pricing": {
+        "base": 3240.00,
+        "basePerPassenger": 360.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 499.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 4495.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 378.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 27
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T16:30:00-05:00",
+        "departure": "2026-11-12T14:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 475,
+        "flightNumber": "DL13",
+        "id": 796,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "796-M",
+      "pricing": {
+        "base": 3402.00,
+        "basePerPassenger": 378.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 517.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 4657.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 389.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T10:25:00-05:00",
+        "departure": "2026-11-12T08:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 470,
+        "flightNumber": "DL11",
+        "id": 794,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "794-K",
+      "pricing": {
+        "base": 3501.00,
+        "basePerPassenger": 389.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 528.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 4756.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 416.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 23
+      },
+      "flight": {
+        "aircraft": "B777",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T13:05:00-05:00",
+        "departure": "2026-11-12T11:15:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 470,
+        "flightNumber": "AF12",
+        "id": 795,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "795-M",
+      "pricing": {
+        "base": 3744.00,
+        "basePerPassenger": 416.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 555.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 4999.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 431.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 36
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T08:35:00-05:00",
+        "departure": "2026-11-12T06:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 480,
+        "flightNumber": "AF10",
+        "id": 793,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "793-M",
+      "pricing": {
+        "base": 3879.00,
+        "basePerPassenger": 431.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 570.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 5134.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 463.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 35
+      },
+      "flight": {
+        "aircraft": "A380",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T18:50:00-05:00",
+        "departure": "2026-11-12T16:55:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 475,
+        "flightNumber": "AF14",
+        "id": 797,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "797-M",
+      "pricing": {
+        "base": 4167.00,
+        "basePerPassenger": 463.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 602.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 5422.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 473.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 55
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T16:30:00-05:00",
+        "departure": "2026-11-12T14:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 475,
+        "flightNumber": "DL13",
+        "id": 796,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "796-Y",
+      "pricing": {
+        "base": 4257.00,
+        "basePerPassenger": 473.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 612.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 5512.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 480.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 25
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T20:55:00-05:00",
+        "departure": "2026-11-12T19:10:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 465,
+        "flightNumber": "DL15",
+        "id": 798,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "798-M",
+      "pricing": {
+        "base": 4320.00,
+        "basePerPassenger": 480.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 619.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 5575.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 519.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 40
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T10:25:00-05:00",
+        "departure": "2026-11-12T08:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 470,
+        "flightNumber": "DL11",
+        "id": 794,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "794-M",
+      "pricing": {
+        "base": 4671.00,
+        "basePerPassenger": 519.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 658.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 5926.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 521.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 68
+      },
+      "flight": {
+        "aircraft": "B777",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T13:05:00-05:00",
+        "departure": "2026-11-12T11:15:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 470,
+        "flightNumber": "AF12",
+        "id": 795,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "795-Y",
+      "pricing": {
+        "base": 4689.00,
+        "basePerPassenger": 521.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 660.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 5944.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 539.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 52
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T08:35:00-05:00",
+        "departure": "2026-11-12T06:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 480,
+        "flightNumber": "AF10",
+        "id": 793,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "793-Y",
+      "pricing": {
+        "base": 4851.00,
+        "basePerPassenger": 539.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 678.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 6106.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 579.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 28
+      },
+      "flight": {
+        "aircraft": "A380",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T18:50:00-05:00",
+        "departure": "2026-11-12T16:55:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 475,
+        "flightNumber": "AF14",
+        "id": 797,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "797-Y",
+      "pricing": {
+        "base": 5211.00,
+        "basePerPassenger": 579.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 718.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 6466.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 600.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 38
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T20:55:00-05:00",
+        "departure": "2026-11-12T19:10:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 465,
+        "flightNumber": "DL15",
+        "id": 798,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "798-Y",
+      "pricing": {
+        "base": 5400.00,
+        "basePerPassenger": 600.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 739.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 6655.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 648.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 73
+      },
+      "flight": {
+        "aircraft": "B787",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "US",
+          "iata": "DL",
+          "icao": "DAL",
+          "name": "Delta Air Lines"
+        },
+        "arrival": "2026-11-12T10:25:00-05:00",
+        "departure": "2026-11-12T08:35:00+01:00",
+        "destination": {
+          "city": "New York",
+          "country": "US",
+          "iata": "JFK",
+          "icao": "KJFK",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "name": "New York John F. Kennedy International",
+          "timezone": "America/New_York"
+        },
+        "durationMinutes": 470,
+        "flightNumber": "DL11",
+        "id": 794,
+        "origin": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "794-Y",
+      "pricing": {
+        "base": 5832.00,
+        "basePerPassenger": 648.00,
+        "currency": "EUR",
+        "passengers": 9,
+        "perPassenger": 787.50,
+        "taxes": 1255.50,
+        "taxesPerPassenger": 139.50,
+        "total": 7087.50
+      }
+    }
+  ]
+}

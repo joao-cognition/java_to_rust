@@ -1,0 +1,13 @@
+{
+  "endpoint": "offers",
+  "label": "offers adults non numeric",
+  "path": "offers?origin=NCE&destination=LHR&date=2026-11-05&adults=x",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Failed to convert 'adults' with value: 'x'",
+    "instance": "/travel/api/offers",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

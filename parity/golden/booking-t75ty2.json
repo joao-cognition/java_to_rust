@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking T75TY2",
+  "path": "bookings/T75TY2",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-21T21:44:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "T75TY2",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "E190",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-05T23:05:00+05:30",
+          "departure": "2026-11-05T18:30:00+04:00",
+          "destination": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          },
+          "durationMinutes": 185,
+          "flightNumber": "EK506",
+          "id": 2767,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 531.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1996-08-23",
+        "email": "chiara.conti@example.com",
+        "firstName": "Chiara",
+        "frequentFlyerNumber": "AZ10203040",
+        "id": 19,
+        "lastName": "Conti",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1996-01-30",
+        "email": "clara.marques@example.com",
+        "firstName": "Clara",
+        "frequentFlyerNumber": null,
+        "id": 50,
+        "lastName": "Marques",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

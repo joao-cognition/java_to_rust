@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking R88KDF",
+  "path": "bookings/R88KDF",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-22T05:21:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "R88KDF",
+    "segments": [
+      {
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "B738",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "NL",
+            "iata": "KL",
+            "icao": "KLM",
+            "name": "KLM Royal Dutch Airlines"
+          },
+          "arrival": "2026-11-09T10:40:00+01:00",
+          "departure": "2026-11-09T06:50:00+00:00",
+          "destination": {
+            "city": "Amsterdam",
+            "country": "NL",
+            "iata": "AMS",
+            "icao": "EHAM",
+            "latitude": 52.3105,
+            "longitude": 4.7683,
+            "name": "Amsterdam Schiphol",
+            "timezone": "Europe/Amsterdam"
+          },
+          "durationMinutes": 170,
+          "flightNumber": "KL1740",
+          "id": 2057,
+          "origin": {
+            "city": "Lisbon",
+            "country": "PT",
+            "iata": "LIS",
+            "icao": "LPPT",
+            "latitude": 38.7742,
+            "longitude": -9.1342,
+            "name": "Lisbon Humberto Delgado",
+            "timezone": "Europe/Lisbon"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 703.90,
+    "travelers": [
+      {
+        "dateOfBirth": "1992-06-09",
+        "email": "beatriz.costa@example.com",
+        "firstName": "Beatriz",
+        "frequentFlyerNumber": null,
+        "id": 30,
+        "lastName": "Costa",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

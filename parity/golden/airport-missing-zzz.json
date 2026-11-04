@@ -1,0 +1,13 @@
+{
+  "endpoint": "airports/{iata}",
+  "label": "airport missing ZZZ",
+  "path": "airports/ZZZ",
+  "status": 404,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Airport ZZZ not found",
+    "instance": "/travel/api/airports/ZZZ",
+    "status": 404,
+    "title": "Not Found"
+  }
+}

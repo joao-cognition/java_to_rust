@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 64297L",
+  "path": "bookings/64297L",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-06T06:22:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "64297L",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "DE",
+            "iata": "LH",
+            "icao": "DLH",
+            "name": "Lufthansa"
+          },
+          "arrival": "2026-11-20T19:25:00+01:00",
+          "departure": "2026-11-20T18:00:00+01:00",
+          "destination": {
+            "city": "Munich",
+            "country": "DE",
+            "iata": "MUC",
+            "icao": "EDDM",
+            "latitude": 48.3537,
+            "longitude": 11.775,
+            "name": "Munich Franz Josef Strauss",
+            "timezone": "Europe/Berlin"
+          },
+          "durationMinutes": 85,
+          "flightNumber": "LH433",
+          "id": 2224,
+          "origin": {
+            "city": "Rome",
+            "country": "IT",
+            "iata": "FCO",
+            "icao": "LIRF",
+            "latitude": 41.8003,
+            "longitude": 12.2389,
+            "name": "Rome Fiumicino",
+            "timezone": "Europe/Rome"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 312.80,
+    "travelers": [
+      {
+        "dateOfBirth": "1989-04-01",
+        "email": "jonas.nielsen@example.com",
+        "firstName": "Jonas",
+        "frequentFlyerNumber": null,
+        "id": 18,
+        "lastName": "Nielsen",
+        "nationality": "DK"
+      },
+      {
+        "dateOfBirth": "1981-07-31",
+        "email": "ines.romero@example.com",
+        "firstName": "Inés",
+        "frequentFlyerNumber": "IB66778899",
+        "id": 38,
+        "lastName": "Romero",
+        "nationality": "ES"
+      }
+    ]
+  }
+}

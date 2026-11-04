@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 7SQF99",
+  "path": "bookings/7SQF99",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-15T09:28:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "7SQF99",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "E190",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "IN",
+            "iata": "AI",
+            "icao": "AIC",
+            "name": "Air India"
+          },
+          "arrival": "2026-11-18T13:00:00+05:30",
+          "departure": "2026-11-18T08:30:00+04:00",
+          "destination": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          },
+          "durationMinutes": 180,
+          "flightNumber": "AI501",
+          "id": 2866,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 583.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1981-06-03",
+        "email": "jan.devries@example.com",
+        "firstName": "Jan",
+        "frequentFlyerNumber": "KL31415926",
+        "id": 9,
+        "lastName": "de Vries",
+        "nationality": "NL"
+      },
+      {
+        "dateOfBirth": "1980-09-07",
+        "email": "lena.fischer@example.com",
+        "firstName": "Lena",
+        "frequentFlyerNumber": "LH880077665",
+        "id": 23,
+        "lastName": "Fischer",
+        "nationality": "DE"
+      },
+      {
+        "dateOfBirth": "1990-03-28",
+        "email": "sara.andersson@example.com",
+        "firstName": "Sara",
+        "frequentFlyerNumber": null,
+        "id": 25,
+        "lastName": "Andersson",
+        "nationality": "SE"
+      }
+    ]
+  }
+}

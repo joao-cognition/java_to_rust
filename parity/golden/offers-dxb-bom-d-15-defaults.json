@@ -1,0 +1,1575 @@
+{
+  "endpoint": "offers",
+  "label": "offers DXB-BOM d+15 defaults",
+  "path": "offers?origin=DXB&destination=BOM&date=2026-11-20",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 137.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T21:10:00+05:30",
+        "departure": "2026-11-20T16:40:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "AI505",
+        "id": 2886,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2886-K",
+      "pricing": {
+        "base": 137.00,
+        "basePerPassenger": 137.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 201.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 201.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 141.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 30
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T13:10:00+05:30",
+        "departure": "2026-11-20T08:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 190,
+        "flightNumber": "AI501",
+        "id": 2882,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2882-K",
+      "pricing": {
+        "base": 141.00,
+        "basePerPassenger": 141.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 205.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 205.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 141.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T14:30:00+05:30",
+        "departure": "2026-11-20T10:10:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "EK502",
+        "id": 2883,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2883-K",
+      "pricing": {
+        "base": 141.00,
+        "basePerPassenger": 141.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 205.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 205.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 146.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 24
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T19:30:00+05:30",
+        "departure": "2026-11-20T14:50:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 190,
+        "flightNumber": "EK504",
+        "id": 2885,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2885-K",
+      "pricing": {
+        "base": 146.00,
+        "basePerPassenger": 146.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 210.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 210.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 155.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T16:35:00+05:30",
+        "departure": "2026-11-20T12:15:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "AI503",
+        "id": 2884,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2884-K",
+      "pricing": {
+        "base": 155.00,
+        "basePerPassenger": 155.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 219.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 219.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 157.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-21T01:05:00+05:30",
+        "departure": "2026-11-20T20:35:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "AI507",
+        "id": 2888,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2888-K",
+      "pricing": {
+        "base": 157.00,
+        "basePerPassenger": 157.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 221.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 221.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 159.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 24
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T22:50:00+05:30",
+        "departure": "2026-11-20T18:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "EK506",
+        "id": 2887,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2887-K",
+      "pricing": {
+        "base": 159.00,
+        "basePerPassenger": 159.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 223.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 223.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 167.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 26
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T11:00:00+05:30",
+        "departure": "2026-11-20T06:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "EK500",
+        "id": 2881,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2881-K",
+      "pricing": {
+        "base": 167.00,
+        "basePerPassenger": 167.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 231.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 231.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 183.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 22
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T21:10:00+05:30",
+        "departure": "2026-11-20T16:40:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "AI505",
+        "id": 2886,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2886-M",
+      "pricing": {
+        "base": 183.00,
+        "basePerPassenger": 183.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 247.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 247.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 188.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 23
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T13:10:00+05:30",
+        "departure": "2026-11-20T08:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 190,
+        "flightNumber": "AI501",
+        "id": 2882,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2882-M",
+      "pricing": {
+        "base": 188.00,
+        "basePerPassenger": 188.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 252.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 252.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 188.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 17
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T14:30:00+05:30",
+        "departure": "2026-11-20T10:10:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "EK502",
+        "id": 2883,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2883-M",
+      "pricing": {
+        "base": 188.00,
+        "basePerPassenger": 188.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 252.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 252.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 195.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 31
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T19:30:00+05:30",
+        "departure": "2026-11-20T14:50:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 190,
+        "flightNumber": "EK504",
+        "id": 2885,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2885-M",
+      "pricing": {
+        "base": 195.00,
+        "basePerPassenger": 195.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 259.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 259.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 206.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 29
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T16:35:00+05:30",
+        "departure": "2026-11-20T12:15:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "AI503",
+        "id": 2884,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2884-M",
+      "pricing": {
+        "base": 206.00,
+        "basePerPassenger": 206.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 270.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 270.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 210.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 25
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-21T01:05:00+05:30",
+        "departure": "2026-11-20T20:35:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "AI507",
+        "id": 2888,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2888-M",
+      "pricing": {
+        "base": 210.00,
+        "basePerPassenger": 210.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 274.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 274.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 212.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 39
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T22:50:00+05:30",
+        "departure": "2026-11-20T18:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "EK506",
+        "id": 2887,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2887-M",
+      "pricing": {
+        "base": 212.00,
+        "basePerPassenger": 212.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 276.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 276.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 223.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 31
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T11:00:00+05:30",
+        "departure": "2026-11-20T06:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "EK500",
+        "id": 2881,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2881-M",
+      "pricing": {
+        "base": 223.00,
+        "basePerPassenger": 223.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 287.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 287.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 228.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 22
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T21:10:00+05:30",
+        "departure": "2026-11-20T16:40:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "AI505",
+        "id": 2886,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2886-Y",
+      "pricing": {
+        "base": 228.00,
+        "basePerPassenger": 228.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 292.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 292.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 235.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 37
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T13:10:00+05:30",
+        "departure": "2026-11-20T08:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 190,
+        "flightNumber": "AI501",
+        "id": 2882,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2882-Y",
+      "pricing": {
+        "base": 235.00,
+        "basePerPassenger": 235.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 299.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 299.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 235.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 30
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T14:30:00+05:30",
+        "departure": "2026-11-20T10:10:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "EK502",
+        "id": 2883,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2883-Y",
+      "pricing": {
+        "base": 235.00,
+        "basePerPassenger": 235.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 299.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 299.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 243.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 26
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T19:30:00+05:30",
+        "departure": "2026-11-20T14:50:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 190,
+        "flightNumber": "EK504",
+        "id": 2885,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2885-Y",
+      "pricing": {
+        "base": 243.00,
+        "basePerPassenger": 243.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 307.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 307.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 258.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 68
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T16:35:00+05:30",
+        "departure": "2026-11-20T12:15:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "AI503",
+        "id": 2884,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2884-Y",
+      "pricing": {
+        "base": 258.00,
+        "basePerPassenger": 258.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 322.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 322.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 262.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 69
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-21T01:05:00+05:30",
+        "departure": "2026-11-20T20:35:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "AI507",
+        "id": 2888,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2888-Y",
+      "pricing": {
+        "base": 262.00,
+        "basePerPassenger": 262.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 326.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 326.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 264.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 80
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T22:50:00+05:30",
+        "departure": "2026-11-20T18:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "EK506",
+        "id": 2887,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2887-Y",
+      "pricing": {
+        "base": 264.00,
+        "basePerPassenger": 264.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 328.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 328.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 279.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 70
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T11:00:00+05:30",
+        "departure": "2026-11-20T06:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "EK500",
+        "id": 2881,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2881-Y",
+      "pricing": {
+        "base": 279.00,
+        "basePerPassenger": 279.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 343.50,
+        "taxes": 64.50,
+        "taxesPerPassenger": 64.50,
+        "total": 343.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 681.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 10
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T14:30:00+05:30",
+        "departure": "2026-11-20T10:10:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "EK502",
+        "id": 2883,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2883-J",
+      "pricing": {
+        "base": 681.00,
+        "basePerPassenger": 681.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 764.70,
+        "taxes": 83.70,
+        "taxesPerPassenger": 83.70,
+        "total": 764.70
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 748.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 15
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "IN",
+          "iata": "AI",
+          "icao": "AIC",
+          "name": "Air India"
+        },
+        "arrival": "2026-11-20T16:35:00+05:30",
+        "departure": "2026-11-20T12:15:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "AI503",
+        "id": 2884,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2884-C",
+      "pricing": {
+        "base": 748.00,
+        "basePerPassenger": 748.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 831.70,
+        "taxes": 83.70,
+        "taxesPerPassenger": 83.70,
+        "total": 831.70
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 808.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 16
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "NONE",
+          "country": "AE",
+          "iata": "EK",
+          "icao": "UAE",
+          "name": "Emirates"
+        },
+        "arrival": "2026-11-20T11:00:00+05:30",
+        "departure": "2026-11-20T06:30:00+04:00",
+        "destination": {
+          "city": "Mumbai",
+          "country": "IN",
+          "iata": "BOM",
+          "icao": "VABB",
+          "latitude": 19.0896,
+          "longitude": 72.8656,
+          "name": "Chhatrapati Shivaji Maharaj International",
+          "timezone": "Asia/Kolkata"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "EK500",
+        "id": 2881,
+        "origin": {
+          "city": "Dubai",
+          "country": "AE",
+          "iata": "DXB",
+          "icao": "OMDB",
+          "latitude": 25.2532,
+          "longitude": 55.3657,
+          "name": "Dubai International",
+          "timezone": "Asia/Dubai"
+        }
+      },
+      "offerId": "2881-C",
+      "pricing": {
+        "base": 808.00,
+        "basePerPassenger": 808.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 891.70,
+        "taxes": 83.70,
+        "taxesPerPassenger": 83.70,
+        "total": 891.70
+      }
+    }
+  ]
+}

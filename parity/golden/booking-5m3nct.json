@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 5M3NCT",
+  "path": "bookings/5M3NCT",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-07T11:25:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "5M3NCT",
+    "segments": [
+      {
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "IT",
+            "iata": "AZ",
+            "icao": "ITY",
+            "name": "ITA Airways"
+          },
+          "arrival": "2026-12-03T07:40:00+01:00",
+          "departure": "2026-12-03T06:10:00+01:00",
+          "destination": {
+            "city": "Munich",
+            "country": "DE",
+            "iata": "MUC",
+            "icao": "EDDM",
+            "latitude": 48.3537,
+            "longitude": 11.775,
+            "name": "Munich Franz Josef Strauss",
+            "timezone": "Europe/Berlin"
+          },
+          "durationMinutes": 90,
+          "flightNumber": "AZ430",
+          "id": 2273,
+          "origin": {
+            "city": "Rome",
+            "country": "IT",
+            "iata": "FCO",
+            "icao": "LIRF",
+            "latitude": 41.8003,
+            "longitude": 12.2389,
+            "name": "Rome Fiumicino",
+            "timezone": "Europe/Rome"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 209.90,
+    "travelers": [
+      {
+        "dateOfBirth": "1982-02-14",
+        "email": "alice.bernard@example.com",
+        "firstName": "Alice",
+        "frequentFlyerNumber": null,
+        "id": 21,
+        "lastName": "Bernard",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

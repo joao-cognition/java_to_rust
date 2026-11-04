@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking BNZ384",
+  "path": "bookings/BNZ384",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-07T19:42:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "BNZ384",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A380",
+          "airline": {
+            "alliance": "ONEWORLD",
+            "country": "GB",
+            "iata": "BA",
+            "icao": "BAW",
+            "name": "British Airways"
+          },
+          "arrival": "2026-11-23T05:10:00+08:00",
+          "departure": "2026-11-22T06:50:00+00:00",
+          "destination": {
+            "city": "Singapore",
+            "country": "SG",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "latitude": 1.3644,
+            "longitude": 103.9915,
+            "name": "Singapore Changi",
+            "timezone": "Asia/Singapore"
+          },
+          "durationMinutes": 860,
+          "flightNumber": "BA300",
+          "id": 1277,
+          "origin": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1111.90,
+    "travelers": [
+      {
+        "dateOfBirth": "1990-07-25",
+        "email": "lucas.martins@example.com",
+        "firstName": "Lucas",
+        "frequentFlyerNumber": "TP00482913",
+        "id": 2,
+        "lastName": "Martins",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

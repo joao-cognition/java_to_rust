@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking XAVVH2",
+  "path": "bookings/XAVVH2",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-20T09:18:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "XAVVH2",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "NL",
+            "iata": "KL",
+            "icao": "KLM",
+            "name": "KLM Royal Dutch Airlines"
+          },
+          "arrival": "2026-12-02T08:45:00+00:00",
+          "departure": "2026-12-02T06:55:00+01:00",
+          "destination": {
+            "city": "Lisbon",
+            "country": "PT",
+            "iata": "LIS",
+            "icao": "LPPT",
+            "latitude": 38.7742,
+            "longitude": -9.1342,
+            "name": "Lisbon Humberto Delgado",
+            "timezone": "Europe/Lisbon"
+          },
+          "durationMinutes": 170,
+          "flightNumber": "KL1690",
+          "id": 2017,
+          "origin": {
+            "city": "Amsterdam",
+            "country": "NL",
+            "iata": "AMS",
+            "icao": "EHAM",
+            "latitude": 52.3105,
+            "longitude": 4.7683,
+            "name": "Amsterdam Schiphol",
+            "timezone": "Europe/Amsterdam"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 289.45,
+    "travelers": [
+      {
+        "dateOfBirth": "1992-06-09",
+        "email": "beatriz.costa@example.com",
+        "firstName": "Beatriz",
+        "frequentFlyerNumber": null,
+        "id": 30,
+        "lastName": "Costa",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

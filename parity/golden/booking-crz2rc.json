@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking CRZ2RC",
+  "path": "bookings/CRZ2RC",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-22T18:57:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "CRZ2RC",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "B777",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-17T16:30:00+01:00",
+          "departure": "2026-11-17T12:35:00+04:00",
+          "destination": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          },
+          "durationMinutes": 415,
+          "flightNumber": "EK233",
+          "id": 2620,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 4756.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1985-11-09",
+        "email": "maria.papadopoulos@example.com",
+        "firstName": "Maria",
+        "frequentFlyerNumber": null,
+        "id": 17,
+        "lastName": "Papadopoulos",
+        "nationality": "GR"
+      },
+      {
+        "dateOfBirth": "1983-01-15",
+        "email": "giulia.ricci@example.com",
+        "firstName": "Giulia",
+        "frequentFlyerNumber": null,
+        "id": 28,
+        "lastName": "Ricci",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1987-01-06",
+        "email": "noah.peeters@example.com",
+        "firstName": "Noah",
+        "frequentFlyerNumber": null,
+        "id": 41,
+        "lastName": "Peeters",
+        "nationality": "BE"
+      }
+    ]
+  }
+}

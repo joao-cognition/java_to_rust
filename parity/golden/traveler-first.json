@@ -1,0 +1,16 @@
+{
+  "endpoint": "travelers/{id}",
+  "label": "traveler first",
+  "path": "travelers/1",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "dateOfBirth": "1984-03-12",
+    "email": "camille.marin@example.com",
+    "firstName": "Camille",
+    "frequentFlyerNumber": "AF123456789",
+    "id": 1,
+    "lastName": "Marin",
+    "nationality": "FR"
+  }
+}

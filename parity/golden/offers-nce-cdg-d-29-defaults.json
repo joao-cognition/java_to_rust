@@ -1,0 +1,1807 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-CDG d+29 defaults",
+  "path": "offers?origin=NCE&destination=CDG&date=2026-12-04",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 60.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 6
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:30:00+01:00",
+        "departure": "2026-12-04T12:05:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "AF7703",
+        "id": 626,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "626-K",
+      "pricing": {
+        "base": 60.00,
+        "basePerPassenger": 60.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 109.40,
+        "taxes": 49.40,
+        "taxesPerPassenger": 49.40,
+        "total": 109.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 60.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 24
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T18:20:00+01:00",
+        "departure": "2026-12-04T16:45:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7705",
+        "id": 628,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "628-K",
+      "pricing": {
+        "base": 60.00,
+        "basePerPassenger": 60.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 109.40,
+        "taxes": 49.40,
+        "taxesPerPassenger": 49.40,
+        "total": 109.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 60.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T20:10:00+01:00",
+        "departure": "2026-12-04T18:45:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "AF7706",
+        "id": 629,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "629-K",
+      "pricing": {
+        "base": 60.00,
+        "basePerPassenger": 60.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 109.40,
+        "taxes": 49.40,
+        "taxesPerPassenger": 49.40,
+        "total": 109.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 62.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 29
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T07:50:00+01:00",
+        "departure": "2026-12-04T06:15:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7700",
+        "id": 623,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "623-K",
+      "pricing": {
+        "base": 62.00,
+        "basePerPassenger": 62.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 111.60,
+        "taxes": 49.60,
+        "taxesPerPassenger": 49.60,
+        "total": 111.60
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 68.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 26
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T11:35:00+01:00",
+        "departure": "2026-12-04T10:00:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7702",
+        "id": 625,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "625-K",
+      "pricing": {
+        "base": 68.00,
+        "basePerPassenger": 68.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 118.20,
+        "taxes": 50.20,
+        "taxesPerPassenger": 50.20,
+        "total": 118.20
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 80.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 30
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:30:00+01:00",
+        "departure": "2026-12-04T12:05:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "AF7703",
+        "id": 626,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "626-M",
+      "pricing": {
+        "base": 80.00,
+        "basePerPassenger": 80.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 131.40,
+        "taxes": 51.40,
+        "taxesPerPassenger": 51.40,
+        "total": 131.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 80.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 20
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T18:20:00+01:00",
+        "departure": "2026-12-04T16:45:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7705",
+        "id": 628,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "628-M",
+      "pricing": {
+        "base": 80.00,
+        "basePerPassenger": 80.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 131.40,
+        "taxes": 51.40,
+        "taxesPerPassenger": 51.40,
+        "total": 131.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 80.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 32
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T20:10:00+01:00",
+        "departure": "2026-12-04T18:45:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "AF7706",
+        "id": 629,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "629-M",
+      "pricing": {
+        "base": 80.00,
+        "basePerPassenger": 80.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 131.40,
+        "taxes": 51.40,
+        "taxesPerPassenger": 51.40,
+        "total": 131.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 83.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 32
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T07:50:00+01:00",
+        "departure": "2026-12-04T06:15:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7700",
+        "id": 623,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "623-M",
+      "pricing": {
+        "base": 83.00,
+        "basePerPassenger": 83.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 134.70,
+        "taxes": 51.70,
+        "taxesPerPassenger": 51.70,
+        "total": 134.70
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 84.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 26
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T22:00:00+01:00",
+        "departure": "2026-12-04T20:40:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 80,
+        "flightNumber": "AF7707",
+        "id": 630,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "630-K",
+      "pricing": {
+        "base": 84.00,
+        "basePerPassenger": 84.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 135.80,
+        "taxes": 51.80,
+        "taxesPerPassenger": 51.80,
+        "total": 135.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 86.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 20
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T10:30:00+01:00",
+        "departure": "2026-12-04T08:55:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7701",
+        "id": 624,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "624-K",
+      "pricing": {
+        "base": 86.00,
+        "basePerPassenger": 86.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 138.00,
+        "taxes": 52.00,
+        "taxesPerPassenger": 52.00,
+        "total": 138.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 87.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T15:55:00+01:00",
+        "departure": "2026-12-04T14:25:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "AF7704",
+        "id": 627,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "627-K",
+      "pricing": {
+        "base": 87.00,
+        "basePerPassenger": 87.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 139.10,
+        "taxes": 52.10,
+        "taxesPerPassenger": 52.10,
+        "total": 139.10
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 91.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 38
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T11:35:00+01:00",
+        "departure": "2026-12-04T10:00:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7702",
+        "id": 625,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "625-M",
+      "pricing": {
+        "base": 91.00,
+        "basePerPassenger": 91.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 143.50,
+        "taxes": 52.50,
+        "taxesPerPassenger": 52.50,
+        "total": 143.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 99.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 39
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T20:10:00+01:00",
+        "departure": "2026-12-04T18:45:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "AF7706",
+        "id": 629,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "629-Y",
+      "pricing": {
+        "base": 99.00,
+        "basePerPassenger": 99.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 152.30,
+        "taxes": 53.30,
+        "taxesPerPassenger": 53.30,
+        "total": 152.30
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 100.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 31
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:30:00+01:00",
+        "departure": "2026-12-04T12:05:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "AF7703",
+        "id": 626,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "626-Y",
+      "pricing": {
+        "base": 100.00,
+        "basePerPassenger": 100.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 153.40,
+        "taxes": 53.40,
+        "taxesPerPassenger": 53.40,
+        "total": 153.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 100.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 77
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T18:20:00+01:00",
+        "departure": "2026-12-04T16:45:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7705",
+        "id": 628,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "628-Y",
+      "pricing": {
+        "base": 100.00,
+        "basePerPassenger": 100.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 153.40,
+        "taxes": 53.40,
+        "taxesPerPassenger": 53.40,
+        "total": 153.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 104.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 24
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T07:50:00+01:00",
+        "departure": "2026-12-04T06:15:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7700",
+        "id": 623,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "623-Y",
+      "pricing": {
+        "base": 104.00,
+        "basePerPassenger": 104.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 157.80,
+        "taxes": 53.80,
+        "taxesPerPassenger": 53.80,
+        "total": 157.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 111.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 34
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T22:00:00+01:00",
+        "departure": "2026-12-04T20:40:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 80,
+        "flightNumber": "AF7707",
+        "id": 630,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "630-M",
+      "pricing": {
+        "base": 111.00,
+        "basePerPassenger": 111.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 165.50,
+        "taxes": 54.50,
+        "taxesPerPassenger": 54.50,
+        "total": 165.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 114.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 53
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T11:35:00+01:00",
+        "departure": "2026-12-04T10:00:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7702",
+        "id": 625,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "625-Y",
+      "pricing": {
+        "base": 114.00,
+        "basePerPassenger": 114.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 168.80,
+        "taxes": 54.80,
+        "taxesPerPassenger": 54.80,
+        "total": 168.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 115.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 11
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T10:30:00+01:00",
+        "departure": "2026-12-04T08:55:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7701",
+        "id": 624,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "624-M",
+      "pricing": {
+        "base": 115.00,
+        "basePerPassenger": 115.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 169.90,
+        "taxes": 54.90,
+        "taxesPerPassenger": 54.90,
+        "total": 169.90
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 116.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 27
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T15:55:00+01:00",
+        "departure": "2026-12-04T14:25:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "AF7704",
+        "id": 627,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "627-M",
+      "pricing": {
+        "base": 116.00,
+        "basePerPassenger": 116.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 171.00,
+        "taxes": 55.00,
+        "taxesPerPassenger": 55.00,
+        "total": 171.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 139.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 42
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T22:00:00+01:00",
+        "departure": "2026-12-04T20:40:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 80,
+        "flightNumber": "AF7707",
+        "id": 630,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "630-Y",
+      "pricing": {
+        "base": 139.00,
+        "basePerPassenger": 139.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 196.30,
+        "taxes": 57.30,
+        "taxesPerPassenger": 57.30,
+        "total": 196.30
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 144.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 78
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T10:30:00+01:00",
+        "departure": "2026-12-04T08:55:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7701",
+        "id": 624,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "624-Y",
+      "pricing": {
+        "base": 144.00,
+        "basePerPassenger": 144.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 201.80,
+        "taxes": 57.80,
+        "taxesPerPassenger": 57.80,
+        "total": 201.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 145.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 59
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T15:55:00+01:00",
+        "departure": "2026-12-04T14:25:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "AF7704",
+        "id": 627,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "627-Y",
+      "pricing": {
+        "base": 145.00,
+        "basePerPassenger": 145.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 202.90,
+        "taxes": 57.90,
+        "taxesPerPassenger": 57.90,
+        "total": 202.90
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 169.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 7
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T20:10:00+01:00",
+        "departure": "2026-12-04T18:45:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "AF7706",
+        "id": 629,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "629-W",
+      "pricing": {
+        "base": 169.00,
+        "basePerPassenger": 169.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 234.80,
+        "taxes": 65.80,
+        "taxesPerPassenger": 65.80,
+        "total": 234.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 237.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 17
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T22:00:00+01:00",
+        "departure": "2026-12-04T20:40:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 80,
+        "flightNumber": "AF7707",
+        "id": 630,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "630-W",
+      "pricing": {
+        "base": 237.00,
+        "basePerPassenger": 237.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 309.60,
+        "taxes": 72.60,
+        "taxesPerPassenger": 72.60,
+        "total": 309.60
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 245.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 9
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T10:30:00+01:00",
+        "departure": "2026-12-04T08:55:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7701",
+        "id": 624,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "624-W",
+      "pricing": {
+        "base": 245.00,
+        "basePerPassenger": 245.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 318.40,
+        "taxes": 73.40,
+        "taxesPerPassenger": 73.40,
+        "total": 318.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 290.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 10
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:30:00+01:00",
+        "departure": "2026-12-04T12:05:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 85,
+        "flightNumber": "AF7703",
+        "id": 626,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "626-J",
+      "pricing": {
+        "base": 290.00,
+        "basePerPassenger": 290.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 375.60,
+        "taxes": 85.60,
+        "taxesPerPassenger": 85.60,
+        "total": 375.60
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 300.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 11
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T07:50:00+01:00",
+        "departure": "2026-12-04T06:15:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7700",
+        "id": 623,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "623-C",
+      "pricing": {
+        "base": 300.00,
+        "basePerPassenger": 300.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 386.60,
+        "taxes": 86.60,
+        "taxesPerPassenger": 86.60,
+        "total": 386.60
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 331.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T11:35:00+01:00",
+        "departure": "2026-12-04T10:00:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7702",
+        "id": 625,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "625-J",
+      "pricing": {
+        "base": 331.00,
+        "basePerPassenger": 331.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 420.70,
+        "taxes": 89.70,
+        "taxesPerPassenger": 89.70,
+        "total": 420.70
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 418.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 16
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T10:30:00+01:00",
+        "departure": "2026-12-04T08:55:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7701",
+        "id": 624,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "624-J",
+      "pricing": {
+        "base": 418.00,
+        "basePerPassenger": 418.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 516.40,
+        "taxes": 98.40,
+        "taxesPerPassenger": 98.40,
+        "total": 516.40
+      }
+    }
+  ]
+}

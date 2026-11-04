@@ -1,0 +1,13 @@
+{
+  "endpoint": "airports/{iata}",
+  "label": "airport trailing slash",
+  "path": "airports/",
+  "status": 404,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "No static resource api/airports.",
+    "instance": "/travel/api/airports/",
+    "status": 404,
+    "title": "Not Found"
+  }
+}

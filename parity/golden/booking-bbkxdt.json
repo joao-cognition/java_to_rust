@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking BBKXDT",
+  "path": "bookings/BBKXDT",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-18T23:23:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "BBKXDT",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-12T14:30:00+05:30",
+          "departure": "2026-11-12T10:10:00+04:00",
+          "destination": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          },
+          "durationMinutes": 170,
+          "flightNumber": "EK502",
+          "id": 2819,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 521.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1990-07-25",
+        "email": "lucas.martins@example.com",
+        "firstName": "Lucas",
+        "frequentFlyerNumber": "TP00482913",
+        "id": 2,
+        "lastName": "Martins",
+        "nationality": "PT"
+      },
+      {
+        "dateOfBirth": "1979-02-27",
+        "email": "marco.bianchi@example.com",
+        "firstName": "Marco",
+        "frequentFlyerNumber": null,
+        "id": 35,
+        "lastName": "Bianchi",
+        "nationality": "IT"
+      }
+    ]
+  }
+}

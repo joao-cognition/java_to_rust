@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking SKUCNS",
+  "path": "bookings/SKUCNS",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-25T10:05:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "SKUCNS",
+    "segments": [
+      {
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "flight": {
+          "aircraft": "A350",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "US",
+            "iata": "DL",
+            "icao": "DAL",
+            "name": "Delta Air Lines"
+          },
+          "arrival": "2026-12-04T10:30:00-05:00",
+          "departure": "2026-12-04T08:35:00+01:00",
+          "destination": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          },
+          "durationMinutes": 475,
+          "flightNumber": "DL11",
+          "id": 926,
+          "origin": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 12055.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1969-12-08",
+        "email": "olivier.dubois@example.com",
+        "firstName": "Olivier",
+        "frequentFlyerNumber": "AF556677889",
+        "id": 7,
+        "lastName": "Dubois",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1972-01-27",
+        "email": "louis.lefebvre@example.com",
+        "firstName": "Louis",
+        "frequentFlyerNumber": "AF990011223",
+        "id": 16,
+        "lastName": "Lefebvre",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1997-07-04",
+        "email": "hugo.moreau@example.com",
+        "firstName": "Hugo",
+        "frequentFlyerNumber": "AF334455667",
+        "id": 26,
+        "lastName": "Moreau",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

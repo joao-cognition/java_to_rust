@@ -1,0 +1,13 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking missing ZZZZZZ",
+  "path": "bookings/ZZZZZZ",
+  "status": 404,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Booking ZZZZZZ not found",
+    "instance": "/travel/api/bookings/ZZZZZZ",
+    "status": 404,
+    "title": "Not Found"
+  }
+}

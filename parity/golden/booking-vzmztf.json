@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking VZMZTF",
+  "path": "bookings/VZMZTF",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-25T22:58:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "VZMZTF",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-14T15:55:00+01:00",
+          "departure": "2026-11-14T14:25:00+01:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 90,
+          "flightNumber": "AF7704",
+          "id": 467,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 165.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1986-07-21",
+        "email": "hannah.schmidt@example.com",
+        "firstName": "Hannah",
+        "frequentFlyerNumber": null,
+        "id": 14,
+        "lastName": "Schmidt",
+        "nationality": "DE"
+      }
+    ]
+  }
+}

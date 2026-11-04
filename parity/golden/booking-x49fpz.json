@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking X49FPZ",
+  "path": "bookings/X49FPZ",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-11-03T20:03:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "X49FPZ",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "DE",
+            "iata": "LH",
+            "icao": "DLH",
+            "name": "Lufthansa"
+          },
+          "arrival": "2026-11-20T16:40:00+01:00",
+          "departure": "2026-11-20T14:25:00+01:00",
+          "destination": {
+            "city": "Frankfurt",
+            "country": "DE",
+            "iata": "FRA",
+            "icao": "EDDF",
+            "latitude": 50.0379,
+            "longitude": 8.5622,
+            "name": "Frankfurt am Main",
+            "timezone": "Europe/Berlin"
+          },
+          "durationMinutes": 135,
+          "flightNumber": "LH1103",
+          "id": 1594,
+          "origin": {
+            "city": "Madrid",
+            "country": "ES",
+            "iata": "MAD",
+            "icao": "LEMD",
+            "latitude": 40.4983,
+            "longitude": -3.5676,
+            "name": "Adolfo Suárez Madrid-Barajas",
+            "timezone": "Europe/Madrid"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1085.60,
+    "travelers": [
+      {
+        "dateOfBirth": "1986-07-21",
+        "email": "hannah.schmidt@example.com",
+        "firstName": "Hannah",
+        "frequentFlyerNumber": null,
+        "id": 14,
+        "lastName": "Schmidt",
+        "nationality": "DE"
+      },
+      {
+        "dateOfBirth": "1988-08-02",
+        "email": "felix.weber@example.com",
+        "firstName": "Felix",
+        "frequentFlyerNumber": "LX55667788",
+        "id": 31,
+        "lastName": "Weber",
+        "nationality": "CH"
+      }
+    ]
+  }
+}

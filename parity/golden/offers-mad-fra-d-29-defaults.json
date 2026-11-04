@@ -1,0 +1,1401 @@
+{
+  "endpoint": "offers",
+  "label": "offers MAD-FRA d+29 defaults",
+  "path": "offers?origin=MAD&destination=FRA&date=2026-12-04",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 99.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 28
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T08:40:00+01:00",
+        "departure": "2026-12-04T06:20:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 140,
+        "flightNumber": "IB1100",
+        "id": 1675,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1675-K",
+      "pricing": {
+        "base": 99.00,
+        "basePerPassenger": 99.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 137.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 137.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 102.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 5
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T10:40:00+01:00",
+        "departure": "2026-12-04T08:20:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 140,
+        "flightNumber": "LH1101",
+        "id": 1676,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1676-K",
+      "pricing": {
+        "base": 102.00,
+        "basePerPassenger": 102.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 140.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 140.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 112.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 23
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T18:45:00+01:00",
+        "departure": "2026-12-04T16:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1104",
+        "id": 1679,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1679-K",
+      "pricing": {
+        "base": 112.00,
+        "basePerPassenger": 112.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 150.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 150.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 132.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 27
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T08:40:00+01:00",
+        "departure": "2026-12-04T06:20:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 140,
+        "flightNumber": "IB1100",
+        "id": 1675,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1675-M",
+      "pricing": {
+        "base": 132.00,
+        "basePerPassenger": 132.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 170.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 170.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 132.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 29
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T13:45:00+01:00",
+        "departure": "2026-12-04T11:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1102",
+        "id": 1677,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1677-K",
+      "pricing": {
+        "base": 132.00,
+        "basePerPassenger": 132.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 170.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 170.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 136.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 17
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T10:40:00+01:00",
+        "departure": "2026-12-04T08:20:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 140,
+        "flightNumber": "LH1101",
+        "id": 1676,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1676-M",
+      "pricing": {
+        "base": 136.00,
+        "basePerPassenger": 136.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 174.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 174.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 136.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 28
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T21:35:00+01:00",
+        "departure": "2026-12-04T19:10:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 145,
+        "flightNumber": "LH1105",
+        "id": 1680,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1680-K",
+      "pricing": {
+        "base": 136.00,
+        "basePerPassenger": 136.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 174.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 174.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 137.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 22
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T16:50:00+01:00",
+        "departure": "2026-12-04T14:25:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 145,
+        "flightNumber": "LH1103",
+        "id": 1678,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1678-K",
+      "pricing": {
+        "base": 137.00,
+        "basePerPassenger": 137.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 175.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 175.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 150.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 11
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T18:45:00+01:00",
+        "departure": "2026-12-04T16:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1104",
+        "id": 1679,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1679-M",
+      "pricing": {
+        "base": 150.00,
+        "basePerPassenger": 150.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 188.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 188.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 164.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 40
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T08:40:00+01:00",
+        "departure": "2026-12-04T06:20:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 140,
+        "flightNumber": "IB1100",
+        "id": 1675,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1675-Y",
+      "pricing": {
+        "base": 164.00,
+        "basePerPassenger": 164.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 202.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 202.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 170.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 37
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T10:40:00+01:00",
+        "departure": "2026-12-04T08:20:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 140,
+        "flightNumber": "LH1101",
+        "id": 1676,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1676-Y",
+      "pricing": {
+        "base": 170.00,
+        "basePerPassenger": 170.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 208.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 208.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 175.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 23
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T13:45:00+01:00",
+        "departure": "2026-12-04T11:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1102",
+        "id": 1677,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1677-M",
+      "pricing": {
+        "base": 175.00,
+        "basePerPassenger": 175.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 213.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 213.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 181.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T21:35:00+01:00",
+        "departure": "2026-12-04T19:10:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 145,
+        "flightNumber": "LH1105",
+        "id": 1680,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1680-M",
+      "pricing": {
+        "base": 181.00,
+        "basePerPassenger": 181.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 219.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 219.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 183.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 34
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T16:50:00+01:00",
+        "departure": "2026-12-04T14:25:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 145,
+        "flightNumber": "LH1103",
+        "id": 1678,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1678-M",
+      "pricing": {
+        "base": 183.00,
+        "basePerPassenger": 183.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 221.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 221.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 187.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 35
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T18:45:00+01:00",
+        "departure": "2026-12-04T16:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1104",
+        "id": 1679,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1679-Y",
+      "pricing": {
+        "base": 187.00,
+        "basePerPassenger": 187.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 225.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 225.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 219.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 51
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T13:45:00+01:00",
+        "departure": "2026-12-04T11:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1102",
+        "id": 1677,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1677-Y",
+      "pricing": {
+        "base": 219.00,
+        "basePerPassenger": 219.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 257.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 257.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 227.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 69
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T21:35:00+01:00",
+        "departure": "2026-12-04T19:10:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 145,
+        "flightNumber": "LH1105",
+        "id": 1680,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1680-Y",
+      "pricing": {
+        "base": 227.00,
+        "basePerPassenger": 227.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 265.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 265.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 228.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 21
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T16:50:00+01:00",
+        "departure": "2026-12-04T14:25:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 145,
+        "flightNumber": "LH1103",
+        "id": 1678,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1678-Y",
+      "pricing": {
+        "base": 228.00,
+        "basePerPassenger": 228.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 266.00,
+        "taxes": 38.00,
+        "taxesPerPassenger": 38.00,
+        "total": 266.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 280.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T08:40:00+01:00",
+        "departure": "2026-12-04T06:20:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 140,
+        "flightNumber": "IB1100",
+        "id": 1675,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1675-W",
+      "pricing": {
+        "base": 280.00,
+        "basePerPassenger": 280.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 322.50,
+        "taxes": 42.50,
+        "taxesPerPassenger": 42.50,
+        "total": 322.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 373.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 15
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T13:45:00+01:00",
+        "departure": "2026-12-04T11:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1102",
+        "id": 1677,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1677-W",
+      "pricing": {
+        "base": 373.00,
+        "basePerPassenger": 373.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 415.50,
+        "taxes": 42.50,
+        "taxesPerPassenger": 42.50,
+        "total": 415.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 492.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 14
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T10:40:00+01:00",
+        "departure": "2026-12-04T08:20:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 140,
+        "flightNumber": "LH1101",
+        "id": 1676,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1676-J",
+      "pricing": {
+        "base": 492.00,
+        "basePerPassenger": 492.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 540.80,
+        "taxes": 48.80,
+        "taxesPerPassenger": 48.80,
+        "total": 540.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 542.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 4
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T18:45:00+01:00",
+        "departure": "2026-12-04T16:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1104",
+        "id": 1679,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1679-C",
+      "pricing": {
+        "base": 542.00,
+        "basePerPassenger": 542.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 590.80,
+        "taxes": 48.80,
+        "taxesPerPassenger": 48.80,
+        "total": 590.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 636.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "ES",
+          "iata": "IB",
+          "icao": "IBE",
+          "name": "Iberia"
+        },
+        "arrival": "2026-12-04T13:45:00+01:00",
+        "departure": "2026-12-04T11:30:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 135,
+        "flightNumber": "IB1102",
+        "id": 1677,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1677-C",
+      "pricing": {
+        "base": 636.00,
+        "basePerPassenger": 636.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 684.80,
+        "taxes": 48.80,
+        "taxesPerPassenger": 48.80,
+        "total": 684.80
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 662.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 2
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "DE",
+          "iata": "LH",
+          "icao": "DLH",
+          "name": "Lufthansa"
+        },
+        "arrival": "2026-12-04T16:50:00+01:00",
+        "departure": "2026-12-04T14:25:00+01:00",
+        "destination": {
+          "city": "Frankfurt",
+          "country": "DE",
+          "iata": "FRA",
+          "icao": "EDDF",
+          "latitude": 50.0379,
+          "longitude": 8.5622,
+          "name": "Frankfurt am Main",
+          "timezone": "Europe/Berlin"
+        },
+        "durationMinutes": 145,
+        "flightNumber": "LH1103",
+        "id": 1678,
+        "origin": {
+          "city": "Madrid",
+          "country": "ES",
+          "iata": "MAD",
+          "icao": "LEMD",
+          "latitude": 40.4983,
+          "longitude": -3.5676,
+          "name": "Adolfo Suárez Madrid-Barajas",
+          "timezone": "Europe/Madrid"
+        }
+      },
+      "offerId": "1678-C",
+      "pricing": {
+        "base": 662.00,
+        "basePerPassenger": 662.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 710.80,
+        "taxes": 48.80,
+        "taxesPerPassenger": 48.80,
+        "total": 710.80
+      }
+    }
+  ]
+}

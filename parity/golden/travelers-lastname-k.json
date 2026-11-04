@@ -1,0 +1,18 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName K",
+  "path": "travelers?lastName=K",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1991-10-29",
+      "email": "anna.kowalski@example.com",
+      "firstName": "Anna",
+      "frequentFlyerNumber": null,
+      "id": 12,
+      "lastName": "Kowalski",
+      "nationality": "PL"
+    }
+  ]
+}

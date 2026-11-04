@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking VRFS7P",
+  "path": "bookings/VRFS7P",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-17T16:31:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "VRFS7P",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-06T16:15:00+01:00",
+          "departure": "2026-11-06T14:45:00+01:00",
+          "destination": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 90,
+          "flightNumber": "AF7752",
+          "id": 637,
+          "origin": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 332.60,
+    "travelers": [
+      {
+        "dateOfBirth": "1983-01-15",
+        "email": "giulia.ricci@example.com",
+        "firstName": "Giulia",
+        "frequentFlyerNumber": null,
+        "id": 28,
+        "lastName": "Ricci",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1993-12-05",
+        "email": "laura.jansen@example.com",
+        "firstName": "Laura",
+        "frequentFlyerNumber": "KL27182818",
+        "id": 34,
+        "lastName": "Jansen",
+        "nationality": "NL"
+      }
+    ]
+  }
+}

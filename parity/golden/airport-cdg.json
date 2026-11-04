@@ -1,0 +1,17 @@
+{
+  "endpoint": "airports/{iata}",
+  "label": "airport CDG",
+  "path": "airports/CDG",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "city": "Paris",
+    "country": "FR",
+    "iata": "CDG",
+    "icao": "LFPG",
+    "latitude": 49.0097,
+    "longitude": 2.5479,
+    "name": "Paris Charles de Gaulle",
+    "timezone": "Europe/Paris"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "endpoint": "flights",
+  "label": "flights DXB-BCN d+15",
+  "path": "flights?origin=DXB&destination=BCN&date=2026-11-20",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "A330",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T10:20:00+01:00",
+      "departure": "2026-11-20T06:15:00+04:00",
+      "destination": {
+        "city": "Barcelona",
+        "country": "ES",
+        "iata": "BCN",
+        "icao": "LEBL",
+        "latitude": 41.2974,
+        "longitude": 2.0833,
+        "name": "Barcelona-El Prat",
+        "timezone": "Europe/Madrid"
+      },
+      "durationMinutes": 425,
+      "flightNumber": "EK230",
+      "id": 2641,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "B777",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T12:05:00+01:00",
+      "departure": "2026-11-20T08:10:00+04:00",
+      "destination": {
+        "city": "Barcelona",
+        "country": "ES",
+        "iata": "BCN",
+        "icao": "LEBL",
+        "latitude": 41.2974,
+        "longitude": 2.0833,
+        "name": "Barcelona-El Prat",
+        "timezone": "Europe/Madrid"
+      },
+      "durationMinutes": 415,
+      "flightNumber": "EK231",
+      "id": 2642,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A350",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T14:45:00+01:00",
+      "departure": "2026-11-20T10:40:00+04:00",
+      "destination": {
+        "city": "Barcelona",
+        "country": "ES",
+        "iata": "BCN",
+        "icao": "LEBL",
+        "latitude": 41.2974,
+        "longitude": 2.0833,
+        "name": "Barcelona-El Prat",
+        "timezone": "Europe/Madrid"
+      },
+      "durationMinutes": 425,
+      "flightNumber": "EK232",
+      "id": 2643,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "B787",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T16:40:00+01:00",
+      "departure": "2026-11-20T12:35:00+04:00",
+      "destination": {
+        "city": "Barcelona",
+        "country": "ES",
+        "iata": "BCN",
+        "icao": "LEBL",
+        "latitude": 41.2974,
+        "longitude": 2.0833,
+        "name": "Barcelona-El Prat",
+        "timezone": "Europe/Madrid"
+      },
+      "durationMinutes": 425,
+      "flightNumber": "EK233",
+      "id": 2644,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A380",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T18:00:00+01:00",
+      "departure": "2026-11-20T14:05:00+04:00",
+      "destination": {
+        "city": "Barcelona",
+        "country": "ES",
+        "iata": "BCN",
+        "icao": "LEBL",
+        "latitude": 41.2974,
+        "longitude": 2.0833,
+        "name": "Barcelona-El Prat",
+        "timezone": "Europe/Madrid"
+      },
+      "durationMinutes": 415,
+      "flightNumber": "EK234",
+      "id": 2645,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A350",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T20:15:00+01:00",
+      "departure": "2026-11-20T16:20:00+04:00",
+      "destination": {
+        "city": "Barcelona",
+        "country": "ES",
+        "iata": "BCN",
+        "icao": "LEBL",
+        "latitude": 41.2974,
+        "longitude": 2.0833,
+        "name": "Barcelona-El Prat",
+        "timezone": "Europe/Madrid"
+      },
+      "durationMinutes": 415,
+      "flightNumber": "EK235",
+      "id": 2646,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A330",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T22:50:00+01:00",
+      "departure": "2026-11-20T18:40:00+04:00",
+      "destination": {
+        "city": "Barcelona",
+        "country": "ES",
+        "iata": "BCN",
+        "icao": "LEBL",
+        "latitude": 41.2974,
+        "longitude": 2.0833,
+        "name": "Barcelona-El Prat",
+        "timezone": "Europe/Madrid"
+      },
+      "durationMinutes": 430,
+      "flightNumber": "EK236",
+      "id": 2647,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "B787",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-21T00:25:00+01:00",
+      "departure": "2026-11-20T20:25:00+04:00",
+      "destination": {
+        "city": "Barcelona",
+        "country": "ES",
+        "iata": "BCN",
+        "icao": "LEBL",
+        "latitude": 41.2974,
+        "longitude": 2.0833,
+        "name": "Barcelona-El Prat",
+        "timezone": "Europe/Madrid"
+      },
+      "durationMinutes": 420,
+      "flightNumber": "EK237",
+      "id": 2648,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    }
+  ]
+}

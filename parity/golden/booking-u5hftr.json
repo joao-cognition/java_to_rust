@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking U5HFTR",
+  "path": "bookings/U5HFTR",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-26T20:20:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "U5HFTR",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A320",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-09T21:55:00+01:00",
+          "departure": "2026-11-09T20:40:00+01:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 75,
+          "flightNumber": "AF7707",
+          "id": 430,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 335.40,
+    "travelers": [
+      {
+        "dateOfBirth": "1990-07-25",
+        "email": "lucas.martins@example.com",
+        "firstName": "Lucas",
+        "frequentFlyerNumber": "TP00482913",
+        "id": 2,
+        "lastName": "Martins",
+        "nationality": "PT"
+      },
+      {
+        "dateOfBirth": "1969-12-08",
+        "email": "olivier.dubois@example.com",
+        "firstName": "Olivier",
+        "frequentFlyerNumber": "AF556677889",
+        "id": 7,
+        "lastName": "Dubois",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

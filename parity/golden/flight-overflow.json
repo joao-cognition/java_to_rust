@@ -1,0 +1,13 @@
+{
+  "endpoint": "flights/{id}",
+  "label": "flight overflow",
+  "path": "flights/99999999999999999999",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Failed to convert 'id' with value: '99999999999999999999'",
+    "instance": "/travel/api/flights/99999999999999999999",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

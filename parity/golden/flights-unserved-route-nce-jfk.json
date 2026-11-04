@@ -1,0 +1,8 @@
+{
+  "endpoint": "flights",
+  "label": "flights unserved route NCE-JFK",
+  "path": "flights?origin=NCE&destination=JFK&date=2026-11-05",
+  "status": 200,
+  "content_type": "application/json",
+  "body": []
+}

@@ -1,0 +1,289 @@
+{
+  "endpoint": "flights",
+  "label": "flights DXB-BOM d+15",
+  "path": "flights?origin=DXB&destination=BOM&date=2026-11-20",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T11:00:00+05:30",
+      "departure": "2026-11-20T06:30:00+04:00",
+      "destination": {
+        "city": "Mumbai",
+        "country": "IN",
+        "iata": "BOM",
+        "icao": "VABB",
+        "latitude": 19.0896,
+        "longitude": 72.8656,
+        "name": "Chhatrapati Shivaji Maharaj International",
+        "timezone": "Asia/Kolkata"
+      },
+      "durationMinutes": 180,
+      "flightNumber": "EK500",
+      "id": 2881,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "IN",
+        "iata": "AI",
+        "icao": "AIC",
+        "name": "Air India"
+      },
+      "arrival": "2026-11-20T13:10:00+05:30",
+      "departure": "2026-11-20T08:30:00+04:00",
+      "destination": {
+        "city": "Mumbai",
+        "country": "IN",
+        "iata": "BOM",
+        "icao": "VABB",
+        "latitude": 19.0896,
+        "longitude": 72.8656,
+        "name": "Chhatrapati Shivaji Maharaj International",
+        "timezone": "Asia/Kolkata"
+      },
+      "durationMinutes": 190,
+      "flightNumber": "AI501",
+      "id": 2882,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T14:30:00+05:30",
+      "departure": "2026-11-20T10:10:00+04:00",
+      "destination": {
+        "city": "Mumbai",
+        "country": "IN",
+        "iata": "BOM",
+        "icao": "VABB",
+        "latitude": 19.0896,
+        "longitude": 72.8656,
+        "name": "Chhatrapati Shivaji Maharaj International",
+        "timezone": "Asia/Kolkata"
+      },
+      "durationMinutes": 170,
+      "flightNumber": "EK502",
+      "id": 2883,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A321",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "IN",
+        "iata": "AI",
+        "icao": "AIC",
+        "name": "Air India"
+      },
+      "arrival": "2026-11-20T16:35:00+05:30",
+      "departure": "2026-11-20T12:15:00+04:00",
+      "destination": {
+        "city": "Mumbai",
+        "country": "IN",
+        "iata": "BOM",
+        "icao": "VABB",
+        "latitude": 19.0896,
+        "longitude": 72.8656,
+        "name": "Chhatrapati Shivaji Maharaj International",
+        "timezone": "Asia/Kolkata"
+      },
+      "durationMinutes": 170,
+      "flightNumber": "AI503",
+      "id": 2884,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A321",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T19:30:00+05:30",
+      "departure": "2026-11-20T14:50:00+04:00",
+      "destination": {
+        "city": "Mumbai",
+        "country": "IN",
+        "iata": "BOM",
+        "icao": "VABB",
+        "latitude": 19.0896,
+        "longitude": 72.8656,
+        "name": "Chhatrapati Shivaji Maharaj International",
+        "timezone": "Asia/Kolkata"
+      },
+      "durationMinutes": 190,
+      "flightNumber": "EK504",
+      "id": 2885,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "IN",
+        "iata": "AI",
+        "icao": "AIC",
+        "name": "Air India"
+      },
+      "arrival": "2026-11-20T21:10:00+05:30",
+      "departure": "2026-11-20T16:40:00+04:00",
+      "destination": {
+        "city": "Mumbai",
+        "country": "IN",
+        "iata": "BOM",
+        "icao": "VABB",
+        "latitude": 19.0896,
+        "longitude": 72.8656,
+        "name": "Chhatrapati Shivaji Maharaj International",
+        "timezone": "Asia/Kolkata"
+      },
+      "durationMinutes": 180,
+      "flightNumber": "AI505",
+      "id": 2886,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "NONE",
+        "country": "AE",
+        "iata": "EK",
+        "icao": "UAE",
+        "name": "Emirates"
+      },
+      "arrival": "2026-11-20T22:50:00+05:30",
+      "departure": "2026-11-20T18:30:00+04:00",
+      "destination": {
+        "city": "Mumbai",
+        "country": "IN",
+        "iata": "BOM",
+        "icao": "VABB",
+        "latitude": 19.0896,
+        "longitude": 72.8656,
+        "name": "Chhatrapati Shivaji Maharaj International",
+        "timezone": "Asia/Kolkata"
+      },
+      "durationMinutes": 170,
+      "flightNumber": "EK506",
+      "id": 2887,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "IN",
+        "iata": "AI",
+        "icao": "AIC",
+        "name": "Air India"
+      },
+      "arrival": "2026-11-21T01:05:00+05:30",
+      "departure": "2026-11-20T20:35:00+04:00",
+      "destination": {
+        "city": "Mumbai",
+        "country": "IN",
+        "iata": "BOM",
+        "icao": "VABB",
+        "latitude": 19.0896,
+        "longitude": 72.8656,
+        "name": "Chhatrapati Shivaji Maharaj International",
+        "timezone": "Asia/Kolkata"
+      },
+      "durationMinutes": 180,
+      "flightNumber": "AI507",
+      "id": 2888,
+      "origin": {
+        "city": "Dubai",
+        "country": "AE",
+        "iata": "DXB",
+        "icao": "OMDB",
+        "latitude": 25.2532,
+        "longitude": 55.3657,
+        "name": "Dubai International",
+        "timezone": "Asia/Dubai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName S",
+  "path": "travelers?lastName=S",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1986-07-21",
+      "email": "hannah.schmidt@example.com",
+      "firstName": "Hannah",
+      "frequentFlyerNumber": null,
+      "id": 14,
+      "lastName": "Schmidt",
+      "nationality": "DE"
+    },
+    {
+      "dateOfBirth": "1979-03-05",
+      "email": "pedro.silva@example.com",
+      "firstName": "Pedro",
+      "frequentFlyerNumber": "TP00118822",
+      "id": 13,
+      "lastName": "Silva",
+      "nationality": "PT"
+    },
+    {
+      "dateOfBirth": "1995-02-11",
+      "email": "charlotte.smith@example.com",
+      "firstName": "Charlotte",
+      "frequentFlyerNumber": "BA20081234",
+      "id": 10,
+      "lastName": "Smith",
+      "nationality": "GB"
+    }
+  ]
+}

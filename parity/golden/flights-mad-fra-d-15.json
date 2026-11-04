@@ -1,0 +1,219 @@
+{
+  "endpoint": "flights",
+  "label": "flights MAD-FRA d+15",
+  "path": "flights?origin=MAD&destination=FRA&date=2026-11-20",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "ES",
+        "iata": "IB",
+        "icao": "IBE",
+        "name": "Iberia"
+      },
+      "arrival": "2026-11-20T08:35:00+01:00",
+      "departure": "2026-11-20T06:20:00+01:00",
+      "destination": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "iata": "FRA",
+        "icao": "EDDF",
+        "latitude": 50.0379,
+        "longitude": 8.5622,
+        "name": "Frankfurt am Main",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 135,
+      "flightNumber": "IB1100",
+      "id": 1591,
+      "origin": {
+        "city": "Madrid",
+        "country": "ES",
+        "iata": "MAD",
+        "icao": "LEMD",
+        "latitude": 40.4983,
+        "longitude": -3.5676,
+        "name": "Adolfo Suárez Madrid-Barajas",
+        "timezone": "Europe/Madrid"
+      }
+    },
+    {
+      "aircraft": "A321",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "DE",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrival": "2026-11-20T10:35:00+01:00",
+      "departure": "2026-11-20T08:20:00+01:00",
+      "destination": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "iata": "FRA",
+        "icao": "EDDF",
+        "latitude": 50.0379,
+        "longitude": 8.5622,
+        "name": "Frankfurt am Main",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 135,
+      "flightNumber": "LH1101",
+      "id": 1592,
+      "origin": {
+        "city": "Madrid",
+        "country": "ES",
+        "iata": "MAD",
+        "icao": "LEMD",
+        "latitude": 40.4983,
+        "longitude": -3.5676,
+        "name": "Adolfo Suárez Madrid-Barajas",
+        "timezone": "Europe/Madrid"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "ES",
+        "iata": "IB",
+        "icao": "IBE",
+        "name": "Iberia"
+      },
+      "arrival": "2026-11-20T13:45:00+01:00",
+      "departure": "2026-11-20T11:30:00+01:00",
+      "destination": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "iata": "FRA",
+        "icao": "EDDF",
+        "latitude": 50.0379,
+        "longitude": 8.5622,
+        "name": "Frankfurt am Main",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 135,
+      "flightNumber": "IB1102",
+      "id": 1593,
+      "origin": {
+        "city": "Madrid",
+        "country": "ES",
+        "iata": "MAD",
+        "icao": "LEMD",
+        "latitude": 40.4983,
+        "longitude": -3.5676,
+        "name": "Adolfo Suárez Madrid-Barajas",
+        "timezone": "Europe/Madrid"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "DE",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrival": "2026-11-20T16:40:00+01:00",
+      "departure": "2026-11-20T14:25:00+01:00",
+      "destination": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "iata": "FRA",
+        "icao": "EDDF",
+        "latitude": 50.0379,
+        "longitude": 8.5622,
+        "name": "Frankfurt am Main",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 135,
+      "flightNumber": "LH1103",
+      "id": 1594,
+      "origin": {
+        "city": "Madrid",
+        "country": "ES",
+        "iata": "MAD",
+        "icao": "LEMD",
+        "latitude": 40.4983,
+        "longitude": -3.5676,
+        "name": "Adolfo Suárez Madrid-Barajas",
+        "timezone": "Europe/Madrid"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "ES",
+        "iata": "IB",
+        "icao": "IBE",
+        "name": "Iberia"
+      },
+      "arrival": "2026-11-20T18:45:00+01:00",
+      "departure": "2026-11-20T16:30:00+01:00",
+      "destination": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "iata": "FRA",
+        "icao": "EDDF",
+        "latitude": 50.0379,
+        "longitude": 8.5622,
+        "name": "Frankfurt am Main",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 135,
+      "flightNumber": "IB1104",
+      "id": 1595,
+      "origin": {
+        "city": "Madrid",
+        "country": "ES",
+        "iata": "MAD",
+        "icao": "LEMD",
+        "latitude": 40.4983,
+        "longitude": -3.5676,
+        "name": "Adolfo Suárez Madrid-Barajas",
+        "timezone": "Europe/Madrid"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "DE",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrival": "2026-11-20T21:30:00+01:00",
+      "departure": "2026-11-20T19:10:00+01:00",
+      "destination": {
+        "city": "Frankfurt",
+        "country": "DE",
+        "iata": "FRA",
+        "icao": "EDDF",
+        "latitude": 50.0379,
+        "longitude": 8.5622,
+        "name": "Frankfurt am Main",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 140,
+      "flightNumber": "LH1105",
+      "id": 1596,
+      "origin": {
+        "city": "Madrid",
+        "country": "ES",
+        "iata": "MAD",
+        "icao": "LEMD",
+        "latitude": 40.4983,
+        "longitude": -3.5676,
+        "name": "Adolfo Suárez Madrid-Barajas",
+        "timezone": "Europe/Madrid"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName T",
+  "path": "travelers?lastName=T",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1984-04-13",
+      "email": "amelia.taylor@example.com",
+      "firstName": "Amelia",
+      "frequentFlyerNumber": null,
+      "id": 32,
+      "lastName": "Taylor",
+      "nationality": "GB"
+    }
+  ]
+}

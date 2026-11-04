@@ -1,0 +1,45 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName R",
+  "path": "travelers?lastName=R",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1983-01-15",
+      "email": "giulia.ricci@example.com",
+      "firstName": "Giulia",
+      "frequentFlyerNumber": null,
+      "id": 28,
+      "lastName": "Ricci",
+      "nationality": "IT"
+    },
+    {
+      "dateOfBirth": "1981-07-31",
+      "email": "ines.romero@example.com",
+      "firstName": "Inés",
+      "frequentFlyerNumber": "IB66778899",
+      "id": 38,
+      "lastName": "Romero",
+      "nationality": "ES"
+    },
+    {
+      "dateOfBirth": "1987-08-17",
+      "email": "matteo.rossi@example.com",
+      "firstName": "Matteo",
+      "frequentFlyerNumber": "AZ44556677",
+      "id": 11,
+      "lastName": "Rossi",
+      "nationality": "IT"
+    },
+    {
+      "dateOfBirth": "1998-11-21",
+      "email": "juliette.roux@example.com",
+      "firstName": "Juliette",
+      "frequentFlyerNumber": null,
+      "id": 40,
+      "lastName": "Roux",
+      "nationality": "FR"
+    }
+  ]
+}

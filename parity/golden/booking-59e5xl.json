@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 59E5XL",
+  "path": "bookings/59E5XL",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-28T14:38:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "59E5XL",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "PT",
+            "iata": "TP",
+            "icao": "TAP",
+            "name": "TAP Air Portugal"
+          },
+          "arrival": "2026-12-03T14:10:00+00:00",
+          "departure": "2026-12-03T12:25:00+01:00",
+          "destination": {
+            "city": "Lisbon",
+            "country": "PT",
+            "iata": "LIS",
+            "icao": "LPPT",
+            "latitude": 38.7742,
+            "longitude": -9.1342,
+            "name": "Lisbon Humberto Delgado",
+            "timezone": "Europe/Lisbon"
+          },
+          "durationMinutes": 165,
+          "flightNumber": "TP1693",
+          "id": 2028,
+          "origin": {
+            "city": "Amsterdam",
+            "country": "NL",
+            "iata": "AMS",
+            "icao": "EHAM",
+            "latitude": 52.3105,
+            "longitude": 4.7683,
+            "name": "Amsterdam Schiphol",
+            "timezone": "Europe/Amsterdam"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 368.90,
+    "travelers": [
+      {
+        "dateOfBirth": "1991-10-29",
+        "email": "anna.kowalski@example.com",
+        "firstName": "Anna",
+        "frequentFlyerNumber": null,
+        "id": 12,
+        "lastName": "Kowalski",
+        "nationality": "PL"
+      },
+      {
+        "dateOfBirth": "1986-07-21",
+        "email": "hannah.schmidt@example.com",
+        "firstName": "Hannah",
+        "frequentFlyerNumber": null,
+        "id": 14,
+        "lastName": "Schmidt",
+        "nationality": "DE"
+      }
+    ]
+  }
+}

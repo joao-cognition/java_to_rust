@@ -1,0 +1,149 @@
+{
+  "endpoint": "flights",
+  "label": "flights SIN-LHR d+0",
+  "path": "flights?origin=SIN&destination=LHR&date=2026-11-05",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "A330",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-11-05T12:05:00+00:00",
+      "departure": "2026-11-05T06:05:00+08:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 840,
+      "flightNumber": "BA350",
+      "id": 1381,
+      "origin": {
+        "city": "Singapore",
+        "country": "SG",
+        "iata": "SIN",
+        "icao": "WSSS",
+        "latitude": 1.3644,
+        "longitude": 103.9915,
+        "name": "Singapore Changi",
+        "timezone": "Asia/Singapore"
+      }
+    },
+    {
+      "aircraft": "A350",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "SG",
+        "iata": "SQ",
+        "icao": "SIA",
+        "name": "Singapore Airlines"
+      },
+      "arrival": "2026-11-05T16:20:00+00:00",
+      "departure": "2026-11-05T10:00:00+08:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 860,
+      "flightNumber": "SQ351",
+      "id": 1382,
+      "origin": {
+        "city": "Singapore",
+        "country": "SG",
+        "iata": "SIN",
+        "icao": "WSSS",
+        "latitude": 1.3644,
+        "longitude": 103.9915,
+        "name": "Singapore Changi",
+        "timezone": "Asia/Singapore"
+      }
+    },
+    {
+      "aircraft": "B787",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-11-05T20:40:00+00:00",
+      "departure": "2026-11-05T14:30:00+08:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 850,
+      "flightNumber": "BA352",
+      "id": 1383,
+      "origin": {
+        "city": "Singapore",
+        "country": "SG",
+        "iata": "SIN",
+        "icao": "WSSS",
+        "latitude": 1.3644,
+        "longitude": 103.9915,
+        "name": "Singapore Changi",
+        "timezone": "Asia/Singapore"
+      }
+    },
+    {
+      "aircraft": "B777",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "SG",
+        "iata": "SQ",
+        "icao": "SIA",
+        "name": "Singapore Airlines"
+      },
+      "arrival": "2026-11-06T01:00:00+00:00",
+      "departure": "2026-11-05T18:55:00+08:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 845,
+      "flightNumber": "SQ353",
+      "id": 1384,
+      "origin": {
+        "city": "Singapore",
+        "country": "SG",
+        "iata": "SIN",
+        "icao": "WSSS",
+        "latitude": 1.3644,
+        "longitude": 103.9915,
+        "name": "Singapore Changi",
+        "timezone": "Asia/Singapore"
+      }
+    }
+  ]
+}

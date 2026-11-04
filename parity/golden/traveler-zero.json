@@ -1,0 +1,13 @@
+{
+  "endpoint": "travelers/{id}",
+  "label": "traveler zero",
+  "path": "travelers/0",
+  "status": 404,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Traveler 0 not found",
+    "instance": "/travel/api/travelers/0",
+    "status": 404,
+    "title": "Not Found"
+  }
+}

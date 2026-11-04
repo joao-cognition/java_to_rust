@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 7FZMQG",
+  "path": "bookings/7FZMQG",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-27T04:48:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "7FZMQG",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B738",
+          "airline": {
+            "alliance": "ONEWORLD",
+            "country": "GB",
+            "iata": "BA",
+            "icao": "BAW",
+            "name": "British Airways"
+          },
+          "arrival": "2026-11-30T14:45:00+01:00",
+          "departure": "2026-11-30T11:50:00+00:00",
+          "destination": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 115,
+          "flightNumber": "BA392",
+          "id": 363,
+          "origin": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 651.30,
+    "travelers": [
+      {
+        "dateOfBirth": "1990-07-25",
+        "email": "lucas.martins@example.com",
+        "firstName": "Lucas",
+        "frequentFlyerNumber": "TP00482913",
+        "id": 2,
+        "lastName": "Martins",
+        "nationality": "PT"
+      },
+      {
+        "dateOfBirth": "1981-06-03",
+        "email": "jan.devries@example.com",
+        "firstName": "Jan",
+        "frequentFlyerNumber": "KL31415926",
+        "id": 9,
+        "lastName": "de Vries",
+        "nationality": "NL"
+      },
+      {
+        "dateOfBirth": "1977-06-18",
+        "email": "oliver.brown@example.com",
+        "firstName": "Oliver",
+        "frequentFlyerNumber": "BA77553311",
+        "id": 20,
+        "lastName": "Brown",
+        "nationality": "GB"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName Mar",
+  "path": "travelers?lastName=Mar",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1978-11-02",
+      "email": "sofia.marchetti@example.com",
+      "firstName": "Sofia",
+      "frequentFlyerNumber": null,
+      "id": 3,
+      "lastName": "Marchetti",
+      "nationality": "IT"
+    },
+    {
+      "dateOfBirth": "1984-03-12",
+      "email": "camille.marin@example.com",
+      "firstName": "Camille",
+      "frequentFlyerNumber": "AF123456789",
+      "id": 1,
+      "lastName": "Marin",
+      "nationality": "FR"
+    },
+    {
+      "dateOfBirth": "1996-01-30",
+      "email": "clara.marques@example.com",
+      "firstName": "Clara",
+      "frequentFlyerNumber": null,
+      "id": 50,
+      "lastName": "Marques",
+      "nationality": "PT"
+    },
+    {
+      "dateOfBirth": "1982-05-27",
+      "email": "mathis.marquet@example.com",
+      "firstName": "Mathis",
+      "frequentFlyerNumber": "AF112233445",
+      "id": 49,
+      "lastName": "Marquet",
+      "nationality": "FR"
+    },
+    {
+      "dateOfBirth": "1990-07-25",
+      "email": "lucas.martins@example.com",
+      "firstName": "Lucas",
+      "frequentFlyerNumber": "TP00482913",
+      "id": 2,
+      "lastName": "Martins",
+      "nationality": "PT"
+    }
+  ]
+}

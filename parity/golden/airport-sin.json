@@ -1,0 +1,17 @@
+{
+  "endpoint": "airports/{iata}",
+  "label": "airport SIN",
+  "path": "airports/SIN",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "city": "Singapore",
+    "country": "SG",
+    "iata": "SIN",
+    "icao": "WSSS",
+    "latitude": 1.3644,
+    "longitude": 103.9915,
+    "name": "Singapore Changi",
+    "timezone": "Asia/Singapore"
+  }
+}

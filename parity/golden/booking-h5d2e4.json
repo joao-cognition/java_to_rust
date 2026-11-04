@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking H5D2E4",
+  "path": "bookings/H5D2E4",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-23T00:45:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "H5D2E4",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "E190",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-28T22:55:00+05:30",
+          "departure": "2026-11-28T18:30:00+04:00",
+          "destination": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          },
+          "durationMinutes": 175,
+          "flightNumber": "EK506",
+          "id": 2951,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 568.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1969-12-08",
+        "email": "olivier.dubois@example.com",
+        "firstName": "Olivier",
+        "frequentFlyerNumber": "AF556677889",
+        "id": 7,
+        "lastName": "Dubois",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1991-04-03",
+        "email": "zoe.williams@example.com",
+        "firstName": "Zoe",
+        "frequentFlyerNumber": "BA11223344",
+        "id": 44,
+        "lastName": "Williams",
+        "nationality": "GB"
+      },
+      {
+        "dateOfBirth": "1994-10-02",
+        "email": "eva.horvath@example.com",
+        "firstName": "Eva",
+        "frequentFlyerNumber": null,
+        "id": 48,
+        "lastName": "Horváth",
+        "nationality": "HU"
+      }
+    ]
+  }
+}

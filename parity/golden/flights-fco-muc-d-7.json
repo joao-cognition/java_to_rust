@@ -1,0 +1,149 @@
+{
+  "endpoint": "flights",
+  "label": "flights FCO-MUC d+7",
+  "path": "flights?origin=FCO&destination=MUC&date=2026-11-12",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "IT",
+        "iata": "AZ",
+        "icao": "ITY",
+        "name": "ITA Airways"
+      },
+      "arrival": "2026-11-12T07:40:00+01:00",
+      "departure": "2026-11-12T06:10:00+01:00",
+      "destination": {
+        "city": "Munich",
+        "country": "DE",
+        "iata": "MUC",
+        "icao": "EDDM",
+        "latitude": 48.3537,
+        "longitude": 11.775,
+        "name": "Munich Franz Josef Strauss",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 90,
+      "flightNumber": "AZ430",
+      "id": 2189,
+      "origin": {
+        "city": "Rome",
+        "country": "IT",
+        "iata": "FCO",
+        "icao": "LIRF",
+        "latitude": 41.8003,
+        "longitude": 12.2389,
+        "name": "Rome Fiumicino",
+        "timezone": "Europe/Rome"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "DE",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrival": "2026-11-12T11:55:00+01:00",
+      "departure": "2026-11-12T10:20:00+01:00",
+      "destination": {
+        "city": "Munich",
+        "country": "DE",
+        "iata": "MUC",
+        "icao": "EDDM",
+        "latitude": 48.3537,
+        "longitude": 11.775,
+        "name": "Munich Franz Josef Strauss",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 95,
+      "flightNumber": "LH431",
+      "id": 2190,
+      "origin": {
+        "city": "Rome",
+        "country": "IT",
+        "iata": "FCO",
+        "icao": "LIRF",
+        "latitude": 41.8003,
+        "longitude": 12.2389,
+        "name": "Rome Fiumicino",
+        "timezone": "Europe/Rome"
+      }
+    },
+    {
+      "aircraft": "A220",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "IT",
+        "iata": "AZ",
+        "icao": "ITY",
+        "name": "ITA Airways"
+      },
+      "arrival": "2026-11-12T15:40:00+01:00",
+      "departure": "2026-11-12T14:20:00+01:00",
+      "destination": {
+        "city": "Munich",
+        "country": "DE",
+        "iata": "MUC",
+        "icao": "EDDM",
+        "latitude": 48.3537,
+        "longitude": 11.775,
+        "name": "Munich Franz Josef Strauss",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 80,
+      "flightNumber": "AZ432",
+      "id": 2191,
+      "origin": {
+        "city": "Rome",
+        "country": "IT",
+        "iata": "FCO",
+        "icao": "LIRF",
+        "latitude": 41.8003,
+        "longitude": 12.2389,
+        "name": "Rome Fiumicino",
+        "timezone": "Europe/Rome"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "STAR_ALLIANCE",
+        "country": "DE",
+        "iata": "LH",
+        "icao": "DLH",
+        "name": "Lufthansa"
+      },
+      "arrival": "2026-11-12T19:25:00+01:00",
+      "departure": "2026-11-12T18:00:00+01:00",
+      "destination": {
+        "city": "Munich",
+        "country": "DE",
+        "iata": "MUC",
+        "icao": "EDDM",
+        "latitude": 48.3537,
+        "longitude": 11.775,
+        "name": "Munich Franz Josef Strauss",
+        "timezone": "Europe/Berlin"
+      },
+      "durationMinutes": 85,
+      "flightNumber": "LH433",
+      "id": 2192,
+      "origin": {
+        "city": "Rome",
+        "country": "IT",
+        "iata": "FCO",
+        "icao": "LIRF",
+        "latitude": 41.8003,
+        "longitude": 12.2389,
+        "name": "Rome Fiumicino",
+        "timezone": "Europe/Rome"
+      }
+    }
+  ]
+}

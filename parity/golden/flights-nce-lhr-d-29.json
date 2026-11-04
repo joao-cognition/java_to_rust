@@ -1,0 +1,254 @@
+{
+  "endpoint": "flights",
+  "label": "flights NCE-LHR d+29",
+  "path": "flights?origin=NCE&destination=LHR&date=2026-12-04",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-12-04T07:50:00+00:00",
+      "departure": "2026-12-04T06:50:00+01:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 120,
+      "flightNumber": "BA340",
+      "id": 204,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "A321",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-12-04T09:15:00+00:00",
+      "departure": "2026-12-04T08:30:00+01:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 105,
+      "flightNumber": "AF341",
+      "id": 205,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "A320",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-12-04T11:30:00+00:00",
+      "departure": "2026-12-04T10:30:00+01:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 120,
+      "flightNumber": "BA342",
+      "id": 206,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-12-04T13:40:00+00:00",
+      "departure": "2026-12-04T12:35:00+01:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 125,
+      "flightNumber": "AF343",
+      "id": 207,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "B738",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-12-04T15:50:00+00:00",
+      "departure": "2026-12-04T15:05:00+01:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 105,
+      "flightNumber": "BA344",
+      "id": 208,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "E190",
+      "airline": {
+        "alliance": "SKYTEAM",
+        "country": "FR",
+        "iata": "AF",
+        "icao": "AFR",
+        "name": "Air France"
+      },
+      "arrival": "2026-12-04T18:40:00+00:00",
+      "departure": "2026-12-04T17:55:00+01:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 105,
+      "flightNumber": "AF345",
+      "id": 209,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    },
+    {
+      "aircraft": "A321",
+      "airline": {
+        "alliance": "ONEWORLD",
+        "country": "GB",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways"
+      },
+      "arrival": "2026-12-04T20:20:00+00:00",
+      "departure": "2026-12-04T19:25:00+01:00",
+      "destination": {
+        "city": "London",
+        "country": "GB",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "latitude": 51.47,
+        "longitude": -0.4543,
+        "name": "London Heathrow",
+        "timezone": "Europe/London"
+      },
+      "durationMinutes": 115,
+      "flightNumber": "BA346",
+      "id": 210,
+      "origin": {
+        "city": "Nice",
+        "country": "FR",
+        "iata": "NCE",
+        "icao": "LFMN",
+        "latitude": 43.6584,
+        "longitude": 7.2159,
+        "name": "Nice Côte d'Azur",
+        "timezone": "Europe/Paris"
+      }
+    }
+  ]
+}

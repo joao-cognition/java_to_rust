@@ -1,0 +1,1691 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-LHR d+29 defaults",
+  "path": "offers?origin=NCE&destination=LHR&date=2026-12-04",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 79.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 24
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T07:50:00+00:00",
+        "departure": "2026-12-04T06:50:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 120,
+        "flightNumber": "BA340",
+        "id": 204,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "204-K",
+      "pricing": {
+        "base": 79.00,
+        "basePerPassenger": 79.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 124.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 124.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 85.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 15
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T15:50:00+00:00",
+        "departure": "2026-12-04T15:05:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "BA344",
+        "id": 208,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "208-K",
+      "pricing": {
+        "base": 85.00,
+        "basePerPassenger": 85.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 130.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 130.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 91.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 17
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T09:15:00+00:00",
+        "departure": "2026-12-04T08:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF341",
+        "id": 205,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "205-K",
+      "pricing": {
+        "base": 91.00,
+        "basePerPassenger": 91.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 134.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 134.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 91.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 11
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T18:40:00+00:00",
+        "departure": "2026-12-04T17:55:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF345",
+        "id": 209,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "209-K",
+      "pricing": {
+        "base": 91.00,
+        "basePerPassenger": 91.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 134.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 134.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 96.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 26
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:40:00+00:00",
+        "departure": "2026-12-04T12:35:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 125,
+        "flightNumber": "AF343",
+        "id": 207,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "207-K",
+      "pricing": {
+        "base": 96.00,
+        "basePerPassenger": 96.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 139.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 139.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 97.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 15
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T11:30:00+00:00",
+        "departure": "2026-12-04T10:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 120,
+        "flightNumber": "BA342",
+        "id": 206,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "206-K",
+      "pricing": {
+        "base": 97.00,
+        "basePerPassenger": 97.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 142.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 142.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 105.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 32
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T07:50:00+00:00",
+        "departure": "2026-12-04T06:50:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 120,
+        "flightNumber": "BA340",
+        "id": 204,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "204-M",
+      "pricing": {
+        "base": 105.00,
+        "basePerPassenger": 105.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 150.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 150.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 108.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 8
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T20:20:00+00:00",
+        "departure": "2026-12-04T19:25:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 115,
+        "flightNumber": "BA346",
+        "id": 210,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "210-K",
+      "pricing": {
+        "base": 108.00,
+        "basePerPassenger": 108.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 153.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 153.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 114.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T15:50:00+00:00",
+        "departure": "2026-12-04T15:05:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "BA344",
+        "id": 208,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "208-M",
+      "pricing": {
+        "base": 114.00,
+        "basePerPassenger": 114.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 159.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 159.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 121.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 37
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T09:15:00+00:00",
+        "departure": "2026-12-04T08:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF341",
+        "id": 205,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "205-M",
+      "pricing": {
+        "base": 121.00,
+        "basePerPassenger": 121.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 164.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 164.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 121.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 38
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T18:40:00+00:00",
+        "departure": "2026-12-04T17:55:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF345",
+        "id": 209,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "209-M",
+      "pricing": {
+        "base": 121.00,
+        "basePerPassenger": 121.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 164.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 164.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 128.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 15
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:40:00+00:00",
+        "departure": "2026-12-04T12:35:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 125,
+        "flightNumber": "AF343",
+        "id": 207,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "207-M",
+      "pricing": {
+        "base": 128.00,
+        "basePerPassenger": 128.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 171.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 171.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 129.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 30
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T11:30:00+00:00",
+        "departure": "2026-12-04T10:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 120,
+        "flightNumber": "BA342",
+        "id": 206,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "206-M",
+      "pricing": {
+        "base": 129.00,
+        "basePerPassenger": 129.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 174.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 174.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 131.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 65
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T07:50:00+00:00",
+        "departure": "2026-12-04T06:50:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 120,
+        "flightNumber": "BA340",
+        "id": 204,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "204-Y",
+      "pricing": {
+        "base": 131.00,
+        "basePerPassenger": 131.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 176.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 176.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 142.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 24
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T15:50:00+00:00",
+        "departure": "2026-12-04T15:05:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "BA344",
+        "id": 208,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "208-Y",
+      "pricing": {
+        "base": 142.00,
+        "basePerPassenger": 142.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 187.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 187.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 144.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T20:20:00+00:00",
+        "departure": "2026-12-04T19:25:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 115,
+        "flightNumber": "BA346",
+        "id": 210,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "210-M",
+      "pricing": {
+        "base": 144.00,
+        "basePerPassenger": 144.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 189.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 189.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 151.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 38
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T18:40:00+00:00",
+        "departure": "2026-12-04T17:55:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF345",
+        "id": 209,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "209-Y",
+      "pricing": {
+        "base": 151.00,
+        "basePerPassenger": 151.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 194.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 194.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 152.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 23
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T09:15:00+00:00",
+        "departure": "2026-12-04T08:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF341",
+        "id": 205,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "205-Y",
+      "pricing": {
+        "base": 152.00,
+        "basePerPassenger": 152.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 195.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 195.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 160.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 77
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:40:00+00:00",
+        "departure": "2026-12-04T12:35:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 125,
+        "flightNumber": "AF343",
+        "id": 207,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "207-Y",
+      "pricing": {
+        "base": 160.00,
+        "basePerPassenger": 160.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 203.00,
+        "taxes": 43.00,
+        "taxesPerPassenger": 43.00,
+        "total": 203.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 161.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 61
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T11:30:00+00:00",
+        "departure": "2026-12-04T10:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 120,
+        "flightNumber": "BA342",
+        "id": 206,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "206-Y",
+      "pricing": {
+        "base": 161.00,
+        "basePerPassenger": 161.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 206.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 206.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 179.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 53
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T20:20:00+00:00",
+        "departure": "2026-12-04T19:25:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 115,
+        "flightNumber": "BA346",
+        "id": 210,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "210-Y",
+      "pricing": {
+        "base": 179.00,
+        "basePerPassenger": 179.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 224.00,
+        "taxes": 45.00,
+        "taxesPerPassenger": 45.00,
+        "total": 224.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 258.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T09:15:00+00:00",
+        "departure": "2026-12-04T08:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF341",
+        "id": 205,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "205-W",
+      "pricing": {
+        "base": 258.00,
+        "basePerPassenger": 258.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 306.50,
+        "taxes": 48.50,
+        "taxesPerPassenger": 48.50,
+        "total": 306.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 272.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 16
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:40:00+00:00",
+        "departure": "2026-12-04T12:35:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 125,
+        "flightNumber": "AF343",
+        "id": 207,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "207-W",
+      "pricing": {
+        "base": 272.00,
+        "basePerPassenger": 272.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 320.50,
+        "taxes": 48.50,
+        "taxesPerPassenger": 48.50,
+        "total": 320.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 305.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 19
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T20:20:00+00:00",
+        "departure": "2026-12-04T19:25:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 115,
+        "flightNumber": "BA346",
+        "id": 210,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "210-W",
+      "pricing": {
+        "base": 305.00,
+        "basePerPassenger": 305.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 356.00,
+        "taxes": 51.00,
+        "taxesPerPassenger": 51.00,
+        "total": 356.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 380.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T07:50:00+00:00",
+        "departure": "2026-12-04T06:50:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 120,
+        "flightNumber": "BA340",
+        "id": 204,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "204-C",
+      "pricing": {
+        "base": 380.00,
+        "basePerPassenger": 380.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 439.40,
+        "taxes": 59.40,
+        "taxesPerPassenger": 59.40,
+        "total": 439.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 438.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 8
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T18:40:00+00:00",
+        "departure": "2026-12-04T17:55:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF345",
+        "id": 209,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "209-J",
+      "pricing": {
+        "base": 438.00,
+        "basePerPassenger": 438.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 494.20,
+        "taxes": 56.20,
+        "taxesPerPassenger": 56.20,
+        "total": 494.20
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 440.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 11
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T09:15:00+00:00",
+        "departure": "2026-12-04T08:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF341",
+        "id": 205,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "205-C",
+      "pricing": {
+        "base": 440.00,
+        "basePerPassenger": 440.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 496.20,
+        "taxes": 56.20,
+        "taxesPerPassenger": 56.20,
+        "total": 496.20
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 464.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 9
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-12-04T13:40:00+00:00",
+        "departure": "2026-12-04T12:35:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 125,
+        "flightNumber": "AF343",
+        "id": 207,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "207-C",
+      "pricing": {
+        "base": 464.00,
+        "basePerPassenger": 464.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 520.20,
+        "taxes": 56.20,
+        "taxesPerPassenger": 56.20,
+        "total": 520.20
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 467.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 5
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-12-04T11:30:00+00:00",
+        "departure": "2026-12-04T10:30:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 120,
+        "flightNumber": "BA342",
+        "id": 206,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "206-J",
+      "pricing": {
+        "base": 467.00,
+        "basePerPassenger": 467.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 526.40,
+        "taxes": 59.40,
+        "taxesPerPassenger": 59.40,
+        "total": 526.40
+      }
+    }
+  ]
+}

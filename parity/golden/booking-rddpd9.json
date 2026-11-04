@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking RDDPD9",
+  "path": "bookings/RDDPD9",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-19T05:27:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "RDDPD9",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "E190",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-06T20:10:00+01:00",
+          "departure": "2026-11-06T18:45:00+01:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 85,
+          "flightNumber": "AF7706",
+          "id": 405,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1262.10,
+    "travelers": [
+      {
+        "dateOfBirth": "1990-07-25",
+        "email": "lucas.martins@example.com",
+        "firstName": "Lucas",
+        "frequentFlyerNumber": "TP00482913",
+        "id": 2,
+        "lastName": "Martins",
+        "nationality": "PT"
+      },
+      {
+        "dateOfBirth": "1980-09-07",
+        "email": "lena.fischer@example.com",
+        "firstName": "Lena",
+        "frequentFlyerNumber": "LH880077665",
+        "id": 23,
+        "lastName": "Fischer",
+        "nationality": "DE"
+      },
+      {
+        "dateOfBirth": "1991-04-03",
+        "email": "zoe.williams@example.com",
+        "firstName": "Zoe",
+        "frequentFlyerNumber": "BA11223344",
+        "id": 44,
+        "lastName": "Williams",
+        "nationality": "GB"
+      }
+    ]
+  }
+}

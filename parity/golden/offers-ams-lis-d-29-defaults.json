@@ -1,0 +1,1923 @@
+{
+  "endpoint": "offers",
+  "label": "offers AMS-LIS d+29 defaults",
+  "path": "offers?origin=AMS&destination=LIS&date=2026-12-04",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 119.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 18
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T10:00:00+00:00",
+        "departure": "2026-12-04T08:15:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 165,
+        "flightNumber": "TP1691",
+        "id": 2034,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2034-K",
+      "pricing": {
+        "base": 119.00,
+        "basePerPassenger": 119.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 196.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 196.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 120.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 20
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T20:25:00+00:00",
+        "departure": "2026-12-04T18:35:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1696",
+        "id": 2039,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2039-K",
+      "pricing": {
+        "base": 120.00,
+        "basePerPassenger": 120.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 197.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 197.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 121.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T22:15:00+00:00",
+        "departure": "2026-12-04T20:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1697",
+        "id": 2040,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2040-K",
+      "pricing": {
+        "base": 121.00,
+        "basePerPassenger": 121.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 198.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 198.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 128.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 30
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T16:45:00+00:00",
+        "departure": "2026-12-04T14:45:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "KL1694",
+        "id": 2037,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2037-K",
+      "pricing": {
+        "base": 128.00,
+        "basePerPassenger": 128.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 205.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 205.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 146.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 6
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T17:50:00+00:00",
+        "departure": "2026-12-04T16:00:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1695",
+        "id": 2038,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2038-K",
+      "pricing": {
+        "base": 146.00,
+        "basePerPassenger": 146.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 223.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 223.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 148.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 7
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T14:20:00+00:00",
+        "departure": "2026-12-04T12:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 175,
+        "flightNumber": "TP1693",
+        "id": 2036,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2036-K",
+      "pricing": {
+        "base": 148.00,
+        "basePerPassenger": 148.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 225.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 225.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 158.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 30
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T10:00:00+00:00",
+        "departure": "2026-12-04T08:15:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 165,
+        "flightNumber": "TP1691",
+        "id": 2034,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2034-M",
+      "pricing": {
+        "base": 158.00,
+        "basePerPassenger": 158.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 235.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 235.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 160.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 10
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T08:45:00+00:00",
+        "departure": "2026-12-04T06:55:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1690",
+        "id": 2033,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2033-K",
+      "pricing": {
+        "base": 160.00,
+        "basePerPassenger": 160.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 237.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 237.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 160.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 28
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T20:25:00+00:00",
+        "departure": "2026-12-04T18:35:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1696",
+        "id": 2039,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2039-M",
+      "pricing": {
+        "base": 160.00,
+        "basePerPassenger": 160.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 237.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 237.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 162.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T22:15:00+00:00",
+        "departure": "2026-12-04T20:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1697",
+        "id": 2040,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2040-M",
+      "pricing": {
+        "base": 162.00,
+        "basePerPassenger": 162.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 239.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 239.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 0,
+        "baseAmount": 170.00,
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "changeable": false,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 17
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T12:10:00+00:00",
+        "departure": "2026-12-04T10:20:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1692",
+        "id": 2035,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2035-K",
+      "pricing": {
+        "base": 170.00,
+        "basePerPassenger": 170.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 247.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 247.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 171.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 21
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T16:45:00+00:00",
+        "departure": "2026-12-04T14:45:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "KL1694",
+        "id": 2037,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2037-M",
+      "pricing": {
+        "base": 171.00,
+        "basePerPassenger": 171.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 248.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 248.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 195.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 17
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T17:50:00+00:00",
+        "departure": "2026-12-04T16:00:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1695",
+        "id": 2038,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2038-M",
+      "pricing": {
+        "base": 195.00,
+        "basePerPassenger": 195.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 272.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 272.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 198.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 27
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T10:00:00+00:00",
+        "departure": "2026-12-04T08:15:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 165,
+        "flightNumber": "TP1691",
+        "id": 2034,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2034-Y",
+      "pricing": {
+        "base": 198.00,
+        "basePerPassenger": 198.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 275.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 275.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 198.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 33
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T14:20:00+00:00",
+        "departure": "2026-12-04T12:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 175,
+        "flightNumber": "TP1693",
+        "id": 2036,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2036-M",
+      "pricing": {
+        "base": 198.00,
+        "basePerPassenger": 198.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 275.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 275.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 200.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 62
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T20:25:00+00:00",
+        "departure": "2026-12-04T18:35:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1696",
+        "id": 2039,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2039-Y",
+      "pricing": {
+        "base": 200.00,
+        "basePerPassenger": 200.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 277.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 277.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 202.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 50
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T22:15:00+00:00",
+        "departure": "2026-12-04T20:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1697",
+        "id": 2040,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2040-Y",
+      "pricing": {
+        "base": 202.00,
+        "basePerPassenger": 202.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 279.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 279.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 213.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 29
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T08:45:00+00:00",
+        "departure": "2026-12-04T06:55:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1690",
+        "id": 2033,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2033-M",
+      "pricing": {
+        "base": 213.00,
+        "basePerPassenger": 213.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 290.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 290.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 214.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 28
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T16:45:00+00:00",
+        "departure": "2026-12-04T14:45:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "KL1694",
+        "id": 2037,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2037-Y",
+      "pricing": {
+        "base": 214.00,
+        "basePerPassenger": 214.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 291.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 291.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 226.00,
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 39
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T12:10:00+00:00",
+        "departure": "2026-12-04T10:20:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1692",
+        "id": 2035,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2035-M",
+      "pricing": {
+        "base": 226.00,
+        "basePerPassenger": 226.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 303.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 303.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 244.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 43
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T17:50:00+00:00",
+        "departure": "2026-12-04T16:00:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1695",
+        "id": 2038,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2038-Y",
+      "pricing": {
+        "base": 244.00,
+        "basePerPassenger": 244.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 321.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 321.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 247.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 75
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T14:20:00+00:00",
+        "departure": "2026-12-04T12:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 175,
+        "flightNumber": "TP1693",
+        "id": 2036,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2036-Y",
+      "pricing": {
+        "base": 247.00,
+        "basePerPassenger": 247.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 324.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 324.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 266.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 51
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T08:45:00+00:00",
+        "departure": "2026-12-04T06:55:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1690",
+        "id": 2033,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2033-Y",
+      "pricing": {
+        "base": 266.00,
+        "basePerPassenger": 266.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 343.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 343.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 283.00,
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 46
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T12:10:00+00:00",
+        "departure": "2026-12-04T10:20:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1692",
+        "id": 2035,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2035-Y",
+      "pricing": {
+        "base": 283.00,
+        "basePerPassenger": 283.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 360.45,
+        "taxes": 77.45,
+        "taxesPerPassenger": 77.45,
+        "total": 360.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 414.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T17:50:00+00:00",
+        "departure": "2026-12-04T16:00:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1695",
+        "id": 2038,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2038-W",
+      "pricing": {
+        "base": 414.00,
+        "basePerPassenger": 414.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 499.45,
+        "taxes": 85.45,
+        "taxesPerPassenger": 85.45,
+        "total": 499.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 420.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 7
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T14:20:00+00:00",
+        "departure": "2026-12-04T12:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 175,
+        "flightNumber": "TP1693",
+        "id": 2036,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2036-W",
+      "pricing": {
+        "base": 420.00,
+        "basePerPassenger": 420.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 505.45,
+        "taxes": 85.45,
+        "taxesPerPassenger": 85.45,
+        "total": 505.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 452.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 19
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T08:45:00+00:00",
+        "departure": "2026-12-04T06:55:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1690",
+        "id": 2033,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2033-W",
+      "pricing": {
+        "base": 452.00,
+        "basePerPassenger": 452.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 537.45,
+        "taxes": 85.45,
+        "taxesPerPassenger": 85.45,
+        "total": 537.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 480.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 17
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T12:10:00+00:00",
+        "departure": "2026-12-04T10:20:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1692",
+        "id": 2035,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2035-W",
+      "pricing": {
+        "base": 480.00,
+        "basePerPassenger": 480.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 565.45,
+        "taxes": 85.45,
+        "taxesPerPassenger": 85.45,
+        "total": 565.45
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 574.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 7
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T10:00:00+00:00",
+        "departure": "2026-12-04T08:15:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 165,
+        "flightNumber": "TP1691",
+        "id": 2034,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2034-J",
+      "pricing": {
+        "base": 574.00,
+        "basePerPassenger": 574.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 670.65,
+        "taxes": 96.65,
+        "taxesPerPassenger": 96.65,
+        "total": 670.65
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 587.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 7
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T22:15:00+00:00",
+        "departure": "2026-12-04T20:25:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1697",
+        "id": 2040,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2040-J",
+      "pricing": {
+        "base": 587.00,
+        "basePerPassenger": 587.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 683.65,
+        "taxes": 96.65,
+        "taxesPerPassenger": 96.65,
+        "total": 683.65
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 621.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 12
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T16:45:00+00:00",
+        "departure": "2026-12-04T14:45:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 180,
+        "flightNumber": "KL1694",
+        "id": 2037,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2037-C",
+      "pricing": {
+        "base": 621.00,
+        "basePerPassenger": 621.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 717.65,
+        "taxes": 96.65,
+        "taxesPerPassenger": 96.65,
+        "total": 717.65
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 706.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "STAR_ALLIANCE",
+          "country": "PT",
+          "iata": "TP",
+          "icao": "TAP",
+          "name": "TAP Air Portugal"
+        },
+        "arrival": "2026-12-04T17:50:00+00:00",
+        "departure": "2026-12-04T16:00:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "TP1695",
+        "id": 2038,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2038-J",
+      "pricing": {
+        "base": 706.00,
+        "basePerPassenger": 706.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 802.65,
+        "taxes": 96.65,
+        "taxesPerPassenger": 96.65,
+        "total": 802.65
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 819.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 8
+      },
+      "flight": {
+        "aircraft": "A220",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "NL",
+          "iata": "KL",
+          "icao": "KLM",
+          "name": "KLM Royal Dutch Airlines"
+        },
+        "arrival": "2026-12-04T12:10:00+00:00",
+        "departure": "2026-12-04T10:20:00+01:00",
+        "destination": {
+          "city": "Lisbon",
+          "country": "PT",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "latitude": 38.7742,
+          "longitude": -9.1342,
+          "name": "Lisbon Humberto Delgado",
+          "timezone": "Europe/Lisbon"
+        },
+        "durationMinutes": 170,
+        "flightNumber": "KL1692",
+        "id": 2035,
+        "origin": {
+          "city": "Amsterdam",
+          "country": "NL",
+          "iata": "AMS",
+          "icao": "EHAM",
+          "latitude": 52.3105,
+          "longitude": 4.7683,
+          "name": "Amsterdam Schiphol",
+          "timezone": "Europe/Amsterdam"
+        }
+      },
+      "offerId": "2035-J",
+      "pricing": {
+        "base": 819.00,
+        "basePerPassenger": 819.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 915.65,
+        "taxes": 96.65,
+        "taxesPerPassenger": 96.65,
+        "total": 915.65
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-LHR d+7 adults=9 cabin=PREMIUM_ECONOMY",
+  "path": "offers?origin=NCE&destination=LHR&date=2026-11-12&adults=9&cabin=PREMIUM_ECONOMY",
+  "status": 200,
+  "content_type": "application/json",
+  "body": []
+}

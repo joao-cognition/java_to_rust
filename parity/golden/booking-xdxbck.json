@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking XDXBCK",
+  "path": "bookings/XDXBCK",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-10T07:51:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "XDXBCK",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A220",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-26T20:05:00+01:00",
+          "departure": "2026-11-26T18:45:00+01:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 80,
+          "flightNumber": "AF7706",
+          "id": 565,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 450.30,
+    "travelers": [
+      {
+        "dateOfBirth": "1992-09-14",
+        "email": "emma.johansson@example.com",
+        "firstName": "Emma",
+        "frequentFlyerNumber": null,
+        "id": 6,
+        "lastName": "Johansson",
+        "nationality": "SE"
+      },
+      {
+        "dateOfBirth": "1969-12-08",
+        "email": "olivier.dubois@example.com",
+        "firstName": "Olivier",
+        "frequentFlyerNumber": "AF556677889",
+        "id": 7,
+        "lastName": "Dubois",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1989-09-11",
+        "email": "lea.fontaine@example.com",
+        "firstName": "Léa",
+        "frequentFlyerNumber": null,
+        "id": 46,
+        "lastName": "Fontaine",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName percent",
+  "path": "travelers?lastName=%25",
+  "status": 200,
+  "content_type": "application/json",
+  "body": []
+}

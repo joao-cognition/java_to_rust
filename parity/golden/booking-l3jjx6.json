@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking L3JJX6",
+  "path": "bookings/L3JJX6",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-11-01T00:51:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "L3JJX6",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B787",
+          "airline": {
+            "alliance": "ONEWORLD",
+            "country": "GB",
+            "iata": "BA",
+            "icao": "BAW",
+            "name": "British Airways"
+          },
+          "arrival": "2026-12-01T20:35:00+00:00",
+          "departure": "2026-12-01T14:30:00+08:00",
+          "destination": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          },
+          "durationMinutes": 845,
+          "flightNumber": "BA352",
+          "id": 1487,
+          "origin": {
+            "city": "Singapore",
+            "country": "SG",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "latitude": 1.3644,
+            "longitude": 103.9915,
+            "name": "Singapore Changi",
+            "timezone": "Asia/Singapore"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 2718.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1990-03-28",
+        "email": "sara.andersson@example.com",
+        "firstName": "Sara",
+        "frequentFlyerNumber": null,
+        "id": 25,
+        "lastName": "Andersson",
+        "nationality": "SE"
+      },
+      {
+        "dateOfBirth": "1993-12-05",
+        "email": "laura.jansen@example.com",
+        "firstName": "Laura",
+        "frequentFlyerNumber": "KL27182818",
+        "id": 34,
+        "lastName": "Jansen",
+        "nationality": "NL"
+      },
+      {
+        "dateOfBirth": "1983-06-15",
+        "email": "rui.pereira@example.com",
+        "firstName": "Rui",
+        "frequentFlyerNumber": "TP00990011",
+        "id": 43,
+        "lastName": "Pereira",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

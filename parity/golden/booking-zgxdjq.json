@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking ZGXDJQ",
+  "path": "bookings/ZGXDJQ",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-28T01:45:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "ZGXDJQ",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-12-01T07:45:00+01:00",
+          "departure": "2026-12-01T06:15:00+01:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 90,
+          "flightNumber": "AF7700",
+          "id": 599,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 430.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1983-04-22",
+        "email": "isabel.fernandez@example.com",
+        "firstName": "Isabel",
+        "frequentFlyerNumber": null,
+        "id": 8,
+        "lastName": "Fernández",
+        "nationality": "ES"
+      },
+      {
+        "dateOfBirth": "1987-01-06",
+        "email": "noah.peeters@example.com",
+        "firstName": "Noah",
+        "frequentFlyerNumber": null,
+        "id": 41,
+        "lastName": "Peeters",
+        "nationality": "BE"
+      },
+      {
+        "dateOfBirth": "1970-12-17",
+        "email": "markus.hoffmann@example.com",
+        "firstName": "Markus",
+        "frequentFlyerNumber": null,
+        "id": 45,
+        "lastName": "Hoffmann",
+        "nationality": "DE"
+      }
+    ]
+  }
+}

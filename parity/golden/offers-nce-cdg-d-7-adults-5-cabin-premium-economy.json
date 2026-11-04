@@ -1,0 +1,183 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-CDG d+7 adults=5 cabin=PREMIUM_ECONOMY",
+  "path": "offers?origin=NCE&destination=CDG&date=2026-11-12&adults=5&cabin=PREMIUM_ECONOMY",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 156.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 16
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T11:30:00+01:00",
+        "departure": "2026-11-12T10:00:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "AF7702",
+        "id": 449,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "449-W",
+      "pricing": {
+        "base": 780.00,
+        "basePerPassenger": 156.00,
+        "currency": "EUR",
+        "passengers": 5,
+        "perPassenger": 220.50,
+        "taxes": 322.50,
+        "taxesPerPassenger": 64.50,
+        "total": 1102.50
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 217.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 5
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T07:50:00+01:00",
+        "departure": "2026-11-12T06:15:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 95,
+        "flightNumber": "AF7700",
+        "id": 447,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "447-W",
+      "pricing": {
+        "base": 1085.00,
+        "basePerPassenger": 217.00,
+        "currency": "EUR",
+        "passengers": 5,
+        "perPassenger": 287.60,
+        "taxes": 353.00,
+        "taxesPerPassenger": 70.60,
+        "total": 1438.00
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 218.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 15
+      },
+      "flight": {
+        "aircraft": "E190",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-12T18:15:00+01:00",
+        "departure": "2026-11-12T16:45:00+01:00",
+        "destination": {
+          "city": "Paris",
+          "country": "FR",
+          "iata": "CDG",
+          "icao": "LFPG",
+          "latitude": 49.0097,
+          "longitude": 2.5479,
+          "name": "Paris Charles de Gaulle",
+          "timezone": "Europe/Paris"
+        },
+        "durationMinutes": 90,
+        "flightNumber": "AF7705",
+        "id": 452,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "452-W",
+      "pricing": {
+        "base": 1090.00,
+        "basePerPassenger": 218.00,
+        "currency": "EUR",
+        "passengers": 5,
+        "perPassenger": 288.70,
+        "taxes": 353.50,
+        "taxesPerPassenger": 70.70,
+        "total": 1443.50
+      }
+    }
+  ]
+}

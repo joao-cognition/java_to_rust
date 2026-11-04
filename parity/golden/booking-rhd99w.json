@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking RHD99W",
+  "path": "bookings/RHD99W",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-11T22:52:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "RHD99W",
+    "segments": [
+      {
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "flight": {
+          "aircraft": "B777",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "US",
+            "iata": "DL",
+            "icao": "DAL",
+            "name": "Delta Air Lines"
+          },
+          "arrival": "2026-12-03T02:35:00+01:00",
+          "departure": "2026-12-02T12:40:00-05:00",
+          "destination": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 475,
+          "flightNumber": "DL63",
+          "id": 1123,
+          "origin": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1016.35,
+    "travelers": [
+      {
+        "dateOfBirth": "1992-06-09",
+        "email": "beatriz.costa@example.com",
+        "firstName": "Beatriz",
+        "frequentFlyerNumber": null,
+        "id": 30,
+        "lastName": "Costa",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-LHR d+0 adults=0 out of range",
+  "path": "offers?origin=NCE&destination=LHR&date=2026-11-05&adults=0",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Validation failure",
+    "instance": "/travel/api/offers",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

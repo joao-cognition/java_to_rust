@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 625VXQ",
+  "path": "bookings/625VXQ",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-21T22:10:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "625VXQ",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B738",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-06T09:25:00+00:00",
+          "departure": "2026-11-06T08:30:00+01:00",
+          "destination": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          },
+          "durationMinutes": 115,
+          "flightNumber": "AF341",
+          "id": 9,
+          "origin": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 424.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1988-01-19",
+        "email": "elena.garcia@example.com",
+        "firstName": "Elena",
+        "frequentFlyerNumber": "IB77120394",
+        "id": 4,
+        "lastName": "García",
+        "nationality": "ES"
+      },
+      {
+        "dateOfBirth": "1974-03-19",
+        "email": "mikko.virtanen@example.com",
+        "firstName": "Mikko",
+        "frequentFlyerNumber": null,
+        "id": 39,
+        "lastName": "Virtanen",
+        "nationality": "FI"
+      }
+    ]
+  }
+}

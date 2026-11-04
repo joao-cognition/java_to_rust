@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking G5XM64",
+  "path": "bookings/G5XM64",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-14T06:48:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "G5XM64",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B777",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-10T08:20:00-05:00",
+          "departure": "2026-11-10T06:35:00+01:00",
+          "destination": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          },
+          "durationMinutes": 465,
+          "flightNumber": "AF10",
+          "id": 781,
+          "origin": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1537.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1990-07-25",
+        "email": "lucas.martins@example.com",
+        "firstName": "Lucas",
+        "frequentFlyerNumber": "TP00482913",
+        "id": 2,
+        "lastName": "Martins",
+        "nationality": "PT"
+      },
+      {
+        "dateOfBirth": "1990-03-28",
+        "email": "sara.andersson@example.com",
+        "firstName": "Sara",
+        "frequentFlyerNumber": null,
+        "id": 25,
+        "lastName": "Andersson",
+        "nationality": "SE"
+      },
+      {
+        "dateOfBirth": "1985-02-23",
+        "email": "alejandro.navarro@example.com",
+        "firstName": "Alejandro",
+        "frequentFlyerNumber": null,
+        "id": 47,
+        "lastName": "Navarro",
+        "nationality": "ES"
+      }
+    ]
+  }
+}

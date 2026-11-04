@@ -1,0 +1,27 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName D",
+  "path": "travelers?lastName=D",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1981-06-03",
+      "email": "jan.devries@example.com",
+      "firstName": "Jan",
+      "frequentFlyerNumber": "KL31415926",
+      "id": 9,
+      "lastName": "de Vries",
+      "nationality": "NL"
+    },
+    {
+      "dateOfBirth": "1969-12-08",
+      "email": "olivier.dubois@example.com",
+      "firstName": "Olivier",
+      "frequentFlyerNumber": "AF556677889",
+      "id": 7,
+      "lastName": "Dubois",
+      "nationality": "FR"
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "endpoint": "bookings",
+  "label": "bookings lastName V",
+  "path": "bookings?lastName=V",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "createdAt": "2026-11-01T13:24:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "BX9E3B",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "B787",
+            "airline": {
+              "alliance": "STAR_ALLIANCE",
+              "country": "SG",
+              "iata": "SQ",
+              "icao": "SIA",
+              "name": "Singapore Airlines"
+            },
+            "arrival": "2026-12-02T14:25:00+08:00",
+            "departure": "2026-12-01T16:20:00+00:00",
+            "destination": {
+              "city": "Singapore",
+              "country": "SG",
+              "iata": "SIN",
+              "icao": "WSSS",
+              "latitude": 1.3644,
+              "longitude": 103.9915,
+              "name": "Singapore Changi",
+              "timezone": "Asia/Singapore"
+            },
+            "durationMinutes": 845,
+            "flightNumber": "SQ305",
+            "id": 1354,
+            "origin": {
+              "city": "London",
+              "country": "GB",
+              "iata": "LHR",
+              "icao": "EGLL",
+              "latitude": 51.47,
+              "longitude": -0.4543,
+              "name": "London Heathrow",
+              "timezone": "Europe/London"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 1843.80,
+      "travelers": [
+        {
+          "dateOfBirth": "1969-12-08",
+          "email": "olivier.dubois@example.com",
+          "firstName": "Olivier",
+          "frequentFlyerNumber": "AF556677889",
+          "id": 7,
+          "lastName": "Dubois",
+          "nationality": "FR"
+        },
+        {
+          "dateOfBirth": "1974-03-19",
+          "email": "mikko.virtanen@example.com",
+          "firstName": "Mikko",
+          "frequentFlyerNumber": null,
+          "id": 39,
+          "lastName": "Virtanen",
+          "nationality": "FI"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-29T05:54:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "4MNZD3",
+      "segments": [
+        {
+          "bookingClass": "W",
+          "cabin": "PREMIUM_ECONOMY",
+          "flight": {
+            "aircraft": "A220",
+            "airline": {
+              "alliance": "NONE",
+              "country": "AE",
+              "iata": "EK",
+              "icao": "UAE",
+              "name": "Emirates"
+            },
+            "arrival": "2026-11-05T15:35:00+04:00",
+            "departure": "2026-11-05T14:00:00+05:30",
+            "destination": {
+              "city": "Dubai",
+              "country": "AE",
+              "iata": "DXB",
+              "icao": "OMDB",
+              "latitude": 25.2532,
+              "longitude": 55.3657,
+              "name": "Dubai International",
+              "timezone": "Asia/Dubai"
+            },
+            "durationMinutes": 185,
+            "flightNumber": "EK552",
+            "id": 3003,
+            "origin": {
+              "city": "Mumbai",
+              "country": "IN",
+              "iata": "BOM",
+              "icao": "VABB",
+              "latitude": 19.0896,
+              "longitude": 72.8656,
+              "name": "Chhatrapati Shivaji Maharaj International",
+              "timezone": "Asia/Kolkata"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 1293.00,
+      "travelers": [
+        {
+          "dateOfBirth": "1988-01-19",
+          "email": "elena.garcia@example.com",
+          "firstName": "Elena",
+          "frequentFlyerNumber": "IB77120394",
+          "id": 4,
+          "lastName": "García",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1995-02-11",
+          "email": "charlotte.smith@example.com",
+          "firstName": "Charlotte",
+          "frequentFlyerNumber": "BA20081234",
+          "id": 10,
+          "lastName": "Smith",
+          "nationality": "GB"
+        },
+        {
+          "dateOfBirth": "1974-03-19",
+          "email": "mikko.virtanen@example.com",
+          "firstName": "Mikko",
+          "frequentFlyerNumber": null,
+          "id": 39,
+          "lastName": "Virtanen",
+          "nationality": "FI"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-21T22:10:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "625VXQ",
+      "segments": [
+        {
+          "bookingClass": "Y",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "B738",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "FR",
+              "iata": "AF",
+              "icao": "AFR",
+              "name": "Air France"
+            },
+            "arrival": "2026-11-06T09:25:00+00:00",
+            "departure": "2026-11-06T08:30:00+01:00",
+            "destination": {
+              "city": "London",
+              "country": "GB",
+              "iata": "LHR",
+              "icao": "EGLL",
+              "latitude": 51.47,
+              "longitude": -0.4543,
+              "name": "London Heathrow",
+              "timezone": "Europe/London"
+            },
+            "durationMinutes": 115,
+            "flightNumber": "AF341",
+            "id": 9,
+            "origin": {
+              "city": "Nice",
+              "country": "FR",
+              "iata": "NCE",
+              "icao": "LFMN",
+              "latitude": 43.6584,
+              "longitude": 7.2159,
+              "name": "Nice Côte d'Azur",
+              "timezone": "Europe/Paris"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 424.00,
+      "travelers": [
+        {
+          "dateOfBirth": "1988-01-19",
+          "email": "elena.garcia@example.com",
+          "firstName": "Elena",
+          "frequentFlyerNumber": "IB77120394",
+          "id": 4,
+          "lastName": "García",
+          "nationality": "ES"
+        },
+        {
+          "dateOfBirth": "1974-03-19",
+          "email": "mikko.virtanen@example.com",
+          "firstName": "Mikko",
+          "frequentFlyerNumber": null,
+          "id": 39,
+          "lastName": "Virtanen",
+          "nationality": "FI"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-20T13:06:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "8NRZJJ",
+      "segments": [
+        {
+          "bookingClass": "W",
+          "cabin": "PREMIUM_ECONOMY",
+          "flight": {
+            "aircraft": "B787",
+            "airline": {
+              "alliance": "SKYTEAM",
+              "country": "FR",
+              "iata": "AF",
+              "icao": "AFR",
+              "name": "Air France"
+            },
+            "arrival": "2026-11-18T04:55:00+01:00",
+            "departure": "2026-11-17T15:10:00-05:00",
+            "destination": {
+              "city": "Paris",
+              "country": "FR",
+              "iata": "CDG",
+              "icao": "LFPG",
+              "latitude": 49.0097,
+              "longitude": 2.5479,
+              "name": "Paris Charles de Gaulle",
+              "timezone": "Europe/Paris"
+            },
+            "durationMinutes": 465,
+            "flightNumber": "AF64",
+            "id": 1019,
+            "origin": {
+              "city": "New York",
+              "country": "US",
+              "iata": "JFK",
+              "icao": "KJFK",
+              "latitude": 40.6413,
+              "longitude": -73.7781,
+              "name": "New York John F. Kennedy International",
+              "timezone": "America/New_York"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 2944.05,
+      "travelers": [
+        {
+          "dateOfBirth": "1984-04-13",
+          "email": "amelia.taylor@example.com",
+          "firstName": "Amelia",
+          "frequentFlyerNumber": null,
+          "id": 32,
+          "lastName": "Taylor",
+          "nationality": "GB"
+        },
+        {
+          "dateOfBirth": "1974-03-19",
+          "email": "mikko.virtanen@example.com",
+          "firstName": "Mikko",
+          "frequentFlyerNumber": null,
+          "id": 39,
+          "lastName": "Virtanen",
+          "nationality": "FI"
+        },
+        {
+          "dateOfBirth": "1998-11-21",
+          "email": "juliette.roux@example.com",
+          "firstName": "Juliette",
+          "frequentFlyerNumber": null,
+          "id": 40,
+          "lastName": "Roux",
+          "nationality": "FR"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-18T18:23:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "8NPWCX",
+      "segments": [
+        {
+          "bookingClass": "J",
+          "cabin": "BUSINESS",
+          "flight": {
+            "aircraft": "B787",
+            "airline": {
+              "alliance": "NONE",
+              "country": "AE",
+              "iata": "EK",
+              "icao": "UAE",
+              "name": "Emirates"
+            },
+            "arrival": "2026-12-01T10:10:00+01:00",
+            "departure": "2026-12-01T06:15:00+04:00",
+            "destination": {
+              "city": "Barcelona",
+              "country": "ES",
+              "iata": "BCN",
+              "icao": "LEBL",
+              "latitude": 41.2974,
+              "longitude": 2.0833,
+              "name": "Barcelona-El Prat",
+              "timezone": "Europe/Madrid"
+            },
+            "durationMinutes": 415,
+            "flightNumber": "EK230",
+            "id": 2729,
+            "origin": {
+              "city": "Dubai",
+              "country": "AE",
+              "iata": "DXB",
+              "icao": "OMDB",
+              "latitude": 25.2532,
+              "longitude": 55.3657,
+              "name": "Dubai International",
+              "timezone": "Asia/Dubai"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 5503.50,
+      "travelers": [
+        {
+          "dateOfBirth": "1983-01-15",
+          "email": "giulia.ricci@example.com",
+          "firstName": "Giulia",
+          "frequentFlyerNumber": null,
+          "id": 28,
+          "lastName": "Ricci",
+          "nationality": "IT"
+        },
+        {
+          "dateOfBirth": "1974-03-19",
+          "email": "mikko.virtanen@example.com",
+          "firstName": "Mikko",
+          "frequentFlyerNumber": null,
+          "id": 39,
+          "lastName": "Virtanen",
+          "nationality": "FI"
+        },
+        {
+          "dateOfBirth": "1983-06-15",
+          "email": "rui.pereira@example.com",
+          "firstName": "Rui",
+          "frequentFlyerNumber": "TP00990011",
+          "id": 43,
+          "lastName": "Pereira",
+          "nationality": "PT"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-16T01:31:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "TGYB9U",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "A320",
+            "airline": {
+              "alliance": "STAR_ALLIANCE",
+              "country": "IN",
+              "iata": "AI",
+              "icao": "AIC",
+              "name": "Air India"
+            },
+            "arrival": "2026-11-29T11:45:00+04:00",
+            "departure": "2026-11-29T10:20:00+05:30",
+            "destination": {
+              "city": "Dubai",
+              "country": "AE",
+              "iata": "DXB",
+              "icao": "OMDB",
+              "latitude": 25.2532,
+              "longitude": 55.3657,
+              "name": "Dubai International",
+              "timezone": "Asia/Dubai"
+            },
+            "durationMinutes": 175,
+            "flightNumber": "AI551",
+            "id": 3098,
+            "origin": {
+              "city": "Mumbai",
+              "country": "IN",
+              "iata": "BOM",
+              "icao": "VABB",
+              "latitude": 19.0896,
+              "longitude": 72.8656,
+              "name": "Chhatrapati Shivaji Maharaj International",
+              "timezone": "Asia/Kolkata"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 202.00,
+      "travelers": [
+        {
+          "dateOfBirth": "1974-03-19",
+          "email": "mikko.virtanen@example.com",
+          "firstName": "Mikko",
+          "frequentFlyerNumber": null,
+          "id": 39,
+          "lastName": "Virtanen",
+          "nationality": "FI"
+        }
+      ]
+    },
+    {
+      "createdAt": "2026-10-07T02:08:52+00:00",
+      "currency": "EUR",
+      "recordLocator": "LEYNR8",
+      "segments": [
+        {
+          "bookingClass": "K",
+          "cabin": "ECONOMY",
+          "flight": {
+            "aircraft": "B738",
+            "airline": {
+              "alliance": "STAR_ALLIANCE",
+              "country": "DE",
+              "iata": "LH",
+              "icao": "DLH",
+              "name": "Lufthansa"
+            },
+            "arrival": "2026-11-11T16:40:00+01:00",
+            "departure": "2026-11-11T14:25:00+01:00",
+            "destination": {
+              "city": "Frankfurt",
+              "country": "DE",
+              "iata": "FRA",
+              "icao": "EDDF",
+              "latitude": 50.0379,
+              "longitude": 8.5622,
+              "name": "Frankfurt am Main",
+              "timezone": "Europe/Berlin"
+            },
+            "durationMinutes": 135,
+            "flightNumber": "LH1103",
+            "id": 1540,
+            "origin": {
+              "city": "Madrid",
+              "country": "ES",
+              "iata": "MAD",
+              "icao": "LEMD",
+              "latitude": 40.4983,
+              "longitude": -3.5676,
+              "name": "Adolfo Suárez Madrid-Barajas",
+              "timezone": "Europe/Madrid"
+            }
+          }
+        }
+      ],
+      "status": "CONFIRMED",
+      "totalAmount": 435.00,
+      "travelers": [
+        {
+          "dateOfBirth": "1979-02-27",
+          "email": "marco.bianchi@example.com",
+          "firstName": "Marco",
+          "frequentFlyerNumber": null,
+          "id": 35,
+          "lastName": "Bianchi",
+          "nationality": "IT"
+        },
+        {
+          "dateOfBirth": "1974-03-19",
+          "email": "mikko.virtanen@example.com",
+          "firstName": "Mikko",
+          "frequentFlyerNumber": null,
+          "id": 39,
+          "lastName": "Virtanen",
+          "nationality": "FI"
+        },
+        {
+          "dateOfBirth": "1987-01-06",
+          "email": "noah.peeters@example.com",
+          "firstName": "Noah",
+          "frequentFlyerNumber": null,
+          "id": 41,
+          "lastName": "Peeters",
+          "nationality": "BE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking MWZ5WE",
+  "path": "bookings/MWZ5WE",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-24T22:14:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "MWZ5WE",
+    "segments": [
+      {
+        "bookingClass": "M",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A330",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-25T13:10:00-05:00",
+          "departure": "2026-11-25T11:15:00+01:00",
+          "destination": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          },
+          "durationMinutes": 475,
+          "flightNumber": "AF12",
+          "id": 873,
+          "origin": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1765.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1995-02-11",
+        "email": "charlotte.smith@example.com",
+        "firstName": "Charlotte",
+        "frequentFlyerNumber": "BA20081234",
+        "id": 10,
+        "lastName": "Smith",
+        "nationality": "GB"
+      },
+      {
+        "dateOfBirth": "1971-09-24",
+        "email": "pierre.girard@example.com",
+        "firstName": "Pierre",
+        "frequentFlyerNumber": "AF778899001",
+        "id": 33,
+        "lastName": "Girard",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1993-12-05",
+        "email": "laura.jansen@example.com",
+        "firstName": "Laura",
+        "frequentFlyerNumber": "KL27182818",
+        "id": 34,
+        "lastName": "Jansen",
+        "nationality": "NL"
+      }
+    ]
+  }
+}

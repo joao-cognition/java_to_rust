@@ -1,0 +1,18 @@
+{
+  "endpoint": "travelers",
+  "label": "travelers lastName O",
+  "path": "travelers?lastName=O",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "dateOfBirth": "1993-05-16",
+      "email": "niamh.oconnor@example.com",
+      "firstName": "Niamh",
+      "frequentFlyerNumber": null,
+      "id": 15,
+      "lastName": "O'Connor",
+      "nationality": "IE"
+    }
+  ]
+}

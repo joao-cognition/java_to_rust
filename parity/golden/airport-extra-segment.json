@@ -1,0 +1,13 @@
+{
+  "endpoint": "airports/{iata}",
+  "label": "airport extra segment",
+  "path": "airports/NCE/x",
+  "status": 404,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "No static resource api/airports/NCE/x.",
+    "instance": "/travel/api/airports/NCE/x",
+    "status": 404,
+    "title": "Not Found"
+  }
+}

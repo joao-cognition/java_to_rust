@@ -1,0 +1,17 @@
+{
+  "endpoint": "airports/{iata}",
+  "label": "airport FCO",
+  "path": "airports/FCO",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "city": "Rome",
+    "country": "IT",
+    "iata": "FCO",
+    "icao": "LIRF",
+    "latitude": 41.8003,
+    "longitude": 12.2389,
+    "name": "Rome Fiumicino",
+    "timezone": "Europe/Rome"
+  }
+}

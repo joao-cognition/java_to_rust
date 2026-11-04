@@ -1,0 +1,16 @@
+{
+  "endpoint": "travelers/{id}",
+  "label": "traveler last",
+  "path": "travelers/50",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "dateOfBirth": "1996-01-30",
+    "email": "clara.marques@example.com",
+    "firstName": "Clara",
+    "frequentFlyerNumber": null,
+    "id": 50,
+    "lastName": "Marques",
+    "nationality": "PT"
+  }
+}

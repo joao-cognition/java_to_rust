@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking BN3QD8",
+  "path": "bookings/BN3QD8",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-11-01T07:25:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "BN3QD8",
+    "segments": [
+      {
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "flight": {
+          "aircraft": "B787",
+          "airline": {
+            "alliance": "ONEWORLD",
+            "country": "GB",
+            "iata": "BA",
+            "icao": "BAW",
+            "name": "British Airways"
+          },
+          "arrival": "2026-11-08T13:05:00+08:00",
+          "departure": "2026-11-07T14:55:00+00:00",
+          "destination": {
+            "city": "Singapore",
+            "country": "SG",
+            "iata": "SIN",
+            "icao": "WSSS",
+            "latitude": 1.3644,
+            "longitude": 103.9915,
+            "name": "Singapore Changi",
+            "timezone": "Asia/Singapore"
+          },
+          "durationMinutes": 850,
+          "flightNumber": "BA304",
+          "id": 1161,
+          "origin": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 2217.90,
+    "travelers": [
+      {
+        "dateOfBirth": "1984-04-13",
+        "email": "amelia.taylor@example.com",
+        "firstName": "Amelia",
+        "frequentFlyerNumber": null,
+        "id": 32,
+        "lastName": "Taylor",
+        "nationality": "GB"
+      }
+    ]
+  }
+}

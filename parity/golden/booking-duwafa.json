@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking DUWAFA",
+  "path": "bookings/DUWAFA",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-21T12:42:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "DUWAFA",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "NL",
+            "iata": "KL",
+            "icao": "KLM",
+            "name": "KLM Royal Dutch Airlines"
+          },
+          "arrival": "2026-12-03T20:25:00+00:00",
+          "departure": "2026-12-03T18:35:00+01:00",
+          "destination": {
+            "city": "Lisbon",
+            "country": "PT",
+            "iata": "LIS",
+            "icao": "LPPT",
+            "latitude": 38.7742,
+            "longitude": -9.1342,
+            "name": "Lisbon Humberto Delgado",
+            "timezone": "Europe/Lisbon"
+          },
+          "durationMinutes": 170,
+          "flightNumber": "KL1696",
+          "id": 2031,
+          "origin": {
+            "city": "Amsterdam",
+            "country": "NL",
+            "iata": "AMS",
+            "icao": "EHAM",
+            "latitude": 52.3105,
+            "longitude": 4.7683,
+            "name": "Amsterdam Schiphol",
+            "timezone": "Europe/Amsterdam"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 192.45,
+    "travelers": [
+      {
+        "dateOfBirth": "1985-02-23",
+        "email": "alejandro.navarro@example.com",
+        "firstName": "Alejandro",
+        "frequentFlyerNumber": null,
+        "id": 47,
+        "lastName": "Navarro",
+        "nationality": "ES"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking P64PDA",
+  "path": "bookings/P64PDA",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-22T08:22:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "P64PDA",
+    "segments": [
+      {
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "flight": {
+          "aircraft": "E190",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "DE",
+            "iata": "LH",
+            "icao": "DLH",
+            "name": "Lufthansa"
+          },
+          "arrival": "2026-11-19T11:55:00+01:00",
+          "departure": "2026-11-19T10:20:00+01:00",
+          "destination": {
+            "city": "Munich",
+            "country": "DE",
+            "iata": "MUC",
+            "icao": "EDDM",
+            "latitude": 48.3537,
+            "longitude": 11.775,
+            "name": "Munich Franz Josef Strauss",
+            "timezone": "Europe/Berlin"
+          },
+          "durationMinutes": 95,
+          "flightNumber": "LH431",
+          "id": 2218,
+          "origin": {
+            "city": "Rome",
+            "country": "IT",
+            "iata": "FCO",
+            "icao": "LIRF",
+            "latitude": 41.8003,
+            "longitude": 12.2389,
+            "name": "Rome Fiumicino",
+            "timezone": "Europe/Rome"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 249.90,
+    "travelers": [
+      {
+        "dateOfBirth": "1983-01-15",
+        "email": "giulia.ricci@example.com",
+        "firstName": "Giulia",
+        "frequentFlyerNumber": null,
+        "id": 28,
+        "lastName": "Ricci",
+        "nationality": "IT"
+      }
+    ]
+  }
+}

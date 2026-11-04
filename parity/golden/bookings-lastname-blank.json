@@ -1,0 +1,13 @@
+{
+  "endpoint": "bookings",
+  "label": "bookings lastName blank",
+  "path": "bookings?lastName=%20",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Validation failure",
+    "instance": "/travel/api/bookings",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 8GCBQZ",
+  "path": "bookings/8GCBQZ",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-24T11:53:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "8GCBQZ",
+    "segments": [
+      {
+        "bookingClass": "F",
+        "cabin": "FIRST",
+        "flight": {
+          "aircraft": "B787",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-15T00:45:00+04:00",
+          "departure": "2026-11-14T14:40:00+01:00",
+          "destination": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          },
+          "durationMinutes": 425,
+          "flightNumber": "EK182",
+          "id": 2439,
+          "origin": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 8859.60,
+    "travelers": [
+      {
+        "dateOfBirth": "1979-03-05",
+        "email": "pedro.silva@example.com",
+        "firstName": "Pedro",
+        "frequentFlyerNumber": "TP00118822",
+        "id": 13,
+        "lastName": "Silva",
+        "nationality": "PT"
+      },
+      {
+        "dateOfBirth": "1968-05-20",
+        "email": "ingrid.hansen@example.com",
+        "firstName": "Ingrid",
+        "frequentFlyerNumber": null,
+        "id": 27,
+        "lastName": "Hansen",
+        "nationality": "NO"
+      },
+      {
+        "dateOfBirth": "1979-02-27",
+        "email": "marco.bianchi@example.com",
+        "firstName": "Marco",
+        "frequentFlyerNumber": null,
+        "id": 35,
+        "lastName": "Bianchi",
+        "nationality": "IT"
+      }
+    ]
+  }
+}

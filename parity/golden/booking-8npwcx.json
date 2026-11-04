@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 8NPWCX",
+  "path": "bookings/8NPWCX",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-18T18:23:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "8NPWCX",
+    "segments": [
+      {
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "flight": {
+          "aircraft": "B787",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-12-01T10:10:00+01:00",
+          "departure": "2026-12-01T06:15:00+04:00",
+          "destination": {
+            "city": "Barcelona",
+            "country": "ES",
+            "iata": "BCN",
+            "icao": "LEBL",
+            "latitude": 41.2974,
+            "longitude": 2.0833,
+            "name": "Barcelona-El Prat",
+            "timezone": "Europe/Madrid"
+          },
+          "durationMinutes": 415,
+          "flightNumber": "EK230",
+          "id": 2729,
+          "origin": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 5503.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1983-01-15",
+        "email": "giulia.ricci@example.com",
+        "firstName": "Giulia",
+        "frequentFlyerNumber": null,
+        "id": 28,
+        "lastName": "Ricci",
+        "nationality": "IT"
+      },
+      {
+        "dateOfBirth": "1974-03-19",
+        "email": "mikko.virtanen@example.com",
+        "firstName": "Mikko",
+        "frequentFlyerNumber": null,
+        "id": 39,
+        "lastName": "Virtanen",
+        "nationality": "FI"
+      },
+      {
+        "dateOfBirth": "1983-06-15",
+        "email": "rui.pereira@example.com",
+        "firstName": "Rui",
+        "frequentFlyerNumber": "TP00990011",
+        "id": 43,
+        "lastName": "Pereira",
+        "nationality": "PT"
+      }
+    ]
+  }
+}

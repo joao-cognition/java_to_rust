@@ -1,0 +1,17 @@
+{
+  "endpoint": "airports/{iata}",
+  "label": "airport MUC",
+  "path": "airports/MUC",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "city": "Munich",
+    "country": "DE",
+    "iata": "MUC",
+    "icao": "EDDM",
+    "latitude": 48.3537,
+    "longitude": 11.775,
+    "name": "Munich Franz Josef Strauss",
+    "timezone": "Europe/Berlin"
+  }
+}

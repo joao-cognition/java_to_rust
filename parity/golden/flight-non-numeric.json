@@ -1,0 +1,13 @@
+{
+  "endpoint": "flights/{id}",
+  "label": "flight non numeric",
+  "path": "flights/abc",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Failed to convert 'id' with value: 'abc'",
+    "instance": "/travel/api/flights/abc",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

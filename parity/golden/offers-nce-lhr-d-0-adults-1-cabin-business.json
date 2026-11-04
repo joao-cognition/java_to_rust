@@ -1,0 +1,183 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-LHR d+0 adults=1 cabin=BUSINESS",
+  "path": "offers?origin=NCE&destination=LHR&date=2026-11-05&adults=1&cabin=BUSINESS",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 368.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 13
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-11-05T20:15:00+00:00",
+        "departure": "2026-11-05T19:25:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 110,
+        "flightNumber": "BA346",
+        "id": 7,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "7-J",
+      "pricing": {
+        "base": 368.00,
+        "basePerPassenger": 368.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 427.40,
+        "taxes": 59.40,
+        "taxesPerPassenger": 59.40,
+        "total": 427.40
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 407.00,
+        "bookingClass": "C",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 7
+      },
+      "flight": {
+        "aircraft": "B738",
+        "airline": {
+          "alliance": "SKYTEAM",
+          "country": "FR",
+          "iata": "AF",
+          "icao": "AFR",
+          "name": "Air France"
+        },
+        "arrival": "2026-11-05T13:20:00+00:00",
+        "departure": "2026-11-05T12:35:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "AF343",
+        "id": 4,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "4-C",
+      "pricing": {
+        "base": 407.00,
+        "basePerPassenger": 407.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 463.20,
+        "taxes": 56.20,
+        "taxesPerPassenger": 56.20,
+        "total": 463.20
+      }
+    },
+    {
+      "fare": {
+        "baggageIncludedKg": 32,
+        "baseAmount": 404.00,
+        "bookingClass": "J",
+        "cabin": "BUSINESS",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": true,
+        "seatsAvailable": 6
+      },
+      "flight": {
+        "aircraft": "A321",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-11-05T15:50:00+00:00",
+        "departure": "2026-11-05T15:05:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 105,
+        "flightNumber": "BA344",
+        "id": 5,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "5-J",
+      "pricing": {
+        "base": 404.00,
+        "basePerPassenger": 404.00,
+        "currency": "EUR",
+        "passengers": 1,
+        "perPassenger": 463.40,
+        "taxes": 59.40,
+        "taxesPerPassenger": 59.40,
+        "total": 463.40
+      }
+    }
+  ]
+}

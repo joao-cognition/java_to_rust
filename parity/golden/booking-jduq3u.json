@@ -1,0 +1,75 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking JDUQ3U",
+  "path": "bookings/JDUQ3U",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-02T04:56:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "JDUQ3U",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A220",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "NL",
+            "iata": "KL",
+            "icao": "KLM",
+            "name": "KLM Royal Dutch Airlines"
+          },
+          "arrival": "2026-11-30T12:15:00+00:00",
+          "departure": "2026-11-30T10:20:00+01:00",
+          "destination": {
+            "city": "Lisbon",
+            "country": "PT",
+            "iata": "LIS",
+            "icao": "LPPT",
+            "latitude": 38.7742,
+            "longitude": -9.1342,
+            "name": "Lisbon Humberto Delgado",
+            "timezone": "Europe/Lisbon"
+          },
+          "durationMinutes": 175,
+          "flightNumber": "KL1692",
+          "id": 2003,
+          "origin": {
+            "city": "Amsterdam",
+            "country": "NL",
+            "iata": "AMS",
+            "icao": "EHAM",
+            "latitude": 52.3105,
+            "longitude": 4.7683,
+            "name": "Amsterdam Schiphol",
+            "timezone": "Europe/Amsterdam"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 658.90,
+    "travelers": [
+      {
+        "dateOfBirth": "1983-04-22",
+        "email": "isabel.fernandez@example.com",
+        "firstName": "Isabel",
+        "frequentFlyerNumber": null,
+        "id": 8,
+        "lastName": "Fernández",
+        "nationality": "ES"
+      },
+      {
+        "dateOfBirth": "1989-09-11",
+        "email": "lea.fontaine@example.com",
+        "firstName": "Léa",
+        "frequentFlyerNumber": null,
+        "id": 46,
+        "lastName": "Fontaine",
+        "nationality": "FR"
+      }
+    ]
+  }
+}

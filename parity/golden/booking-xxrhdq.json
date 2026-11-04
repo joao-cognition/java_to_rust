@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking XXRHDQ",
+  "path": "bookings/XXRHDQ",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-30T08:23:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "XXRHDQ",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A220",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "FR",
+            "iata": "AF",
+            "icao": "AFR",
+            "name": "Air France"
+          },
+          "arrival": "2026-11-21T21:55:00+01:00",
+          "departure": "2026-11-21T19:00:00+00:00",
+          "destination": {
+            "city": "Nice",
+            "country": "FR",
+            "iata": "NCE",
+            "icao": "LFMN",
+            "latitude": 43.6584,
+            "longitude": 7.2159,
+            "name": "Nice Côte d'Azur",
+            "timezone": "Europe/Paris"
+          },
+          "durationMinutes": 115,
+          "flightNumber": "AF395",
+          "id": 312,
+          "origin": {
+            "city": "London",
+            "country": "GB",
+            "iata": "LHR",
+            "icao": "EGLL",
+            "latitude": 51.47,
+            "longitude": -0.4543,
+            "name": "London Heathrow",
+            "timezone": "Europe/London"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 197.10,
+    "travelers": [
+      {
+        "dateOfBirth": "1996-08-23",
+        "email": "chiara.conti@example.com",
+        "firstName": "Chiara",
+        "frequentFlyerNumber": "AZ10203040",
+        "id": 19,
+        "lastName": "Conti",
+        "nationality": "IT"
+      }
+    ]
+  }
+}

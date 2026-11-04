@@ -1,0 +1,66 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking A8S292",
+  "path": "bookings/A8S292",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-10T13:49:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "A8S292",
+    "segments": [
+      {
+        "bookingClass": "Y",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "E190",
+          "airline": {
+            "alliance": "NONE",
+            "country": "AE",
+            "iata": "EK",
+            "icao": "UAE",
+            "name": "Emirates"
+          },
+          "arrival": "2026-11-07T15:20:00+04:00",
+          "departure": "2026-11-07T14:00:00+05:30",
+          "destination": {
+            "city": "Dubai",
+            "country": "AE",
+            "iata": "DXB",
+            "icao": "OMDB",
+            "latitude": 25.2532,
+            "longitude": 55.3657,
+            "name": "Dubai International",
+            "timezone": "Asia/Dubai"
+          },
+          "durationMinutes": 170,
+          "flightNumber": "EK552",
+          "id": 3011,
+          "origin": {
+            "city": "Mumbai",
+            "country": "IN",
+            "iata": "BOM",
+            "icao": "VABB",
+            "latitude": 19.0896,
+            "longitude": 72.8656,
+            "name": "Chhatrapati Shivaji Maharaj International",
+            "timezone": "Asia/Kolkata"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 277.00,
+    "travelers": [
+      {
+        "dateOfBirth": "1988-01-19",
+        "email": "elena.garcia@example.com",
+        "firstName": "Elena",
+        "frequentFlyerNumber": "IB77120394",
+        "id": 4,
+        "lastName": "García",
+        "nationality": "ES"
+      }
+    ]
+  }
+}

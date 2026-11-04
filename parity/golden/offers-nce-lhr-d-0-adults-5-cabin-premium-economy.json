@@ -1,0 +1,67 @@
+{
+  "endpoint": "offers",
+  "label": "offers NCE-LHR d+0 adults=5 cabin=PREMIUM_ECONOMY",
+  "path": "offers?origin=NCE&destination=LHR&date=2026-11-05&adults=5&cabin=PREMIUM_ECONOMY",
+  "status": 200,
+  "content_type": "application/json",
+  "body": [
+    {
+      "fare": {
+        "baggageIncludedKg": 23,
+        "baseAmount": 216.00,
+        "bookingClass": "W",
+        "cabin": "PREMIUM_ECONOMY",
+        "changeable": true,
+        "currency": "EUR",
+        "refundable": false,
+        "seatsAvailable": 8
+      },
+      "flight": {
+        "aircraft": "A320",
+        "airline": {
+          "alliance": "ONEWORLD",
+          "country": "GB",
+          "iata": "BA",
+          "icao": "BAW",
+          "name": "British Airways"
+        },
+        "arrival": "2026-11-05T20:15:00+00:00",
+        "departure": "2026-11-05T19:25:00+01:00",
+        "destination": {
+          "city": "London",
+          "country": "GB",
+          "iata": "LHR",
+          "icao": "EGLL",
+          "latitude": 51.47,
+          "longitude": -0.4543,
+          "name": "London Heathrow",
+          "timezone": "Europe/London"
+        },
+        "durationMinutes": 110,
+        "flightNumber": "BA346",
+        "id": 7,
+        "origin": {
+          "city": "Nice",
+          "country": "FR",
+          "iata": "NCE",
+          "icao": "LFMN",
+          "latitude": 43.6584,
+          "longitude": 7.2159,
+          "name": "Nice Côte d'Azur",
+          "timezone": "Europe/Paris"
+        }
+      },
+      "offerId": "7-W",
+      "pricing": {
+        "base": 1080.00,
+        "basePerPassenger": 216.00,
+        "currency": "EUR",
+        "passengers": 5,
+        "perPassenger": 267.00,
+        "taxes": 255.00,
+        "taxesPerPassenger": 51.00,
+        "total": 1335.00
+      }
+    }
+  ]
+}

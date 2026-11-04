@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking 33SUH9",
+  "path": "bookings/33SUH9",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-10-22T12:41:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "33SUH9",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "B777",
+          "airline": {
+            "alliance": "SKYTEAM",
+            "country": "US",
+            "iata": "DL",
+            "icao": "DAL",
+            "name": "Delta Air Lines"
+          },
+          "arrival": "2026-11-08T10:40:00-05:00",
+          "departure": "2026-11-08T08:35:00+01:00",
+          "destination": {
+            "city": "New York",
+            "country": "US",
+            "iata": "JFK",
+            "icao": "KJFK",
+            "latitude": 40.6413,
+            "longitude": -73.7781,
+            "name": "New York John F. Kennedy International",
+            "timezone": "America/New_York"
+          },
+          "durationMinutes": 485,
+          "flightNumber": "DL11",
+          "id": 770,
+          "origin": {
+            "city": "Paris",
+            "country": "FR",
+            "iata": "CDG",
+            "icao": "LFPG",
+            "latitude": 49.0097,
+            "longitude": 2.5479,
+            "name": "Paris Charles de Gaulle",
+            "timezone": "Europe/Paris"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 1711.50,
+    "travelers": [
+      {
+        "dateOfBirth": "1991-10-29",
+        "email": "anna.kowalski@example.com",
+        "firstName": "Anna",
+        "frequentFlyerNumber": null,
+        "id": 12,
+        "lastName": "Kowalski",
+        "nationality": "PL"
+      },
+      {
+        "dateOfBirth": "1971-09-24",
+        "email": "pierre.girard@example.com",
+        "firstName": "Pierre",
+        "frequentFlyerNumber": "AF778899001",
+        "id": 33,
+        "lastName": "Girard",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1991-04-03",
+        "email": "zoe.williams@example.com",
+        "firstName": "Zoe",
+        "frequentFlyerNumber": "BA11223344",
+        "id": 44,
+        "lastName": "Williams",
+        "nationality": "GB"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "endpoint": "flights/{id}",
+  "label": "flight decimal",
+  "path": "flights/1.5",
+  "status": 400,
+  "content_type": "application/problem+json",
+  "body": {
+    "detail": "Failed to convert 'id' with value: '1.5'",
+    "instance": "/travel/api/flights/1.5",
+    "status": 400,
+    "title": "Bad Request"
+  }
+}

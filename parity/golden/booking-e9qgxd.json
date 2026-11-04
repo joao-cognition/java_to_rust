@@ -1,0 +1,84 @@
+{
+  "endpoint": "bookings/{recordLocator}",
+  "label": "booking E9QGXD",
+  "path": "bookings/E9QGXD",
+  "status": 200,
+  "content_type": "application/json",
+  "body": {
+    "createdAt": "2026-09-29T20:26:52+00:00",
+    "currency": "EUR",
+    "recordLocator": "E9QGXD",
+    "segments": [
+      {
+        "bookingClass": "K",
+        "cabin": "ECONOMY",
+        "flight": {
+          "aircraft": "A321",
+          "airline": {
+            "alliance": "STAR_ALLIANCE",
+            "country": "DE",
+            "iata": "LH",
+            "icao": "DLH",
+            "name": "Lufthansa"
+          },
+          "arrival": "2026-11-24T13:05:00+01:00",
+          "departure": "2026-11-24T10:35:00+01:00",
+          "destination": {
+            "city": "Madrid",
+            "country": "ES",
+            "iata": "MAD",
+            "icao": "LEMD",
+            "latitude": 40.4983,
+            "longitude": -3.5676,
+            "name": "Adolfo Suárez Madrid-Barajas",
+            "timezone": "Europe/Madrid"
+          },
+          "durationMinutes": 150,
+          "flightNumber": "LH1151",
+          "id": 1758,
+          "origin": {
+            "city": "Frankfurt",
+            "country": "DE",
+            "iata": "FRA",
+            "icao": "EDDF",
+            "latitude": 50.0379,
+            "longitude": 8.5622,
+            "name": "Frankfurt am Main",
+            "timezone": "Europe/Berlin"
+          }
+        }
+      }
+    ],
+    "status": "CONFIRMED",
+    "totalAmount": 464.49,
+    "travelers": [
+      {
+        "dateOfBirth": "1984-03-12",
+        "email": "camille.marin@example.com",
+        "firstName": "Camille",
+        "frequentFlyerNumber": "AF123456789",
+        "id": 1,
+        "lastName": "Marin",
+        "nationality": "FR"
+      },
+      {
+        "dateOfBirth": "1991-10-29",
+        "email": "anna.kowalski@example.com",
+        "firstName": "Anna",
+        "frequentFlyerNumber": null,
+        "id": 12,
+        "lastName": "Kowalski",
+        "nationality": "PL"
+      },
+      {
+        "dateOfBirth": "1970-12-17",
+        "email": "markus.hoffmann@example.com",
+        "firstName": "Markus",
+        "frequentFlyerNumber": null,
+        "id": 45,
+        "lastName": "Hoffmann",
+        "nationality": "DE"
+      }
+    ]
+  }
+}
