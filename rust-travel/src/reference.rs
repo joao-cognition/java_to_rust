@@ -56,22 +56,24 @@ impl Reference {
         })
     }
 
-    /// Waits until the Java service has finished applying `data.sql`. Its statements commit one by one, so the
-    /// reference tables are only known to be complete once the demo generator, which runs afterwards, has written
-    /// flights.
+    /// Waits until the Java service has finished applying `data.sql`. Its statements commit one by one, so a
+    /// snapshot is only accepted once every reference table is non-empty and unchanged since the previous poll.
     pub async fn load_when_ready(pool: &PgPool) -> Self {
+        let mut previous = None;
         loop {
-            let seeded = sqlx::query_scalar::<_, bool>("SELECT EXISTS (SELECT 1 FROM flight)")
-                .fetch_one(pool)
-                .await;
-            match seeded {
-                Ok(true) => match Self::load(pool).await {
-                    Ok(r) => return r,
-                    Err(e) => tracing::warn!("reference data not readable yet ({e}); retrying"),
-                },
-                Ok(false) => tracing::warn!(
-                    "flight table is empty; waiting for the Java service to finish seeding"
-                ),
+            match Self::load(pool).await {
+                Ok(r) => {
+                    let sizes = (r.airports.len(), r.airlines.len(), r.tax_rules.len());
+                    if sizes.0 > 0 && sizes.1 > 0 && sizes.2 > 0 && previous == Some(sizes) {
+                        return r;
+                    }
+                    if sizes.0 == 0 || sizes.1 == 0 || sizes.2 == 0 {
+                        tracing::warn!(
+                            "reference tables are empty; waiting for the Java service to seed them"
+                        );
+                    }
+                    previous = Some(sizes);
+                }
                 Err(e) => tracing::warn!("reference data not readable yet ({e}); retrying"),
             }
             tokio::time::sleep(Duration::from_secs(2)).await;
