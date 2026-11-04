@@ -761,6 +761,9 @@ pub async fn run(bases: &Bases, opts: &Options<'_>) -> Result<(), Box<dyn std::e
     if let Some(o) = opts.only {
         pairs.retain(|(c, _)| c.path.contains(o) || c.label.contains(o));
     }
+    if pairs.is_empty() {
+        return Err(format!("no case matches --only {:?}", opts.only.unwrap_or_default()).into());
+    }
     let java_label = if opts.golden {
         format!("golden {}", opts.golden_dir.display())
     } else {
