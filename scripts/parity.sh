@@ -85,9 +85,10 @@ fi
 
 echo "== j2r parity ($mode)"
 status=0
+touch "$LOGS/parity-start"
 J2R_JAVA="$JAVA_URL" J2R_RUST="$RUST_URL" cli/target/release/j2r parity --out "$OUT" --golden-dir "$GOLDEN" "$@" || status=$?
 
-if [ "$mode" = record ] && [ -f "$GOLDEN/manifest.json" ]; then
+if [ "$mode" = record ] && [ "$GOLDEN/manifest.json" -nt "$LOGS/parity-start" ]; then
   docker compose exec -T postgres pg_dump --no-owner --no-privileges -U travel -d travel | gzip -n -9 >"$GOLDEN/db.sql.gz"
   echo "recorded database → $GOLDEN/db.sql.gz ($(du -h "$GOLDEN/db.sql.gz" | cut -f1))"
 fi
