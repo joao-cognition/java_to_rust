@@ -1,8 +1,0 @@
-{
-  "endpoint": "offers",
-  "label": "offers NCE-CDG d+7 adults=5 cabin=FIRST",
-  "path": "offers?origin=NCE&destination=CDG&date=2026-11-12&adults=5&cabin=FIRST",
-  "status": 200,
-  "content_type": "application/json",
-  "body": []
-}

@@ -94,7 +94,8 @@ line per case, writes `parity/results.json` and `parity/report.md`, and exits no
 | `J2R_RUST=http://localhost:9966/travel/api scripts/parity.sh` | Java vs Java (sanity check: every case identical) |
 | `scripts/parity.sh --only offers` | a subset (path or label contains the text) |
 
-Case labels slugify uniquely into golden file names (`parity/golden/<slug>.json`). Booking `createdAt` comes from the
+Goldens live in one file, `parity/golden/goldens.json.gz` (a JSON object keyed by case slug; labels slugify
+uniquely), next to `manifest.json` (case order, schedule start) and `db.sql.gz`. Booking `createdAt` comes from the
 seeding wall clock, so goldens are only valid against their own database dump; `--golden` therefore restores it.
 
 Until a Rust service answers on `:9977`, `j2r api` shows the rust column as `down` and `j2r bench` prints the Java

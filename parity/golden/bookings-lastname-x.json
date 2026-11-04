@@ -1,8 +1,0 @@
-{
-  "endpoint": "bookings",
-  "label": "bookings lastName X",
-  "path": "bookings?lastName=X",
-  "status": 200,
-  "content_type": "application/json",
-  "body": []
-}

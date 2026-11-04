@@ -11,9 +11,13 @@ use crate::api::{self, Bases, Probe};
 use crate::render::{bold, dim, green, red, yellow};
 use crate::Service;
 use chrono::{Duration, Local, NaiveDate};
+use flate2::read::GzDecoder;
+use flate2::write::GzEncoder;
+use flate2::Compression;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use std::collections::{BTreeMap, BTreeSet};
+use std::io::Write;
 use std::path::{Path, PathBuf};
 
 /// Every GET endpoint in scope, in report order. Cases outside these templates are grouped as `unknown route`.
@@ -52,6 +56,7 @@ const AIRLINES: [&str; 11] = ["AF", "BA", "DL", "SQ", "IB", "LH", "KL", "TP", "A
 const CABINS: [&str; 5] = ["", "ECONOMY", "PREMIUM_ECONOMY", "BUSINESS", "FIRST"];
 const PROBLEM_FIELDS: [&str; 5] = ["type", "title", "status", "detail", "instance"];
 const MANIFEST: &str = "manifest.json";
+const GOLDENS: &str = "goldens.json.gz";
 
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]
 pub struct Case {
@@ -112,8 +117,8 @@ fn day_label(n: i64) -> String {
     }
 }
 
-/// The full case catalogue. Dates are relative to `facts.first_day`; labels never contain a date, so golden file
-/// names stay stable from one recording day to the next.
+/// The full case catalogue. Dates are relative to `facts.first_day`; labels never contain a date, so golden keys
+/// stay stable from one recording day to the next.
 pub fn catalogue(facts: &Facts) -> Vec<Case> {
     let mut b = Builder {
         d0: facts.first_day,
@@ -401,7 +406,7 @@ pub fn catalogue(facts: &Facts) -> Vec<Case> {
     b.cases
 }
 
-/// Labels must slugify uniquely: the slug is the golden file name.
+/// Labels must slugify uniquely: the slug is the golden key.
 pub fn check_unique(cases: &[Case]) -> Result<(), String> {
     let mut seen = BTreeMap::new();
     for c in cases {
@@ -539,8 +544,8 @@ struct Manifest {
     java: String,
     recorded_at: String,
     cases: usize,
-    /// Golden file stems (case slugs), in catalogue order.
-    files: Vec<String>,
+    /// Case slugs (the keys of `goldens.json.gz`), in catalogue order.
+    slugs: Vec<String>,
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize)]
@@ -649,16 +654,21 @@ pub struct Options<'a> {
 type Goldens = (NaiveDate, Vec<(Case, Response)>);
 
 fn load_goldens(dir: &Path) -> Result<Goldens, Box<dyn std::error::Error>> {
+    let manifest_path = dir.join(MANIFEST);
     let manifest: Manifest = serde_json::from_str(
-        &std::fs::read_to_string(dir.join(MANIFEST))
-            .map_err(|e| format!("{}: {e} (record with --record)", dir.join(MANIFEST).display()))?,
+        &std::fs::read_to_string(&manifest_path).map_err(|e| format!("{}: {e} (record with --record)", manifest_path.display()))?,
     )?;
-    let mut out = Vec::with_capacity(manifest.files.len());
-    for stem in &manifest.files {
-        let file = dir.join(format!("{stem}.json"));
-        let g: Golden = serde_json::from_str(&std::fs::read_to_string(&file).map_err(|e| format!("{}: {e}", file.display()))?)?;
-        if slug(&g.label) != *stem {
-            return Err(format!("{}: label {:?} does not match the file name", file.display(), g.label).into());
+    let file = dir.join(GOLDENS);
+    let gz = std::fs::File::open(&file).map_err(|e| format!("{}: {e} (record with --record)", file.display()))?;
+    let mut goldens: BTreeMap<String, Golden> =
+        serde_json::from_reader(std::io::BufReader::new(GzDecoder::new(gz))).map_err(|e| format!("{}: {e}", file.display()))?;
+    let mut out = Vec::with_capacity(manifest.slugs.len());
+    for key in &manifest.slugs {
+        let g = goldens
+            .remove(key)
+            .ok_or_else(|| format!("{}: no golden for {key:?}", file.display()))?;
+        if slug(&g.label) != *key {
+            return Err(format!("{}: label {:?} does not slugify to its key {key:?}", file.display(), g.label).into());
         }
         out.push((
             Case {
@@ -669,9 +679,13 @@ fn load_goldens(dir: &Path) -> Result<Goldens, Box<dyn std::error::Error>> {
             g.response,
         ));
     }
+    if !goldens.is_empty() {
+        return Err(format!("{}: {} goldens are not listed in {MANIFEST}", file.display(), goldens.len()).into());
+    }
     Ok((manifest.first_day, out))
 }
 
+/// Writes `manifest.json` and one gzipped JSON object of goldens keyed by case slug.
 fn write_goldens(dir: &Path, bases: &Bases, first_day: NaiveDate, recorded: &[(Case, Response)]) -> Result<(), Box<dyn std::error::Error>> {
     std::fs::create_dir_all(dir)?;
     for entry in std::fs::read_dir(dir)? {
@@ -680,24 +694,34 @@ fn write_goldens(dir: &Path, bases: &Bases, first_day: NaiveDate, recorded: &[(C
             std::fs::remove_file(path)?;
         }
     }
-    let mut files = Vec::with_capacity(recorded.len());
+    let mut slugs = Vec::with_capacity(recorded.len());
+    let mut goldens = BTreeMap::new();
     for (case, response) in recorded {
-        let stem = slug(&case.label);
-        let g = Golden {
-            endpoint: case.endpoint.clone(),
-            label: case.label.clone(),
-            path: case.path.clone(),
-            response: response.clone(),
-        };
-        std::fs::write(dir.join(format!("{stem}.json")), serde_json::to_string_pretty(&g)? + "\n")?;
-        files.push(stem);
+        let key = slug(&case.label);
+        slugs.push(key.clone());
+        goldens.insert(
+            key,
+            Golden {
+                endpoint: case.endpoint.clone(),
+                label: case.label.clone(),
+                path: case.path.clone(),
+                response: response.clone(),
+            },
+        );
     }
+    let mut gz = GzEncoder::new(
+        std::io::BufWriter::new(std::fs::File::create(dir.join(GOLDENS))?),
+        Compression::best(),
+    );
+    serde_json::to_writer_pretty(&mut gz, &goldens)?;
+    gz.write_all(b"\n")?;
+    gz.finish()?.flush()?;
     let manifest = Manifest {
         first_day,
         java: bases.java.clone(),
         recorded_at: Local::now().to_rfc3339(),
-        cases: files.len(),
-        files,
+        cases: slugs.len(),
+        slugs,
     };
     std::fs::write(dir.join(MANIFEST), serde_json::to_string_pretty(&manifest)? + "\n")?;
     Ok(())
@@ -1047,5 +1071,46 @@ mod tests {
         assert_eq!(compare(&case(), &down, &j).verdict, Verdict::JavaDown);
         let r = resp(200, "application/json", serde_json::from_str(r#"{"total": 384.0}"#).unwrap());
         assert_eq!(compare(&case(), &j, &r).diffs, vec!["$.total: 384.00 != 384.0"]);
+    }
+    #[test]
+    fn goldens_round_trip_through_one_gzipped_file() {
+        let dir = std::env::temp_dir().join(format!("j2r-goldens-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(&dir).unwrap();
+        std::fs::write(dir.join("stale-case.json"), "{}").unwrap();
+        let bases = Bases {
+            java: "http://java".into(),
+            rust: "http://rust".into(),
+        };
+        let first_day = NaiveDate::from_ymd_opt(2026, 11, 5).unwrap();
+        let recorded = vec![
+            (
+                case(),
+                resp(200, "application/json", serde_json::from_str(r#"{"total": 384.00}"#).unwrap()),
+            ),
+            (
+                Case {
+                    endpoint: "airports".into(),
+                    label: "airports list".into(),
+                    path: "airports".into(),
+                },
+                Response {
+                    status: 500,
+                    content_type: "text/plain".into(),
+                    text: Some("boom".into()),
+                    ..Response::default()
+                },
+            ),
+        ];
+        write_goldens(&dir, &bases, first_day, &recorded).unwrap();
+        assert!(!dir.join("stale-case.json").exists());
+        let (d0, loaded) = load_goldens(&dir).unwrap();
+        assert_eq!(d0, first_day);
+        assert_eq!(loaded.len(), 2);
+        for ((c, r), (lc, lr)) in recorded.iter().zip(&loaded) {
+            assert_eq!(c, lc);
+            assert!(compare(c, r, lr).diffs.is_empty());
+        }
+        std::fs::remove_dir_all(&dir).unwrap();
     }
 }

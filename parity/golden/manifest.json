@@ -1,9 +1,9 @@
 {
   "first_day": "2026-11-05",
   "java": "http://localhost:9966/travel/api",
-  "recorded_at": "2026-11-04T12:30:59.517168322+00:00",
+  "recorded_at": "2026-11-04T13:09:00.725771987+00:00",
   "cases": 843,
-  "files": [
+  "slugs": [
     "airports-list",
     "airport-nce",
     "airport-lhr",

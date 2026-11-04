@@ -1,8 +1,0 @@
-{
-  "endpoint": "offers",
-  "label": "offers FCO-MUC d+0 adults=9 cabin=FIRST",
-  "path": "offers?origin=FCO&destination=MUC&date=2026-11-05&adults=9&cabin=FIRST",
-  "status": 200,
-  "content_type": "application/json",
-  "body": []
-}

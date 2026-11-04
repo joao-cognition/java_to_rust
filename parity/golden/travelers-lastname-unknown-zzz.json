@@ -1,8 +1,0 @@
-{
-  "endpoint": "travelers",
-  "label": "travelers lastName unknown Zzz",
-  "path": "travelers?lastName=Zzz",
-  "status": 200,
-  "content_type": "application/json",
-  "body": []
-}
