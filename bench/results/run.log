@@ -1,0 +1,91 @@
+$ j2r bench --rate 300 --duration 30 --peak 10
+# 2026-11-04T13:40:25.539530155+00:00 · 8 vcpu · Intel(R) Xeon(R) Processor
+# mix: offers?origin=NCE&destination=LHR&date=2026-11-05 offers?origin=NCE&destination=LHR&date=2026-11-05&adults=2&cabin=ECONOMY offers?origin=CDG&destination=JFK&date=2026-11-05 offers?origin=MAD&destination=FRA&date=2026-11-05&cabin=BUSINESS offers?origin=LHR&destination=DXB&date=2026-11-05 bookings/QX7K2M bookings?lastName=Mar travelers/1 flights?origin=NCE&destination=LHR&date=2026-11-05 airports
+[java] up http://localhost:9966/travel/api/ · pid 18818 (java)
+[java] t=  1s cpu=2.07 cores rps=  300 p50=  3.1ms p99=   9.3ms rss=518MB
+[java] t=  2s cpu=1.96 cores rps=  300 p50=  2.5ms p99=   7.7ms rss=523MB
+[java] t=  3s cpu=1.27 cores rps=  300 p50=  2.6ms p99=   9.4ms rss=523MB
+[java] t=  4s cpu=1.69 cores rps=  300 p50=  2.3ms p99=   9.5ms rss=526MB
+[java] t=  5s cpu=0.91 cores rps=  300 p50=  2.2ms p99=   7.2ms rss=527MB
+[java] t=  6s cpu=0.94 cores rps=  300 p50=  2.4ms p99=   8.4ms rss=531MB
+[java] t=  7s cpu=0.86 cores rps=  300 p50=  2.4ms p99=   8.1ms rss=532MB
+[java] t=  8s cpu=0.52 cores rps=  299 p50=  2.0ms p99=   7.2ms rss=532MB
+[java] t=  9s cpu=0.58 cores rps=  300 p50=  2.3ms p99=   7.6ms rss=532MB
+[java] t= 10s cpu=0.55 cores rps=  300 p50=  2.1ms p99=   5.2ms rss=532MB
+[java] t= 11s cpu=1.00 cores rps=  300 p50=  2.1ms p99=   5.4ms rss=537MB
+[java] t= 12s cpu=0.61 cores rps=  300 p50=  2.1ms p99=   5.6ms rss=537MB
+[java] t= 13s cpu=0.68 cores rps=  300 p50=  2.0ms p99=   5.5ms rss=537MB
+[java] t= 14s cpu=0.91 cores rps=  300 p50=  1.9ms p99=   7.2ms rss=540MB
+[java] t= 15s cpu=0.64 cores rps=  301 p50=  2.1ms p99=   7.1ms rss=541MB
+[java] t= 16s cpu=0.88 cores rps=  300 p50=  1.9ms p99=   6.1ms rss=542MB
+[java] t= 17s cpu=0.55 cores rps=  300 p50=  2.4ms p99=   6.6ms rss=542MB
+[java] t= 18s cpu=0.65 cores rps=  300 p50=  2.2ms p99=   7.1ms rss=543MB
+[java] t= 19s cpu=0.67 cores rps=  301 p50=  2.2ms p99=   6.6ms rss=543MB
+[java] t= 20s cpu=1.02 cores rps=  300 p50=  1.9ms p99=   8.1ms rss=544MB
+[java] t= 21s cpu=0.41 cores rps=  300 p50=  2.1ms p99=  10.2ms rss=544MB
+[java] t= 22s cpu=0.36 cores rps=  300 p50=  2.0ms p99=   9.5ms rss=544MB
+[java] t= 23s cpu=0.30 cores rps=  300 p50=  2.2ms p99=   5.4ms rss=544MB
+[java] t= 24s cpu=0.51 cores rps=  300 p50=  2.0ms p99=   6.1ms rss=544MB
+[java] t= 25s cpu=0.28 cores rps=  300 p50=  2.0ms p99=   5.2ms rss=544MB
+[java] t= 26s cpu=0.30 cores rps=  300 p50=  1.9ms p99=   6.7ms rss=544MB
+[java] t= 27s cpu=0.40 cores rps=  300 p50=  1.7ms p99=   5.1ms rss=544MB
+[java] t= 28s cpu=0.52 cores rps=  300 p50=  2.1ms p99=   7.0ms rss=544MB
+[java] t= 29s cpu=0.33 cores rps=  300 p50=  1.9ms p99=   5.9ms rss=544MB
+[java] t= 30s cpu=0.28 cores rps=  300 p50=  2.0ms p99=   5.4ms rss=544MB
+[java] peak: 4577 req/s over 10s, 64 in flight, p99=42.6ms
+[rust] up http://localhost:9977/travel/api/ · pid 19293 (rust-travel)
+[rust] t=  1s cpu=0.13 cores rps=  300 p50=  2.2ms p99=   5.0ms rss=8MB
+[rust] t=  2s cpu=0.14 cores rps=  300 p50=  2.1ms p99=   5.4ms rss=8MB
+[rust] t=  3s cpu=0.12 cores rps=  300 p50=  2.2ms p99=   5.1ms rss=9MB
+[rust] t=  4s cpu=0.13 cores rps=  300 p50=  2.2ms p99=   4.8ms rss=9MB
+[rust] t=  5s cpu=0.14 cores rps=  300 p50=  2.1ms p99=   6.4ms rss=9MB
+[rust] t=  6s cpu=0.13 cores rps=  300 p50=  2.2ms p99=   5.0ms rss=9MB
+[rust] t=  7s cpu=0.15 cores rps=  301 p50=  2.1ms p99=   5.5ms rss=9MB
+[rust] t=  8s cpu=0.13 cores rps=  300 p50=  2.2ms p99=   5.3ms rss=9MB
+[rust] t=  9s cpu=0.14 cores rps=  300 p50=  2.4ms p99=   5.8ms rss=9MB
+[rust] t= 10s cpu=0.14 cores rps=  300 p50=  2.2ms p99=   4.7ms rss=9MB
+[rust] t= 11s cpu=0.14 cores rps=  300 p50=  2.0ms p99=   5.0ms rss=9MB
+[rust] t= 12s cpu=0.13 cores rps=  300 p50=  2.3ms p99=   4.9ms rss=9MB
+[rust] t= 13s cpu=0.13 cores rps=  300 p50=  1.9ms p99=   5.2ms rss=9MB
+[rust] t= 14s cpu=0.14 cores rps=  300 p50=  2.2ms p99=   5.1ms rss=9MB
+[rust] t= 15s cpu=0.14 cores rps=  300 p50=  2.2ms p99=   4.5ms rss=9MB
+[rust] t= 16s cpu=0.13 cores rps=  300 p50=  2.2ms p99=   4.6ms rss=9MB
+[rust] t= 17s cpu=0.13 cores rps=  300 p50=  2.1ms p99=   4.8ms rss=9MB
+[rust] t= 18s cpu=0.14 cores rps=  300 p50=  2.2ms p99=   4.9ms rss=9MB
+[rust] t= 19s cpu=0.13 cores rps=  300 p50=  1.8ms p99=   4.9ms rss=9MB
+[rust] t= 20s cpu=0.13 cores rps=  300 p50=  2.4ms p99=   5.4ms rss=9MB
+[rust] t= 21s cpu=0.14 cores rps=  300 p50=  2.1ms p99=   5.1ms rss=9MB
+[rust] t= 22s cpu=0.13 cores rps=  301 p50=  2.1ms p99=   4.5ms rss=9MB
+[rust] t= 23s cpu=0.13 cores rps=  300 p50=  2.3ms p99=   5.5ms rss=9MB
+[rust] t= 24s cpu=0.14 cores rps=  301 p50=  2.4ms p99=   5.2ms rss=9MB
+[rust] t= 25s cpu=0.14 cores rps=  300 p50=  1.9ms p99=   5.2ms rss=9MB
+[rust] t= 26s cpu=0.14 cores rps=  300 p50=  2.2ms p99=   4.4ms rss=9MB
+[rust] t= 27s cpu=0.14 cores rps=  300 p50=  2.3ms p99=   4.8ms rss=9MB
+[rust] t= 28s cpu=0.14 cores rps=  300 p50=  2.3ms p99=   4.9ms rss=9MB
+[rust] t= 29s cpu=0.12 cores rps=  300 p50=  2.0ms p99=   4.6ms rss=9MB
+[rust] t= 30s cpu=0.15 cores rps=  300 p50=  2.1ms p99=   5.3ms rss=9MB
+[rust] peak: 4846 req/s over 10s, 64 in flight, p99=23.0ms
+
+cpu cores
+  java  ████▅▅▇▇▄▄▄▄▄▄▃▃▃▃▃▃▄▄▃▃▃▃▄▄▃▃▄▄▃▃▃▃▃▃▄▄▂▂▂▂▂▂▃▃▂▂▂▂▂▂▃▃▂▂▂▂      0.76
+  rust  ▁▁▁▁▁▁▁▁▁▁▁▁▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂      0.14
+rps req/s
+  java  ████████████████████████████████████████████████████████████       300
+  rust  ████████████████████████████████████████████████████████████       300
+p99 ms
+  java  ▇▇▆▆▇▇██▆▆▇▇▇▇▆▆▆▆▅▅▅▅▅▅▅▅▆▆▆▆▅▅▆▆▆▆▆▆▇▇████▅▅▅▅▅▅▆▆▄▄▆▆▅▅▅▅       7.0
+  rust  ▄▄▅▅▅▅▄▄▅▅▄▄▅▅▅▅▅▅▄▄▄▄▄▄▅▅▅▅▄▄▄▄▄▄▄▄▄▄▅▅▄▄▄▄▅▅▅▅▅▅▄▄▄▄▄▄▄▄▅▅       5.1
+rss MB
+  java  ████████████████████████████████████████████████████████████       537
+  rust  ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁         9
+
+summary                    java     rust    delta
+delivered req/s             300      300      +0%
+cpu cores @300 req/s       0.76     0.14     -82%
+p50 ms                      2.2      2.2      +1%
+p99 ms                      7.0      5.1     -28%
+rss MB                      537        9     -98%
+peak req/s                 4577     4846      +6%
+
+cpu freed at 300 req/s: 0.62 cores (82% of the java footprint) — same traffic on 5.6x fewer cores
+

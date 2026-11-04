@@ -1,0 +1,23 @@
+[package]
+name = "rust-travel"
+version = "0.1.0"
+edition = "2021"
+description = "Axum + sqlx port of the read hot path of the Travel Shopping & Reservation API (same contract and PostgreSQL database as the Java service)"
+license = "Apache-2.0"
+
+[dependencies]
+axum = "0.8"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "signal"] }
+sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio", "postgres", "chrono", "rust_decimal"] }
+rust_decimal = { version = "1", features = ["serde-float", "serde-arbitrary-precision"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["arbitrary_precision"] }
+chrono = { version = "0.4", default-features = false, features = ["std", "clock"] }
+chrono-tz = "0.10"
+form_urlencoded = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
