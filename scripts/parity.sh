@@ -44,6 +44,10 @@ for port in 9966 9977; do
   if up "http://localhost:$port/"; then echo "port $port is busy: stop the running service first" >&2; exit 1; fi
 done
 
+if [ "$mode" = golden ] && [ ! -f "$GOLDEN/db.sql.gz" ]; then
+  echo "no $GOLDEN/db.sql.gz: record first with scripts/parity.sh --record" >&2; exit 1
+fi
+
 echo "== build"
 (cd cli && cargo build --release -q)
 if [ "$mode" != golden ] && [ ! -f "$JAR" ]; then ./mvnw -q -B package -DskipTests -Djacoco.skip=true; fi
@@ -58,7 +62,6 @@ for _ in $(seq 60); do docker compose exec -T postgres pg_isready -U travel -d t
 psql_travel -c 'DROP SCHEMA public CASCADE; CREATE SCHEMA public;'
 
 if [ "$mode" = golden ]; then
-  [ -f "$GOLDEN/db.sql.gz" ] || { echo "no $GOLDEN/db.sql.gz: record first with scripts/parity.sh --record" >&2; exit 1; }
   echo "== java: not started (restoring the recorded database from $GOLDEN/db.sql.gz)"
   gunzip -c "$GOLDEN/db.sql.gz" | psql_travel >/dev/null
 else
