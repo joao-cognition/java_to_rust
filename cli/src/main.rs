@@ -114,8 +114,8 @@ pub enum Cmd {
         /// Directory for results.json and report.md
         #[arg(long, default_value = "parity")]
         out: PathBuf,
-        /// Also write the Java responses as goldens
-        #[arg(long, conflicts_with = "golden")]
+        /// Also write the Java responses as goldens (always the full catalogue, so not with --only)
+        #[arg(long, conflicts_with_all = ["golden", "only"])]
         record: bool,
         /// Use the recorded goldens as the Java side (Java does not need to run)
         #[arg(long)]
