@@ -126,13 +126,18 @@ fn parse_iso_date(text: &str) -> Option<NaiveDate> {
     NaiveDate::parse_from_str(&text[..10], "%Y-%m-%d").ok()
 }
 
+/// `+HH:MM[:SS]` with hours 0-23 and minutes/seconds 0-59 (the range `ISO_DATE` checks while parsing).
 fn is_offset(s: &str) -> bool {
     let b = s.as_bytes();
-    let hhmm = |i: usize| b[i].is_ascii_digit() && b[i + 1].is_ascii_digit();
+    let field = |i: usize, max: u8| {
+        b[i].is_ascii_digit()
+            && b[i + 1].is_ascii_digit()
+            && (b[i] - b'0') * 10 + (b[i + 1] - b'0') <= max
+    };
     matches!(b.first(), Some(b'+' | b'-'))
         && match b.len() {
-            6 => hhmm(1) && b[3] == b':' && hhmm(4),
-            9 => hhmm(1) && b[3] == b':' && hhmm(4) && b[6] == b':' && hhmm(7),
+            6 => field(1, 23) && b[3] == b':' && field(4, 59),
+            9 => field(1, 23) && b[3] == b':' && field(4, 59) && b[6] == b':' && field(7, 59),
             _ => false,
         }
 }
@@ -160,5 +165,9 @@ mod tests {
         assert!(parse_iso_date("2026-02-30").is_none());
         assert!(parse_iso_date("2026-1-05").is_none());
         assert!(parse_iso_date("05/11/2026").is_none());
+        assert!(parse_iso_date("2026-11-05+23:59:59").is_some());
+        assert!(parse_iso_date("2026-11-05+99:99").is_none());
+        assert!(parse_iso_date("2026-11-05+24:00").is_none());
+        assert!(parse_iso_date("2026-11-05+00:60").is_none());
     }
 }
