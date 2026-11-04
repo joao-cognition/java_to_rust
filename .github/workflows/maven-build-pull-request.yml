@@ -3,7 +3,7 @@ name: Java CI for Pull Request
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    paths-ignore: [ "cli/**", "readme.md" ]
+    paths-ignore: [ "cli/**", "rust-travel/**", ".github/workflows/cli.yml", ".github/workflows/rust-travel.yml", "readme.md" ]
 
 jobs:
   build:
@@ -22,6 +22,7 @@ jobs:
         run: |
           java -jar target/travel-reservation-api-*.jar > app.log 2>&1 &
           echo $! > app.pid
+          for _ in $(seq 60); do curl -sf http://localhost:9966/travel/actuator/health > /dev/null && break; sleep 1; done
           scripts/smoke.sh http://localhost:9966/travel
       - name: Application log
         if: failure()
