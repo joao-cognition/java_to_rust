@@ -74,9 +74,16 @@ impl IntoResponse for ApiError {
 /// Renders an [`ApiError`] left by a handler, with the request path as `instance` like Spring does.
 pub async fn render_problems(req: Request, next: Next) -> Response {
     let path = req.uri().path().to_owned();
+    let method = req.method().clone();
     let mut res = next.run(req).await;
-    let Some(err) = res.extensions_mut().remove::<ApiError>() else {
-        return res;
+    let err = match res.extensions_mut().remove::<ApiError>() {
+        Some(err) => err,
+        // Spring's `HttpRequestMethodNotSupportedException`; the router's `Allow` header is kept.
+        None if res.status() == StatusCode::METHOD_NOT_ALLOWED => ApiError::new(
+            StatusCode::METHOD_NOT_ALLOWED,
+            format!("Method '{method}' is not supported."),
+        ),
+        None => return res,
     };
     let body = Problem {
         title: err.status.canonical_reason().unwrap_or(""),
@@ -84,7 +91,11 @@ pub async fn render_problems(req: Request, next: Next) -> Response {
         detail: &err.detail,
         instance: &path,
     };
+    let allow = res.headers_mut().remove(header::ALLOW);
     let mut out = (err.status, serde_json::to_string(&body).unwrap_or_default()).into_response();
+    if let Some(allow) = allow {
+        out.headers_mut().insert(header::ALLOW, allow);
+    }
     out.headers_mut().insert(
         header::CONTENT_TYPE,
         HeaderValue::from_static("application/problem+json"),
